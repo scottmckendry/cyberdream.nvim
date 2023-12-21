@@ -4,6 +4,10 @@ local util = require("cyberdream.util")
 
 local M = {}
 
-M.colorscheme = util.load(theme.setup())
+function M.load()
+    util.load(theme.setup())
+end
+
+M.colorscheme = M.load
 
 return M

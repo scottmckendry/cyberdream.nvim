@@ -6,7 +6,7 @@ local M = {}
 ---@field fg string|nil
 ---@field bg string|nil
 ---@field sp string|nil
----@field style string|nil
+---@field style string|nil|Highlight
 ---@field link string|nil
 
 ---@alias Highlights table<string, Highlight>
@@ -139,6 +139,10 @@ function M.setup()
         mkdCodeStart = { fg = t.grey },
         mkdCodeEnd = { fg = t.grey },
     }
+
+    ---@type table<string, table>
+    theme.defer = {}
+
     return theme
 end
 
