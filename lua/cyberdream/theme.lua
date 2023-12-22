@@ -37,7 +37,7 @@ function M.setup()
         CursorLine = { bg = t.bgHighlight },
         Directory = { fg = t.blue },
         DiffAdd = { fg = t.green },
-        DiffChange = { fg = t.yellow },
+        DiffChange = { fg = t.cyan },
         DiffDelete = { fg = t.red },
         DiffText = { fg = t.blue },
         EndOfBuffer = { fg = t.bg },
@@ -51,14 +51,14 @@ function M.setup()
         Substitute = { fg = t.red, bg = t.bgHighlight },
         LineNr = { fg = t.bgHighlight },
         CursorLineNr = { fg = t.grey },
-        MatchParen = { fg = t.orange, bg = t.bgHighlight },
+        MatchParen = { fg = t.pink, bg = t.bgHighlight },
         ModeMsg = { fg = t.fg },
         MsgArea = { fg = t.fg },
         MoreMsg = { fg = t.fg },
         NonText = { fg = t.grey },
         Normal = { fg = t.fg, bg = t.bg },
         NormalNC = { fg = t.fg, bg = t.bg },
-        NormalFloat = { fg = t.fg, bg = t.bgHighlight },
+        NormalFloat = { fg = t.fg, bg = t.bg },
         FloatTitle = { fg = t.fg, bg = t.bgHighlight },
         FloatBorder = { fg = t.grey, bg = t.bgHighlight },
         Pmenu = { fg = t.fg, bg = t.bgHighlight },
@@ -87,7 +87,7 @@ function M.setup()
         Whitespace = { fg = t.grey },
         WildMenu = { fg = t.bg, bg = t.blue },
 
-        Constant = { fg = t.blue },
+        Constant = { fg = t.fg },
         String = { fg = t.green },
         Character = { fg = t.green },
 
@@ -95,14 +95,14 @@ function M.setup()
         Boolean = { fg = t.purple },
         Float = { fg = t.purple },
 
-        Identifier = { fg = t.blue },
+        Identifier = { fg = t.fg },
         Function = { fg = t.blue },
         Statement = { fg = t.magenta },
         Conditional = { fg = t.pink },
         Repeat = { fg = t.yellow },
         Label = { fg = t.yellow },
         Operator = { fg = t.pink },
-        Keyword = { fg = t.orange },
+        Keyword = { fg = t.cyan },
         Exception = { fg = t.pink },
         PreProc = { fg = t.cyan },
         Include = { fg = t.cyan },
@@ -110,12 +110,12 @@ function M.setup()
         Macro = { fg = t.cyan },
         PreCondit = { fg = t.cyan },
 
-        Type = { fg = t.yellow },
+        Type = { fg = t.purple },
         StorageClass = { fg = t.yellow },
         Structure = { fg = t.yellow },
         Typedef = { fg = t.yellow },
 
-        Special = { fg = t.orange },
+        Special = { fg = t.pink },
         SpecialChar = { fg = t.orange },
         Tag = { fg = t.orange },
         Delimiter = { fg = t.orange },
@@ -138,6 +138,21 @@ function M.setup()
         mkdCodeDelimiter = { fg = t.grey },
         mkdCodeStart = { fg = t.grey },
         mkdCodeEnd = { fg = t.grey },
+
+        -- WhichKey
+        WhichKey = { fg = t.cyan },
+        WhichKeyGroup = { fg = t.blue },
+        WhichKeyDesc = { fg = t.pink },
+        WhichKeySeperator = { fg = t.bg },
+        WhichKeyFloat = { bg = t.bg },
+        WhichKeyValue = { fg = t.blue },
+
+        -- Alpha
+        AlphaShortcut = { fg = t.orange },
+        AlphaHeader = { fg = t.purple },
+        AlphaHeaderLabel = { fg = t.orange },
+        AlphaFooter = { fg = t.cyan },
+        AlphaButtons = { fg = t.blue },
     }
 
     ---@type table<string, table>
