@@ -69,8 +69,8 @@ function M.load(theme)
     M.syntax(theme.highlights)
 
     -- vim.api.nvim_set_hl_ns(M.ns)
-    if theme.config.terminal_colours then
-        M.terminal(theme.colours)
+    if theme.config.terminal_colors then
+        M.terminal(theme.colors)
     end
 
     M.autocmds(theme.config)
