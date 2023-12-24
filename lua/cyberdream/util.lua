@@ -1,7 +1,6 @@
 local ts = require("cyberdream.treesitter")
 local M = {}
 
----@param group string
 function M.highlight(group, hl)
     group = ts.get(group)
     if not group then
@@ -21,34 +20,12 @@ function M.highlight(group, hl)
     vim.api.nvim_set_hl(0, group, hl)
 end
 
----@param config Config
-function M.autocmds(config)
-    local group = vim.api.nvim_create_augroup("tokyonight", { clear = true })
-
-    vim.api.nvim_create_autocmd("ColorSchemePre", {
-        group = group,
-        callback = function()
-            vim.api.nvim_del_augroup_by_id(group)
-        end,
-    })
-    local function set_whl()
-        local win = vim.api.nvim_get_current_win()
-        local whl = vim.split(vim.wo[win].winhighlight, ",")
-        vim.list_extend(whl, { "Normal:NormalSB", "SignColumn:SignColumnSB" })
-        whl = vim.tbl_filter(function(hl)
-            return hl ~= ""
-        end, whl)
-        vim.opt_local.winhighlight = table.concat(whl, ",")
-    end
-end
-
 function M.syntax(syntax)
     for group, colors in pairs(syntax) do
         M.highlight(group, colors)
     end
 end
 
----@param theme Theme
 function M.load(theme)
     -- only needed to clear when not the default colorscheme
     if vim.g.colors_name then
@@ -67,13 +44,6 @@ function M.load(theme)
     end
 
     M.syntax(theme.highlights)
-
-    -- vim.api.nvim_set_hl_ns(M.ns)
-    if theme.config.terminal_colors then
-        M.terminal(theme.colors)
-    end
-
-    M.autocmds(theme.config)
 end
 
 return M

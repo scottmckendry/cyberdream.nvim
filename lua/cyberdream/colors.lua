@@ -1,8 +1,8 @@
 local M = {}
 
 M.default = {
-    none = "NONE",
     bg = "#16181a",
+    bgAlt = "#1e2124",
     bgHighlight = "#3c4048",
     fg = "#ffffff",
     grey = "#7b8496",

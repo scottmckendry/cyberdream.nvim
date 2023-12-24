@@ -1,38 +1,37 @@
 local colors = require("cyberdream.colors")
 
 local M = {}
----
----@class Highlight
----@field fg string|nil
----@field bg string|nil
----@field sp string|nil
----@field style string|nil|Highlight
----@field link string|nil
-
----@alias Highlights table<string, Highlight>
-
----@return Theme
 function M.setup()
-    -- Placeholders for now, will add config options later
     local config = require("cyberdream.config")
-    local options = config.options
+    local opts = config.options
 
-    ---@class Theme
-    ---@field highlights Highlights
-    local theme = {
-        config = options,
-        colors = colors.default,
-    }
+    local theme = {}
+    local t = colors.default
 
-    local t = theme.colors
+    if opts.transparent then
+        t.bg = "NONE"
+    end
+
+    if opts.hide_fillchars then
+        vim.opt.fillchars:append({
+            horiz = " ",
+            horizup = " ",
+            horizdown = " ",
+            vert = " ",
+            vertleft = " ",
+            vertright = " ",
+            verthoriz = " ",
+            eob = " ",
+        })
+    end
 
     theme.highlights = {
-        Comment = { fg = t.grey },
-        ColorColumn = { bg = t.none },
+        Comment = { fg = t.grey, italic = opts.italic_comments },
+        ColorColumn = { bg = t.bg },
         Conceal = { fg = t.grey },
-        Cursor = { fg = t.none, bg = t.fg },
-        ICursor = { fg = t.none, bg = t.fg },
-        CursorIM = { fg = t.none, bg = t.fg },
+        Cursor = { fg = t.bg, bg = t.fg },
+        ICursor = { fg = t.bg, bg = t.fg },
+        CursorIM = { fg = t.bg, bg = t.fg },
         CursorColumn = { bg = t.bgHighlight },
         CursorLine = { bg = t.bgHighlight },
         Directory = { fg = t.blue },
@@ -40,14 +39,14 @@ function M.setup()
         DiffChange = { fg = t.cyan },
         DiffDelete = { fg = t.red },
         DiffText = { fg = t.blue },
-        EndOfBuffer = { fg = t.none },
+        EndOfBuffer = { fg = t.bg },
         ErrorMsg = { fg = t.red },
-        VertSplit = { fg = t.none, bg = t.none },
-        WinSeperator = { fg = t.none, bg = t.none },
+        VertSplit = { fg = t.bg, bg = t.bg },
+        WinSeperator = { fg = t.bg, bg = t.bg },
         Folded = { fg = t.grey, bg = t.bgHighlight },
         FoldColumn = { fg = t.grey, bg = t.bgHighlight },
-        SignColumn = { fg = t.grey, bg = t.none },
-        SignColumnSB = { fg = t.grey, bg = t.none },
+        SignColumn = { fg = t.grey, bg = t.bg },
+        SignColumnSB = { fg = t.grey, bg = t.bg },
         Substitute = { fg = t.red, bg = t.bgHighlight },
         LineNr = { fg = t.bgHighlight },
         CursorLineNr = { fg = t.grey },
@@ -56,20 +55,20 @@ function M.setup()
         MsgArea = { fg = t.fg },
         MoreMsg = { fg = t.fg },
         NonText = { fg = t.grey },
-        Normal = { fg = t.fg, bg = t.none },
-        NormalNC = { fg = t.fg, bg = t.none },
-        NormalFloat = { fg = t.fg, bg = t.none },
+        Normal = { fg = t.fg, bg = t.bg },
+        NormalNC = { fg = t.fg, bg = t.bg },
+        NormalFloat = { fg = t.fg, bg = t.bg },
         FloatTitle = { fg = t.fg, bg = t.bgHighlight },
         FloatBorder = { fg = t.grey, bg = t.bgHighlight },
         Pmenu = { fg = t.fg, bg = t.bgHighlight },
         PmenuSel = { fg = t.fg, bg = t.bgHighlight },
-        PmenuSbar = { fg = t.none, bg = t.bgHighlight },
-        PmenuThumb = { fg = t.none, bg = t.bgHighlight },
+        PmenuSbar = { fg = t.bg, bg = t.bgHighlight },
+        PmenuThumb = { fg = t.bg, bg = t.bgHighlight },
         Question = { fg = t.yellow },
-        QuickFixLine = { fg = t.none, bg = t.blue },
-        Search = { fg = t.bg, bg = t.fg },
-        IncSearch = { fg = t.bg, bg = t.fg },
-        CurSearch = { fg = t.bg, bg = t.cyan },
+        QuickFixLine = { fg = t.bg, bg = t.blue },
+        Search = { fg = t.bgAlt, bg = t.fg },
+        IncSearch = { fg = t.bgAlt, bg = t.fg },
+        CurSearch = { fg = t.bgAlt, bg = t.cyan },
         SpecialKey = { fg = t.grey },
         SpellBad = { fg = t.red, style = "undercurl" },
         SpellCap = { fg = t.yellow, style = "undercurl" },
@@ -81,11 +80,11 @@ function M.setup()
         TabLineFill = { fg = t.grey, bg = t.bgHighlight },
         TabLineSel = { fg = t.fg, bg = t.bgHighlight },
         Title = { fg = t.fg },
-        Visual = { fg = t.none, bg = t.blue },
-        VisualNOS = { fg = t.none, bg = t.blue },
+        Visual = { fg = t.bg, bg = t.blue },
+        VisualNOS = { fg = t.bg, bg = t.blue },
         WarningMsg = { fg = t.orange },
         Whitespace = { fg = t.grey },
-        WildMenu = { fg = t.none, bg = t.blue },
+        WildMenu = { fg = t.bg, bg = t.blue },
 
         Constant = { fg = t.fg },
         String = { fg = t.green },
@@ -153,14 +152,14 @@ function M.setup()
         LspCodeLens = { fg = t.grey },
         LspInlayHint = { fg = t.grey },
 
-        LspInfoBorder = { fg = t.none },
+        LspInfoBorder = { fg = t.bg },
 
         -- WhichKey
         WhichKey = { fg = t.cyan },
         WhichKeyGroup = { fg = t.blue },
         WhichKeyDesc = { fg = t.pink },
-        WhichKeySeperator = { fg = t.none },
-        WhichKeyFloat = { bg = t.none },
+        WhichKeySeperator = { fg = t.bg },
+        WhichKeyFloat = { bg = t.bg },
         WhichKeyValue = { fg = t.blue },
 
         -- Alpha
@@ -171,46 +170,43 @@ function M.setup()
         AlphaButtons = { fg = t.blue },
 
         -- Telescope
-        TelescopeBorder = { fg = t.bg, bg = t.bg },
-        TelescopeNormal = { bg = t.bg },
-        TelescopePreviewBorder = { fg = t.bg, bg = t.bg },
-        TelescopePreviewNormal = { bg = t.bg },
-        TelescopePreviewTitle = { fg = t.bg, bg = t.green },
-        TelescopePromptBorder = { fg = t.bg, bg = t.bg },
-        TelescopePromptNormal = { fg = t.fg, bg = t.bg },
-        TelescopePromptPrefix = { fg = t.red, bg = t.bg },
-        TelescopePromptTitle = { fg = t.bg, bg = t.red },
-        TelescopeResultsBorder = { fg = t.bg, bg = t.bg },
-        TelescopeResultsNormal = { bg = t.bg },
-        TelescopeResultsTitle = { fg = t.bg, bg = t.bg },
+        TelescopeBorder = { fg = t.bgAlt, bg = t.bgAlt },
+        TelescopeNormal = { bg = t.bgAlt },
+        TelescopePreviewBorder = { fg = t.bgAlt, bg = t.bgAlt },
+        TelescopePreviewNormal = { bg = t.bgAlt },
+        TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green },
+        TelescopePromptBorder = { fg = t.bgAlt, bg = t.bgAlt },
+        TelescopePromptNormal = { fg = t.fg, bg = t.bgAlt },
+        TelescopePromptPrefix = { fg = t.red, bg = t.bgAlt },
+        TelescopePromptTitle = { fg = t.bgAlt, bg = t.red },
+        TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt },
+        TelescopeResultsNormal = { bg = t.bgAlt },
+        TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt },
 
         -- Cmp
-        CmpDocumentation = { fg = t.fg, bg = t.bg },
-        CmpDocumentationBorder = { fg = t.bg, bg = t.bg },
-        CmpGhostText = { fg = t.grey, bg = t.none },
+        CmpDocumentation = { fg = t.fg, bg = t.bgAlt },
+        CmpDocumentationBorder = { fg = t.bgAlt, bg = t.bgAlt },
+        CmpGhostText = { fg = t.grey, bg = t.bg },
 
-        CmpItemAbbr = { fg = t.fg, bg = t.none },
-        CmpItemAbbrDeprecated = { fg = t.grey, bg = t.none, strikethrough = true },
-        CmpItemAbbrMatch = { fg = t.blue, bg = t.none },
-        CmpItemAbbrMatchFuzzy = { fg = t.blue, bg = t.none },
+        CmpItemAbbr = { fg = t.fg, bg = t.bg },
+        CmpItemAbbrDeprecated = { fg = t.grey, bg = t.bg, strikethrough = true },
+        CmpItemAbbrMatch = { fg = t.blue, bg = t.bg },
+        CmpItemAbbrMatchFuzzy = { fg = t.blue, bg = t.bg },
 
-        CmpItemMenu = { fg = t.grey, bg = t.none },
+        CmpItemMenu = { fg = t.grey, bg = t.bg },
 
-        CmpItemKindDefault = { fg = t.bgHighlight, bg = t.none },
+        CmpItemKindDefault = { fg = t.bgHighlight, bg = t.bg },
 
         -- Leap
         LeapMatch = { fg = t.fg, bg = t.magenta },
-        LeapLabelPrimary = { fg = t.blue, bg = t.none, bold = true },
-        LeapLabelSecondary = { fg = t.green, bg = t.none },
+        LeapLabelPrimary = { fg = t.blue, bg = t.bg, bold = true },
+        LeapLabelSecondary = { fg = t.green, bg = t.bg },
         LeapBackdrop = { fg = t.bgHighlight },
 
         -- Lazy
         LazyProgressDone = { bold = true, fg = t.magenta },
         LazyProgressTodo = { bold = true, fg = t.grey },
     }
-
-    ---@type table<string, table>
-    theme.defer = {}
 
     return theme
 end
