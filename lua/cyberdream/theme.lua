@@ -94,8 +94,8 @@ function M.setup()
         Identifier = { fg = t.fg },
         Function = { fg = t.blue },
         Statement = { fg = t.magenta },
-        Operator = { fg = t.pink },
-        Keyword = { fg = t.cyan },
+        Operator = { fg = t.purple },
+        Keyword = { fg = t.orange },
         PreProc = { fg = t.cyan },
 
         Type = { fg = t.purple },
