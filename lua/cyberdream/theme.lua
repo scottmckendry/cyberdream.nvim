@@ -59,8 +59,8 @@ function M.setup()
         NormalNC = { fg = t.fg, bg = t.bg },
         NormalFloat = { fg = t.fg, bg = t.bg },
         FloatTitle = { fg = t.fg, bg = t.bgHighlight },
-        FloatBorder = { fg = t.grey, bg = t.bgHighlight },
-        Pmenu = { fg = t.fg, bg = t.bgHighlight },
+        FloatBorder = { fg = t.grey, bg = t.bg },
+        Pmenu = { fg = t.fg, bg = t.bg },
         PmenuSel = { fg = t.fg, bg = t.bgHighlight },
         PmenuSbar = { fg = t.bg, bg = t.bgHighlight },
         PmenuThumb = { fg = t.bg, bg = t.bgHighlight },
@@ -184,8 +184,8 @@ function M.setup()
         TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt },
 
         -- Cmp
-        CmpDocumentation = { fg = t.fg, bg = t.bgAlt },
-        CmpDocumentationBorder = { fg = t.bgAlt, bg = t.bgAlt },
+        CmpDocumentation = { fg = t.grey, bg = t.bg },
+        CmpDocumentationBorder = { fg = t.grey, bg = t.bg },
         CmpGhostText = { fg = t.grey, bg = t.bg },
 
         CmpItemAbbr = { fg = t.fg, bg = t.bg },
@@ -193,8 +193,18 @@ function M.setup()
         CmpItemAbbrMatch = { fg = t.blue, bg = t.bg },
         CmpItemAbbrMatchFuzzy = { fg = t.blue, bg = t.bg },
 
-        CmpItemMenu = { fg = t.grey, bg = t.bg },
+        CmpItemKindVariable = { fg = t.cyan, bg = t.bg },
+        CmpItemKindInterface = { fg = t.cyan, bg = t.bg },
+        CmpItemKindText = { fg = t.cyan, bg = t.bg },
 
+        CmpItemKindFunction = { fg = t.pink, bg = t.bg },
+        CmpItemKindMethod = { fg = t.pink, bg = t.bg },
+
+        CmpItemKindKeyword = { fg = t.fg, bg = t.bg },
+        CmpItemKindProperty = { fg = t.fg, bg = t.bg },
+        CmpItemKindUnit = { fg = t.fg, bg = t.bg },
+
+        CmpItemMenu = { fg = t.grey, bg = t.bg },
         CmpItemKindDefault = { fg = t.bgHighlight, bg = t.bg },
 
         -- Leap
