@@ -1,4 +1,4 @@
-# CYBERDREAM
+![ cyberdream-transparent](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/e758f47a-32eb-4eac-a008-eb59272badef)
 
 A high-contrast, futuristic & vibrant theme for neovim.
 
