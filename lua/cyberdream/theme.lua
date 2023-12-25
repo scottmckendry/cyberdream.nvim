@@ -190,8 +190,8 @@ function M.setup()
 
         CmpItemAbbr = { fg = t.fg, bg = t.bg },
         CmpItemAbbrDeprecated = { fg = t.grey, bg = t.bg, strikethrough = true },
-        CmpItemAbbrMatch = { fg = t.blue, bg = t.bg },
-        CmpItemAbbrMatchFuzzy = { fg = t.blue, bg = t.bg },
+        CmpItemAbbrMatch = { fg = t.purple, bg = t.bg },
+        CmpItemAbbrMatchFuzzy = { fg = t.purple, bg = t.bg },
 
         CmpItemKindVariable = { fg = t.cyan, bg = t.bg },
         CmpItemKindInterface = { fg = t.cyan, bg = t.bg },
@@ -205,7 +205,7 @@ function M.setup()
         CmpItemKindUnit = { fg = t.fg, bg = t.bg },
 
         CmpItemMenu = { fg = t.grey, bg = t.bg },
-        CmpItemKindDefault = { fg = t.bgHighlight, bg = t.bg },
+        CmpItemKindDefault = { fg = t.grey, bg = t.bg },
 
         -- Leap
         LeapMatch = { fg = t.fg, bg = t.magenta },
