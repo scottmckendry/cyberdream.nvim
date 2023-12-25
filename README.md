@@ -1,6 +1,19 @@
-![ cyberdream-transparent](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/e758f47a-32eb-4eac-a008-eb59272badef)
+<p align="center">
+    <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/e758f47a-32eb-4eac-a008-eb59272badef">
+     <b><i>A high-contrast, futuristic & vibrant theme for neovim</i></b>
+</p>
 
-A high-contrast, futuristic & vibrant theme for neovim.
+<p align="center">
+    <a href="https://github.com/scottmckendry/cyberdream.nvim/issues">
+        <img alt="Issues" src="https://img.shields.io/github/issues/scottmckendry/cyberdream.nvim?style=for-the-badge&logo=github&color=%23ffbd5e">
+    </a>
+    <a href="https://github.com/scottmckendry/cyberdream.nvim/blob/main/LICENSE">
+        <img alt="License" src="https://img.shields.io/github/license/scottmckendry/cyberdream.nvim?style=for-the-badge&logo=github&color=%235ef1ff">
+    </a>
+    <a href="https://github.com/scottmckendry/cyberdream.nvim/stars">
+        <img alt="stars" src="https://img.shields.io/github/stars/scottmckendry/cyberdream.nvim?style=for-the-badge&logo=github&color=%23bd5eff">
+    </a>
+</p>
 
 ## 🚀 Features
 
@@ -19,6 +32,8 @@ A high-contrast, futuristic & vibrant theme for neovim.
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/which-key.nvim"> which-key.nvim</a></label></li>
     </ul>
 </details>
+
+![cyberdream-screenshot](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/18004b97-8677-4ec1-afb8-76ea5c49a7bd)
 
 ## 📦 Installation
 
