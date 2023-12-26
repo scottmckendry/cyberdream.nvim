@@ -23,6 +23,10 @@ function M.setup()
             verthoriz = " ",
             eob = " ",
         })
+    else
+        vim.opt.fillchars:append({
+            eob = " ",
+        })
     end
 
     theme.highlights = {
@@ -41,8 +45,8 @@ function M.setup()
         DiffText = { fg = t.blue },
         EndOfBuffer = { fg = t.bg },
         ErrorMsg = { fg = t.red },
-        VertSplit = { fg = t.bg, bg = t.bg },
-        WinSeperator = { fg = t.bg, bg = t.bg },
+        VertSplit = { fg = t.bgHighlight, bg = t.bg },
+        WinSeperator = { fg = t.bgHighlight, bg = t.bg },
         Folded = { fg = t.grey, bg = t.bgHighlight },
         FoldColumn = { fg = t.grey, bg = t.bgHighlight },
         SignColumn = { fg = t.grey, bg = t.bg },
@@ -53,8 +57,8 @@ function M.setup()
         MatchParen = { fg = t.pink, bg = t.bgHighlight },
         ModeMsg = { fg = t.fg },
         MsgArea = { fg = t.fg },
-        MoreMsg = { fg = t.fg },
-        NonText = { fg = t.grey },
+        MoreMsg = { fg = t.blue },
+        NonText = { fg = t.bg },
         Normal = { fg = t.fg, bg = t.bg },
         NormalNC = { fg = t.fg, bg = t.bg },
         NormalFloat = { fg = t.fg, bg = t.bg },
