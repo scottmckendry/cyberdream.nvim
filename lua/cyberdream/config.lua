@@ -6,6 +6,11 @@ local default_options = {
     italic_comments = false,
     hide_fillchars = false,
     borderless_telescope = true,
+
+    theme = {
+        colors = {},
+        highlights = {},
+    },
 }
 
 ---@type Config

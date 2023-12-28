@@ -8,6 +8,9 @@ function M.setup()
     local theme = {}
     local t = colors.default
 
+    -- Override colors with user defined colors
+    t = vim.tbl_deep_extend("force", t, opts.theme.colors)
+
     if opts.transparent then
         t.bg = "NONE"
     end
@@ -229,6 +232,9 @@ function M.setup()
         theme.highlights.TelescopeResultsNormal = { bg = t.bgAlt }
         theme.highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
     end
+
+    -- Override highlights with user defined highlights
+    theme.highlights = vim.tbl_deep_extend("force", theme.highlights, opts.theme.highlights or {})
 
     return theme
 end
