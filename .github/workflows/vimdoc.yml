@@ -1,0 +1,21 @@
+name: Generate VimDoc
+on:
+    push:
+
+jobs:
+    generate-doc:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - run: git pull
+            - name: panvimdoc
+              uses: kdheepak/panvimdoc@main
+              with:
+                  vimdoc: cyberdream.nvim
+                  version: "Neovim >= 0.9.0"
+                  demojify: true
+                  treesitter: true
+            - name: Push changes
+              uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: "chore: auto-generate vimdoc"
