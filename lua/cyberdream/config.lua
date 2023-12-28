@@ -5,6 +5,7 @@ local default_options = {
     transparent = false,
     italic_comments = false,
     hide_fillchars = false,
+    borderless_telescope = true,
 }
 
 ---@type Config

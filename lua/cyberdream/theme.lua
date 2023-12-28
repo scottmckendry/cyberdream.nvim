@@ -174,18 +174,11 @@ function M.setup()
         AlphaButtons = { fg = t.blue },
 
         -- Telescope
-        TelescopeBorder = { fg = t.bgAlt, bg = t.bgAlt },
-        TelescopeNormal = { bg = t.bgAlt },
-        TelescopePreviewBorder = { fg = t.bgAlt, bg = t.bgAlt },
-        TelescopePreviewNormal = { bg = t.bgAlt },
-        TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green },
-        TelescopePromptBorder = { fg = t.bgAlt, bg = t.bgAlt },
-        TelescopePromptNormal = { fg = t.fg, bg = t.bgAlt },
-        TelescopePromptPrefix = { fg = t.red, bg = t.bgAlt },
-        TelescopePromptTitle = { fg = t.bgAlt, bg = t.red },
-        TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt },
-        TelescopeResultsNormal = { bg = t.bgAlt },
-        TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt },
+        TelescopeBorder = { fg = t.bgHighlight },
+        TelescopePromptTitle = { fg = t.blue },
+        TelescopeResultsTitle = { fg = t.cyan },
+        TelescopePromptPrefix = { fg = t.pink },
+        TelescopePreviewTitle = { fg = t.magenta },
 
         -- Cmp
         CmpDocumentation = { fg = t.grey, bg = t.bg },
@@ -221,6 +214,21 @@ function M.setup()
         LazyProgressDone = { bold = true, fg = t.magenta },
         LazyProgressTodo = { bold = true, fg = t.grey },
     }
+
+    if opts.borderless_telescope then
+        theme.highlights.TelescopeBorder = { fg = t.bgAlt, bg = t.bgAlt }
+        theme.highlights.TelescopeNormal = { bg = t.bgAlt }
+        theme.highlights.TelescopePreviewBorder = { fg = t.bgAlt, bg = t.bgAlt }
+        theme.highlights.TelescopePreviewNormal = { bg = t.bgAlt }
+        theme.highlights.TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green }
+        theme.highlights.TelescopePromptBorder = { fg = t.bgAlt, bg = t.bgAlt }
+        theme.highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bgAlt }
+        theme.highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bgAlt }
+        theme.highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.red }
+        theme.highlights.TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt }
+        theme.highlights.TelescopeResultsNormal = { bg = t.bgAlt }
+        theme.highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
+    end
 
     return theme
 end
