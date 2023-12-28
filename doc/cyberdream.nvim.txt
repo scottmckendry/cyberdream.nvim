@@ -38,6 +38,7 @@ Lazy:
                 transparent = true, -- enable transparent background
                 italic_comments = true, -- italicize comments
                 hide_fillchars = true, -- replace all fillchars with ' ' for the ultimate clean look
+                borderless_telescope = true, -- use a modern borderless theme for telescope
             })
             vim.cmd("colorscheme cyberdream") -- set the colorscheme
         end,
