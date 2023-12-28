@@ -5,6 +5,7 @@ Table of Contents                          *cyberdream.nvim-table-of-contents*
 
   - Features                                        |cyberdream.nvim-features|
   - Installation                                |cyberdream.nvim-installation|
+  - Configuring                                  |cyberdream.nvim-configuring|
   - Contributing                                |cyberdream.nvim-contributing|
 
 A high-contrast, futuristic & vibrant theme for neovim
@@ -35,9 +36,11 @@ Lazy:
         priority = 1000,
         config = function()
             require("cyberdream").setup({
-                transparent = true, -- enable transparent background
-                italic_comments = true, -- italicize comments
-                hide_fillchars = true, -- replace all fillchars with ' ' for the ultimate clean look
+                -- Recommended - see "Configuring" below for more config options
+                transparent = true,
+                italic_comments = true,
+                hide_fillchars = true,
+                borderless_telescope = true,
             })
             vim.cmd("colorscheme cyberdream") -- set the colorscheme
         end,
@@ -62,6 +65,48 @@ Lualine (optional):
 See my personal lualine config here
 <https://github.com/scottmckendry/Windots/blob/main/nvim/lua/plugins/lualine.lua>
 for an example.
+
+
+CONFIGURING                                      *cyberdream.nvim-configuring*
+
+Below is an example of all the available configuration options:
+
+>lua
+    require("cyberdream").setup({
+        -- Enable transparent background
+        transparent = true, -- Default: false
+    
+        -- Enable italics comments
+        italic_comments = true, -- Default: false
+    
+        -- Replace all fillchars with ' ' for the ultimate clean look
+        hide_fillchars = true, -- Default: false
+    
+        -- Modern borderless telescope theme
+        borderless_telescope = true, -- Default: true
+    
+        theme = { -- Default: nil
+            highlights = {
+                -- Highlight groups to override, adding new groups is also possible
+                -- See `:help highlight-groups` for a list of highlight groups
+    
+                -- Example:
+                Comment = { fg = "#696969", bg = "NONE", italic = true },
+    
+                -- Complete list can be found in `lua/cyberdream/theme.lua`
+            },
+    
+            -- Override a color entirely
+            colors = {
+                -- For a list of colors see `lua/cyberdream/colours.lua`
+                -- Example:
+                bg = "#000000",
+                green = "#00ff00",
+                magenta = "#ff00ff",
+            },
+        },
+    })
+<
 
 
 CONTRIBUTING                                    *cyberdream.nvim-contributing*
