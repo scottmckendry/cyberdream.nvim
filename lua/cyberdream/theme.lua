@@ -40,7 +40,7 @@ function M.setup()
         ICursor = { fg = t.bg, bg = t.fg },
         CursorIM = { fg = t.bg, bg = t.fg },
         CursorColumn = { bg = t.bgHighlight },
-        CursorLine = { bg = t.bgHighlight },
+        CursorLine = { bg = t.bg },
         Directory = { fg = t.blue },
         DiffAdd = { fg = t.green },
         DiffChange = { fg = t.cyan },
