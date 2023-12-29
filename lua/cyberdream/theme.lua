@@ -216,6 +216,14 @@ function M.setup()
         -- Lazy
         LazyProgressDone = { bold = true, fg = t.magenta },
         LazyProgressTodo = { bold = true, fg = t.grey },
+
+        -- Noice
+        NoiceFormatProgressDone = { fg = t.bgAlt, bg = t.cyan },
+        NoiceFormatProgressTodo = { fg = t.grey, bg = t.bgHighlight },
+
+        NoiceLspProgressClient = { fg = t.blue },
+        NoiceLspProgressSpinner = { fg = t.orange },
+        NoiceLspProgressTitle = { fg = t.cyan },
     }
 
     if opts.borderless_telescope then
