@@ -176,6 +176,23 @@ function M.setup()
         AlphaFooter = { fg = t.cyan },
         AlphaButtons = { fg = t.blue },
 
+        -- dashboard-nvim
+        DashboardHeader = { fg = t.purple },
+        DashboardFooter = { fg = t.cyan },
+        -- dashboard-nvim: doom theme
+        DashboardShortCut = { fg = t.orange },
+        DashboardDesc = { fg = t.orange },
+        DashboardKey = { fg = t.green },
+        DashboardIcon = { fg = t.blue },
+        -- dashboard-nvim: hyper theme
+        DashboardProjectTitle = { fg = t.blue },
+        DashboardProjectTitleIcon = { fg = t.orange },
+        DashboardProjectIcon = { fg = t.orange },
+        DashboardMruTitle = { fg = t.blue },
+        DashboardMruIcon = { fg = t.orange },
+        DashboardFiles = { fg = t.cyan },
+        DashboardShortCutIcon = { fg = t.pink },
+
         -- Telescope
         TelescopeBorder = { fg = t.bgHighlight },
         TelescopePromptTitle = { fg = t.blue },
