@@ -1,4 +1,4 @@
-*cyberdream.nvim.txt*     For Neovim >= 0.9.0    Last change: 2023 December 30
+*cyberdream.nvim.txt*     For Neovim >= 0.9.0     Last change: 2024 January 01
 
 ==============================================================================
 Table of Contents                          *cyberdream.nvim-table-of-contents*
