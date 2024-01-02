@@ -49,7 +49,7 @@ function M.setup()
         EndOfBuffer = { fg = t.bg },
         ErrorMsg = { fg = t.red },
         VertSplit = { fg = t.bgHighlight, bg = t.bg },
-        WinSeperator = { fg = t.bgHighlight, bg = t.bg },
+        WinSeparator = { fg = t.bgHighlight, bg = t.bg },
         Folded = { fg = t.grey, bg = t.bgHighlight },
         FoldColumn = { fg = t.grey, bg = t.bgHighlight },
         SignColumn = { fg = t.grey, bg = t.bg },
