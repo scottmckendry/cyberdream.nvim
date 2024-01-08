@@ -338,7 +338,23 @@ M.defaults = {
     },
     ["@text.title"] = {
         default = true,
-        link = "Title",
+        link = "markdownH1",
+    },
+    ["@text.title.2"] = {
+        default = true,
+        link = "markdownH2",
+    },
+    ["@text.title.3"] = {
+        default = true,
+        link = "markdownH3",
+    },
+    ["@text.title.4"] = {
+        default = true,
+        link = "markdownH4",
+    },
+    ["@text.title.5"] = {
+        default = true,
+        link = "markdownH5",
     },
     ["@text.underline"] = {
         underline = true,

@@ -131,7 +131,10 @@ function M.setup()
         markdownCode = { fg = t.cyan },
         markdownCodeBlock = { fg = t.cyan },
         markdownH1 = { fg = t.orange, bold = true },
-        markdownH2 = { fg = t.orange, bold = true },
+        markdownH2 = { fg = t.cyan, bold = true },
+        markdownH3 = { fg = t.blue, bold = true },
+        markdownH4 = { fg = t.purple, bold = true },
+        markdownH5 = { fg = t.magenta, bold = true },
         markdownLinkText = { fg = t.blue, underline = true },
 
         LspReferenceText = { bg = t.bgHighlight },
