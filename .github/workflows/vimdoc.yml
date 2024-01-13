@@ -11,7 +11,7 @@ jobs:
             - name: panvimdoc
               uses: kdheepak/panvimdoc@main
               with:
-                  vimdoc: cyberdream.nvim
+                  vimdoc: cyberdream
                   version: "Neovim >= 0.9.0"
                   demojify: true
                   treesitter: true
