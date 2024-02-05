@@ -13,6 +13,10 @@
     <a href="https://github.com/scottmckendry/cyberdream.nvim/stars">
         <img alt="stars" src="https://img.shields.io/github/stars/scottmckendry/cyberdream.nvim?style=for-the-badge&logo=github&color=%23bd5eff">
     </a>
+    <br>
+    <a href="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim">
+	    <img src="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim/shield?style=for-the-badge" />
+    </a>
 </p>
 
 ## 🚀 Features
