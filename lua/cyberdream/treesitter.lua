@@ -356,6 +356,26 @@ M.defaults = {
         default = true,
         link = "markdownH5",
     },
+    ["@markup.heading.1"] = {
+        default = true,
+        link = "markdownH1",
+    },
+    ["@markup.heading.2"] = {
+        default = true,
+        link = "markdownH2",
+    },
+    ["@markup.heading.3"] = {
+        default = true,
+        link = "markdownH3",
+    },
+    ["@markup.heading.4"] = {
+        default = true,
+        link = "markdownH4",
+    },
+    ["@markup.heading.5"] = {
+        default = true,
+        link = "markdownH5",
+    },
     ["@text.underline"] = {
         underline = true,
     },
