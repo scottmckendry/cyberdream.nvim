@@ -38,7 +38,9 @@
     </ul>
 </details>
 
-![cyberdream-screenshot](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/18004b97-8677-4ec1-afb8-76ea5c49a7bd)
+![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/55ad863e-11e6-4539-bf67-118ea328fb5b)
+![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/387a32f3-da38-4e96-b1e6-ea55591ec9ae)
+
 
 ## 📦 Installation
 
