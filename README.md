@@ -100,6 +100,9 @@ require("cyberdream").setup({
     -- Modern borderless telescope theme
     borderless_telescope = true, -- Default: true
 
+    -- Set terminal colors used in `:terminal`
+    terminal_colors = true, -- Default: true
+
     theme = { -- Default: nil
         highlights = {
             -- Highlight groups to override, adding new groups is also possible
