@@ -58,6 +58,7 @@ Lazy:
             italic_comments = true,
             hide_fillchars = true,
             borderless_telescope = true,
+            terminal_colors = true,
         })
         vim.cmd("colorscheme cyberdream") -- set the colorscheme
     end,

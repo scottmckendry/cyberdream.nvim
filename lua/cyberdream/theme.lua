@@ -262,6 +262,32 @@ function M.setup()
         theme.highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
     end
 
+    if opts.terminal_colors then
+        vim.g.terminal_color_0 = t.bg
+        vim.g.terminal_color_8 = t.bgAlt
+
+        vim.g.terminal_color_7 = t.fg
+        vim.g.terminal_color_15 = t.grey
+
+        vim.g.terminal_color_1 = t.red
+        vim.g.terminal_color_9 = t.red
+
+        vim.g.terminal_color_2 = t.green
+        vim.g.terminal_color_10 = t.green
+
+        vim.g.terminal_color_3 = t.yellow
+        vim.g.terminal_color_11 = t.yellow
+
+        vim.g.terminal_color_4 = t.blue
+        vim.g.terminal_color_12 = t.blue
+
+        vim.g.terminal_color_5 = t.purple
+        vim.g.terminal_color_13 = t.purple
+
+        vim.g.terminal_color_6 = t.cyan
+        vim.g.terminal_color_14 = t.cyan
+    end
+
     -- Override highlights with user defined highlights
     theme.highlights = vim.tbl_deep_extend("force", theme.highlights, opts.theme.highlights or {})
 
