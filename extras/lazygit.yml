@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://json.schemastore.org/lazygit.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
 gui:
     border: rounded
     theme:
