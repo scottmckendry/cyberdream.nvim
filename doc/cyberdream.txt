@@ -1,4 +1,4 @@
-*cyberdream.txt*         For Neovim >= 0.9.0        Last change: 2024 March 26
+*cyberdream.txt*         For Neovim >= 0.9.0        Last change: 2024 April 03
 
 ==============================================================================
 Table of Contents                               *cyberdream-table-of-contents*
@@ -7,6 +7,7 @@ Table of Contents                               *cyberdream-table-of-contents*
   - Installation                                     |cyberdream-installation|
   - Configuring                                       |cyberdream-configuring|
   - Contributing                                     |cyberdream-contributing|
+1. Links                                                    |cyberdream-links|
 
 A high-contrast, futuristic & vibrant theme for neovim
 
