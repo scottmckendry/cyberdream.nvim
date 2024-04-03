@@ -81,9 +81,9 @@ function M.setup()
         SpellCap = { fg = t.yellow, style = "undercurl" },
         SpellLocal = { fg = t.blue, style = "undercurl" },
         SpellRare = { fg = t.purple, style = "undercurl" },
-        StatusLine = { fg = t.fg, bg = t.bgHighlight },
-        StatusLineNC = { fg = t.grey, bg = t.bgHighlight },
-        TabLine = { fg = t.grey, bg = t.bgHighlight },
+        StatusLine = { fg = t.fg, bg = t.bg },
+        StatusLineNC = { fg = t.grey, bg = t.bg },
+        TabLine = { fg = t.grey, bg = t.bg },
         TabLineFill = { fg = t.grey, bg = t.bgHighlight },
         TabLineSel = { fg = t.fg, bg = t.bgHighlight },
         Title = { fg = t.fg },
@@ -245,6 +245,19 @@ function M.setup()
         NoiceLspProgressClient = { fg = t.blue },
         NoiceLspProgressSpinner = { fg = t.orange },
         NoiceLspProgressTitle = { fg = t.cyan },
+
+        -- GitSigns
+        GitSignsAdd = { fg = t.green },
+        GitSignsChange = { fg = t.orange },
+        GitSignsDelete = { fg = t.red },
+
+        -- Heirline
+        HeirlineInactive = { fg = t.grey },
+        HeirlineNormal = { fg = t.blue },
+        HeirlineVisual = { fg = t.magenta },
+        HeirlineReplace = { fg = t.red },
+        HeirlineCommand = { fg = t.yellow },
+        HeirlineInsert = { fg = t.green },
     }
 
     if opts.borderless_telescope then
