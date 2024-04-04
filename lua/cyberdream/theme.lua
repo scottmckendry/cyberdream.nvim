@@ -86,6 +86,8 @@ function M.setup()
         TabLine = { fg = t.grey, bg = t.bg },
         TabLineFill = { fg = t.grey, bg = t.bgHighlight },
         TabLineSel = { fg = t.fg, bg = t.bgHighlight },
+        WinBar = { fg = t.grey, bg = t.bg },
+        WinBarNC = { fg = t.grey, bg = t.bg },
         Title = { fg = t.fg },
         Visual = { fg = t.bg, bg = t.bgHighlight },
         VisualNOS = { fg = t.bg, bg = t.bgHighlight },
@@ -252,12 +254,12 @@ function M.setup()
         GitSignsDelete = { fg = t.red },
 
         -- Heirline
-        HeirlineInactive = { fg = t.grey },
-        HeirlineNormal = { fg = t.blue },
-        HeirlineVisual = { fg = t.magenta },
-        HeirlineReplace = { fg = t.red },
-        HeirlineCommand = { fg = t.yellow },
-        HeirlineInsert = { fg = t.green },
+        HeirlineInactive = { bg = t.grey },
+        HeirlineNormal = { bg = t.blue },
+        HeirlineVisual = { bg = t.magenta },
+        HeirlineReplace = { bg = t.red },
+        HeirlineCommand = { bg = t.yellow },
+        HeirlineInsert = { bg = t.green },
     }
 
     if opts.borderless_telescope then
