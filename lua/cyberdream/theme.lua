@@ -260,6 +260,7 @@ function M.setup()
         HeirlineReplace = { bg = t.red },
         HeirlineCommand = { bg = t.yellow },
         HeirlineInsert = { bg = t.green },
+        HeirlineTerminal = { bg = t.cyan },
     }
 
     if opts.borderless_telescope then
