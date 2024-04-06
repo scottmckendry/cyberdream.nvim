@@ -28,11 +28,14 @@
     <summary><b>Supported Plugins</b></summary>
     <ul>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/goolord/alpha-nvim"> alpha-nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/lewis6991/gitsigns.nvim"> gitsigns.nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/Zeioth/heirline-components.nvim"> heirline-components.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/lazy.nvim"> lazy.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ggandor/leap.nvim"> leap.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-lualine/lualine.nvim"> lualine.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/hrsh7th/nvim-cmp"> nvim-cmp</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-treesitter/nvim-treesitter"> nvim-treesitter</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/HiPhish/rainbow-delimiters.nvim"> rainbow-delimiters.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-telescope/telescope.nvim"> telescope.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/which-key.nvim"> which-key.nvim</a></label></li>
     </ul>
@@ -40,7 +43,6 @@
 
 ![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/55ad863e-11e6-4539-bf67-118ea328fb5b)
 ![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/387a32f3-da38-4e96-b1e6-ea55591ec9ae)
-
 
 ## 📦 Installation
 
