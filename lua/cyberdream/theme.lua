@@ -253,6 +253,15 @@ function M.setup()
         GitSignsChange = { fg = t.orange },
         GitSignsDelete = { fg = t.red },
 
+        -- Rainbow Delimiters
+        RainbowDelimiterRed = { fg = t.red },
+        RainbowDelimiterOrange = { fg = t.orange },
+        RainbowDelimiterYellow = { fg = t.yellow },
+        RainbowDelimiterGreen = { fg = t.green },
+        RainbowDelimiterBlue = { fg = t.blue },
+        RainbowDelimiterViolet = { fg = t.purple },
+        RainbowDelimiterCyan = { fg = t.cyan },
+
         -- Heirline
         HeirlineInactive = { bg = t.grey },
         HeirlineNormal = { bg = t.blue },
