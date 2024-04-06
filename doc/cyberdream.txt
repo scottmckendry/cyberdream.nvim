@@ -29,7 +29,7 @@ FEATURES                                                 *cyberdream-features*
 
 Supported Plugins ~
 
- alpha-nvim lazy.nvim leap.nvim lualine.nvim nvim-cmp nvim-treesitter telescope.nvim which-key.nvim
+ alpha-nvim gitsigns.nvim heirline-components.nvim lazy.nvim leap.nvim lualine.nvim nvim-cmp nvim-treesitter rainbow-delimiters.nvim telescope.nvim which-key.nvim
 
 
 INSTALLATION                                         *cyberdream-installation*
