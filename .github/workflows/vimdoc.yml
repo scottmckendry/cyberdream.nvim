@@ -1,7 +1,8 @@
 name: Generate VimDoc
 on:
     push:
-
+        branches:
+            - main
 jobs:
     generate-doc:
         runs-on: ubuntu-latest
