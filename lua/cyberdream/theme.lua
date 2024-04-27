@@ -34,7 +34,7 @@ function M.setup()
 
     theme.highlights = {
         Comment = { fg = t.grey, italic = opts.italic_comments },
-        ColorColumn = { bg = t.bg },
+        ColorColumn = { bg = t.bgHighlight },
         Conceal = { fg = t.grey },
         Cursor = { fg = t.bg, bg = t.fg },
         ICursor = { fg = t.bg, bg = t.fg },
