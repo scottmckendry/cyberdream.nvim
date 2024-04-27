@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.0.0...v1.0.1) (2024-04-27)
+
+
+### Bug Fixes
+
+* set TS [@variable](https://github.com/variable) to built-in color ([eaabbae](https://github.com/scottmckendry/cyberdream.nvim/commit/eaabbaea162e90c671cff64bdbca2d2e2a211a30))
+* use visible color for colorcolumn highlight ([341178e](https://github.com/scottmckendry/cyberdream.nvim/commit/341178ea1d9da135e2aace85ff186d4ba1eea85e)), closes [#16](https://github.com/scottmckendry/cyberdream.nvim/issues/16)
+
 ## 1.0.0 (2024-04-26)
 
 
