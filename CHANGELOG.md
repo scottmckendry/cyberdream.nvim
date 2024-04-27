@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.0.1...v1.1.0) (2024-04-27)
+
+
+### Features
+
+* add fish theme ([#18](https://github.com/scottmckendry/cyberdream.nvim/issues/18)) ([19693ee](https://github.com/scottmckendry/cyberdream.nvim/commit/19693ee5a577addb4dd2f7c43474e84f283ccc3b))
+
+
+### Bug Fixes
+
+* change wezterm cursor_fg ([#19](https://github.com/scottmckendry/cyberdream.nvim/issues/19)) ([75966c7](https://github.com/scottmckendry/cyberdream.nvim/commit/75966c7ee08b6ebb6ca97fd7ee8d8f8b27103481))
+* use non-conflicting hl for quickfix list ([d400d3f](https://github.com/scottmckendry/cyberdream.nvim/commit/d400d3fede6ad68df0c4c58d009da7420dcb43cb)), closes [#17](https://github.com/scottmckendry/cyberdream.nvim/issues/17)
+
 ## [1.0.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.0.0...v1.0.1) (2024-04-27)
 
 
