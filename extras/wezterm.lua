@@ -3,7 +3,7 @@ return {
     background = "#16181a",
 
     cursor_bg = "#ffffff",
-    cursor_fg = "#ffffff",
+    cursor_fg = "#000000",
     cursor_border = "#ffffff",
 
     selection_fg = "#ffffff",
