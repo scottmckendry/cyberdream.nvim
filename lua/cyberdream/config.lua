@@ -9,6 +9,7 @@ local default_options = {
     terminal_colos = true,
 
     theme = {
+        variant = "default",
         colors = {},
         highlights = {},
     },
