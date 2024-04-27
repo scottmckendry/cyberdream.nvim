@@ -270,6 +270,9 @@ function M.setup()
         HeirlineCommand = { bg = t.yellow },
         HeirlineInsert = { bg = t.green },
         HeirlineTerminal = { bg = t.cyan },
+
+        -- TreeSitter Specific
+        ["@variable"] = { fg = t.fg },
     }
 
     if opts.borderless_telescope then
