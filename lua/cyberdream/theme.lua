@@ -72,7 +72,7 @@ function M.setup()
         PmenuSbar = { fg = t.bg, bg = t.bgHighlight },
         PmenuThumb = { fg = t.bg, bg = t.bgHighlight },
         Question = { fg = t.yellow },
-        QuickFixLine = { fg = t.bg, bg = t.blue },
+        QuickFixLine = { bg = t.bgHighlight },
         Search = { fg = t.bgAlt, bg = t.fg },
         IncSearch = { fg = t.bgAlt, bg = t.fg },
         CurSearch = { fg = t.bgAlt, bg = t.cyan },
