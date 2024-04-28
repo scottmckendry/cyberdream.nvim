@@ -271,6 +271,28 @@ function M.setup()
         HeirlineInsert = { bg = t.green },
         HeirlineTerminal = { bg = t.cyan },
 
+        -- Nvim Notify
+        NotifyDEBUGBody = { fg = t.fg },
+        NotifyDEBUGBorder = { fg = t.bgHighlight },
+        NotifyDEBUGIcon = { fg = t.grey },
+        NotifyDEBUGTitle = { fg = t.grey },
+        NotifyERRORBody = { fg = t.fg },
+        NotifyERRORBorder = { fg = t.bgHighlight },
+        NotifyERRORIcon = { fg = t.red },
+        NotifyERRORTitle = { fg = t.pink },
+        NotifyINFOBody = { fg = t.fg },
+        NotifyINFOBorder = { fg = t.bgHighlight },
+        NotifyINFOIcon = { fg = t.green },
+        NotifyINFOTitle = { fg = t.cyan },
+        NotifyTRACEBorder = { fg = t.bgHighlight },
+        NotifyTRACEIcon = { fg = t.purple },
+        NotifyTRACETitle = { fg = t.magenta },
+        NotifyWARNBody = { fg = t.fg },
+        NotifyWARNBorder = { fg = t.bgHighlight },
+        NotifyWARNIcon = { fg = t.orange },
+        NotifyWARNTitle = { fg = t.yellow },
+        NotifyBackground = { bg = t.bg },
+
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
     }
@@ -314,6 +336,11 @@ function M.setup()
 
         vim.g.terminal_color_6 = t.cyan
         vim.g.terminal_color_14 = t.cyan
+    end
+
+    -- Use #000000 for full transparency
+    if opts.transparent then
+        theme.highlights.NotifyBackground = { bg = "#000000" }
     end
 
     -- Override highlights with user defined highlights
