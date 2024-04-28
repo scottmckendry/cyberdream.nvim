@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.1.0...v1.2.0) (2024-04-28)
+
+
+### Features
+
+* add support for nofify ([dab90f1](https://github.com/scottmckendry/cyberdream.nvim/commit/dab90f1cf0c49bab8fb7a967d47724e075bcc437)), closes [#22](https://github.com/scottmckendry/cyberdream.nvim/issues/22)
+
+
+### Bug Fixes
+
+* typo in default config properties ([8008e70](https://github.com/scottmckendry/cyberdream.nvim/commit/8008e70302ecf70b32c7d3658dc6a346351ed93d))
+
 ## [1.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.0.1...v1.1.0) (2024-04-27)
 
 
