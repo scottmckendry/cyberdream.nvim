@@ -6,7 +6,7 @@ local default_options = {
     italic_comments = false,
     hide_fillchars = false,
     borderless_telescope = true,
-    terminal_colos = true,
+    terminal_colors = true,
 
     theme = {
         colors = {},
