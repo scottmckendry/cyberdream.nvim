@@ -1,4 +1,5 @@
 local colors = require("cyberdream.colors")
+local util = require("cyberdream.util")
 
 local M = {}
 function M.setup()
@@ -40,7 +41,7 @@ function M.setup()
         ICursor = { fg = t.bg, bg = t.fg },
         CursorIM = { fg = t.bg, bg = t.fg },
         CursorColumn = { bg = t.bgHighlight },
-        CursorLine = { bg = t.bg },
+        CursorLine = { bg = (util.blend(t.bgAlt, t.bgHighlight)) },
         Directory = { fg = t.blue },
         DiffAdd = { fg = t.green },
         DiffChange = { fg = t.cyan },

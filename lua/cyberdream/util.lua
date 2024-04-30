@@ -46,4 +46,22 @@ function M.load(theme)
     M.syntax(theme.highlights)
 end
 
+--- Blend two colors together based on a weight.
+--- @param color1 string
+--- @param color2 string
+--- @param weight? number
+--- @return string
+function M.blend(color1, color2, weight)
+    weight = weight or 0.5
+
+    local rgb1 = { tonumber(color1:sub(2, 3), 16), tonumber(color1:sub(4, 5), 16), tonumber(color1:sub(6, 7), 16) }
+    local rgb2 = { tonumber(color2:sub(2, 3), 16), tonumber(color2:sub(4, 5), 16), tonumber(color2:sub(6, 7), 16) }
+    local rgb_blended = {}
+    for i = 1, 3 do
+        rgb_blended[i] = math.floor(rgb1[i] * weight + rgb2[i] * (1 - weight))
+    end
+
+    return string.format("#%02x%02x%02x", rgb_blended[1], rgb_blended[2], rgb_blended[3])
+end
+
 return M
