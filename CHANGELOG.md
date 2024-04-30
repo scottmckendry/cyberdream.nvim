@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.2.0...v1.2.1) (2024-04-30)
+
+
+### Bug Fixes
+
+* differentiate matches when replacing with /gc ([d777f1b](https://github.com/scottmckendry/cyberdream.nvim/commit/d777f1bfb0e6e1d74b3f243d8e4999b6b931ae19))
+* set CursorLine hl to visible color ([528085b](https://github.com/scottmckendry/cyberdream.nvim/commit/528085bc1760a76ff4e9aba4d85b0d39d2486866))
+
 ## [1.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.1.0...v1.2.0) (2024-04-28)
 
 
