@@ -74,7 +74,7 @@ function M.setup()
         Question = { fg = t.yellow },
         QuickFixLine = { bg = t.bgHighlight },
         Search = { fg = t.bgAlt, bg = t.fg },
-        IncSearch = { fg = t.bgAlt, bg = t.fg },
+        IncSearch = { fg = t.bgAlt, bg = t.cyan },
         CurSearch = { fg = t.bgAlt, bg = t.cyan },
         SpecialKey = { fg = t.grey },
         SpellBad = { fg = t.red, style = "undercurl" },
