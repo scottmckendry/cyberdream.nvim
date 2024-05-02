@@ -294,6 +294,10 @@ function M.setup()
         NotifyWARNTitle = { fg = t.yellow },
         NotifyBackground = { bg = t.bg },
 
+        -- Indent Blankline
+        IblIndent = { fg = util.blend(t.bgHighlight, t.bgAlt, 0.3) },
+        IblScope = { fg = t.bgHighlight },
+
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
     }
