@@ -1,9 +1,8 @@
 "ui.background" = "bg"
 "ui.text" = "fg"
-"ui.cursor" = "fg"
-"ui.cursor.primary" = "blue"
+"ui.cursor" = { bg = "fg", fg = "bg" }
 "ui.linenr" = "grey"
-"ui.statusline" = { fg = "blue", bg = "bg" }
+"ui.statusline" = { fg = "cyan" }
 "ui.selection" = "green"
 "ui.selection.primary" = "magenta"
 
@@ -20,22 +19,22 @@
 "type.builtin" = "cyan"
 "function" = "blue"
 "function.builtin" = "pink"
-"function.method" = { fg = "cyan", underline = { color = "blue", style = "line"} }
+"function.method" = "blue"
 "variable" = "fg"
 "variable.builtin" = "magenta"
 "variable.parameter" = "cyan"
 "string" = "green"
 "string.special" = "pink"
-"constant" = "yellow"
+"constant" = "fg"
 "constant.builtin" = "red"
 "constant.numeric" = "yellow"
 "constant.character" = "pink"
 "constant.boolean" = "red"
 "attribute" = "magenta"
-"operator" = "pink"
+"operator" = "purple"
 "tag" = { fg = "purple", modifiers = ["bold"] }
 "tag.special" = { fg = "orange", modifiers = ["bold"] }
-"namespace" = "cyan"
+"namespace" = "purple"
 "macro" = "orange"
 "label" = "red"
 
