@@ -298,6 +298,10 @@ function M.setup()
         IblIndent = { fg = util.blend(t.bgHighlight, t.bgAlt, 0.3) },
         IblScope = { fg = t.bgHighlight },
 
+        -- TreeSitter Context
+        TreeSitterContext = { bg = util.blend(t.bgAlt, t.cyan, 0.9) },
+        TreeSitterContextLineNumber = { fg = util.blend(t.bgHighlight, t.fg) },
+
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
     }
