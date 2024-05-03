@@ -20,12 +20,9 @@ local function format_colors(t)
 end
 
 --- Generate the configuration for Alacritty.
---- @param variant string: Variation of the colorscheme to use. Defaults to "default".
+--- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
-    variant = variant or "default"
-
-    local t = format_colors(colors.default)
-
+    local t = format_colors(colors[variant])
     local template = [==[
 # cyberdream theme for Alacritty
 [[colors.indexed_colors]]

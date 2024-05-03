@@ -1,6 +1,6 @@
 local M = {}
 
-M.variants = { default = "default", light = "light" }
+M.variants = { default = "default" }
 
 M.extras = {
     alacritty = { extension = "toml", name = "Alacritty" },
@@ -12,22 +12,23 @@ local function write(str, filename)
     print("writing extra: extras/" .. filename)
     vim.fn.mkdir(vim.fs.dirname("extras/" .. filename), "p")
     local file = io.open("extras/" .. filename, "w")
-    file:write(str)
-    file:close()
+    if file then
+        file:write(str)
+        file:close()
+    else
+        print("Failed to write to file: extras/" .. filename)
+    end
 end
 
 --- Generate the extras for a given variant.
 --- @param variant string: Variation of the colorscheme to use. Defaults to "default".
 local function generate_extras(variant)
-    if variant == "default" then
-        variant = "" -- remove the default prefix
-    else
-        variant = "-" .. variant
-    end
+    local suffix = variant == "default" and "" or "-" .. variant
+
     for name, extra in pairs(M.extras) do
         local extra_module = require("cyberdream.extra." .. name)
         local str = extra_module.generate(variant)
-        write(str, extra.name .. "/" .. "cyberdream" .. variant .. "." .. extra.extension)
+        write(str, extra.name .. "/" .. "cyberdream" .. suffix .. "." .. extra.extension)
     end
 end
 
