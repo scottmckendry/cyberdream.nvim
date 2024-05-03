@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.2.1...v1.3.0) (2024-05-03)
+
+
+### Features
+
+* add support for indent-blankline ([a9eb003](https://github.com/scottmckendry/cyberdream.nvim/commit/a9eb003663010322b3acbf41740dd8024f24acb9))
+* add support for treesitter-context ([ef2cbcc](https://github.com/scottmckendry/cyberdream.nvim/commit/ef2cbccda1197f5ed07d52177456c14db27fd0f5))
+
 ## [1.2.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.2.0...v1.2.1) (2024-04-30)
 
 
