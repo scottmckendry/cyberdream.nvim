@@ -3,7 +3,8 @@ local M = {}
 M.variants = { default = "default" }
 
 M.extras = {
-    alacritty = { extension = "toml", name = "Alacritty" },
+    alacritty = { extension = "toml", name = "alacritty" },
+    wezterm = { extension = "lua", name = "wezterm" },
 }
 
 --- Create/overwrite a file in the extras directory.
