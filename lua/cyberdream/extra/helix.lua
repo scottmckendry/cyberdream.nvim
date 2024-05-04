@@ -1,3 +1,12 @@
+local colors = require("cyberdream.colors")
+local util = require("cyberdream.util")
+
+local M = {}
+
+--- Generate cyberdream theme for helix.
+--- @param variant string: Variation of the colorscheme to use.
+function M.generate(variant)
+    local template = [==[
 # cyberdream theme for helix
 "ui.background" = "bg"
 "ui.text" = "fg"
@@ -71,17 +80,23 @@
 "ui.virtual.indent-guide" = { fg = "grey", style = "dotted" }
 
 [palette]
-bg = "#16181a"
-fg = "#ffffff"
-grey = "#7b8496"
-blue = "#5ea1ff"
-green = "#5eff6c"
-cyan = "#5ef1ff"
-red = "#ff6e5e"
-yellow = "#f1ff5e"
-magenta = "#ff5ef1"
-pink = "#ff5ea0"
-orange = "#ffbd5e"
-purple = "#bd5eff"
-bgAlt = "#1e2124"
-bgHighlight = "#3c4048"
+bg = "${bg}"
+fg = "${fg}"
+grey = "${grey}"
+blue = "${blue}"
+green = "${green}"
+cyan = "${cyan}"
+red = "${red}"
+yellow = "${yellow}"
+magenta = "${magenta}"
+pink = "${pink}"
+orange = "${orange}"
+purple = "${purple}"
+bgAlt = "${bgAlt}"
+bgHighlight = "${bgHighlight}"
+]==]
+
+    return util.parse_extra_template(template, colors[variant])
+end
+
+return M

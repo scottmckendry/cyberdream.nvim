@@ -1,9 +1,10 @@
+-- cyberdream theme for wezterm
 return {
     foreground = "#ffffff",
     background = "#16181a",
 
     cursor_bg = "#ffffff",
-    cursor_fg = "#000000",
+    cursor_fg = "#16181a",
     cursor_border = "#ffffff",
 
     selection_fg = "#ffffff",

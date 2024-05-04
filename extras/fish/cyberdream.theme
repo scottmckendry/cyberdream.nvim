@@ -1,30 +1,30 @@
 # name: 'cyberdream'
 # url: 'https://github.com/scottmckendry/cyberdream.nvim'
-# preferred_background: 16181A
+# preferred_background: 16181a
 
 fish_color_normal ffffff
-fish_color_command 52cfff
-fish_color_param f2cdcd
+fish_color_command 5ef1ff
+fish_color_param ffaecf
 fish_color_keyword 5eff6c
 fish_color_quote f1ff5e
 fish_color_redirection 5ea1ff
 fish_color_end bd5eff
-fish_color_comment 7f849c
+fish_color_comment 7b8496
 fish_color_error ff6e5e
-fish_color_gray 6c7086
+fish_color_gray 7b8496
 fish_color_selection --background=3c4048
 fish_color_search_match --background=3c4048
 fish_color_option f1ff5e
 fish_color_operator 5ea1ff
-fish_color_escape eba0ac
-fish_color_autosuggestion 6c7086
+fish_color_escape ffaecf
+fish_color_autosuggestion 7b8496
 fish_color_cancel ff6e5e
-fish_color_cwd f9e2af
-fish_color_user 94e2d5
+fish_color_cwd ffbd5e
+fish_color_user 5ef5d2
 fish_color_host 5eff6c
 fish_color_host_remote f1ff5e
 fish_color_status ff6e5e
-fish_pager_color_progress 6c7086
+fish_pager_color_progress 7b8496
 fish_pager_color_prefix 5ea1ff
 fish_pager_color_completion ffffff
-fish_pager_color_description 6c7086
+fish_pager_color_description 7b8496

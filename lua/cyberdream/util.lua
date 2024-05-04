@@ -64,4 +64,12 @@ function M.blend(color1, color2, weight)
     return string.format("#%02x%02x%02x", rgb_blended[1], rgb_blended[2], rgb_blended[3])
 end
 
+function M.parse_extra_template(template, t)
+    for k, v in pairs(t) do
+        template = template:gsub("%${" .. k .. "}", v)
+    end
+
+    return template
+end
+
 return M
