@@ -6,7 +6,6 @@ local M = {}
 --- Generate cyberdream theme for wezterm.
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
-    local t = colors[variant]
     local template = [==[
 -- cyberdream theme for wezterm
 return {
@@ -29,7 +28,7 @@ return {
 }
 ]==]
 
-    return util.parse_extra_template(template, t)
+    return util.parse_extra_template(template, colors[variant])
 end
 
 return M

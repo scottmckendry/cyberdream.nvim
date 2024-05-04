@@ -3,13 +3,13 @@ local util = require("cyberdream.util")
 
 local M = {}
 
---- Format a color for use in the Alacritty theme.
+--- Format a color for use in the allacritty.
 --- @param hex string: The hex color to format. Must be in the format "#RRGGBB".
 local function format_color(hex)
     return "0x" .. string.sub(hex, 2)
 end
 
---- Iterate over the colors in a table and format them for use in the Alacritty configuration.
+--- Iterate over the colors in a table and format them.
 --- @param t table: The table of colors to format.
 local function format_colors(t)
     local formatted = {}
@@ -19,7 +19,7 @@ local function format_colors(t)
     return formatted
 end
 
---- Generate the theme for Alacritty.
+--- Generate the theme for alacritty.
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
     local t = format_colors(colors[variant])
