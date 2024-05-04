@@ -4,7 +4,7 @@ local util = require("cyberdream.util")
 local M = {}
 
 --- Format a color for use in gitui
---- @param hex string: The hex color to formaunformatted. Must be in the format "#RRGGBB".
+--- @param hex string: The hex color to formatted. Must be in the format "#RRGGBB".
 local function format_color(hex)
     local r = tonumber(string.sub(hex, 2, 3), 16)
     local g = tonumber(string.sub(hex, 4, 5), 16)

@@ -3,7 +3,7 @@ local util = require("cyberdream.util")
 
 local M = {}
 
---- Format a color for use in the allacritty.
+--- Format a color for use in allacritty.
 --- @param hex string: The hex color to format. Must be in the format "#RRGGBB".
 local function format_color(hex)
     return "0x" .. string.sub(hex, 2)
