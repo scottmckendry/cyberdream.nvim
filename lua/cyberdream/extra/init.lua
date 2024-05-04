@@ -4,6 +4,7 @@ M.variants = { default = "default" }
 
 M.extras = {
     alacritty = { extension = "toml", name = "alacritty" },
+    gitui = { extension = "ron", name = "gitui" },
     lazygit = { extension = "yml", name = "lazygit" },
     wezterm = { extension = "lua", name = "wezterm" },
 }
