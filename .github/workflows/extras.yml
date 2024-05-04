@@ -1,9 +1,6 @@
 name: Generate Extras
 on:
     push:
-        branches:
-            - main
-    workflow_dispatch:
 
 jobs:
     generate-extras:
