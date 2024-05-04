@@ -11,6 +11,7 @@ M.extras = {
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
     wezterm = { extension = "lua", name = "wezterm" },
+    windowsterminal = { extension = "json", name = "windowsterminal" },
 }
 
 --- Create/overwrite a file in the extras directory.
