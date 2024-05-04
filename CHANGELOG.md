@@ -1,5 +1,54 @@
 # Changelog
 
+## [1.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.2.1...v1.3.0) (2024-05-03)
+
+
+### Features
+
+* add support for indent-blankline ([a9eb003](https://github.com/scottmckendry/cyberdream.nvim/commit/a9eb003663010322b3acbf41740dd8024f24acb9))
+* add support for treesitter-context ([ef2cbcc](https://github.com/scottmckendry/cyberdream.nvim/commit/ef2cbccda1197f5ed07d52177456c14db27fd0f5))
+
+## [1.2.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.2.0...v1.2.1) (2024-04-30)
+
+
+### Bug Fixes
+
+* differentiate matches when replacing with /gc ([d777f1b](https://github.com/scottmckendry/cyberdream.nvim/commit/d777f1bfb0e6e1d74b3f243d8e4999b6b931ae19))
+* set CursorLine hl to visible color ([528085b](https://github.com/scottmckendry/cyberdream.nvim/commit/528085bc1760a76ff4e9aba4d85b0d39d2486866))
+
+## [1.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.1.0...v1.2.0) (2024-04-28)
+
+
+### Features
+
+* add support for nofify ([dab90f1](https://github.com/scottmckendry/cyberdream.nvim/commit/dab90f1cf0c49bab8fb7a967d47724e075bcc437)), closes [#22](https://github.com/scottmckendry/cyberdream.nvim/issues/22)
+
+
+### Bug Fixes
+
+* typo in default config properties ([8008e70](https://github.com/scottmckendry/cyberdream.nvim/commit/8008e70302ecf70b32c7d3658dc6a346351ed93d))
+
+## [1.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.0.1...v1.1.0) (2024-04-27)
+
+
+### Features
+
+* add fish theme ([#18](https://github.com/scottmckendry/cyberdream.nvim/issues/18)) ([19693ee](https://github.com/scottmckendry/cyberdream.nvim/commit/19693ee5a577addb4dd2f7c43474e84f283ccc3b))
+
+
+### Bug Fixes
+
+* change wezterm cursor_fg ([#19](https://github.com/scottmckendry/cyberdream.nvim/issues/19)) ([75966c7](https://github.com/scottmckendry/cyberdream.nvim/commit/75966c7ee08b6ebb6ca97fd7ee8d8f8b27103481))
+* use non-conflicting hl for quickfix list ([d400d3f](https://github.com/scottmckendry/cyberdream.nvim/commit/d400d3fede6ad68df0c4c58d009da7420dcb43cb)), closes [#17](https://github.com/scottmckendry/cyberdream.nvim/issues/17)
+
+## [1.0.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.0.0...v1.0.1) (2024-04-27)
+
+
+### Bug Fixes
+
+* set TS [@variable](https://github.com/variable) to built-in color ([eaabbae](https://github.com/scottmckendry/cyberdream.nvim/commit/eaabbaea162e90c671cff64bdbca2d2e2a211a30))
+* use visible color for colorcolumn highlight ([341178e](https://github.com/scottmckendry/cyberdream.nvim/commit/341178ea1d9da135e2aace85ff186d4ba1eea85e)), closes [#16](https://github.com/scottmckendry/cyberdream.nvim/issues/16)
+
 ## 1.0.0 (2024-04-26)
 
 

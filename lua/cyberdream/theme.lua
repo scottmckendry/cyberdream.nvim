@@ -1,4 +1,5 @@
 local colors = require("cyberdream.colors")
+local util = require("cyberdream.util")
 
 local M = {}
 function M.setup()
@@ -37,13 +38,13 @@ function M.setup()
 
     theme.highlights = {
         Comment = { fg = t.grey, italic = opts.italic_comments },
-        ColorColumn = { bg = t.bg },
+        ColorColumn = { bg = t.bgHighlight },
         Conceal = { fg = t.grey },
         Cursor = { fg = t.bg, bg = t.fg },
         ICursor = { fg = t.bg, bg = t.fg },
         CursorIM = { fg = t.bg, bg = t.fg },
         CursorColumn = { bg = t.bgHighlight },
-        CursorLine = { bg = t.bg },
+        CursorLine = { bg = (util.blend(t.bgAlt, t.bgHighlight)) },
         Directory = { fg = t.blue },
         DiffAdd = { fg = t.green },
         DiffChange = { fg = t.cyan },
@@ -75,9 +76,9 @@ function M.setup()
         PmenuSbar = { fg = t.bg, bg = t.bgHighlight },
         PmenuThumb = { fg = t.bg, bg = t.bgHighlight },
         Question = { fg = t.yellow },
-        QuickFixLine = { fg = t.bg, bg = t.blue },
+        QuickFixLine = { bg = t.bgHighlight },
         Search = { fg = t.bgAlt, bg = t.fg },
-        IncSearch = { fg = t.bgAlt, bg = t.fg },
+        IncSearch = { fg = t.bgAlt, bg = t.cyan },
         CurSearch = { fg = t.bgAlt, bg = t.cyan },
         SpecialKey = { fg = t.grey },
         SpellBad = { fg = t.red, style = "undercurl" },
@@ -275,6 +276,36 @@ function M.setup()
         HeirlineInsert = { bg = t.green },
         HeirlineTerminal = { bg = t.cyan },
 
+        -- Nvim Notify
+        NotifyDEBUGBody = { fg = t.fg },
+        NotifyDEBUGBorder = { fg = t.bgHighlight },
+        NotifyDEBUGIcon = { fg = t.grey },
+        NotifyDEBUGTitle = { fg = t.grey },
+        NotifyERRORBody = { fg = t.fg },
+        NotifyERRORBorder = { fg = t.bgHighlight },
+        NotifyERRORIcon = { fg = t.red },
+        NotifyERRORTitle = { fg = t.pink },
+        NotifyINFOBody = { fg = t.fg },
+        NotifyINFOBorder = { fg = t.bgHighlight },
+        NotifyINFOIcon = { fg = t.green },
+        NotifyINFOTitle = { fg = t.cyan },
+        NotifyTRACEBorder = { fg = t.bgHighlight },
+        NotifyTRACEIcon = { fg = t.purple },
+        NotifyTRACETitle = { fg = t.magenta },
+        NotifyWARNBody = { fg = t.fg },
+        NotifyWARNBorder = { fg = t.bgHighlight },
+        NotifyWARNIcon = { fg = t.orange },
+        NotifyWARNTitle = { fg = t.yellow },
+        NotifyBackground = { bg = t.bg },
+
+        -- Indent Blankline
+        IblIndent = { fg = util.blend(t.bgHighlight, t.bgAlt, 0.3) },
+        IblScope = { fg = t.bgHighlight },
+
+        -- TreeSitter Context
+        TreeSitterContext = { bg = util.blend(t.bgAlt, t.cyan, 0.9) },
+        TreeSitterContextLineNumber = { fg = util.blend(t.bgHighlight, t.fg) },
+
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
     }
@@ -318,6 +349,11 @@ function M.setup()
 
         vim.g.terminal_color_6 = t.cyan
         vim.g.terminal_color_14 = t.cyan
+    end
+
+    -- Use #000000 for full transparency
+    if opts.transparent then
+        theme.highlights.NotifyBackground = { bg = "#000000" }
     end
 
     -- Override highlights with user defined highlights
