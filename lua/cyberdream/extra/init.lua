@@ -7,6 +7,7 @@ M.extras = {
     gitui = { extension = "ron", name = "gitui" },
     helix = { extension = "toml", name = "helix" },
     lazygit = { extension = "yml", name = "lazygit" },
+    textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
     wezterm = { extension = "lua", name = "wezterm" },
 }
