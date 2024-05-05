@@ -1,0 +1,10 @@
+name: Ask a Question
+description: Ask a question or suggest an idea or feature
+labels: [question]
+body:
+    - type: textarea
+      attributes:
+          label: "Question or Suggestion"
+          description: "Ask a question or suggest an idea or feature"
+      validations:
+          required: true
