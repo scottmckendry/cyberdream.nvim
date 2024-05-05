@@ -1,0 +1,33 @@
+name: Housekeeping
+
+on:
+    issue_comment:
+    schedule:
+        - cron: "0 0 * * *" # once daily
+
+jobs:
+    update-issues:
+        runs-on: ubuntu-latest
+        permissions:
+            issues: write
+            pull-requests: write
+        steps:
+            - uses: actions/stale@v9
+              with:
+                  repo-token: ${{ secrets.RELEASE_TOKEN }}
+                  days-before-stale: -1 # never add label automatically
+                  days-before-close: 7
+                  stale-issue-label: "waiting for op"
+                  stale-pr-label: "waiting for op"
+                  close-issue-label: "autoclosed"
+                  close-pr-label: "autoclosed"
+
+    remove-waiting-label:
+        runs-on: ubuntu-latest
+        if: github.event.sender.login != 'scottmckendry' && github.event_name == 'issue_comment'
+        steps:
+            - uses: mondeja/remove-labels-gh-action@v2
+              with:
+                  token: ${{ secrets.RELEASE_TOKEN }}
+                  labels: |
+                      waiting for op

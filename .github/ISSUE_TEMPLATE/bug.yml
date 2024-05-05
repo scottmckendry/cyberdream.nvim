@@ -1,0 +1,59 @@
+name: Bug Report
+description: Report a problem with cyberdream
+labels: [bug]
+body:
+    - type: markdown
+      attributes:
+          value: >
+              Please make sure cyberdream is up to date before reporting a bug!
+
+    - type: textarea
+      attributes:
+          label: "Description"
+          description: "What is the issue?"
+      validations:
+          required: true
+
+    - type: input
+      attributes:
+          label: "Neovim version?"
+          description: |
+              Output of `nvim --version`
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          label: "What should happen?"
+          description: "A clear and concise description of what you expected to happen or what you expected to see."
+
+    - type: textarea
+      attributes:
+          label: "What happened instead?"
+          description: "Based on the description above, what actually happened. Screenshots are helpful."
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          label: "Your configuration"
+          description: >
+              Minimal configuration necessary to reproduce the issue. Include any relevant plugins and settings.
+          render: Lua
+          value: |
+              {
+                  "scottmckendry/cyberdream.nvim",
+                  lazy = false,
+                  priority = 1000,
+                  config = function()
+                      require("cyberdream").setup({
+                          transparent = true,
+                          italic_comments = true,
+                          hide_fillchars = true,
+                          borderless_telescope = true,
+                      })
+                      vim.cmd("colorscheme cyberdream")
+                  end,
+              }
+      validations:
+          required: true
