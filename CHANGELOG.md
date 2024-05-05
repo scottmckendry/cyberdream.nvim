@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.3.0...v1.4.0) (2024-05-05)
+
+
+### Features
+
+* add helix theme extra ([#28](https://github.com/scottmckendry/cyberdream.nvim/issues/28)) ([2420116](https://github.com/scottmckendry/cyberdream.nvim/commit/24201167df02088f66577831742d120d10a554ce))
+* **CI:** update CI and other QoL updates ([#39](https://github.com/scottmckendry/cyberdream.nvim/issues/39)) ([5f60b64](https://github.com/scottmckendry/cyberdream.nvim/commit/5f60b64e16fbc870992e6414e21ae08607b7f883))
+* **extras:** auto-generate extras ([#37](https://github.com/scottmckendry/cyberdream.nvim/issues/37)) ([61b2a27](https://github.com/scottmckendry/cyberdream.nvim/commit/61b2a27784bbaaa3c5a7783d951b8743164fb070))
+* **gitui:** Basic theme setup for gitui ([#36](https://github.com/scottmckendry/cyberdream.nvim/issues/36)) ([03251ad](https://github.com/scottmckendry/cyberdream.nvim/commit/03251adb7ac5c29867f0658c613599af329cf917))
+
 ## [1.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.2.1...v1.3.0) (2024-05-03)
 
 
