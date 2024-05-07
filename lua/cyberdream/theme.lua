@@ -312,6 +312,8 @@ function M.setup()
 
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
+        ["@markup.strong"] = { fg = t.pink, bold = true },
+        ["@markup.italic"] = { fg = t.blue, italic = true },
     }
 
     if opts.borderless_telescope then
