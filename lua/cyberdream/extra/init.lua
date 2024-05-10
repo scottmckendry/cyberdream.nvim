@@ -1,6 +1,9 @@
 local M = {}
 
-M.variants = { default = "default" }
+M.variants = {
+    default = "default",
+    light = "light",
+}
 
 M.extras = {
     alacritty = { extension = "toml", name = "alacritty" },
