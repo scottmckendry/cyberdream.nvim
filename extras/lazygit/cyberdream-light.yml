@@ -4,7 +4,7 @@ gui:
     border: rounded
     theme:
         activeBorderColor:
-            - "#00afc0"
+            - "#008c99"
         inactiveBorderColor:
             - "#7b8496"
         searchingActiveBorderColor:

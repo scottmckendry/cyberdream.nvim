@@ -24,7 +24,7 @@
 				<key>selection</key>
 				<string>#acacac</string>
 				<key>findHighlight</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 				<key>findHighlightForeground</key>
 				<string>#eaeaea</string>
 				<key>selectionBorder</key>
@@ -64,7 +64,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00ae0f</string>
+				<string>#008b0c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -195,7 +195,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -247,7 +247,7 @@
 				<key>fontStyle</key>
 				<string>underline</string>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -299,7 +299,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -312,7 +312,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -447,7 +447,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00ae0f</string>
+				<string>#008b0c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -458,7 +458,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -476,7 +476,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00ae0f</string>
+				<string>#008b0c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -573,7 +573,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -695,7 +695,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00ae0f</string>
+				<string>#008b0c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -877,7 +877,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -921,7 +921,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00afc0</string>
+				<string>#008c99</string>
 			</dict>
 		</dict>
 	</array>
