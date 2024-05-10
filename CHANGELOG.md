@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.4.0...v1.5.0) (2024-05-07)
+
+
+### Features
+
+* add lua type annotations to config ([cf39bc4](https://github.com/scottmckendry/cyberdream.nvim/commit/cf39bc40cd4cae374aef569f7b985323e083cd15))
+* add support for mini.files ([2615669](https://github.com/scottmckendry/cyberdream.nvim/commit/2615669d9815d1e975d2a3ffba5fb78745e25378))
+* **extras:** add lazydocker extra ([eecc28a](https://github.com/scottmckendry/cyberdream.nvim/commit/eecc28a0cdf43b1bc74b4d5f031baff26a4be551))
+* **extras:** add support for zellij ([#40](https://github.com/scottmckendry/cyberdream.nvim/issues/40)) ([a9cb4b2](https://github.com/scottmckendry/cyberdream.nvim/commit/a9cb4b229127e1b06964e73b5d55fad300b560be))
+
+
+### Bug Fixes
+
+* markdown bold and italic highlights on v9.5 ([f8342c9](https://github.com/scottmckendry/cyberdream.nvim/commit/f8342c96d4d0bfc39490a866e5e66316881571be)), closes [#32](https://github.com/scottmckendry/cyberdream.nvim/issues/32)
+
 ## [1.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.3.0...v1.4.0) (2024-05-05)
 
 

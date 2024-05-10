@@ -1,6 +1,16 @@
 local M = {}
 
+---@class ThemeConfig
+---@field colors? table<string, string>
+---@field highlights? table<string, table<string, string>>
+
 ---@class Config
+---@field transparent? boolean
+---@field italic_comments? boolean
+---@field hide_fillchars? boolean
+---@field borderless_telescope? boolean
+---@field terminal_colors? boolean
+---@field theme? ThemeConfig
 local default_options = {
     transparent = false,
     italic_comments = false,

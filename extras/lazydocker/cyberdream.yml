@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://json.schemastore.org/lazydocker.json
+# cyberdream theme for lazygit
+gui:
+    border: rounded # pending merge of https://github.com/jesseduffield/lazydocker/pull/529 🤞
+    theme:
+        activeBorderColor:
+            - "#5ef1ff"
+        inactiveBorderColor:
+            - "#7b8496"
+        selectedLineBgColor:
+            - "#3c4048"
+        optionsTextColor:
+            - "#3c4048"

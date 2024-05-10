@@ -306,8 +306,18 @@ function M.setup()
         TreeSitterContext = { bg = util.blend(t.bgAlt, t.cyan, 0.9) },
         TreeSitterContextLineNumber = { fg = util.blend(t.bgHighlight, t.fg) },
 
+        -- Mini Files
+        MiniFilesBorder = { fg = t.bgHighlight },
+        MiniFilesBorderModified = { fg = t.pink },
+        MiniFilesCursorLine = { bg = util.blend(t.bgHighlight, t.bgAlt, 0.3) },
+        MiniFilesDirectory = { fg = t.blue },
+        MiniFilesTitle = { fg = util.blend(t.bgHighlight, t.cyan, 0.7) },
+        MiniFilesTitleFocused = { fg = t.cyan },
+
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
+        ["@markup.strong"] = { fg = t.pink, bold = true },
+        ["@markup.italic"] = { fg = t.blue, italic = true },
     }
 
     if opts.borderless_telescope then
