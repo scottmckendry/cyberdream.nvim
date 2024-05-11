@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.5.0...v1.6.0) (2024-05-11)
+
+
+### Features
+
+* add light colors variant ([#45](https://github.com/scottmckendry/cyberdream.nvim/issues/45)) ([548968a](https://github.com/scottmckendry/cyberdream.nvim/commit/548968a9ac9e9f9d3597c4abe976df030773af69))
+
 ## [1.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.4.0...v1.5.0) (2024-05-07)
 
 
