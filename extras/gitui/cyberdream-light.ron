@@ -1,0 +1,23 @@
+(
+    selected_tab: Rgb(0, 140, 153), // bright cyan for highlight
+    command_fg: Rgb(22, 24, 26), // white for commands foreground
+    selection_bg: Rgb(172, 172, 172), // darker grey for selection background
+    selection_fg: Rgb(22, 24, 26), // white for selected text
+    cmdbar_bg: Rgb(255, 255, 255), // very dark grey almost black for command bar background
+    cmdbar_extra_lines_bg: Rgb(255, 255, 255), // very dark grey almost black for extra lines in command bar
+    disabled_fg: Rgb(123, 132, 150), // a soft grey for disabled elements, adjusted to fit the theme
+    diff_line_add: Rgb(0, 139, 12), // vibrant green for added lines
+    diff_line_delete: Rgb(209, 21, 0), // vibrant red for deleted lines
+    diff_file_added: Rgb(153, 123, 0), // yellow for added files
+    diff_file_removed: Rgb(244, 0, 100), // light red for removed files
+    diff_file_moved: Rgb(160, 24, 255), // purple for moved files
+    diff_file_modified: Rgb(0, 87, 209), // blue for modified files
+    commit_hash: Rgb(91, 24, 140), // light purplish for commit hashes
+    commit_time: Rgb(61, 109, 179), // greyish blue for commit time
+    commit_author: Rgb(0, 87, 209), // soft blue for author
+    danger_fg: Rgb(209, 21, 0), // vibrant red for danger
+    push_gauge_bg: Rgb(0, 87, 209), // soft blue for push gauge background
+    push_gauge_fg: Rgb(117, 160, 221), // dark blue for push gauge foreground
+    tag_fg: Rgb(133, 12, 63), // light pastel pink for tags
+    branch_fg: Rgb(0, 139, 110) // soft turquoise for branches
+)

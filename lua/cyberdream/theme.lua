@@ -8,6 +8,9 @@ function M.setup()
 
     local theme = {}
     local t = colors.default
+    if opts.theme.variant == "light" then
+        t = colors.light
+    end
 
     -- Override colors with user defined colors
     t = vim.tbl_deep_extend("force", t, opts.theme.colors)
@@ -110,6 +113,7 @@ function M.setup()
         Type = { fg = t.purple },
 
         Special = { fg = t.pink },
+        Delimiter = { fg = t.fg },
 
         Debug = { fg = t.orange },
 

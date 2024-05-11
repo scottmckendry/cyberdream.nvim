@@ -1,0 +1,36 @@
+# cyberdream theme for alacritty
+[[colors.indexed_colors]]
+color = "0xd17c00"
+index = 16
+
+[[colors.indexed_colors]]
+color = "0xd11500"
+index = 17
+
+[colors.bright]
+black = "0xacacac"
+blue = "0x0057d1"
+cyan = "0x008c99"
+green = "0x008b0c"
+magenta = "0xa018ff"
+red = "0xd11500"
+white = "0x16181a"
+yellow = "0x997b00"
+
+[colors.normal]
+black = "0xffffff"
+blue = "0x0057d1"
+cyan = "0x008c99"
+green = "0x008b0c"
+magenta = "0xa018ff"
+red = "0xd11500"
+white = "0x16181a"
+yellow = "0x997b00"
+
+[colors.primary]
+background = "0xffffff"
+foreground = "0x16181a"
+
+[colors.selection]
+background = "0xacacac"
+foreground = "0x16181a"

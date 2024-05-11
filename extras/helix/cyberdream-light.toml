@@ -1,0 +1,87 @@
+# cyberdream theme for helix
+"ui.background" = "bg"
+"ui.text" = "fg"
+"ui.cursor" = { bg = "fg", fg = "bg" }
+"ui.linenr" = "grey"
+"ui.statusline" = { fg = "cyan" }
+"ui.selection" = "green"
+"ui.selection.primary" = "magenta"
+
+# Syntax Highlighting for Code
+"comment" = { fg = "grey", modifiers = ["italic"] }
+"comment.line" = { fg = "grey", modifiers = ["italic"] }
+"comment.block" = { fg = "grey", modifiers = ["italic"] }
+"comment.documentation" = { fg = "blue", modifiers = ["italic"] }
+"keyword" = "orange"
+"keyword.control" = "orange"
+"keyword.operator" = "pink"
+"keyword.function" = "orange"
+"type" = "cyan"
+"type.builtin" = "cyan"
+"function" = "blue"
+"function.builtin" = "pink"
+"function.method" = "blue"
+"variable" = "fg"
+"variable.builtin" = "magenta"
+"variable.parameter" = "cyan"
+"string" = "green"
+"string.special" = "pink"
+"constant" = "fg"
+"constant.builtin" = "red"
+"constant.numeric" = "yellow"
+"constant.character" = "pink"
+"constant.boolean" = "red"
+"attribute" = "magenta"
+"operator" = "purple"
+"tag" = { fg = "purple", modifiers = ["bold"] }
+"tag.special" = { fg = "orange", modifiers = ["bold"] }
+"namespace" = "purple"
+"macro" = "orange"
+"label" = "red"
+
+# Interface specific
+"ui.cursorline.primary" = { bg = "bgHighlight" }
+"ui.cursorline.secondary" = { bg = "bgAlt" }
+"ui.cursorcolumn.primary" = { bg = "bgHighlight" }
+"ui.cursorcolumn.secondary" = { bg = "bgAlt" }
+"ui.statusline.normal" = { fg = "fg", bg = "bg" }
+"ui.statusline.insert" = { fg = "green", bg = "bg" }
+"ui.statusline.select" = { fg = "blue", bg = "bg" }
+"ui.statusline.command" = { fg = "red", bg = "bg" }
+"ui.statusline.visual" = { fg = "purple", bg = "bg" }
+
+# Diagnostic styles
+"warning" = { fg = "yellow", modifiers = ["bold"] }
+"error" = { fg = "red", modifiers = ["bold"] }
+"info" = { fg = "cyan", modifiers = ["bold"] }
+"hint" = { fg = "blue", modifiers = ["bold"] }
+"diagnostic.error" = { fg = "red" }
+"diagnostic.warning" = { fg = "yellow" }
+"diagnostic.info" = { fg = "cyan" }
+"diagnostic.hint" = { fg = "blue" }
+
+# Popups and Menus
+"ui.popup" = { fg = "fg", bg = "bg" }
+"ui.popup.info" = { fg = "cyan", bg = "bgAlt" }
+"ui.menu" = { fg = "fg", bg = "bg" }
+"ui.menu.selected" = { fg = "bg", bg = "fg" }
+
+# Additional overrides
+"ui.virtual.whitespace" = "grey"
+"ui.virtual.indent-guide" = { fg = "grey", style = "dotted" }
+
+[palette]
+bg = "#ffffff"
+fg = "#16181a"
+grey = "#7b8496"
+blue = "#0057d1"
+green = "#008b0c"
+cyan = "#008c99"
+red = "#d11500"
+yellow = "#997b00"
+magenta = "#d100bf"
+pink = "#f40064"
+orange = "#d17c00"
+purple = "#a018ff"
+bgAlt = "#eaeaea"
+bgHighlight = "#acacac"
