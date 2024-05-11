@@ -76,7 +76,7 @@ Lualine (optional):
 
 ```lua
 {
-    local cyberdream = require("lualine.themes.cyberdream")
+    local cyberdream = require("lualine.themes.cyberdream") -- or require("lualine.themes.cyberdream-light") for the light variant
     require("lualine").setup({
         -- ... other config
         options = {
@@ -111,6 +111,7 @@ require("cyberdream").setup({
     terminal_colors = true, -- Default: true
 
     theme = { -- Default: nil
+        variant = "light", -- Default: "deafult" (dark)
         highlights = {
             -- Highlight groups to override, adding new groups is also possible
             -- See `:help highlight-groups` for a list of highlight groups
