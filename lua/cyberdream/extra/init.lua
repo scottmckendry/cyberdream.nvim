@@ -10,6 +10,7 @@ M.extras = {
     fish = { extension = "theme", name = "fish" },
     gitui = { extension = "ron", name = "gitui" },
     helix = { extension = "toml", name = "helix" },
+    kitty = { extension = "conf", name = "kitty" },
     lazydocker = { extension = "yml", name = "lazydocker" },
     lazygit = { extension = "yml", name = "lazygit" },
     pywal = { extension = "json", name = "pywal" },
