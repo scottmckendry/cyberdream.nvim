@@ -12,6 +12,7 @@ function M.generate(variant)
 background            ${bg}
 foreground            ${fg}
 cursor                ${fg}
+cursor_text_color     ${bg}
 selection_background  ${bgHighlight}
 color0                ${bg}
 color8                ${bg}
