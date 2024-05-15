@@ -1,6 +1,7 @@
 local M = {}
 
 ---@class ThemeConfig
+---@field variant? string | "'default'" | "'light'"
 ---@field colors? table<string, string>
 ---@field highlights? table<string, table<string, string>>
 

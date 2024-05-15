@@ -1,6 +1,9 @@
 local ts = require("cyberdream.treesitter")
 local M = {}
 
+--- Sets the highlight group to the given table of colors.
+--- @param group string
+--- @param hl vim.api.keyset.highlight
 function M.highlight(group, hl)
     group = ts.get(group)
     if not group then
@@ -20,12 +23,16 @@ function M.highlight(group, hl)
     vim.api.nvim_set_hl(0, group, hl)
 end
 
+--- Set the syntax highlighting for a group.
+--- @param syntax table
 function M.syntax(syntax)
     for group, colors in pairs(syntax) do
         M.highlight(group, colors)
     end
 end
 
+--- Load the colorscheme.
+--- @param theme table
 function M.load(theme)
     -- only needed to clear when not the default colorscheme
     if vim.g.colors_name then
@@ -64,6 +71,25 @@ function M.blend(color1, color2, weight)
     return string.format("#%02x%02x%02x", rgb_blended[1], rgb_blended[2], rgb_blended[3])
 end
 
+--- Remove an element from a table.
+--- @param table table
+--- @param index number
+--- @return table
+function M.remove(table, index)
+    local new_table = {}
+    for i = 1, #table do
+        if i ~= index then
+            new_table[#new_table + 1] = table[i]
+        end
+    end
+
+    return new_table
+end
+
+--- Parse a template string with a given table of colors.
+--- @param template string
+--- @param t table
+--- @return string
 function M.parse_extra_template(template, t)
     for k, v in pairs(t) do
         template = template:gsub("%${" .. k .. "}", v)
