@@ -53,24 +53,18 @@
 
 Lazy:
 
-```lua
+````lua
 {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-        require("cyberdream").setup({
-            -- Recommended - see "Configuring" below for more config options
-            transparent = true,
-            italic_comments = true,
-            hide_fillchars = true,
-            borderless_telescope = true,
-            terminal_colors = true,
-        })
-        vim.cmd("colorscheme cyberdream") -- set the colorscheme
-    end,
 }
-```
+
+Packer:
+
+```lua
+use { "scottmckendry/cyberdream.nvim" }
+````
 
 Lualine (optional):
 
@@ -89,32 +83,39 @@ Lualine (optional):
 
 See my personal lualine config [here](https://github.com/scottmckendry/Windots/blob/main/nvim/lua/plugins/lualine.lua) for an example.
 
+## 🎨 Usage
+
+```lua
+vim.cmd("colorscheme cyberdream")
+```
+
 ## ⚙️ Configuring
 
-Below is an example of all the available configuration options:
+Calling `setup` is optional, but allows you to configure the theme to your liking.
+Below is an example of all the available configuration options with their default values:
 
 ```lua
 require("cyberdream").setup({
     -- Enable transparent background
-    transparent = true, -- Default: false
+    transparent = false,
 
     -- Enable italics comments
-    italic_comments = true, -- Default: false
+    italic_comments = false,
 
     -- Replace all fillchars with ' ' for the ultimate clean look
-    hide_fillchars = true, -- Default: false
+    hide_fillchars = false,
 
     -- Modern borderless telescope theme
-    borderless_telescope = true, -- Default: true
+    borderless_telescope = true
 
     -- Set terminal colors used in `:terminal`
-    terminal_colors = true, -- Default: true
+    terminal_colors = true
 
-    theme = { -- Default: nil
-        variant = "light", -- Default: "deafult" (dark)
+    theme = {
+        variant = "default", -- use "light" for the light variant
         highlights = {
             -- Highlight groups to override, adding new groups is also possible
-            -- See `:help highlight-groups` for a list of highlight groups
+            -- See `:h highlight-groups` for a list of highlight groups or run `:hi` to see all groups and their current values
 
             -- Example:
             Comment = { fg = "#696969", bg = "NONE", italic = true },
