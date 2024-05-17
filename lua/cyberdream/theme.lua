@@ -210,6 +210,7 @@ function M.setup()
         TelescopePromptPrefix = { fg = t.pink },
         TelescopePreviewTitle = { fg = t.magenta },
         TelescopeSelection = { bg = t.bgHighlight },
+        TelescopePromptCounter = { fg = t.pink },
 
         -- Cmp
         CmpDocumentation = { fg = t.grey, bg = t.bg },

@@ -53,18 +53,19 @@
 
 Lazy:
 
-````lua
+```lua
 {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
 }
+```
 
 Packer:
 
 ```lua
 use { "scottmckendry/cyberdream.nvim" }
-````
+```
 
 Lualine (optional):
 
