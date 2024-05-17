@@ -43,10 +43,11 @@ Lazy:
         lazy = false,
         priority = 1000,
     }
-    
-    Packer:
-    
-    ```lua
+<
+
+Packer:
+
+>lua
     use { "scottmckendry/cyberdream.nvim" }
 <
 
