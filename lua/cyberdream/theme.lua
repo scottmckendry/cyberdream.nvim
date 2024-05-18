@@ -315,6 +315,11 @@ function M.setup()
         MiniFilesTitle = { fg = util.blend(t.bgHighlight, t.cyan, 0.7) },
         MiniFilesTitleFocused = { fg = t.cyan },
 
+        -- Grapple
+        GrappleTitle = { fg = t.pink },
+        GrappleFooter = { fg = t.grey },
+        GrappleBorder = { fg = t.cyan },
+
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
         ["@markup.strong"] = { fg = t.pink, bold = true },
@@ -334,6 +339,11 @@ function M.setup()
         theme.highlights.TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt }
         theme.highlights.TelescopeResultsNormal = { bg = t.bgAlt }
         theme.highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
+
+        -- Mimic styling in Grapple
+        theme.highlights.GrappleNormal = { bg = t.bgAlt }
+        theme.highlights.GrappleBorder = { fg = t.bgAlt, bg = t.bgAlt }
+        theme.highlights.GrappleTitle = { fg = t.bgAlt, bg = t.cyan }
     end
 
     if opts.terminal_colors then
