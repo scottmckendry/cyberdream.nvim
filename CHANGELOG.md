@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.7.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.6.0...v1.7.0) (2024-05-18)
+
+
+### Features
+
+* add support for grapple.nvim ([638e37c](https://github.com/scottmckendry/cyberdream.nvim/commit/638e37c62cc04a354b4bc1e5daafecb9356be7d8))
+* **extras:** add support for kitty term ([#48](https://github.com/scottmckendry/cyberdream.nvim/issues/48)) ([3b57712](https://github.com/scottmckendry/cyberdream.nvim/commit/3b577123ca6d580c971fdc49ebf8950794c80d20))
+
+
+### Bug Fixes
+
+* add theme variant field to config class ([3b5e1df](https://github.com/scottmckendry/cyberdream.nvim/commit/3b5e1df018b239df0410fb94275a134913fd0c9f))
+* **docs:** small typo in readme ([0511451](https://github.com/scottmckendry/cyberdream.nvim/commit/0511451180b81fd821bd37bca2c61b8d049f69fc))
+* improve contrast for line numbers ([5827dc9](https://github.com/scottmckendry/cyberdream.nvim/commit/5827dc9a34b9f2d009ad8a75f4dd7121a3e77511))
+* low contrast counter in telelscope light theme ([0511451](https://github.com/scottmckendry/cyberdream.nvim/commit/0511451180b81fd821bd37bca2c61b8d049f69fc))
+
 ## [1.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.5.0...v1.6.0) (2024-05-11)
 
 
