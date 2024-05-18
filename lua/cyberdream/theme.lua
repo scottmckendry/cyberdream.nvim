@@ -59,7 +59,7 @@ function M.setup()
         SignColumn = { fg = t.grey, bg = t.bg },
         SignColumnSB = { fg = t.grey, bg = t.bg },
         Substitute = { fg = t.red, bg = t.bgHighlight },
-        LineNr = { fg = t.bgHighlight },
+        LineNr = { fg = util.blend(t.bgHighlight, t.fg, 0.9) },
         CursorLineNr = { fg = t.grey },
         MatchParen = { fg = t.pink, bg = t.bgHighlight },
         ModeMsg = { fg = t.fg },
