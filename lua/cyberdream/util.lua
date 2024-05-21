@@ -1,4 +1,5 @@
 local ts = require("cyberdream.treesitter")
+local config = require("cyberdream.config")
 local M = {}
 
 --- Sets the highlight group to the given table of colors.
@@ -96,6 +97,50 @@ function M.parse_extra_template(template, t)
     end
 
     return template
+end
+
+--- Override options with a new table of values.
+--- @param new_opts Config
+--- @return Config
+function M.set_options(new_opts)
+    local opts = vim.g.cyberdream_opts
+    vim.g.cyberdream_opts = vim.tbl_deep_extend("force", opts, new_opts)
+
+    return vim.g.cyberdream_opts
+end
+
+--- Apply options to the colorscheme.
+--- @param opts Config
+function M.apply_options(opts)
+    -- Update the colorscheme
+    config.setup(opts)
+    vim.cmd("colorscheme cyberdream")
+end
+
+--- Toggle the theme variant between "default" and "light".
+--- @return string new variant
+function M.toggle_theme_variant()
+    local opts = vim.g.cyberdream_opts
+    opts.theme.variant = opts.theme.variant == "default" and "light" or "default"
+    M.set_options(opts)
+    M.apply_options(opts)
+
+    return opts.theme.variant
+end
+
+--- Toggle theme for lualine
+--- @param new_variant string "default" | "light"
+function M.toggle_lualine_theme(new_variant)
+    if package.loaded["lualine"] == nil then
+        return
+    end
+
+    local lualine_opts = require("lualine").get_config()
+    local lualine_theme = new_variant == "default" and require("lualine.themes.cyberdream")
+        or require("lualine.themes.cyberdream-light")
+
+    lualine_opts.options.theme = lualine_theme
+    require("lualine").setup(lualine_opts)
 end
 
 return M
