@@ -136,6 +136,34 @@ require("cyberdream").setup({
 })
 ```
 
+## 🧑‍🍳 Recipes
+
+Include these alongside the `setup` function to add additional functionality to the theme.
+
+#### Map a key to toggle between light and dark mode
+
+```lua
+-- Add a custom keybinding to toggle the colorscheme
+vim.api.nvim_set_keymap("n", "<leader>tt", ":CyberdreamToggleMode<CR>", { noremap = true, silent = true })
+```
+
+#### Create an `autocmd` to hook into the toggle event and run custom code
+
+```lua
+-- The event data property will contain a string with either "default" or "light" respectively
+vim.api.nvim_create_autocmd("User", {
+    pattern = "CyberdreamToggleMode",
+    callback = function(event)
+        -- Your custom code here!
+        -- For example, notify the user that the colorscheme has been toggled
+        print("Switched to " .. event.data .. " mode!")
+    end,
+})
+```
+
+![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/c0188d60-d62b-4a15-965d-a19757c484e6)
+
+
 ## 🤝 Contributing
 
 Pull requests are welcome. If a plugin you use is not supported, please open an issue and I'll try to add support for it. If you have any suggestions or feedback, please open an issue.

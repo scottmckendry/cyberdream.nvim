@@ -12,4 +12,10 @@ M.setup = config.setup
 
 M.colorscheme = M.load
 
+vim.api.nvim_create_user_command("CyberdreamToggleMode", function()
+    local new_variant = util.toggle_theme_variant()
+    util.toggle_lualine_theme(new_variant)
+    vim.api.nvim_exec_autocmds("User", { pattern = "CyberdreamToggleMode", data = new_variant })
+end, {})
+
 return M

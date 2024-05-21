@@ -32,6 +32,7 @@ M.options = {}
 ---@param options Config|nil
 function M.setup(options)
     M.options = vim.tbl_deep_extend("force", {}, default_options, options or {})
+    vim.g.cyberdream_opts = M.options
 end
 
 M.setup()
