@@ -107,10 +107,10 @@ require("cyberdream").setup({
     hide_fillchars = false,
 
     -- Modern borderless telescope theme
-    borderless_telescope = true
+    borderless_telescope = true,
 
     -- Set terminal colors used in `:terminal`
-    terminal_colors = true
+    terminal_colors = true,
 
     theme = {
         variant = "default", -- use "light" for the light variant
