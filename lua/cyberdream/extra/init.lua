@@ -16,6 +16,7 @@ M.extras = {
     pywal = { extension = "json", name = "pywal" },
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
+    tmux = { extension = "tmuxtheme", name = "tmux" },
     wezterm = { extension = "lua", name = "wezterm" },
     windowsterminal = { extension = "json", name = "windowsterminal" },
     zellij = { extension = "kdl", name = "zellij" },
