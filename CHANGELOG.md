@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.7.0...v1.8.0) (2024-06-03)
+
+
+### Features
+
+* add vim cmd to toggle between theme modes ([#56](https://github.com/scottmckendry/cyberdream.nvim/issues/56)) ([17f9e55](https://github.com/scottmckendry/cyberdream.nvim/commit/17f9e55bd3c349006190e7ff8203c2af6b7e3051))
+* **extras:** add tmux extra ([#59](https://github.com/scottmckendry/cyberdream.nvim/issues/59)) ([9eb7c63](https://github.com/scottmckendry/cyberdream.nvim/commit/9eb7c63091d7369eba9015e9c656ca644ba6a3a4))
+
 ## [1.7.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.6.0...v1.7.0) (2024-05-18)
 
 
