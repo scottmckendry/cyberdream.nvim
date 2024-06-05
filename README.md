@@ -15,14 +15,14 @@
     </a>
     <br>
     <a href="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim">
-	    <img src="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim/shield?style=for-the-badge" />
+     <img src="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim/shield?style=for-the-badge" />
     </a>
 </p>
 
 ## 🚀 Features
 
--   **Transparency-first design** - all design decisions are made with transparency in mind
--   **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish
+- **Transparency-first design** - all design decisions are made with transparency in mind
+- **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish
 
 <details>
     <summary><b>Supported Plugins</b></summary>
@@ -53,13 +53,25 @@
 
 Lazy:
 
+Create the file `colorschema.lua` in your `lua/plugins` directory and add the following:
+
 ```lua
-{
+return {
+  {
     "scottmckendry/cyberdream.nvim",
-    lazy = false,
+  },
+  {
+    "LazyVim/LazyVim",
     priority = 1000,
+    lazy = false,
+    opts = {
+      colorscheme = "cyberdream",
+    },
+  },
 }
 ```
+
+Save it, then restart LazyVim.
 
 Packer:
 
@@ -162,7 +174,6 @@ vim.api.nvim_create_autocmd("User", {
 ```
 
 ![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/c0188d60-d62b-4a15-965d-a19757c484e6)
-
 
 ## 🤝 Contributing
 
