@@ -53,25 +53,13 @@
 
 Lazy:
 
-Create the file `colorschema.lua` in your `lua/plugins` directory and add the following:
-
 ```lua
-return {
-  {
+{
     "scottmckendry/cyberdream.nvim",
-  },
-  {
-    "LazyVim/LazyVim",
-    priority = 1000,
     lazy = false,
-    opts = {
-      colorscheme = "cyberdream",
-    },
-  },
+    priority = 1000,
 }
 ```
-
-Save it, then restart LazyVim.
 
 Packer:
 
@@ -95,6 +83,10 @@ Lualine (optional):
 ```
 
 See my personal lualine config [here](https://github.com/scottmckendry/Windots/blob/main/nvim/lua/plugins/lualine.lua) for an example.
+
+LazyVim:
+
+Link to their docs: [lazyvim/colorscheme](http://www.lazyvim.org/plugins/colorscheme)
 
 ## 🎨 Usage
 
