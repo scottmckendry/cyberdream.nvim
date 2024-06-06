@@ -167,4 +167,6 @@ vim.api.nvim_create_autocmd("User", {
 
 Pull requests are welcome. If a plugin you use is not supported, please open an issue and I'll try to add support for it. If you have any suggestions or feedback, please open an issue.
 
+<hr>
+
 <sub>1. For Lazyvim users, refer to the [LazyVim docs](http://www.lazyvim.org/plugins/colorscheme) for specific instructions.</sub>
