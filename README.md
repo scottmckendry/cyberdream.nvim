@@ -21,8 +21,8 @@
 
 ## 🚀 Features
 
-- **Transparency-first design** - all design decisions are made with transparency in mind
-- **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish
+-   **Transparency-first design** - all design decisions are made with transparency in mind
+-   **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish
 
 <details>
     <summary><b>Supported Plugins</b></summary>
@@ -51,7 +51,7 @@
 
 ## 📦 Installation
 
-Lazy:
+Lazy<sup>1</sup>:
 
 ```lua
 {
@@ -83,10 +83,6 @@ Lualine (optional):
 ```
 
 See my personal lualine config [here](https://github.com/scottmckendry/Windots/blob/main/nvim/lua/plugins/lualine.lua) for an example.
-
-LazyVim:
-
-Link to their docs: [lazyvim/colorscheme](http://www.lazyvim.org/plugins/colorscheme)
 
 ## 🎨 Usage
 
@@ -170,3 +166,5 @@ vim.api.nvim_create_autocmd("User", {
 ## 🤝 Contributing
 
 Pull requests are welcome. If a plugin you use is not supported, please open an issue and I'll try to add support for it. If you have any suggestions or feedback, please open an issue.
+
+<sub>1. For Lazyvim users, refer to the [LazyVim docs](http://www.lazyvim.org/plugins/colorscheme) for specific instructions.</sub>
