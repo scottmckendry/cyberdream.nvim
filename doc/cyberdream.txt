@@ -36,7 +36,7 @@ Supported Plugins ~
 
 INSTALLATION                                         *cyberdream-installation*
 
-Lazy:
+Lazy1
 
 >lua
     {
@@ -52,7 +52,7 @@ Packer:
     use { "scottmckendry/cyberdream.nvim" }
 <
 
-Lualine (optional):
+Lualine(optional):
 
 >lua
     {
@@ -161,6 +161,9 @@ CONTRIBUTING                                         *cyberdream-contributing*
 Pull requests are welcome. If a plugin you use is not supported, please open an
 issue and I’ll try to add support for it. If you have any suggestions or
 feedback, please open an issue.
+
+1. For Lazyvim users, refer to the LazyVim docs
+<http://www.lazyvim.org/plugins/colorscheme> for specific instructions.
 
 ==============================================================================
 1. Links                                                    *cyberdream-links*
