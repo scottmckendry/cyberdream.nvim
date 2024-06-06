@@ -15,7 +15,7 @@
     </a>
     <br>
     <a href="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim">
-	    <img src="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim/shield?style=for-the-badge" />
+     <img src="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim/shield?style=for-the-badge" />
     </a>
 </p>
 
@@ -51,7 +51,7 @@
 
 ## 📦 Installation
 
-Lazy:
+Lazy<sup>1</sup>:
 
 ```lua
 {
@@ -163,7 +163,10 @@ vim.api.nvim_create_autocmd("User", {
 
 ![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/c0188d60-d62b-4a15-965d-a19757c484e6)
 
-
 ## 🤝 Contributing
 
 Pull requests are welcome. If a plugin you use is not supported, please open an issue and I'll try to add support for it. If you have any suggestions or feedback, please open an issue.
+
+<hr>
+
+<sub>1. For Lazyvim users, refer to the [LazyVim docs](http://www.lazyvim.org/plugins/colorscheme) for specific instructions.</sub>
