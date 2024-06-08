@@ -12,6 +12,12 @@ function M.setup()
         t = colors.light
     end
 
+    if opts.theme.variant == "auto" then
+        if vim.o.background == "light" then
+            t = colors.light
+        end
+    end
+
     -- Override colors with user defined colors
     t = vim.tbl_deep_extend("force", t, opts.theme.colors)
 

@@ -18,4 +18,16 @@ vim.api.nvim_create_user_command("CyberdreamToggleMode", function()
     vim.api.nvim_exec_autocmds("User", { pattern = "CyberdreamToggleMode", data = new_variant })
 end, {})
 
+vim.api.nvim_create_autocmd("OptionSet", {
+    pattern = "background",
+    callback = function()
+        if vim.g.cyberdream_opts.theme.variant ~= "auto" then
+            return
+        end
+        local new_variant = vim.v.option_new == "dark" and "default" or "light"
+        util.toggle_lualine_theme(new_variant)
+        vim.api.nvim_exec_autocmds("User", { pattern = "CyberdreamToggleMode", data = new_variant })
+    end,
+})
+
 return M
