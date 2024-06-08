@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.9.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.7.0...v1.9.0) (2024-06-08)
+
+
+### Features
+
+* add 'auto' option to use vim.o.background for light/dark theme ([ce0a60d](https://github.com/scottmckendry/cyberdream.nvim/commit/ce0a60d9258ef4bb94c995f3ad2e272e7073eef4)), closes [#63](https://github.com/scottmckendry/cyberdream.nvim/issues/63)
+* add vim cmd to toggle between theme modes ([#56](https://github.com/scottmckendry/cyberdream.nvim/issues/56)) ([17f9e55](https://github.com/scottmckendry/cyberdream.nvim/commit/17f9e55bd3c349006190e7ff8203c2af6b7e3051))
+* **extras:** add tmux extra ([#59](https://github.com/scottmckendry/cyberdream.nvim/issues/59)) ([9eb7c63](https://github.com/scottmckendry/cyberdream.nvim/commit/9eb7c63091d7369eba9015e9c656ca644ba6a3a4))
+
+
+### Miscellaneous Chores
+
+* release 1.9.0 ([69cedc7](https://github.com/scottmckendry/cyberdream.nvim/commit/69cedc7dfc1937c83d207bdebdb3fdfaf2cf778f))
+
 ## [1.8.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.7.0...v1.8.0) (2024-06-03)
 
 
