@@ -21,7 +21,7 @@ end, {})
 vim.api.nvim_create_autocmd("OptionSet", {
     pattern = "background",
     callback = function()
-        if vim.g.cyberdream_opts.theme.variant ~= "auto" then
+        if vim.g.cyberdream_opts.theme.variant ~= "auto" or vim.fn.execute("colorscheme"):find("cyberdream") == nil then
             return
         end
         local new_variant = vim.v.option_new == "dark" and "default" or "light"
