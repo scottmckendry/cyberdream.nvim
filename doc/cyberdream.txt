@@ -56,7 +56,7 @@ Lualine(optional):
 
 >lua
     {
-        local cyberdream = require("lualine.themes.cyberdream") -- or require("lualine.themes.cyberdream-light") for the light variant
+        local cyberdream = require("lualine.themes.cyberdream").get_theme() -- as of v2.0.0. For older versions, use `require("lualine.themes.cyberdream")`
         require("lualine").setup({
             -- ... other config
             options = {
