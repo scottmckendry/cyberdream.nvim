@@ -129,16 +129,13 @@ function M.toggle_theme_variant()
 end
 
 --- Toggle theme for lualine
---- @param new_variant string "default" | "light"
-function M.toggle_lualine_theme(new_variant)
+function M.toggle_lualine_theme()
     if package.loaded["lualine"] == nil then
         return
     end
 
     local lualine_opts = require("lualine").get_config()
-    local lualine_theme = new_variant == "default" and require("lualine.themes.cyberdream")
-        or require("lualine.themes.cyberdream-light")
-
+    local lualine_theme = require("lualine.themes.cyberdream").get_theme()
     lualine_opts.options.theme = lualine_theme
     require("lualine").setup(lualine_opts)
 end
