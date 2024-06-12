@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.9.0...v2.0.0) (2024-06-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* theme toggling highlighting issues ([#66](https://github.com/scottmckendry/cyberdream.nvim/issues/66))
+
+### Bug Fixes
+
+* check colorscheme setting before executing update autocmd ([1801de8](https://github.com/scottmckendry/cyberdream.nvim/commit/1801de891253b80e2e5b8fdc7c3faf54f49b93ae))
+* theme toggling highlighting issues ([#66](https://github.com/scottmckendry/cyberdream.nvim/issues/66)) ([943ba0a](https://github.com/scottmckendry/cyberdream.nvim/commit/943ba0a6704b41a2606d39b5aa3796b02c586b9b))
+
 ## [1.9.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.7.0...v1.9.0) (2024-06-08)
 
 
