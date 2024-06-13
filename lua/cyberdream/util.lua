@@ -152,8 +152,9 @@ function M.toggle_lualine_theme()
         return
     end
 
+    package.loaded["lualine.themes.cyberdream"] = nil
     local lualine_opts = require("lualine").get_config()
-    local lualine_theme = require("lualine.themes.cyberdream").get_theme()
+    local lualine_theme = require("lualine.themes.cyberdream")
     lualine_opts.options.theme = lualine_theme
     require("lualine").setup(lualine_opts)
 end
