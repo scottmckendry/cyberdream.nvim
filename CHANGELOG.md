@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v2.0.0...v3.0.0) (2024-06-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* un-break previous breaking change :poop:
+
+### Bug Fixes
+
+* un-break previous breaking change :poop: ([78b6bc0](https://github.com/scottmckendry/cyberdream.nvim/commit/78b6bc0a7aea89d64e2d74b24f5ea064ee6f3671))
+
 ## [2.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v1.9.0...v2.0.0) (2024-06-12)
 
 
