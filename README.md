@@ -71,11 +71,10 @@ Lualine (optional):
 
 ```lua
 {
-    local cyberdream = require("lualine.themes.cyberdream").get_theme() -- as of v2.0.0. For older versions, use `require("lualine.themes.cyberdream")`
     require("lualine").setup({
         -- ... other config
         options = {
-            theme = "cyberdream",
+            theme = "auto", -- "auto" will set the theme dynamically based on the colorscheme
         },
         -- ... other config
     })
