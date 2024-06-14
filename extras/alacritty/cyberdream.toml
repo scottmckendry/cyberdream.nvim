@@ -8,7 +8,7 @@ color = "0xff6e5e"
 index = 17
 
 [colors.bright]
-black = "0x3c4048"
+black = "0x414751"
 blue = "0x5ea1ff"
 cyan = "0x5ef1ff"
 green = "0x5eff6c"
@@ -32,5 +32,5 @@ background = "0x16181a"
 foreground = "0xffffff"
 
 [colors.selection]
-background = "0x3c4048"
+background = "0x414751"
 foreground = "0xffffff"

@@ -20,13 +20,13 @@
 				<key>invisibles</key>
 				<string>#16181a</string>
 				<key>lineHighlight</key>
-				<string>#3c4048</string>
+				<string>#414751</string>
 				<key>selection</key>
-				<string>#3c4048</string>
+				<string>#414751</string>
 				<key>findHighlight</key>
 				<string>#5ef1ff</string>
 				<key>findHighlightForeground</key>
-				<string>#1e2124</string>
+				<string>#2d3237</string>
 				<key>selectionBorder</key>
 				<string>#16181a</string>
 				<key>activeGuide</key>

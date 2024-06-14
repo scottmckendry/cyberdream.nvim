@@ -26,7 +26,7 @@
 				<key>findHighlight</key>
 				<string>#008c99</string>
 				<key>findHighlightForeground</key>
-				<string>#eaeaea</string>
+				<string>#d2d2d2</string>
 				<key>selectionBorder</key>
 				<string>#ffffff</string>
 				<key>activeGuide</key>

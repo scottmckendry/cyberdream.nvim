@@ -1,5 +1,5 @@
 # cyberdream theme for tmux (catppuccin)
-thm_bg="#eaeaea"
+thm_bg="#d2d2d2"
 thm_fg="#16181a"
 thm_cyan="#008c99"
 thm_black="#acacac"

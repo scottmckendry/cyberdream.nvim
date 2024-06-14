@@ -17,7 +17,7 @@
     commit_author: Rgb(0, 87, 209), // soft blue for author
     danger_fg: Rgb(209, 21, 0), // vibrant red for danger
     push_gauge_bg: Rgb(0, 87, 209), // soft blue for push gauge background
-    push_gauge_fg: Rgb(117, 160, 221), // dark blue for push gauge foreground
+    push_gauge_fg: Rgb(105, 148, 209), // dark blue for push gauge foreground
     tag_fg: Rgb(133, 12, 63), // light pastel pink for tags
     branch_fg: Rgb(0, 139, 110) // soft turquoise for branches
 )
