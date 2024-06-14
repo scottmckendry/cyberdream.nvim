@@ -7,19 +7,22 @@ function M.setup()
     local opts = config.options
 
     local theme = {}
-    ---@type CyberdreamColorDefault|CyberdreamColorLight
+    ---@type CyberdreamPalette
     local t = colors.default
     if opts.theme.variant == "light" then
+        ---@type CyberdreamPalette
         t = colors.light
     end
 
     if opts.theme.variant == "auto" then
         if vim.o.background == "light" then
+            ---@type CyberdreamPalette
             t = colors.light
         end
     end
 
     -- Override colors with user defined colors
+    ---@type CyberdreamPalette
     t = vim.tbl_deep_extend("force", t, opts.theme.colors)
 
     if opts.transparent then
