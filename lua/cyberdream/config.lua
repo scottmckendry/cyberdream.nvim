@@ -1,9 +1,21 @@
 local M = {}
 
+---@class CyberdreamHighlight
+---@field fg string
+---@field bg string
+---@field sp string
+---@field bold boolean
+---@field italic boolean
+---@field underline boolean
+---@field strikethrough boolean
+
+---@alias CyberdreamOverrideFn fun(palette: CyberdreamColorDefault|CyberdreamColorLight): CyberdreamHighlight
+
 ---@class ThemeConfig
 ---@field variant? string | "'default'" | "'light'" | "'auto'"
 ---@field colors? table<string, string>
 ---@field highlights? table<string, table<string, string>>
+---@field overrides? CyberdreamOverrideFn
 
 ---@class Config
 ---@field transparent? boolean
