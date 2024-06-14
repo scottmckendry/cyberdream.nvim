@@ -123,6 +123,15 @@ require("cyberdream").setup({
             -- Complete list can be found in `lua/cyberdream/theme.lua`
         },
 
+        -- Override a highlight group entirely using the color palette
+        overrides = function(colors) -- NOTE: This function nullifies the `highlights` option
+            -- Example:
+            return {
+                Comment = { fg = colors.green, bg = "NONE", italic = true },
+                ["@property"] = { fg = colors.magenta, bold = true },
+            }
+        end,
+
         -- Override a color entirely
         colors = {
             -- For a list of colors see `lua/cyberdream/colours.lua`
