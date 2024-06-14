@@ -23,22 +23,22 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Run selene
-              uses: AlejandroSuero/selene-linter-action@67f24332d5c38f523c8f78dc02657b2141dadbdf
-              with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
-                  args: --display-style quiet lua
+            - name: Install Selene
+              run: cargo install selene
+
+            - name: Run Selene
+              run: selene --display-style quiet --config ./selene.toml lua
 
     codespell:
         runs-on: ubuntu-latest
         steps:
-          - uses: actions/checkout@v4
+            - uses: actions/checkout@v4
 
-          - name: Install codespell
-            run: pip install codespell
+            - name: Install codespell
+              run: pip install codespell
 
-          - name: Use codespell
-            run: make spell
+            - name: Use codespell
+              run: make spell
 
     generate-extras:
         runs-on: ubuntu-latest
