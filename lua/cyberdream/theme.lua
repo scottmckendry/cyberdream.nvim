@@ -109,15 +109,17 @@ function M.setup()
         Whitespace = { fg = t.grey },
         WildMenu = { fg = t.bg, bg = t.blue },
 
-        Constant = { fg = t.fg },
+        Constant = { fg = t.pink },
         String = { fg = t.green },
         Character = { fg = t.green },
+        Boolean = { fg = t.orange },
+        Number = { fg = t.orange },
 
         Identifier = { fg = t.fg },
         Function = { fg = t.blue },
         Statement = { fg = t.magenta },
         Operator = { fg = t.purple },
-        Keyword = { fg = t.orange },
+        Keyword = { fg = t.yellow },
         PreProc = { fg = t.cyan },
 
         Type = { fg = t.purple },
@@ -334,6 +336,9 @@ function M.setup()
         ["@variable"] = { fg = t.fg },
         ["@markup.strong"] = { fg = t.pink, bold = true },
         ["@markup.italic"] = { fg = t.blue, italic = true },
+        ["@boolean"] = { link = "Boolean" },
+        ["@number"] = { link = "Number" },
+        ["@keyword"] = { link = "Keyword" },
     }
 
     if opts.borderless_telescope then
