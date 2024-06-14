@@ -1,4 +1,5 @@
 local colors = require("cyberdream.colors")
+
 local util = require("cyberdream.util")
 
 local M = {}
@@ -54,7 +55,7 @@ function M.setup()
         ICursor = { fg = t.bg, bg = t.fg },
         CursorIM = { fg = t.bg, bg = t.fg },
         CursorColumn = { bg = t.bgHighlight },
-        CursorLine = { bg = (util.blend(t.bgAlt, t.bgHighlight)) },
+        CursorLine = { bg = (util.blend(t.bgAlt, t.bgHighlight, 0.1)) },
         Directory = { fg = t.blue },
         DiffAdd = { fg = t.green },
         DiffChange = { fg = t.cyan },
@@ -75,7 +76,7 @@ function M.setup()
         ModeMsg = { fg = t.fg },
         MsgArea = { fg = t.fg },
         MoreMsg = { fg = t.blue },
-        NonText = { fg = t.bg },
+        NonText = { fg = t.bgAlt },
         Normal = { fg = t.fg, bg = t.bg },
         NormalNC = { fg = t.fg, bg = t.bg },
         NormalFloat = { fg = t.fg, bg = t.bg },
