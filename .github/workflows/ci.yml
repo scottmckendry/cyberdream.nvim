@@ -18,6 +18,28 @@ jobs:
                   version: latest
                   args: --color always --check .
 
+    selene:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Install Selene
+              run: cargo install selene
+
+            - name: Run Selene
+              run: selene --display-style quiet --config ./selene.toml lua
+
+    codespell:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Install codespell
+              run: pip install codespell
+
+            - name: Use codespell
+              run: make spell
+
     generate-extras:
         runs-on: ubuntu-latest
         steps:
