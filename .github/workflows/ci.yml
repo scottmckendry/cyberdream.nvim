@@ -24,7 +24,7 @@ jobs:
             - uses: actions/checkout@v4
 
             - name: Run selene
-              uses: NTBBloodbath/selene-action@v1.0.0
+              uses: AlejandroSuero/selene-linter-action@67f24332d5c38f523c8f78dc02657b2141dadbdf
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
                   args: --display-style quiet lua
