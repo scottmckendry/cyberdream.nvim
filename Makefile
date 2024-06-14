@@ -1,5 +1,10 @@
-GREEN="\033[00;32m"
-RESTORE="\033[0m"
+ifeq ($(OS),Windows_NT)
+	GREEN=[00;32m
+	RESTORE=[0m
+else
+	GREEN="\033[0;32m"
+	RESTORE="\033[0m"
+endif
 
 # make the output of the message appear green
 define style_calls
