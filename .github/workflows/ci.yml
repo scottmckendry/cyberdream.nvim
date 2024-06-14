@@ -18,6 +18,28 @@ jobs:
                   version: latest
                   args: --color always --check .
 
+    selene:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Run selene
+              uses: NTBBloodbath/selene-action@v1.0.0
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  args: --display-style quiet lua
+
+    codespell:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+
+          - name: Install codespell
+            run: pip install codespell
+
+          - name: Use codespell
+            run: make spell
+
     generate-extras:
         runs-on: ubuntu-latest
         steps:

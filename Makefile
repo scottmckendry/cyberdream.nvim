@@ -1,0 +1,43 @@
+GREEN="\033[00;32m"
+RESTORE="\033[0m"
+
+# make the output of the message appear green
+define style_calls
+	$(eval $@_msg = $(1))
+	echo ${GREEN}${$@_msg}${RESTORE}
+endef
+
+lint: style-lint
+	@$(call style_calls,"Running selene")
+	@selene --display-style quiet --config ./selene.toml lua
+	@$(call style_calls,"Done!")
+
+.PHONY: lint
+
+style-lint:
+	@$(call style_calls,"Running stylua check")
+	@stylua --color always -f ./.stylua.toml --check lua
+	@$(call style_calls,"Done!")
+
+.PHONY: style-lint
+
+format:
+	@$(call style_calls,"Running stylua format")
+	@stylua --color always -f ./.stylua.toml lua
+	@$(call style_calls,"Done!")
+
+.PHONY: format
+
+spell:
+	@$(call style_calls,"Running codespell check")
+	@codespell --quiet-level=2 --check-hidden --skip=./.git,./CHANGELOG.md --ignore-words=./.codespellignorewords .
+	@$(call style_calls,"Done!")
+
+.PHONY: spell
+
+spell-write:
+	@$(call style_calls,"Running codespell write")
+	@codespell --quiet-level=2 --check-hidden --skip=./.git,./CHANGELOG.md --write-changes --ignore-words=./.codespellignorewords .
+	@$(call style_calls,"Done!")
+
+.PHONY: spell-write
