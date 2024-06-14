@@ -112,14 +112,14 @@ function M.setup()
         Constant = { fg = t.pink },
         String = { fg = t.green },
         Character = { fg = t.green },
-        Boolean = { fg = t.orange },
+        Boolean = { fg = t.cyan },
         Number = { fg = t.orange },
 
         Identifier = { fg = t.fg },
         Function = { fg = t.blue },
         Statement = { fg = t.magenta },
         Operator = { fg = t.purple },
-        Keyword = { fg = t.yellow },
+        Keyword = { fg = t.orange },
         PreProc = { fg = t.cyan },
 
         Type = { fg = t.purple },
