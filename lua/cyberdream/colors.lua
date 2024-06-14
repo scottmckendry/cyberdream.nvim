@@ -39,8 +39,8 @@ local M = {}
 ---@field default CyberdreamColorDefault
 M.default = {
     bg = "#16181a",
-    bgAlt = "#2d3237",
-    bgHighlight = "#414751",
+    bgAlt = "#1e2124",
+    bgHighlight = "#3c4048",
     fg = "#ffffff",
     lightGrey = "#bbd3ff",
     grey = "#7b8496",
@@ -59,8 +59,8 @@ M.default = {
 ---@field light CyberdreamColorLight
 M.light = {
     bg = "#ffffff",
-    bgAlt = "#d2d2d2",
-    bgHighlight = "#acacac",
+    bgAlt = "#f7f8f9",
+    bgHighlight = "#e9eef2",
     fg = "#16181a",
     grey = "#7b8496",
     blue = "#0057d1",
