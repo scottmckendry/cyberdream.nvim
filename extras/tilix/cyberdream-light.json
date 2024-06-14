@@ -6,7 +6,7 @@
     "badge-color": "#ffffff",
     "bold-color": "#008c99",
     "cursor-color": "#16181a",
-    "highlight-background-color": "#acacac",
+    "highlight-background-color": "#e9eef2",
     "highlight-foreground-color": "#16181a",
     "palette": [
         "#ffffff",
@@ -17,7 +17,7 @@
         "#a018ff",
         "#008c99",
         "#16181a",
-        "#acacac",
+        "#e9eef2",
         #d11500",
         "#008b0c",
         "#997b00",
