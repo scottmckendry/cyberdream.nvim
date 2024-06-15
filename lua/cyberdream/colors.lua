@@ -59,8 +59,8 @@ M.default = {
 ---@field light CyberdreamColorLight
 M.light = {
     bg = "#ffffff",
-    bgAlt = "#f7f8f9",
-    bgHighlight = "#e9eef2",
+    bgAlt = "#eaeaea",
+    bgHighlight = "#acacac",
     fg = "#16181a",
     grey = "#7b8496",
     blue = "#0057d1",
