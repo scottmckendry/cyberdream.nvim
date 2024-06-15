@@ -26,7 +26,7 @@ function M.setup()
     ---@type CyberdreamPalette
     t = vim.tbl_deep_extend("force", t, opts.theme.colors)
 
-    t.bg_solid = t.bg
+    t.bg_solid = t.bg ~= "NONE" and t.bg or t.bgAlt
     if opts.transparent then
         t.bg = "NONE"
     end
