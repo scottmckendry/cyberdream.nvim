@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.0.0...v3.1.0) (2024-06-15)
+
+
+### Features
+
+* add highlight override function to config opts ([#70](https://github.com/scottmckendry/cyberdream.nvim/issues/70)) ([344db87](https://github.com/scottmckendry/cyberdream.nvim/commit/344db872e954de3c69b632fbc419870919a8a53b))
+* **ci:** developer experience improvements ([#71](https://github.com/scottmckendry/cyberdream.nvim/issues/71)) ([b7c5f5b](https://github.com/scottmckendry/cyberdream.nvim/commit/b7c5f5b4fbed9a9655bf738d3fbf932ecfe24f78))
+* **ci:** run ci checks on pull requests ([9d0662e](https://github.com/scottmckendry/cyberdream.nvim/commit/9d0662e79d0a1ccb437dee7d7cd093a076a14f3b))
+* **highlights:** improved `NonText` readability ([#74](https://github.com/scottmckendry/cyberdream.nvim/issues/74)) ([aec0467](https://github.com/scottmckendry/cyberdream.nvim/commit/aec04675175107fb613e638312dd90cddca3977f))
+* **telescope:** add `nvchad` borderless telescope style ([#75](https://github.com/scottmckendry/cyberdream.nvim/issues/75)) ([c1085d7](https://github.com/scottmckendry/cyberdream.nvim/commit/c1085d73fcb72edc14dab0f6a90d0e8155b51d03))
+* use more distinct colors for variable types ([#73](https://github.com/scottmckendry/cyberdream.nvim/issues/73)) ([e668b02](https://github.com/scottmckendry/cyberdream.nvim/commit/e668b02fb438fe1be907dfd83f98b7eb2a563b66))
+
+
+### Bug Fixes
+
+* blended transparent color cuasing error ([99746e8](https://github.com/scottmckendry/cyberdream.nvim/commit/99746e8044552422e5b44358b50f075a71161b67))
+
 ## [3.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v2.0.0...v3.0.0) (2024-06-13)
 
 
