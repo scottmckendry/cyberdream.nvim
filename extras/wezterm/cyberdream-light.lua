@@ -8,12 +8,12 @@ return {
     cursor_border = "#16181a",
 
     selection_fg = "#16181a",
-    selection_bg = "#e9eef2",
+    selection_bg = "#acacac",
 
     scrollbar_thumb = "#ffffff",
     split = "#ffffff",
 
     ansi = { "#ffffff", "#d11500", "#008b0c", "#997b00", "#0057d1", "#a018ff", "#008c99", "#16181a" },
-    brights = { "#e9eef2", "#d11500", "#008b0c", "#997b00", "#0057d1", "#a018ff", "#008c99", "#16181a" },
+    brights = { "#acacac", "#d11500", "#008b0c", "#997b00", "#0057d1", "#a018ff", "#008c99", "#16181a" },
     indexed = { [16] = "#d17c00", [17] = "#d11500" },
 }

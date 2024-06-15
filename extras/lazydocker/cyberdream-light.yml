@@ -8,6 +8,6 @@ gui:
         inactiveBorderColor:
             - "#7b8496"
         selectedLineBgColor:
-            - "#e9eef2"
+            - "#acacac"
         optionsTextColor:
-            - "#e9eef2"
+            - "#acacac"

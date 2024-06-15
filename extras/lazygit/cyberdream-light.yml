@@ -10,11 +10,11 @@ gui:
         searchingActiveBorderColor:
             - "#d100bf"
         optionsTextColor:
-            - "#e9eef2"
+            - "#acacac"
         selectedLineBgColor:
-            - "#e9eef2"
+            - "#acacac"
         cherryPickedCommitBgColor:
-            - "#e9eef2"
+            - "#acacac"
         cherryPickedCommitFgColor:
             - "#f40064"
         unstagedChangesColor:

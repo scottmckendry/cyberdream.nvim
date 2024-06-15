@@ -2,7 +2,7 @@
     "background": "#ffffff",
     "black": "#ffffff",
     "blue": "#0057d1",
-    "brightBlack": "#e9eef2",
+    "brightBlack": "#acacac",
     "brightBlue": "#0057d1",
     "brightCyan": "#008c99",
     "brightGreen": "#008b0c",
@@ -17,7 +17,7 @@
     "name": "cyberdream",
     "purple": "#a018ff",
     "red": "#d11500",
-    "selectionBackground": "#e9eef2",
+    "selectionBackground": "#acacac",
     "white": "#16181a",
     "yellow": "#997b00"
 }

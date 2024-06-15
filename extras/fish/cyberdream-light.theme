@@ -12,8 +12,8 @@ fish_color_end a018ff
 fish_color_comment 7b8496
 fish_color_error d11500
 fish_color_gray 7b8496
-fish_color_selection --background=e9eef2
-fish_color_search_match --background=e9eef2
+fish_color_selection --background=acacac
+fish_color_search_match --background=acacac
 fish_color_option 997b00
 fish_color_operator 0057d1
 fish_color_escape 850c3f
