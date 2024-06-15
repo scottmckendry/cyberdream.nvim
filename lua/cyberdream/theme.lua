@@ -48,6 +48,13 @@ function M.setup()
         })
     end
 
+    local borderless_telescope = opts.borderless_telescope
+    local telescope_style = ""
+    if type(opts.borderless_telescope) == "table" then
+        borderless_telescope = not opts.borderless_telescope.border
+        telescope_style = opts.borderless_telescope.style
+    end
+
     theme.highlights = {
         Comment = { fg = t.grey, italic = opts.italic_comments },
         ColorColumn = { bg = t.bgHighlight },
@@ -343,16 +350,24 @@ function M.setup()
         ["@keyword"] = { link = "Keyword" },
     }
 
-    if opts.borderless_telescope then
+    if borderless_telescope then
         theme.highlights.TelescopeBorder = { fg = t.bgAlt, bg = t.bgAlt }
         theme.highlights.TelescopeNormal = { bg = t.bgAlt }
         theme.highlights.TelescopePreviewBorder = { fg = t.bgAlt, bg = t.bgAlt }
         theme.highlights.TelescopePreviewNormal = { bg = t.bgAlt }
-        theme.highlights.TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green }
-        theme.highlights.TelescopePromptBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        theme.highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bgAlt }
-        theme.highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bgAlt }
-        theme.highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.red }
+        if telescope_style == "nvchad" then
+            theme.highlights.TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green, bold = true }
+            theme.highlights.TelescopePromptBorder = { fg = t.bgHighlight, bg = t.bgHighlight }
+            theme.highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bgHighlight }
+            theme.highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bgHighlight }
+            theme.highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.red, bold = true }
+        else
+            theme.highlights.TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green }
+            theme.highlights.TelescopePromptBorder = { fg = t.bgAlt, bg = t.bgAlt }
+            theme.highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bgAlt }
+            theme.highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bgAlt }
+            theme.highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.red }
+        end
         theme.highlights.TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt }
         theme.highlights.TelescopeResultsNormal = { bg = t.bgAlt }
         theme.highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
