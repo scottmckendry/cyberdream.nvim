@@ -20,11 +20,13 @@ local M = {}
 ---@field highlights? table<string, table<string, string>>
 ---@field overrides? CyberdreamOverrideFn
 
+---@alias CyberdreamTelescopeStyle "nvchad"
+
 ---@class Config
 ---@field transparent? boolean
 ---@field italic_comments? boolean
 ---@field hide_fillchars? boolean
----@field borderless_telescope? boolean
+---@field borderless_telescope? boolean|{ border: boolean, style: CyberdreamTelescopeStyle }
 ---@field terminal_colors? boolean
 ---@field theme? ThemeConfig
 local default_options = {
