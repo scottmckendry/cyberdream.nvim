@@ -26,6 +26,7 @@ function M.setup()
     ---@type CyberdreamPalette
     t = vim.tbl_deep_extend("force", t, opts.theme.colors)
 
+    t.bg_solid = t.bg
     if opts.transparent then
         t.bg = "NONE"
     end
@@ -55,7 +56,7 @@ function M.setup()
         ICursor = { fg = t.bg, bg = t.fg },
         CursorIM = { fg = t.bg, bg = t.fg },
         CursorColumn = { bg = t.bgHighlight },
-        CursorLine = { bg = (util.blend(t.bg, t.bgHighlight, 0.65)) },
+        CursorLine = { bg = (util.blend(t.bg_solid, t.bgHighlight, 0.65)) },
         Directory = { fg = t.blue },
         DiffAdd = { fg = t.green },
         DiffChange = { fg = t.cyan },
@@ -76,7 +77,7 @@ function M.setup()
         ModeMsg = { fg = t.fg },
         MsgArea = { fg = t.fg },
         MoreMsg = { fg = t.blue },
-        NonText = { fg = util.blend(t.bg, t.grey, 0.55) },
+        NonText = { fg = util.blend(t.bg_solid, t.grey, 0.55) },
         Normal = { fg = t.fg, bg = t.bg },
         NormalNC = { fg = t.fg, bg = t.bg },
         NormalFloat = { fg = t.fg, bg = t.bg },
