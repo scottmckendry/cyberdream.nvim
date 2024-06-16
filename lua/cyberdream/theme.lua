@@ -130,6 +130,7 @@ function M.setup()
         Operator = { fg = t.purple },
         Keyword = { fg = t.orange },
         PreProc = { fg = t.cyan },
+        Label = { fg = t.orange },
 
         Type = { fg = t.purple },
 
@@ -343,11 +344,18 @@ function M.setup()
 
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },
-        ["@markup.strong"] = { fg = t.pink, bold = true },
-        ["@markup.italic"] = { fg = t.blue, italic = true },
         ["@boolean"] = { link = "Boolean" },
         ["@number"] = { link = "Number" },
         ["@keyword"] = { link = "Keyword" },
+        -- TreeSitter Markup
+        ["@markup.strong"] = { fg = t.pink, bold = true },
+        ["@markup.italic"] = { fg = t.blue, italic = true },
+        ["@markup.list.unchecked"] = { fg = t.bg_solid, bg = t.magenta, bold = true },
+        ["@markup.list.checked"] = { fg = t.bg_solid, bg = t.green, bold = true },
+        ["@markup.link.label"] = { link = "Label" },
+        ["@markup.link.label.markdown_inline"] = { fg = t.cyan },
+        ["@markup.link.markdown_inline"] = { fg = t.blue },
+        ["@markup.link.url"] = { fg = t.blue, style = "underline" },
     }
 
     if borderless_telescope then
