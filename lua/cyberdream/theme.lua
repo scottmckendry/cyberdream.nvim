@@ -350,8 +350,8 @@ function M.setup()
         -- TreeSitter Markup
         ["@markup.strong"] = { fg = t.pink, bold = true },
         ["@markup.italic"] = { fg = t.blue, italic = true },
-        ["@markup.list.unchecked"] = { fg = t.bg_solid, bg = t.magenta, bold = true },
-        ["@markup.list.checked"] = { fg = t.bg_solid, bg = t.green, bold = true },
+        ["@markup.list.unchecked"] = { fg = t.magenta, bold = true },
+        ["@markup.list.checked"] = { fg = t.green, bold = true },
         ["@markup.link.label"] = { link = "Label" },
         ["@markup.link.label.markdown_inline"] = { fg = t.cyan },
         ["@markup.link.markdown_inline"] = { fg = t.blue },
