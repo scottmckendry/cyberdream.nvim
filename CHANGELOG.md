@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.1.0...v3.2.0) (2024-06-17)
+
+
+### Features
+
+* **markup:** improve first look readability/distinction ([#77](https://github.com/scottmckendry/cyberdream.nvim/issues/77)) ([8546564](https://github.com/scottmckendry/cyberdream.nvim/commit/85465644bc3cdd3d5f57c7565db09bab1058668f))
+
+
+### Bug Fixes
+
+* attempted blend on transparent color after mode toggle ([c326f93](https://github.com/scottmckendry/cyberdream.nvim/commit/c326f93f6f5e8c652e3357690129e5ccf7027ffe))
+
 ## [3.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.0.0...v3.1.0) (2024-06-15)
 
 
