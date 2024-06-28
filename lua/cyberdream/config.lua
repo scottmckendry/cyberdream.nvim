@@ -25,6 +25,7 @@ local M = {}
 ---@class extensions
 ---@field telescope? boolean
 ---@field notify? boolean
+---@field mini? boolean
 
 ---@class Config
 ---@field transparent? boolean
@@ -50,6 +51,7 @@ local default_options = {
     extensions = {
         telescope = true,
         notify = true,
+        mini = true,
     },
 }
 

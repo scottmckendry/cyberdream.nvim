@@ -146,6 +146,7 @@ require("cyberdream").setup({
     extensions = {
         telescope = true,
         notify = true,
+        mini = true,
         ...
     },
 })
