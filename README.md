@@ -141,8 +141,18 @@ require("cyberdream").setup({
             magenta = "#ff00ff",
         },
     },
+
+    -- Disable or enable colorscheme extensions
+    extensions = {
+        telescope = true,
+        notify = true,
+        ...
+    },
 })
 ```
+
+> [!NOTE]
+> For a complete list of extensions, see the [table in `config.lua`](lua/cyberdream/config.lua).
 
 ## 🧑‍🍳 Recipes
 
