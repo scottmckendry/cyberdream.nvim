@@ -26,6 +26,7 @@ local M = {}
 ---@field alpha? boolean
 ---@field cmp? boolean
 ---@field dashboard? boolean
+---@field fzflua? boolean
 ---@field grapple? boolean
 ---@field mini? boolean
 ---@field notify? boolean
@@ -57,6 +58,7 @@ local default_options = {
         alpha = true,
         cmp = true,
         dashboard = true,
+        fzflua = true,
         grapple = true,
         mini = true,
         notify = true,
