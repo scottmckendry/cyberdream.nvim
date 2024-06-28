@@ -186,62 +186,6 @@ function M.setup()
 
         LspInfoBorder = { fg = t.bg },
 
-        -- WhichKey
-        WhichKey = { fg = t.cyan },
-        WhichKeyGroup = { fg = t.blue },
-        WhichKeyDesc = { fg = t.pink },
-        WhichKeySeperator = { fg = t.bg },
-        WhichKeyFloat = { bg = t.bg },
-        WhichKeyValue = { fg = t.blue },
-
-        -- Alpha
-        AlphaShortcut = { fg = t.orange },
-        AlphaHeader = { fg = t.purple },
-        AlphaHeaderLabel = { fg = t.orange },
-        AlphaFooter = { fg = t.cyan },
-        AlphaButtons = { fg = t.blue },
-
-        -- dashboard-nvim
-        DashboardHeader = { fg = t.purple },
-        DashboardFooter = { fg = t.cyan },
-        -- dashboard-nvim: doom theme
-        DashboardShortCut = { fg = t.orange },
-        DashboardDesc = { fg = t.orange },
-        DashboardKey = { fg = t.green },
-        DashboardIcon = { fg = t.blue },
-        -- dashboard-nvim: hyper theme
-        DashboardProjectTitle = { fg = t.blue },
-        DashboardProjectTitleIcon = { fg = t.orange },
-        DashboardProjectIcon = { fg = t.orange },
-        DashboardMruTitle = { fg = t.blue },
-        DashboardMruIcon = { fg = t.orange },
-        DashboardFiles = { fg = t.cyan },
-        DashboardShortCutIcon = { fg = t.pink },
-
-        -- Cmp
-        CmpDocumentation = { fg = t.grey, bg = t.bg },
-        CmpDocumentationBorder = { fg = t.grey, bg = t.bg },
-        CmpGhostText = { fg = t.grey, bg = t.bg },
-
-        CmpItemAbbr = { fg = t.fg, bg = t.bg },
-        CmpItemAbbrDeprecated = { fg = t.grey, bg = t.bg, strikethrough = true },
-        CmpItemAbbrMatch = { fg = t.purple, bg = t.bg },
-        CmpItemAbbrMatchFuzzy = { fg = t.purple, bg = t.bg },
-
-        CmpItemKindVariable = { fg = t.cyan, bg = t.bg },
-        CmpItemKindInterface = { fg = t.cyan, bg = t.bg },
-        CmpItemKindText = { fg = t.cyan, bg = t.bg },
-
-        CmpItemKindFunction = { fg = t.pink, bg = t.bg },
-        CmpItemKindMethod = { fg = t.pink, bg = t.bg },
-
-        CmpItemKindKeyword = { fg = t.fg, bg = t.bg },
-        CmpItemKindProperty = { fg = t.fg, bg = t.bg },
-        CmpItemKindUnit = { fg = t.fg, bg = t.bg },
-
-        CmpItemMenu = { fg = t.grey, bg = t.bg },
-        CmpItemKindDefault = { fg = t.grey, bg = t.bg },
-
         -- Leap
         LeapMatch = { fg = t.fg, bg = t.magenta },
         LeapLabelPrimary = { fg = t.blue, bg = t.bg, bold = true },
@@ -290,11 +234,6 @@ function M.setup()
         -- TreeSitter Context
         TreeSitterContext = { bg = util.blend(t.bgAlt, t.cyan, 0.9) },
         TreeSitterContextLineNumber = { fg = util.blend(t.bgHighlight, t.fg) },
-
-        -- Grapple
-        GrappleTitle = { fg = t.pink },
-        GrappleFooter = { fg = t.grey },
-        GrappleBorder = { fg = t.cyan },
 
         -- TreeSitter Specific
         ["@variable"] = { fg = t.fg },

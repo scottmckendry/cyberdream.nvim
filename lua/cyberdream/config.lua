@@ -23,9 +23,14 @@ local M = {}
 ---@alias CyberdreamTelescopeStyle "nvchad" | "flat"
 
 ---@class extensions
----@field telescope? boolean
----@field notify? boolean
+---@field alpha? boolean
+---@field cmp? boolean
+---@field dashboard? boolean
+---@field grapple? boolean
 ---@field mini? boolean
+---@field notify? boolean
+---@field telescope? boolean
+---@field whichkey? boolean
 
 ---@class Config
 ---@field transparent? boolean
@@ -49,9 +54,14 @@ local default_options = {
     },
 
     extensions = {
-        telescope = true,
-        notify = true,
+        alpha = true,
+        cmp = true,
+        dashboard = true,
+        grapple = true,
         mini = true,
+        notify = true,
+        telescope = true,
+        whichkey = true,
     },
 }
 

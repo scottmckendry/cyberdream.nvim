@@ -4,6 +4,7 @@ local M = {}
 --- @param opts Config
 --- @param t CyberdreamPalette
 function M.get(opts, t)
+    opts = opts or {}
     local highlights = {
         NotifyDEBUGBody = { fg = t.fg },
         NotifyDEBUGBorder = { fg = t.bgHighlight },

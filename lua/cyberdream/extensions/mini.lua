@@ -4,7 +4,8 @@ local M = {}
 --- Get extension configuration
 --- @param opts Config
 --- @param t CyberdreamPalette
-function M.get(_, t)
+function M.get(opts, t)
+    opts = opts or {}
     local highlights = {
         -- Mini Files
         MiniFilesBorder = { fg = t.bgHighlight },

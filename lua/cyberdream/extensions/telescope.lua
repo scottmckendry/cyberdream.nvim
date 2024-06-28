@@ -4,6 +4,7 @@ local M = {}
 --- @param opts Config
 --- @param t CyberdreamPalette
 function M.get(opts, t)
+    opts = opts or {}
     local borderless_telescope = opts.borderless_telescope
     local telescope_style = ""
     if type(opts.borderless_telescope) == "table" then
@@ -42,11 +43,6 @@ function M.get(opts, t)
         highlights.TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt }
         highlights.TelescopeResultsNormal = { bg = t.bgAlt }
         highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
-
-        -- Mimic styling in Grapple
-        highlights.GrappleNormal = { bg = t.bgAlt }
-        highlights.GrappleBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        highlights.GrappleTitle = { fg = t.bgAlt, bg = t.cyan }
     end
 
     return highlights
