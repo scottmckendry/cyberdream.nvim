@@ -22,6 +22,10 @@ local M = {}
 
 ---@alias CyberdreamTelescopeStyle "nvchad" | "flat"
 
+---@class extensions
+---@field telescope? boolean
+---@field notify? boolean
+
 ---@class Config
 ---@field transparent? boolean
 ---@field italic_comments? boolean
@@ -29,6 +33,7 @@ local M = {}
 ---@field borderless_telescope? boolean | { border: boolean, style: CyberdreamTelescopeStyle }
 ---@field terminal_colors? boolean
 ---@field theme? ThemeConfig
+---@field extensions? extensions
 local default_options = {
     transparent = false,
     italic_comments = false,
@@ -40,6 +45,11 @@ local default_options = {
         variant = "default",
         colors = {},
         highlights = {},
+    },
+
+    extensions = {
+        telescope = true,
+        notify = true,
     },
 }
 

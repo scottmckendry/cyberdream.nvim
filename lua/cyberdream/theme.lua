@@ -48,13 +48,6 @@ function M.setup()
         })
     end
 
-    local borderless_telescope = opts.borderless_telescope
-    local telescope_style = ""
-    if type(opts.borderless_telescope) == "table" then
-        borderless_telescope = not opts.borderless_telescope.border
-        telescope_style = opts.borderless_telescope.style
-    end
-
     theme.highlights = {
         Comment = { fg = t.grey, italic = opts.italic_comments },
         ColorColumn = { bg = t.bgHighlight },
@@ -225,15 +218,6 @@ function M.setup()
         DashboardFiles = { fg = t.cyan },
         DashboardShortCutIcon = { fg = t.pink },
 
-        -- Telescope
-        TelescopeBorder = { fg = t.bgHighlight },
-        TelescopePromptTitle = { fg = t.blue },
-        TelescopeResultsTitle = { fg = t.cyan },
-        TelescopePromptPrefix = { fg = t.pink },
-        TelescopePreviewTitle = { fg = t.magenta },
-        TelescopeSelection = { bg = t.bgHighlight },
-        TelescopePromptCounter = { fg = t.pink },
-
         -- Cmp
         CmpDocumentation = { fg = t.grey, bg = t.bg },
         CmpDocumentationBorder = { fg = t.grey, bg = t.bg },
@@ -299,28 +283,6 @@ function M.setup()
         HeirlineInsert = { bg = t.green },
         HeirlineTerminal = { bg = t.cyan },
 
-        -- Nvim Notify
-        NotifyDEBUGBody = { fg = t.fg },
-        NotifyDEBUGBorder = { fg = t.bgHighlight },
-        NotifyDEBUGIcon = { fg = t.grey },
-        NotifyDEBUGTitle = { fg = t.grey },
-        NotifyERRORBody = { fg = t.fg },
-        NotifyERRORBorder = { fg = t.bgHighlight },
-        NotifyERRORIcon = { fg = t.red },
-        NotifyERRORTitle = { fg = t.pink },
-        NotifyINFOBody = { fg = t.fg },
-        NotifyINFOBorder = { fg = t.bgHighlight },
-        NotifyINFOIcon = { fg = t.green },
-        NotifyINFOTitle = { fg = t.cyan },
-        NotifyTRACEBorder = { fg = t.bgHighlight },
-        NotifyTRACEIcon = { fg = t.purple },
-        NotifyTRACETitle = { fg = t.magenta },
-        NotifyWARNBody = { fg = t.fg },
-        NotifyWARNBorder = { fg = t.bgHighlight },
-        NotifyWARNIcon = { fg = t.orange },
-        NotifyWARNTitle = { fg = t.yellow },
-        NotifyBackground = { bg = t.bg },
-
         -- Indent Blankline
         IblIndent = { fg = util.blend(t.bgHighlight, t.bgAlt, 0.3) },
         IblScope = { fg = t.bgHighlight },
@@ -358,34 +320,6 @@ function M.setup()
         ["@markup.link.url"] = { fg = t.blue, style = "underline" },
     }
 
-    if borderless_telescope then
-        theme.highlights.TelescopeBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        theme.highlights.TelescopeNormal = { bg = t.bgAlt }
-        theme.highlights.TelescopePreviewBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        theme.highlights.TelescopePreviewNormal = { bg = t.bgAlt }
-        if telescope_style == "nvchad" then
-            theme.highlights.TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green, bold = true }
-            theme.highlights.TelescopePromptBorder = { fg = t.bgHighlight, bg = t.bgHighlight }
-            theme.highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bgHighlight }
-            theme.highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bgHighlight }
-            theme.highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.red, bold = true }
-        else
-            theme.highlights.TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green }
-            theme.highlights.TelescopePromptBorder = { fg = t.bgAlt, bg = t.bgAlt }
-            theme.highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bgAlt }
-            theme.highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bgAlt }
-            theme.highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.red }
-        end
-        theme.highlights.TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        theme.highlights.TelescopeResultsNormal = { bg = t.bgAlt }
-        theme.highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
-
-        -- Mimic styling in Grapple
-        theme.highlights.GrappleNormal = { bg = t.bgAlt }
-        theme.highlights.GrappleBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        theme.highlights.GrappleTitle = { fg = t.bgAlt, bg = t.cyan }
-    end
-
     if opts.terminal_colors then
         vim.g.terminal_color_0 = t.bg
         vim.g.terminal_color_8 = t.bgAlt
@@ -412,16 +346,20 @@ function M.setup()
         vim.g.terminal_color_14 = t.cyan
     end
 
-    -- Use #000000 for full transparency
-    if opts.transparent then
-        theme.highlights.NotifyBackground = { bg = "#000000" }
+    -- Load enabled extensions
+    local extensions = opts.extensions or {}
+    for extension, enabled in pairs(extensions) do
+        if enabled then
+            local ext = require("cyberdream.extensions." .. extension)
+            theme.highlights = vim.tbl_deep_extend("force", theme.highlights, ext.get(opts, t))
+        end
     end
 
+    -- Parse user defined overrides and apply them
     local overrides = opts.theme.overrides or opts.theme.highlights
     if type(overrides) == "function" then
         overrides = overrides(t)
     end
-    -- Override highlights with user defined highlights
     theme.highlights = vim.tbl_deep_extend("force", theme.highlights, overrides or {})
 
     return theme
