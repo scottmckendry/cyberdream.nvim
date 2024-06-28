@@ -35,6 +35,7 @@
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/lazy.nvim"> lazy.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ggandor/leap.nvim"> leap.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-lualine/lualine.nvim"> lualine.nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/echasnovski/mini.nvim"> mini.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/noice.nvim"> noice.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/hrsh7th/nvim-cmp"> nvim-cmp</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/rcarriga/nvim-notify"> nvim-notify</a></label></li>
