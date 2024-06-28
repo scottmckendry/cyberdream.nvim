@@ -62,6 +62,8 @@ function M.setup()
         DiffChange = { fg = t.cyan },
         DiffDelete = { fg = t.red },
         DiffText = { fg = t.blue },
+        Added = { fg = t.green },
+        Removed = { fg = t.red },
         EndOfBuffer = { fg = t.bg },
         ErrorMsg = { fg = t.red },
         VertSplit = { fg = t.bgHighlight, bg = t.bg },
