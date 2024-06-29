@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.3.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.3.0...v3.3.1) (2024-06-29)
+
+
+### Bug Fixes
+
+* use bg instead of fg for diff highlight groups ([852cede](https://github.com/scottmckendry/cyberdream.nvim/commit/852cede7e655b86e3d51562ebfb886e1b635d68a))
+
+
+### Performance Improvements
+
+* **ci:** use pre-compiled selene ([e8608c3](https://github.com/scottmckendry/cyberdream.nvim/commit/e8608c315a3b44ce912f3d7d7f7dfa8cdbb1b160))
+
 ## [3.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.2.0...v3.3.0) (2024-06-29)
 
 
