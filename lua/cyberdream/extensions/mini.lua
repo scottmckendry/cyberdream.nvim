@@ -30,9 +30,9 @@ function M.get(opts, t)
         MiniDepsMsgBreaking = { link = "DiagnosticWarn" },
         MiniDepsPlaceholder = { link = "Comment" },
         MiniDepsTitle = { link = "Title" },
-        MiniDepsTitleError = { link = "DiffDelete" },
-        MiniDepsTitleSame = { link = "DiffChange" },
-        MiniDepsTitleUpdate = { link = "DiffAdd" },
+        MiniDepsTitleError = { link = "ErrorMsg" },
+        MiniDepsTitleSame = { link = "Boolean" },
+        MiniDepsTitleUpdate = { link = "String" },
 
         MiniDiffOverAdd = { bg = util.blend(t.bg_solid, t.green, 0.8) },
         MiniDiffOverChange = { bg = util.blend(t.bg_solid, t.blue, 0.8) },
