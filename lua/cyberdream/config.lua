@@ -27,9 +27,16 @@ local M = {}
 ---@field cmp? boolean
 ---@field dashboard? boolean
 ---@field fzflua? boolean
+---@field gitsigns? boolean
 ---@field grapple? boolean
+---@field heirline? boolean
+---@field indentblankline? boolean
+---@field lazy? boolean
+---@field leap? boolean
 ---@field mini? boolean
+---@field noice? boolean
 ---@field notify? boolean
+---@field eainbow_delimiters? boolean
 ---@field telescope? boolean
 ---@field whichkey? boolean
 
@@ -59,9 +66,16 @@ local default_options = {
         cmp = true,
         dashboard = true,
         fzflua = true,
+        gitsigns = true,
         grapple = true,
+        heirline = true,
+        indentblankline = true,
+        lazy = true,
+        leap = true,
         mini = true,
+        noice = true,
         notify = true,
+        rainbow_delimiters = true,
         telescope = true,
         whichkey = true,
     },

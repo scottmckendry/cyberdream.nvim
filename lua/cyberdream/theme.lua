@@ -56,7 +56,7 @@ function M.setup()
         ICursor = { fg = t.bg, bg = t.fg },
         CursorIM = { fg = t.bg, bg = t.fg },
         CursorColumn = { bg = t.bgHighlight },
-        CursorLine = { bg = (util.blend(t.bg_solid, t.bgHighlight, 0.65)) },
+        CursorLine = { bg = t.bgHighlight },
         Directory = { fg = t.blue },
         DiffAdd = { fg = t.green },
         DiffChange = { fg = t.cyan },
@@ -187,51 +187,6 @@ function M.setup()
         LspInlayHint = { fg = t.grey },
 
         LspInfoBorder = { fg = t.bg },
-
-        -- Leap
-        LeapMatch = { fg = t.fg, bg = t.magenta },
-        LeapLabelPrimary = { fg = t.blue, bg = t.bg, bold = true },
-        LeapLabelSecondary = { fg = t.green, bg = t.bg },
-        LeapBackdrop = { fg = t.bgHighlight },
-
-        -- Lazy
-        LazyProgressDone = { bold = true, fg = t.magenta },
-        LazyProgressTodo = { bold = true, fg = t.grey },
-
-        -- Noice
-        NoiceFormatProgressDone = { fg = t.bgAlt, bg = t.cyan },
-        NoiceFormatProgressTodo = { fg = t.grey, bg = t.bgHighlight },
-
-        NoiceLspProgressClient = { fg = t.blue },
-        NoiceLspProgressSpinner = { fg = t.orange },
-        NoiceLspProgressTitle = { fg = t.cyan },
-
-        -- GitSigns
-        GitSignsAdd = { fg = t.green },
-        GitSignsChange = { fg = t.orange },
-        GitSignsDelete = { fg = t.red },
-
-        -- Rainbow Delimiters
-        RainbowDelimiterRed = { fg = t.red },
-        RainbowDelimiterOrange = { fg = t.orange },
-        RainbowDelimiterYellow = { fg = t.yellow },
-        RainbowDelimiterGreen = { fg = t.green },
-        RainbowDelimiterBlue = { fg = t.blue },
-        RainbowDelimiterViolet = { fg = t.purple },
-        RainbowDelimiterCyan = { fg = t.cyan },
-
-        -- Heirline
-        HeirlineInactive = { bg = t.grey },
-        HeirlineNormal = { bg = t.blue },
-        HeirlineVisual = { bg = t.magenta },
-        HeirlineReplace = { bg = t.red },
-        HeirlineCommand = { bg = t.yellow },
-        HeirlineInsert = { bg = t.green },
-        HeirlineTerminal = { bg = t.cyan },
-
-        -- Indent Blankline
-        IblIndent = { fg = util.blend(t.bgHighlight, t.bgAlt, 0.3) },
-        IblScope = { fg = t.bgHighlight },
 
         -- TreeSitter Context
         TreeSitterContext = { bg = util.blend(t.bgAlt, t.cyan, 0.9) },
