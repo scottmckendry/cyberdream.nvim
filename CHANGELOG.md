@@ -1,5 +1,23 @@
 # Changelog
 
+## [3.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.2.0...v3.3.0) (2024-06-29)
+
+
+### Features
+
+* add support for toggleable extensions ([#82](https://github.com/scottmckendry/cyberdream.nvim/issues/82)) ([07d5a85](https://github.com/scottmckendry/cyberdream.nvim/commit/07d5a85d8c7aed217cbb7fe59b3c0c982fd4822f))
+* **extensions:** add alpha, cmp, dashboard, grapple ([6af8320](https://github.com/scottmckendry/cyberdream.nvim/commit/6af832028897d2652182541854ba3e3facc40655))
+* **extensions:** add explicit full 'mini.nvim' support ([#86](https://github.com/scottmckendry/cyberdream.nvim/issues/86)) ([63a4dbe](https://github.com/scottmckendry/cyberdream.nvim/commit/63a4dbe911ee4a117e883c25de5da029b50cc81b))
+* **extensions:** borderless fzf-lua theme ([ba05f56](https://github.com/scottmckendry/cyberdream.nvim/commit/ba05f56f9f1e2a08d1acf8952b5a209a2268842c)), closes [#81](https://github.com/scottmckendry/cyberdream.nvim/issues/81)
+* **extensions:** migrate remaining theme plugins to extensions ([ad8ad48](https://github.com/scottmckendry/cyberdream.nvim/commit/ad8ad480c653144940636a52578db65ab86e8b9c))
+
+
+### Bug Fixes
+
+* **mini:** use solid color where `bg` is used as `fg` ([3d8ee41](https://github.com/scottmckendry/cyberdream.nvim/commit/3d8ee41853e43b021342d101fd7fcaf99656c3d8))
+* missing `Added` and `Removed` groups ([8e5bf0b](https://github.com/scottmckendry/cyberdream.nvim/commit/8e5bf0bc8684f0bd99a514d045807a5a08742717))
+* visual mode contrast ([e5b5f34](https://github.com/scottmckendry/cyberdream.nvim/commit/e5b5f34aa86b21566cc688014724fc1c57dd236d))
+
 ## [3.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.1.0...v3.2.0) (2024-06-17)
 
 
