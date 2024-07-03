@@ -31,6 +31,7 @@ local M = {}
 ---@field grapple? boolean
 ---@field heirline? boolean
 ---@field indentblankline? boolean
+---@field kubectl? boolean
 ---@field lazy? boolean
 ---@field leap? boolean
 ---@field mini? boolean
@@ -70,6 +71,7 @@ local default_options = {
         grapple = true,
         heirline = true,
         indentblankline = true,
+        kubectl = true,
         lazy = true,
         leap = true,
         mini = true,
