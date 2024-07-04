@@ -37,7 +37,7 @@ local M = {}
 ---@field mini? boolean
 ---@field noice? boolean
 ---@field notify? boolean
----@field eainbow_delimiters? boolean
+---@field rainbow_delimiters? boolean
 ---@field telescope? boolean
 ---@field whichkey? boolean
 
