@@ -5,6 +5,7 @@ local M = {}
 ---@field bg "#ffffff"|string
 ---@field bgAlt "#f7f8f9"|string
 ---@field bgHighlight "#e9eef2"|string
+---@field bg_solid? string
 ---@field fg "#16181a"|string
 ---@field lightGrey "#bbd3ff"|string
 ---@field grey "#7b8496"|string
@@ -22,6 +23,7 @@ local M = {}
 ---@field bg "#16181a"|string
 ---@field bgAlt "#1e2124"|string
 ---@field bgHighlight "#3c4048"|string
+---@field bg_solid? string
 ---@field fg "#ffffff"|string
 ---@field lightGrey "#bbd3ff"|string
 ---@field grey "#7b8496"|string
