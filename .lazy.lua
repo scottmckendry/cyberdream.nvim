@@ -4,6 +4,7 @@
 -- All credits to the original author: @folke 💚
 -- https://github.com/folke/tokyonight.nvim
 
+--# selene: allow(global_usage)
 local colors
 local cache = {}
 local hl_groups = {}
