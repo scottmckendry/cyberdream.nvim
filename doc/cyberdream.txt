@@ -177,9 +177,8 @@ CREATE AN AUTOCMD TO HOOK INTO THE TOGGLE EVENT AND RUN CUSTOM CODE
 
 CONTRIBUTING                                         *cyberdream-contributing*
 
-Pull requests are welcome. If a plugin you use is not supported, please open an
-issue and I’ll try to add support for it. If you have any suggestions or
-feedback, please open an issue.
+Contributions are welcome! Please read the contributing guidelines
+<CONTRIBUTING.md> to get started.
 
 1. For Lazyvim users, refer to the LazyVim docs
 <http://www.lazyvim.org/plugins/colorscheme> for specific instructions.
