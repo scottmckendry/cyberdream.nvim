@@ -185,7 +185,7 @@ vim.api.nvim_create_autocmd("User", {
 
 ## 🤝 Contributing
 
-Pull requests are welcome. If a plugin you use is not supported, please open an issue and I'll try to add support for it. If you have any suggestions or feedback, please open an issue.
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) to get started.
 
 <hr>
 
