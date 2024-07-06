@@ -27,6 +27,7 @@ local M = {}
 ---@field cmp? boolean
 ---@field dashboard? boolean
 ---@field fzflua? boolean
+---@field gitpad? boolean
 ---@field gitsigns? boolean
 ---@field grapple? boolean
 ---@field heirline? boolean
@@ -67,6 +68,7 @@ local default_options = {
         cmp = true,
         dashboard = true,
         fzflua = true,
+        gitpad = true,
         gitsigns = true,
         grapple = true,
         heirline = true,

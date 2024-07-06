@@ -63,6 +63,7 @@
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ibhagwan/fzf-lua"> fzf-lua</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/lewis6991/gitsigns.nvim"> gitsigns.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/cbochs/grapple.nvim"> grapple.nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/yujinyuz/gitpad.nvim"> gitpad.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/Zeioth/heirline-components.nvim"> heirline-components.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/lukas-reineke/indent-blankline.nvim"> indent-blankline.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ramilito/kubectl.nvim"> kubectl.nvim</a></label></li>
