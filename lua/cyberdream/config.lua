@@ -40,6 +40,7 @@ local M = {}
 ---@field notify? boolean
 ---@field rainbow_delimiters? boolean
 ---@field telescope? boolean
+---@field trouble? boolean
 ---@field whichkey? boolean
 
 ---@class Config
@@ -81,6 +82,7 @@ local default_options = {
         notify = true,
         rainbow_delimiters = true,
         telescope = true,
+        trouble = true,
         whichkey = true,
     },
 }
