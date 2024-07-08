@@ -116,7 +116,7 @@ Lualine (optional):
 
 See my personal lualine config [here](https://github.com/scottmckendry/Windots/blob/main/nvim/lua/plugins/lualine.lua) for an example.
 
-## 🎨 Usage
+## 🚀 Usage
 
 ```lua
 vim.cmd("colorscheme cyberdream")
@@ -235,6 +235,53 @@ vim.api.nvim_create_autocmd("User", {
 ```
 
 ![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/c0188d60-d62b-4a15-965d-a19757c484e6)
+
+## 🎨 Palette
+
+<details>
+<summary><b>Dark</b></summary>
+
+| 🖌                                                        | Hex       | Color       |
+| --------------------------------------------------------- | --------- | ----------- |
+| ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | bg          |
+| ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bgAlt       |
+| ![#3c4048](https://place-hold.it/15/3c4048/3c4048?text=+) | `#3c4048` | bgHighlight |
+| ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | fg          |
+| ![#bbd3ff](https://place-hold.it/15/bbd3ff/bbd3ff?text=+) | `#bbd3ff` | lightGrey   |
+| ![#7b8496](https://place-hold.it/15/7b8496/7b8496?text=+) | `#7b8496` | grey        |
+| ![#5ea1ff](https://place-hold.it/15/5ea1ff/5ea1ff?text=+) | `#5ea1ff` | blue        |
+| ![#5eff6c](https://place-hold.it/15/5eff6c/5eff6c?text=+) | `#5eff6c` | green       |
+| ![#5ef1ff](https://place-hold.it/15/5ef1ff/5ef1ff?text=+) | `#5ef1ff` | cyan        |
+| ![#ff6e5e](https://place-hold.it/15/ff6e5e/ff6e5e?text=+) | `#ff6e5e` | red         |
+| ![#f1ff5e](https://place-hold.it/15/f1ff5e/f1ff5e?text=+) | `#f1ff5e` | yellow      |
+| ![#ff5ef1](https://place-hold.it/15/ff5ef1/ff5ef1?text=+) | `#ff5ef1` | magenta     |
+| ![#ff5ea0](https://place-hold.it/15/ff5ea0/ff5ea0?text=+) | `#ff5ea0` | pink        |
+| ![#ffbd5e](https://place-hold.it/15/ffbd5e/ffbd5e?text=+) | `#ffbd5e` | orange      |
+| ![#bd5eff](https://place-hold.it/15/bd5eff/bd5eff?text=+) | `#bd5eff` | purple      |
+
+</details>
+
+<details>
+<summary><b>Light</b></summary>
+
+| 🖌                                                        | Hex       | Color       |
+| --------------------------------------------------------- | --------- | ----------- |
+| ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | bg          |
+| ![#eaeaea](https://place-hold.it/15/eaeaea/eaeaea?text=+) | `#eaeaea` | bgAlt       |
+| ![#acacac](https://place-hold.it/15/acacac/acacac?text=+) | `#acacac` | bgHighlight |
+| ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | fg          |
+| ![#7b8496](https://place-hold.it/15/7b8496/7b8496?text=+) | `#7b8496` | grey        |
+| ![#0057d1](https://place-hold.it/15/0057d1/0057d1?text=+) | `#0057d1` | blue        |
+| ![#008b0c](https://place-hold.it/15/008b0c/008b0c?text=+) | `#008b0c` | green       |
+| ![#008c99](https://place-hold.it/15/008c99/008c99?text=+) | `#008c99` | cyan        |
+| ![#d11500](https://place-hold.it/15/d11500/d11500?text=+) | `#d11500` | red         |
+| ![#997b00](https://place-hold.it/15/997b00/997b00?text=+) | `#997b00` | yellow      |
+| ![#d100bf](https://place-hold.it/15/d100bf/d100bf?text=+) | `#d100bf` | magenta     |
+| ![#f40064](https://place-hold.it/15/f40064/f40064?text=+) | `#f40064` | pink        |
+| ![#d17c00](https://place-hold.it/15/d17c00/d17c00?text=+) | `#d17c00` | orange      |
+| ![#a018ff](https://place-hold.it/15/a018ff/a018ff?text=+) | `#a018ff` | purple      |
+
+</details>
 
 ## 🤝 Contributing
 
