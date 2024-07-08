@@ -1,6 +1,6 @@
 <p align="center">
     <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/e758f47a-32eb-4eac-a008-eb59272badef">
-     <b><i>A high-contrast, futuristic & vibrant theme for neovim</i></b>
+    <b><i>A high-contrast, futuristic & vibrant theme for neovim</i></b>
 </p>
 
 <p align="center">
@@ -15,23 +15,58 @@
     </a>
     <br>
     <a href="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim">
-     <img src="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim/shield?style=for-the-badge" />
+        <img src="https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim/shield?style=for-the-badge" />
     </a>
 </p>
 
+<hr>
+
+<table align="center">
+    <tr>
+        <td>
+            <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/f9dc6523-f458-48df-8837-09d5c131a5c7">
+        </td>
+        <td>
+            <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/0a0595a9-4d4d-4fc3-9bb3-dab2eb3b3e04"
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/ac6f5b6e-458b-4087-bbe3-745c1033cfb0"
+        </td>
+        <td>
+            <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/e7721a7d-26a9-4bcb-b72b-18c44defd7c6"
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/18c40e4c-e1f7-40c6-be82-f82c011338bd"
+        </td>
+        <td>
+            <img src="https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/80def4be-476e-4f1d-9e2a-cd141264fecd"
+        </td>
+    </tr>
+</table>
+
 ## 🚀 Features
 
-- **Transparency-first design** - all design decisions are made with transparency in mind
-- **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish
+-   **Transparency-first design** - all design decisions are made with transparency in mind.
+-   **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish.
+-   **Terminal Support** - Several included [terminal themes](#-extras) to enhance your cyberdream experience.
+-   **Extensions** - Support for a variety of popular plugins out of the box. Can be toggled on or off to maximise performance.
 
 <details>
-    <summary><b>Supported Plugins</b></summary>
+    <summary><b>Supported Plugins/Extensions</b></summary>
     <ul>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/goolord/alpha-nvim"> alpha-nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvimdev/dashboard-nvim"> dashboard-nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ibhagwan/fzf-lua"> fzf-lua</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/lewis6991/gitsigns.nvim"> gitsigns.nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/cbochs/grapple.nvim"> grapple.nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/yujinyuz/gitpad.nvim"> gitpad.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/Zeioth/heirline-components.nvim"> heirline-components.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/lukas-reineke/indent-blankline.nvim"> indent-blankline.nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ramilito/kubectl.nvim"> kubectl.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/lazy.nvim"> lazy.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ggandor/leap.nvim"> leap.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-lualine/lualine.nvim"> lualine.nvim</a></label></li>
@@ -46,9 +81,6 @@
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/which-key.nvim"> which-key.nvim</a></label></li>
     </ul>
 </details>
-
-![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/55ad863e-11e6-4539-bf67-118ea328fb5b)
-![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/387a32f3-da38-4e96-b1e6-ea55591ec9ae)
 
 ## 📦 Installation
 
@@ -155,6 +187,27 @@ require("cyberdream").setup({
 
 > [!NOTE]
 > For a complete list of extensions, see the [table in `config.lua`](lua/cyberdream/config.lua).
+
+## 🎁 Extras
+
+We've cooked up some wonderful extras to enhance your cyberdream experience. Mostly terminal themes and a few other goodies!
+
+![terminal](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/b6727dd0-cd45-4f6c-94cd-92fb0dadcfae)
+
+-   **[Alacritty](extras/alacritty/)**
+-   **[Fish](extras/fish/)**
+-   **[GitUI](extras/gitui/)**
+-   **[Helix](extras/helix/)**
+-   **[Kitty](extras/kitty/)**
+-   **[Lazydocker](extras/lazydocker/)**
+-   **[Lazygit](extras/lazygit/)**
+-   **[Pywal](extras/pywal/)**
+-   **[Textmate/Bat/Sublime](extras/textmate/)**
+-   **[Tilux](extras/tilux/)**
+-   **[Tmux](extras/tmux/)**
+-   **[Wezterm](extras/wezterm/)**
+-   **[Windows Terminal](extras/windowsterminal/)**
+-   **[Zellij](extras/zellij/)**
 
 ## 🧑‍🍳 Recipes
 

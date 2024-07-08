@@ -27,6 +27,7 @@ local M = {}
 ---@field cmp? boolean
 ---@field dashboard? boolean
 ---@field fzflua? boolean
+---@field gitpad? boolean
 ---@field gitsigns? boolean
 ---@field grapple? boolean
 ---@field heirline? boolean
@@ -39,6 +40,7 @@ local M = {}
 ---@field notify? boolean
 ---@field rainbow_delimiters? boolean
 ---@field telescope? boolean
+---@field trouble? boolean
 ---@field whichkey? boolean
 
 ---@class Config
@@ -67,6 +69,7 @@ local default_options = {
         cmp = true,
         dashboard = true,
         fzflua = true,
+        gitpad = true,
         gitsigns = true,
         grapple = true,
         heirline = true,
@@ -79,6 +82,7 @@ local default_options = {
         notify = true,
         rainbow_delimiters = true,
         telescope = true,
+        trouble = true,
         whichkey = true,
     },
 }
