@@ -9,6 +9,7 @@ Table of Contents                               *cyberdream-table-of-contents*
   - Configuring                                       |cyberdream-configuring|
   - Extras                                                 |cyberdream-extras|
   - ‍ Recipes                                       |cyberdream-‍-recipes|
+  - Palette                                               |cyberdream-palette|
   - Contributing                                     |cyberdream-contributing|
 1. Links                                                    |cyberdream-links|
 
@@ -196,6 +197,77 @@ CREATE AN AUTOCMD TO HOOK INTO THE TOGGLE EVENT AND RUN CUSTOM CODE
     })
 <
 
+
+PALETTE                                                   *cyberdream-palette*
+
+Dark ~
+
+  ----------------------------------------------------------------------------
+                                                       Hex       Color
+  ---------------------------------------------------- --------- -------------
+  [#16181a]                                            #16181a   bg
+
+  [#1e2124]                                            #1e2124   bgAlt
+
+  [#3c4048]                                            #3c4048   bgHighlight
+
+  [#ffffff]                                            #ffffff   fg
+
+  [#bbd3ff]                                            #bbd3ff   lightGrey
+
+  [#7b8496]                                            #7b8496   grey
+
+  [#5ea1ff]                                            #5ea1ff   blue
+
+  [#5eff6c]                                            #5eff6c   green
+
+  [#5ef1ff]                                            #5ef1ff   cyan
+
+  [#ff6e5e]                                            #ff6e5e   red
+
+  [#f1ff5e]                                            #f1ff5e   yellow
+
+  [#ff5ef1]                                            #ff5ef1   magenta
+
+  [#ff5ea0]                                            #ff5ea0   pink
+
+  [#ffbd5e]                                            #ffbd5e   orange
+
+  [#bd5eff]                                            #bd5eff   purple
+  ----------------------------------------------------------------------------
+Light ~
+
+  ----------------------------------------------------------------------------
+                                                       Hex       Color
+  ---------------------------------------------------- --------- -------------
+  [#ffffff]                                            #ffffff   bg
+
+  [#eaeaea]                                            #eaeaea   bgAlt
+
+  [#acacac]                                            #acacac   bgHighlight
+
+  [#16181a]                                            #16181a   fg
+
+  [#7b8496]                                            #7b8496   grey
+
+  [#0057d1]                                            #0057d1   blue
+
+  [#008b0c]                                            #008b0c   green
+
+  [#008c99]                                            #008c99   cyan
+
+  [#d11500]                                            #d11500   red
+
+  [#997b00]                                            #997b00   yellow
+
+  [#d100bf]                                            #d100bf   magenta
+
+  [#f40064]                                            #f40064   pink
+
+  [#d17c00]                                            #d17c00   orange
+
+  [#a018ff]                                            #a018ff   purple
+  ----------------------------------------------------------------------------
 
 CONTRIBUTING                                         *cyberdream-contributing*
 
