@@ -155,6 +155,9 @@ function M.get(opts, t)
         ["@boolean"] = { link = "Boolean" },
         ["@number"] = { link = "Number" },
         ["@keyword"] = { link = "Keyword" },
+        ["@keyword.type"] = { fg = t.orange, italic = true },
+        ["@type.builtin"] = { fg = util.blend(t.purple, t.pink, 0.65) },
+
         -- TreeSitter Markup
         ["@markup.strong"] = { fg = t.pink, bold = true },
         ["@markup.italic"] = { fg = t.blue, italic = true },
