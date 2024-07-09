@@ -207,6 +207,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 -   **[Tmux](extras/tmux/)**
 -   **[Wezterm](extras/wezterm/)**
 -   **[Windows Terminal](extras/windowsterminal/)**
+-   **[Zed](extras/zed/)**
 -   **[Zellij](extras/zellij/)**
 
 ## 🧑‍🍳 Recipes
