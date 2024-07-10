@@ -99,6 +99,16 @@ function M.parse_extra_template(template, t)
     return template
 end
 
+--- Parse a template string with the variant dark or light
+--- @param template string
+--- @param variant string
+--- @return string
+function M.parse_extra_template_variant(template, variant)
+    local themeVariant = (variant == "default" and "dark") or variant
+    template = template:gsub("%${" .. "variant" .. "}", themeVariant)
+    return template
+end
+
 --- Override options with a new table of values.
 --- @param new_opts Config
 --- @return Config
