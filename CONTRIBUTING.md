@@ -4,7 +4,6 @@ First off, thanks for taking the time to contribute! 🎉
 
 ![image](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/5c4cfa7e-e787-4a06-ba8c-f4aa8f06805a)
 
-
 > [!TIP]
 > The best way you can contribute to cyberdream.nvim is by giving it a star ⭐️ and sharing it with others!
 
@@ -69,6 +68,6 @@ We support a number of terminals and other goodies to make the cyberdream experi
 > [!NOTE]
 > Do not edit the extras directly. Your changes will be overwritten the next time the GitHub action runs.
 
-To add a new extra, create a new template file in the `lua/cyberdrem/extras` directory. Use the existing templates as a guide. Once you've created the template, you'll need to add it to the `extras` table in `lua/cyberdream/extras/init.lua`, including the extension and name.
+To add a new extra, create a new template file in the `lua/cyberdrem/extra` directory. Use the existing templates as a guide. Once you've created the template, you'll need to add it to the `extras` table in `lua/cyberdream/extra/init.lua`, including the extension and name.
 
 Once you've done this, the extra will be generated the next time the GitHub action runs. You can find the generated extras in the `extras` directory.
