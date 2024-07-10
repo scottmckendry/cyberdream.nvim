@@ -20,6 +20,7 @@ M.extras = {
     wezterm = { extension = "lua", name = "wezterm" },
     windowsterminal = { extension = "json", name = "windowsterminal" },
     zellij = { extension = "kdl", name = "zellij" },
+    zed = { extension = "json", name = "zed" },
 }
 
 --- Create/overwrite a file in the extras directory.
