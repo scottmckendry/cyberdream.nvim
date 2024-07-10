@@ -166,6 +166,7 @@ Mostly terminal themes and a few other goodies!
 - **Tmux**
 - **Wezterm**
 - **Windows Terminal**
+- **Zed**
 - **Zellij**
 
 
