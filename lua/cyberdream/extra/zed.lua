@@ -162,7 +162,7 @@ function M.generate(variant)
             "font_weight": null
           },
           "boolean": {
-            "color": "${fg}",
+            "color": "${blue}",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -216,7 +216,7 @@ function M.generate(variant)
             "font_weight": null
           },
           "number": {
-            "color": "${fg}",
+            "color": "${orange}",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -306,7 +306,7 @@ function M.generate(variant)
             "font_weight": null
           },
           "variable": {
-            "color": "${purple}",
+            "color": "${fg}",
             "background_color": null,
             "font_style": null,
             "font_weight": null
