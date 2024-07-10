@@ -6,6 +6,8 @@ local M = {}
 --- Generate cyberdream theme for https://zed.dev/
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
+    local modified_colors = vim.fn.copy(colors[variant])
+    modified_colors.variant = variant == "default" and "dark" or "light"
     local template = [==[
 {
   "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
@@ -322,8 +324,7 @@ function M.generate(variant)
 }
 ]==]
 
-    template = util.parse_extra_template(template, colors[variant])
-    return util.parse_extra_template_variant(template, variant)
+    return util.parse_extra_template(template, modified_colors)
 end
 
 return M
