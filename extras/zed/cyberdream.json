@@ -151,7 +151,7 @@
             "font_weight": null
           },
           "boolean": {
-            "color": "#ffffff",
+            "color": "#5ea1ff",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -205,7 +205,7 @@
             "font_weight": null
           },
           "number": {
-            "color": "#ffffff",
+            "color": "#ffbd5e",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -295,7 +295,7 @@
             "font_weight": null
           },
           "variable": {
-            "color": "#bd5eff",
+            "color": "#ffffff",
             "background_color": null,
             "font_style": null,
             "font_weight": null
