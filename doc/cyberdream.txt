@@ -214,8 +214,6 @@ Dark ~
 
   [#ffffff]                                            #ffffff   fg
 
-  [#bbd3ff]                                            #bbd3ff   lightGrey
-
   [#7b8496]                                            #7b8496   grey
 
   [#5ea1ff]                                            #5ea1ff   blue
