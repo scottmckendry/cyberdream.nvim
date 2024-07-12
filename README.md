@@ -70,6 +70,7 @@
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/lazy.nvim"> lazy.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ggandor/leap.nvim"> leap.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-lualine/lualine.nvim"> lualine.nvim</a></label></li>
+        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/OXY2DEV/markview.nvim"> markview.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/echasnovski/mini.nvim"> mini.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/noice.nvim"> noice.nvim</a></label></li>
         <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/hrsh7th/nvim-cmp"> nvim-cmp</a></label></li>

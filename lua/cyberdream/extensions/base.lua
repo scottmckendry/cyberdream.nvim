@@ -167,6 +167,7 @@ function M.get(opts, t)
         ["@markup.link.label.markdown_inline"] = { fg = t.cyan },
         ["@markup.link.markdown_inline"] = { fg = t.blue },
         ["@markup.link.url"] = { fg = t.blue, underline = true },
+        ["@markup.quote"] = { link = "Comment" },
     }
 
     return highlights
