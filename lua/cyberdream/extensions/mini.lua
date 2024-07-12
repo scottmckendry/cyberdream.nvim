@@ -56,7 +56,7 @@ function M.get(opts, t)
         MiniHipatternsNote = { fg = t.bg_solid, bg = t.blue, bold = true },
         MiniHipatternsTodo = { fg = t.bg_solid, bg = t.cyan, bold = true },
 
-        MiniIconsAzure = { fg = t.lightGrey },
+        MiniIconsAzure = { fg = util.blend(t.cyan, t.fg, 0.3) },
         MiniIconsBlue = { fg = t.blue },
         MiniIconsCyan = { fg = t.cyan },
         MiniIconsGreen = { fg = t.green },

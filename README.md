@@ -249,7 +249,6 @@ vim.api.nvim_create_autocmd("User", {
 | ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bgAlt       |
 | ![#3c4048](https://place-hold.it/15/3c4048/3c4048?text=+) | `#3c4048` | bgHighlight |
 | ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | fg          |
-| ![#bbd3ff](https://place-hold.it/15/bbd3ff/bbd3ff?text=+) | `#bbd3ff` | lightGrey   |
 | ![#7b8496](https://place-hold.it/15/7b8496/7b8496?text=+) | `#7b8496` | grey        |
 | ![#5ea1ff](https://place-hold.it/15/5ea1ff/5ea1ff?text=+) | `#5ea1ff` | blue        |
 | ![#5eff6c](https://place-hold.it/15/5eff6c/5eff6c?text=+) | `#5eff6c` | green       |
