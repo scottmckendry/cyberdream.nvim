@@ -7,12 +7,12 @@ local util = require("cyberdream.util")
 function M.get(opts, t)
     opts = opts or {}
     local highlights = {
-        MarkviewCol1 = { fg = t.orange, bg = util.blend(t.bg_solid, t.orange, 0.9), bold = true },
-        MarkviewCol2 = { fg = t.cyan, bg = util.blend(t.bg_solid, t.cyan, 0.9), bold = true },
-        MarkviewCol3 = { fg = t.blue, bg = util.blend(t.bg_solid, t.blue, 0.9), bold = true },
-        MarkviewCol4 = { fg = t.purple, bg = util.blend(t.bg_solid, t.purple, 0.9), bold = true },
-        MarkviewCol5 = { fg = t.magenta, bg = util.blend(t.bg_solid, t.magenta, 0.9), bold = true },
-        MarkviewCol6 = { fg = t.green, bg = util.blend(t.bg_solid, t.green, 0.9), bold = true },
+        MarkviewCol1 = { fg = t.orange, bg = util.blend(t.bg_solid, t.orange, 0.8), bold = true },
+        MarkviewCol2 = { fg = t.cyan, bg = util.blend(t.bg_solid, t.cyan, 0.8), bold = true },
+        MarkviewCol3 = { fg = t.blue, bg = util.blend(t.bg_solid, t.blue, 0.8), bold = true },
+        MarkviewCol4 = { fg = t.purple, bg = util.blend(t.bg_solid, t.purple, 0.8), bold = true },
+        MarkviewCol5 = { fg = t.magenta, bg = util.blend(t.bg_solid, t.magenta, 0.8), bold = true },
+        MarkviewCol6 = { fg = t.green, bg = util.blend(t.bg_solid, t.green, 0.8), bold = true },
 
         MarkviewLayer = { bg = util.blend(t.bgAlt, t.bgHighlight, 0.8) },
         MarkviewLayer2 = { bg = util.blend(t.bgAlt, t.bgHighlight, 0.8) },
