@@ -35,7 +35,7 @@ FEATURES                                                 *cyberdream-features*
 
 Supported Plugins/Extensions ~
 
- alpha-nvim dashboard-nvim fzf-lua gitsigns.nvim grapple.nvim gitpad.nvim heirline-components.nvim indent-blankline.nvim kubectl.nvim lazy.nvim leap.nvim lualine.nvim mini.nvim noice.nvim nvim-cmp nvim-notify nvim-treesitter nvim-treesitter-context rainbow-delimiters.nvim telescope.nvim which-key.nvim
+ alpha-nvim dashboard-nvim fzf-lua gitsigns.nvim grapple.nvim gitpad.nvim heirline-components.nvim indent-blankline.nvim kubectl.nvim lazy.nvim leap.nvim lualine.nvim markview.nvim mini.nvim noice.nvim nvim-cmp nvim-notify nvim-treesitter nvim-treesitter-context rainbow-delimiters.nvim telescope.nvim which-key.nvim
 INSTALLATION                                         *cyberdream-installation*
 
 Lazy1
