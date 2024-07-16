@@ -60,7 +60,7 @@
         "editor.background": "#ffffff",
         "editor.gutter.background": "#ffffff",
         "editor.subheader.background": null,
-        "editor.active_line.background": "#acacac",
+        "editor.active_line.background": "#eaeaea",
         "editor.highlighted_line.background": null,
         "editor.line_number": null,
         "editor.active_line_number": "#16181a",
@@ -142,7 +142,13 @@
         "warning": "#997b00",
         "warning.background": "#ffffff",
         "warning.border": null,
-        "players": [],
+        "players": [
+          {
+            "cursor": "#16181a",
+            "background": "#16181a",
+            "selection": null
+          }
+        ],
         "syntax": {
           "attribute": {
             "color": "#008c99",
