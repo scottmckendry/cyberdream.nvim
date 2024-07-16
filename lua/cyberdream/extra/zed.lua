@@ -153,7 +153,13 @@ function M.generate(variant)
         "warning": "${yellow}",
         "warning.background": "${bg}",
         "warning.border": null,
-        "players": [],
+        "players": [
+          {
+            "cursor": "${fg}",
+            "background": "${fg}",
+            "selection": null
+          }
+        ],
         "syntax": {
           "attribute": {
             "color": "${cyan}",
