@@ -31,6 +31,7 @@ local M = {}
 ---@field gitsigns? boolean
 ---@field grapple? boolean
 ---@field heirline? boolean
+---@field hop? boolean
 ---@field indentblankline? boolean
 ---@field kubectl? boolean
 ---@field lazy? boolean
@@ -74,6 +75,7 @@ local default_options = {
         gitsigns = true,
         grapple = true,
         heirline = true,
+        hop = true,
         indentblankline = true,
         kubectl = true,
         lazy = true,
