@@ -1,5 +1,24 @@
 # Changelog
 
+## [3.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.4.0...v3.5.0) (2024-07-18)
+
+
+### Features
+
+* **extensions:** add hop.nvim ([70470cb](https://github.com/scottmckendry/cyberdream.nvim/commit/70470cb37386be034f7d9540c40c056f1756196a))
+* **extensions:** add markview.nvim ([958ad23](https://github.com/scottmckendry/cyberdream.nvim/commit/958ad2337d73fdc898db0d0072acb4ea29e45d64))
+* **extensions:** improve bg contrast for markview.nvim headings ([d96290a](https://github.com/scottmckendry/cyberdream.nvim/commit/d96290af1c2cffcfdadb266144097e5496d08fd3))
+* **extras:** add zed editor theme ([7d75ae8](https://github.com/scottmckendry/cyberdream.nvim/commit/7d75ae89e0580964573c55d29da8be33634e2457))
+* **palette:** remove mostly unused 'lightgrey' color ([b3125d5](https://github.com/scottmckendry/cyberdream.nvim/commit/b3125d50c94793a4a65bad7d47739f18ed8a6205))
+
+
+### Bug Fixes
+
+* **base:** improve distinction between builtin and defintion types ([b36e661](https://github.com/scottmckendry/cyberdream.nvim/commit/b36e66120020c9544771d24c5e304d755276ae2d)), closes [#96](https://github.com/scottmckendry/cyberdream.nvim/issues/96)
+* **ci:** skip doc push step on pull requests ([cdfab47](https://github.com/scottmckendry/cyberdream.nvim/commit/cdfab4744cc154ce7f3ed4aae37cf9bd7c60b0ce))
+* **extensions:** correctly name mixed leap/gitsigns extensions ([b91d2b1](https://github.com/scottmckendry/cyberdream.nvim/commit/b91d2b1b6bdcd308fbf913bcfa38db63ac12b99b))
+* **extras:** Add modified, warning and error colors to zed theme ([#98](https://github.com/scottmckendry/cyberdream.nvim/issues/98)) ([2b52b8b](https://github.com/scottmckendry/cyberdream.nvim/commit/2b52b8b91bcae2987faf3746ad4e1891cf84ced5))
+
 ## [3.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.3.0...v3.4.0) (2024-07-06)
 
 
