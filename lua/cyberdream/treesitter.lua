@@ -376,6 +376,10 @@ M.defaults = {
         default = true,
         link = "markdownH5",
     },
+    ["@markup.heading.6"] = {
+        default = true,
+        link = "markdownH6",
+    },
     ["@text.underline"] = {
         underline = true,
     },

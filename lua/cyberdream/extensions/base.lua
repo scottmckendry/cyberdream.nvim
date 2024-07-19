@@ -117,6 +117,7 @@ function M.get(opts, t)
         markdownH3 = { fg = t.blue, bold = true },
         markdownH4 = { fg = t.purple, bold = true },
         markdownH5 = { fg = t.magenta, bold = true },
+        markdownH6 = { fg = t.green, bold = true },
         markdownLinkText = { fg = t.blue, underline = true },
 
         LspReferenceText = { bg = t.bgHighlight },
