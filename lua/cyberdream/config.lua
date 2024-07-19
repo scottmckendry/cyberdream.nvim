@@ -36,6 +36,7 @@ local M = {}
 ---@field kubectl? boolean
 ---@field lazy? boolean
 ---@field leap? boolean
+---@field markdown? boolean
 ---@field markview? boolean
 ---@field mini? boolean
 ---@field noice? boolean
@@ -80,6 +81,7 @@ local default_options = {
         kubectl = true,
         lazy = true,
         leap = true,
+        markdown = true,
         markview = true,
         mini = true,
         noice = true,
