@@ -57,30 +57,33 @@
 
 <details>
     <summary><b>Supported Plugins/Extensions</b></summary>
-    <ul>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/goolord/alpha-nvim"> alpha-nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvimdev/dashboard-nvim"> dashboard-nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ibhagwan/fzf-lua"> fzf-lua</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/lewis6991/gitsigns.nvim"> gitsigns.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/cbochs/grapple.nvim"> grapple.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/yujinyuz/gitpad.nvim"> gitpad.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/Zeioth/heirline-components.nvim"> heirline-components.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/lukas-reineke/indent-blankline.nvim"> indent-blankline.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ramilito/kubectl.nvim"> kubectl.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/lazy.nvim"> lazy.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/ggandor/leap.nvim"> leap.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-lualine/lualine.nvim"> lualine.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/OXY2DEV/markview.nvim"> markview.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/echasnovski/mini.nvim"> mini.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/noice.nvim"> noice.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/hrsh7th/nvim-cmp"> nvim-cmp</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/rcarriga/nvim-notify"> nvim-notify</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-treesitter/nvim-treesitter"> nvim-treesitter</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-treesitter/nvim-treesitter-context"> nvim-treesitter-context</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/HiPhish/rainbow-delimiters.nvim"> rainbow-delimiters.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/nvim-telescope/telescope.nvim"> telescope.nvim</a></label></li>
-        <li><input type="checkbox" checked disabled><label for=""><a href="https://github.com/folke/which-key.nvim"> which-key.nvim</a></label></li>
-    </ul>
+
+| Plugin                                                                          | Highlights                                                             |
+| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [alpha-nvim](https://github.com/goolord/alpha-nvim)                             | [alpha](lua/cyberdream/extensions/alpha.lua)                           |
+| [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)                     | [dashboard](lua/cyberdream/extensions/dashboard.lua)                   |
+| [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                  | [fzf](lua/cyberdream/extensions/fzf.lua)                               |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                     | [gitsigns](lua/cyberdream/extensions/gitsigns.lua)                     |
+| [grapple.nvim](https://github.com/cbochs/grapple.nvim)                          | [grapple](lua/cyberdream/extensions/grapple.lua)                       |
+| [gitpad.nvim](https://github.com/yujinyuz/gitpad.nvim)                          | [gitpad](lua/cyberdream/extensions/gitpad.lua)                         |
+| [heirline-components.nvim](https://github.com/Zeioth/heirline-components.nvim)  | [heirline](lua/cyberdream/extensions/heirline.lua)                     |
+| [hop.nvim](https://github.com/phaazon/hop.nvim)                                 | [hop](lua/cyberdream/extensions/hop.lua)                               |
+| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | [indentblankline](lua/cyberdream/extensions/indentblankline.lua)       |
+| [kubectl.nvim](https://github.com/ramilito/kubectl.nvim)                        | [kubectl](lua/cyberdream/extensions/kubectl.lua)                       |
+| [lazy.nvim](https://github.com/folke/lazy.nvim)                                 | [lazy](lua/cyberdream/extensions/lazy.lua)                             |
+| [leap.nvim](https://github.com/ggandor/leap.nvim)                               | [leap](lua/cyberdream/extensions/leap.lua)                             |
+| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)                    | [lualine](lua/cyberdream/extensions/lualine.lua)                       |
+| [markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)          | [markdown](lua/cyberdream/extensions/markdown.lua)                     |
+| [markview.nvim](https://github.com/OXY2DEV/markview.nvim)                       | [markview](lua/cyberdream/extensions/markview.lua)                     |
+| [mini.nvim](https://github.com/echasnovski/mini.nvim)                           | [mini](lua/cyberdream/extensions/mini.lua)                             |
+| [noice.nvim](https://github.com/folke/noice.nvim)                               | [noice](lua/cyberdream/extensions/noice.lua)                           |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | [cmp](lua/cyberdream/extensions/cmp.lua)                               |
+| [nvim-notify](https://github.com/rcarriga/nvim-notify)                          | [notify](lua/cyberdream/extensions/notify.lua)                         |
+| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)           | [treesitter](lua/cyberdream/extensions/treesitter.lua)                 |
+| [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)   | [rainbow_delimiters](lua/cyberdream/extensions/rainbow_delimiters.lua) |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)              | [telescope](lua/cyberdream/extensions/telescope.lua)                   |
+| [which-key.nvim](https://github.com/folke/which-key.nvim)                       | [whichkey](lua/cyberdream/extensions/whichkey.lua)                     |
+
 </details>
 
 ## 📦 Installation
