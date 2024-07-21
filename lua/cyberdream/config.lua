@@ -30,6 +30,7 @@ local M = {}
 ---@field gitpad? boolean
 ---@field gitsigns? boolean
 ---@field grapple? boolean
+---@field grugfar? boolean
 ---@field heirline? boolean
 ---@field hop? boolean
 ---@field indentblankline? boolean
@@ -75,6 +76,7 @@ local default_options = {
         gitpad = true,
         gitsigns = true,
         grapple = true,
+        grugfar = true,
         heirline = true,
         hop = true,
         indentblankline = true,
