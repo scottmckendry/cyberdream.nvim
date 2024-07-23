@@ -35,7 +35,56 @@ FEATURES                                                 *cyberdream-features*
 
 Supported Plugins/Extensions ~
 
- alpha-nvim dashboard-nvim fzf-lua gitsigns.nvim grapple.nvim gitpad.nvim heirline-components.nvim indent-blankline.nvim kubectl.nvim lazy.nvim leap.nvim lualine.nvim mini.nvim noice.nvim nvim-cmp nvim-notify nvim-treesitter nvim-treesitter-context rainbow-delimiters.nvim telescope.nvim which-key.nvim
+  -----------------------------------------------------------------------
+  Plugin                                Highlights
+  ------------------------------------- ---------------------------------
+  alpha-nvim                            alpha
+
+  dashboard-nvim                        dashboard
+
+  fzf-lua                               fzf
+
+  gitsigns.nvim                         gitsigns
+
+  grapple.nvim                          grapple
+
+  gitpad.nvim                           gitpad
+
+  heirline-components.nvim              heirline
+
+  hop.nvim                              hop
+
+  indent-blankline.nvim                 indentblankline
+
+  kubectl.nvim                          kubectl
+
+  lazy.nvim                             lazy
+
+  leap.nvim                             leap
+
+  lualine.nvim                          lualine
+
+  markdown.nvim                         markdown
+
+  markview.nvim                         markview
+
+  mini.nvim                             mini
+
+  noice.nvim                            noice
+
+  nvim-cmp                              cmp
+
+  nvim-notify                           notify
+
+  nvim-treesitter                       treesitter
+
+  rainbow-delimiters.nvim               rainbow_delimiters
+
+  telescope.nvim                        telescope
+
+  which-key.nvim                        whichkey
+  -----------------------------------------------------------------------
+
 INSTALLATION                                         *cyberdream-installation*
 
 Lazy1
@@ -213,8 +262,6 @@ Dark ~
   [#3c4048]                                            #3c4048   bgHighlight
 
   [#ffffff]                                            #ffffff   fg
-
-  [#bbd3ff]                                            #bbd3ff   lightGrey
 
   [#7b8496]                                            #7b8496   grey
 

@@ -7,7 +7,6 @@ local M = {}
 ---@field bgHighlight "#e9eef2"|string
 ---@field bg_solid? string
 ---@field fg "#16181a"|string
----@field lightGrey "#bbd3ff"|string
 ---@field grey "#7b8496"|string
 ---@field blue "#5ea1ff"|string
 ---@field green "#5eff6c"|string
@@ -25,7 +24,6 @@ local M = {}
 ---@field bgHighlight "#3c4048"|string
 ---@field bg_solid? string
 ---@field fg "#ffffff"|string
----@field lightGrey "#bbd3ff"|string
 ---@field grey "#7b8496"|string
 ---@field blue "#5ea1ff"|string
 ---@field green "#5eff6c"|string
@@ -44,7 +42,6 @@ M.default = {
     bgAlt = "#1e2124",
     bgHighlight = "#3c4048",
     fg = "#ffffff",
-    lightGrey = "#bbd3ff",
     grey = "#7b8496",
     blue = "#5ea1ff",
     green = "#5eff6c",

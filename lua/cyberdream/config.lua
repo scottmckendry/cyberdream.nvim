@@ -30,11 +30,15 @@ local M = {}
 ---@field gitpad? boolean
 ---@field gitsigns? boolean
 ---@field grapple? boolean
+---@field grugfar? boolean
 ---@field heirline? boolean
+---@field hop? boolean
 ---@field indentblankline? boolean
 ---@field kubectl? boolean
 ---@field lazy? boolean
 ---@field leap? boolean
+---@field markdown? boolean
+---@field markview? boolean
 ---@field mini? boolean
 ---@field noice? boolean
 ---@field notify? boolean
@@ -72,11 +76,15 @@ local default_options = {
         gitpad = true,
         gitsigns = true,
         grapple = true,
+        grugfar = true,
         heirline = true,
+        hop = true,
         indentblankline = true,
         kubectl = true,
         lazy = true,
         leap = true,
+        markdown = true,
+        markview = true,
         mini = true,
         noice = true,
         notify = true,

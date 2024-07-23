@@ -14,7 +14,7 @@ jobs:
         steps:
             - uses: actions/stale@v9
               with:
-                  repo-token: ${{ secrets.RELEASE_TOKEN }}
+                  repo-token: ${{ secrets.GITHUB_TOKEN }}
                   days-before-stale: -1 # never add label automatically
                   days-before-close: 7
                   stale-issue-label: "waiting for op"
