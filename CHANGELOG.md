@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.5.0...v3.6.0) (2024-07-23)
+
+
+### Features
+
+* **extensions:** add grug-far.nvim ([916102a](https://github.com/scottmckendry/cyberdream.nvim/commit/916102a282ae99a8e7a1fc52ded19754b4452d99))
+* **extensions:** add markdown.nvim ([ba25d43](https://github.com/scottmckendry/cyberdream.nvim/commit/ba25d43d68dd34d31bee88286fb6179df2763c31))
+* **extras:** zed - add cursor color and change active line bg ([#101](https://github.com/scottmckendry/cyberdream.nvim/issues/101)) ([2208cfe](https://github.com/scottmckendry/cyberdream.nvim/commit/2208cfe27110a8c6fb8ee5ada84ac6f14230e7a3))
+
+
+### Bug Fixes
+
+* **markdown:** add missing H6 highlight ([7d658e7](https://github.com/scottmckendry/cyberdream.nvim/commit/7d658e768199b235e14363fa8e122754a78747c5))
+
 ## [3.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.4.0...v3.5.0) (2024-07-18)
 
 
