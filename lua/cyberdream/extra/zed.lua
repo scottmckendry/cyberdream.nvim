@@ -71,7 +71,7 @@ function M.generate(variant)
         "editor.background": "${bg}",
         "editor.gutter.background": "${bg}",
         "editor.subheader.background": null,
-        "editor.active_line.background": "${bgHighlight}",
+        "editor.active_line.background": "${bgAlt}",
         "editor.highlighted_line.background": null,
         "editor.line_number": null,
         "editor.active_line_number": "${fg}",
@@ -153,7 +153,13 @@ function M.generate(variant)
         "warning": "${yellow}",
         "warning.background": "${bg}",
         "warning.border": null,
-        "players": [],
+        "players": [
+          {
+            "cursor": "${fg}",
+            "background": "${fg}",
+            "selection": null
+          }
+        ],
         "syntax": {
           "attribute": {
             "color": "${cyan}",
