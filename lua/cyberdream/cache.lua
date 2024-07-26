@@ -1,4 +1,5 @@
 local config = require("cyberdream.config")
+local util = require("cyberdream.util")
 
 local M = {}
 local cache_file = vim.fn.stdpath("cache") .. "/cyberdream_cache.lua"
@@ -8,7 +9,7 @@ local cache_file = vim.fn.stdpath("cache") .. "/cyberdream_cache.lua"
 M.build = function(theme)
     local cache = io.open(cache_file, "w")
     if not cache then
-        error("Could not open cache file for writing")
+        util.notify("Failed to open cache file", "error")
     end
 
     for group, opts in pairs(theme.highlights) do
@@ -39,7 +40,7 @@ vim.opt.fillchars:append({
     cache:write("vim.g.colors_name = 'cyberdream'\n")
     cache:close()
 
-    vim.notify("Cache file written to " .. cache_file, 2, { title = "Cyberdream Cache" })
+    util.notify("Cache file written to " .. cache_file)
 end
 
 --- load a cache file for a configured cyberdream theme
@@ -47,7 +48,7 @@ M.load = function()
     local cache = loadfile(cache_file)
     if not cache then
         local notify = vim.defer_fn(function()
-            vim.notify("Cache file not found. Run :CyberdreamBuildCache to generate it", 3)
+            util.notify("Cache file not found, run :CyberdreamBuildCache to generate", "warn")
         end, 1000)
         return notify
     end
@@ -59,7 +60,7 @@ end
 
 M.clear = function()
     os.remove(cache_file)
-    vim.notify("Cache file removed", 2, { title = "Cyberdream Cache" })
+    util.notify("Cache file removed")
 end
 
 return M

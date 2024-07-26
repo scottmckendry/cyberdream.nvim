@@ -2,6 +2,18 @@ local ts = require("cyberdream.treesitter")
 local config = require("cyberdream.config")
 local M = {}
 
+--- Notify the user with a message.
+--- @param message string
+--- @param level? "info" | "warn" | "error"
+--- @param title? string
+function M.notify(message, level, title)
+    level = level or "info"
+    title = title or " cyberdream.nvim"
+    local level_int = level == "info" and 2 or level == "warn" and 3 or 4
+
+    vim.notify(message, level_int, { title = title })
+end
+
 --- Sets the highlight group to the given table of colors.
 --- @param group string
 --- @param hl vim.api.keyset.highlight
