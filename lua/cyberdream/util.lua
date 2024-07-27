@@ -1,4 +1,3 @@
-local ts = require("cyberdream.treesitter")
 local config = require("cyberdream.config")
 local M = {}
 
@@ -14,33 +13,11 @@ function M.notify(message, level, title)
     vim.notify(message, level_int, { title = title })
 end
 
---- Sets the highlight group to the given table of colors.
---- @param group string
---- @param hl vim.api.keyset.highlight
-function M.highlight(group, hl)
-    group = ts.get(group)
-    if not group then
-        return
-    end
-    if hl.style then
-        if type(hl.style) == "table" then
-            hl = vim.tbl_extend("force", hl, hl.style)
-        elseif hl.style:lower() ~= "none" then
-            -- handle old string style definitions
-            for s in string.gmatch(hl.style, "([^,]+)") do
-                hl[s] = true
-            end
-        end
-        hl.style = nil
-    end
-    vim.api.nvim_set_hl(0, group, hl)
-end
-
 --- Set the syntax highlighting for a group.
 --- @param syntax table
 function M.syntax(syntax)
     for group, colors in pairs(syntax) do
-        M.highlight(group, colors)
+        vim.api.nvim_set_hl(0, group, colors)
     end
 end
 
@@ -54,14 +31,6 @@ function M.load(theme)
 
     vim.o.termguicolors = true
     vim.g.colors_name = "cyberdream"
-
-    if ts.new_style() then
-        for group, colors in pairs(ts.defaults) do
-            if not theme.highlights[group] then
-                M.highlight(group, colors)
-            end
-        end
-    end
 
     M.syntax(theme.highlights)
 end

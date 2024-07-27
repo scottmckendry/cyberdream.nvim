@@ -45,6 +45,8 @@ local M = {}
 ---@field notify? boolean
 ---@field rainbow_delimiters? boolean
 ---@field telescope? boolean
+---@field treesitter? boolean
+---@field treesittercontext? boolean
 ---@field trouble? boolean
 ---@field whichkey? boolean
 
@@ -92,6 +94,8 @@ local default_options = {
         notify = true,
         rainbow_delimiters = true,
         telescope = true,
+        treesitter = true,
+        treesittercontext = true,
         trouble = true,
         whichkey = true,
     },

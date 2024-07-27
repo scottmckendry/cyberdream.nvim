@@ -124,7 +124,6 @@ function M.get(opts, t)
         LspReferenceRead = { bg = t.bgHighlight },
         LspReferenceWrite = { bg = t.bgHighlight },
 
-        -- LspDiagnostics
         DiagnosticError = { fg = t.red },
         DiagnosticWarn = { fg = t.yellow },
         DiagnosticInfo = { fg = t.blue },
@@ -144,31 +143,7 @@ function M.get(opts, t)
         LspSignatureActiveParameter = { fg = t.orange },
         LspCodeLens = { fg = t.grey },
         LspInlayHint = { fg = t.grey },
-
         LspInfoBorder = { fg = t.bg },
-
-        -- TreeSitter Context
-        TreeSitterContext = { bg = util.blend(t.bgAlt, t.cyan, 0.9) },
-        TreeSitterContextLineNumber = { fg = util.blend(t.bgHighlight, t.fg) },
-
-        -- TreeSitter Specific
-        ["@variable"] = { fg = t.fg },
-        ["@boolean"] = { link = "Boolean" },
-        ["@number"] = { link = "Number" },
-        ["@keyword"] = { link = "Keyword" },
-        ["@keyword.type"] = { fg = t.orange, italic = true },
-        ["@type.builtin"] = { fg = util.blend(t.purple, t.pink, 0.65) },
-
-        -- TreeSitter Markup
-        ["@markup.strong"] = { fg = t.pink, bold = true },
-        ["@markup.italic"] = { fg = t.blue, italic = true },
-        ["@markup.list.unchecked"] = { fg = t.magenta, bold = true },
-        ["@markup.list.checked"] = { fg = t.green, bold = true },
-        ["@markup.link.label"] = { link = "Label" },
-        ["@markup.link.label.markdown_inline"] = { fg = t.cyan },
-        ["@markup.link.markdown_inline"] = { fg = t.blue },
-        ["@markup.link.url"] = { fg = t.blue, underline = true },
-        ["@markup.quote"] = { link = "Comment" },
     }
 
     return highlights
