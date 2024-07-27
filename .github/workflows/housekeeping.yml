@@ -28,6 +28,6 @@ jobs:
         steps:
             - uses: mondeja/remove-labels-gh-action@v2
               with:
-                  token: ${{ secrets.RELEASE_TOKEN }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
                   labels: |
                       waiting for op
