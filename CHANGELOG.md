@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.7.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.6.0...v3.7.0) (2024-07-27)
+
+
+### Features
+
+* **cache:** add experimental cache option to improve load times ([462f2ca](https://github.com/scottmckendry/cyberdream.nvim/commit/462f2cacce38c9b0ef7f66dc356b8cb6d80895f4))
+* **extensions:** migrate treesitter config to an extensions ([11b9eca](https://github.com/scottmckendry/cyberdream.nvim/commit/11b9eca52bb1984b015e127ec018dc1f4ecaf63b))
+* **extras:** add rio terminal ([02b29be](https://github.com/scottmckendry/cyberdream.nvim/commit/02b29be12532c821b519235d72a84810e7e01803))
+* highlight undercurl only for spell groups ([0db72c2](https://github.com/scottmckendry/cyberdream.nvim/commit/0db72c2a5c0443c3732aa349b6da4344f449a254)), closes [#103](https://github.com/scottmckendry/cyberdream.nvim/issues/103)
+
 ## [3.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.5.0...v3.6.0) (2024-07-23)
 
 
