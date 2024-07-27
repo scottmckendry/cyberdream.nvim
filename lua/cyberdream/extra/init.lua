@@ -14,6 +14,7 @@ M.extras = {
     lazydocker = { extension = "yml", name = "lazydocker" },
     lazygit = { extension = "yml", name = "lazygit" },
     pywal = { extension = "json", name = "pywal" },
+    rio = { extension = "toml", name = "rio" },
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
     tmux = { extension = "tmuxtheme", name = "tmux" },
