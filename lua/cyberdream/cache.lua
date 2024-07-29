@@ -2,47 +2,7 @@ local config = require("cyberdream.config")
 local util = require("cyberdream.util")
 
 local M = {}
-local cache_file = vim.fn.stdpath("cache") .. "/cyberdream_cache.lua"
-
-local function gen_hl_opts_string(opts)
-    local opts_string = ""
-    for opt, value in pairs(opts) do
-        local value_str = ((type(value) == "string") and "'" .. value .. "'") or tostring(value)
-        opts_string = opts_string .. opt .. " = " .. value_str .. ", "
-    end
-    return opts_string
-end
-
-local function gen_highlights_string(highlights)
-    local highlights_string = ""
-    for group, opts in pairs(highlights) do
-        local opts_string = gen_hl_opts_string(opts)
-        highlights_string = highlights_string .. "vim.api.nvim_set_hl(0, '" .. group .. "', {" .. opts_string .. "})\n"
-    end
-    return highlights_string
-end
-
-local function gen_fillchars_string()
-    local fillchars_string = "vim.opt.fillchars:append({\n"
-    for key, value in pairs(vim.opt.fillchars:get()) do
-        fillchars_string = fillchars_string .. "  " .. key .. " = '" .. value .. "',\n"
-    end
-    fillchars_string = fillchars_string .. "})\n"
-    return fillchars_string
-end
-
-local function gen_terminal_colors_string()
-    local terminal_colors_string = ""
-    for i = 0, 15 do
-        terminal_colors_string = terminal_colors_string
-            .. "vim.g.terminal_color_"
-            .. i
-            .. " = '"
-            .. vim.g["terminal_color_" .. i]
-            .. "'\n"
-    end
-    return terminal_colors_string
-end
+local cache_file = vim.fn.stdpath("cache") .. "/cyberdream_cache.json"
 
 --- build a cache file for a configured cyberdream theme
 --- @param theme table
@@ -53,25 +13,48 @@ M.build = function(theme)
         return
     end
 
-    cache:write(gen_highlights_string(theme.highlights))
-
-    if config.options.hide_fillchars then
-        cache:write(gen_fillchars_string())
-    end
-
+    local terminal_colors = {}
     if config.options.terminal_colors then
-        cache:write(gen_terminal_colors_string())
+        for i = 0, 15 do
+            terminal_colors[i] = vim.g["terminal_color_" .. i]
+        end
     end
 
-    cache:write("vim.g.colors_name = 'cyberdream'\n")
-    cache:close()
+    theme.fillchars = config.options.hide_fillchars
+    theme.terminal_colors = #terminal_colors > 0 and terminal_colors or nil
 
+    cache:write(vim.json.encode(theme))
     util.notify("Cache file written to " .. cache_file)
+end
+
+M.load_options = function(theme)
+    if theme.fillchars then
+        vim.opt.fillchars:append({
+            horiz = " ",
+            horizup = " ",
+            horizdown = " ",
+            vert = " ",
+            vertleft = " ",
+            vertright = " ",
+            verthoriz = " ",
+            eob = " ",
+        })
+    else
+        vim.opt.fillchars:append({
+            eob = " ",
+        })
+    end
+
+    if theme.terminal_colors then
+        for i = 0, 15 do
+            vim.g["terminal_color_" .. i] = theme.terminal_colors[i]
+        end
+    end
 end
 
 --- load a cache file for a configured cyberdream theme
 M.load = function()
-    local cache = loadfile(cache_file)
+    local cache = io.open(cache_file, "r")
     if not cache then
         local notify = vim.defer_fn(function()
             util.notify("Cache file not found, run :CyberdreamBuildCache to generate", "warn")
@@ -79,9 +62,15 @@ M.load = function()
         return notify
     end
 
-    if cache then
-        cache()
+    local theme = vim.json.decode(cache:read("*a"))
+
+    for group, opts in pairs(theme.highlights) do
+        vim.api.nvim_set_hl(0, group, opts)
     end
+
+    M.load_options(theme)
+
+    vim.g.colors_name = "cyberdream"
 end
 
 M.clear = function()
