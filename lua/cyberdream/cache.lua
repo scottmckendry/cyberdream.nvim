@@ -56,20 +56,20 @@ end
 M.load = function()
     local cache = io.open(cache_file, "r")
     if not cache then
+        M.build(require("cyberdream.theme").setup())
         local notify = vim.defer_fn(function()
-            util.notify("Cache file not found, run :CyberdreamBuildCache to generate", "warn")
+            util.notify(" Building cache...\n A restart may be required for changes to take effect.")
+            M.load()
         end, 1000)
         return notify
     end
 
     local theme = vim.json.decode(cache:read("*a"))
-
     for group, opts in pairs(theme.highlights) do
         vim.api.nvim_set_hl(0, group, opts)
     end
 
     M.load_options(theme)
-
     vim.g.colors_name = "cyberdream"
 end
 
