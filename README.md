@@ -211,7 +211,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 -   **[Lazygit](extras/lazygit/)**
 -   **[Pywal](extras/pywal/)**
 -   **[Rio](extras/rio/)**
--   **[Textmate/Bat/Sublime](extras/textmate/)**
+-   **[Textmate/Bat/Sublime/Delta](extras/textmate/)**
 -   **[Tilux](extras/tilux/)**
 -   **[Tmux](extras/tmux/)**
 -   **[Wezterm](extras/wezterm/)**
