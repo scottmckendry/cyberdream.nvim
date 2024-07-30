@@ -215,7 +215,7 @@ Mostly terminal themes and a few other goodies!
 - **Lazygit**
 - **Pywal**
 - **Rio**
-- **Textmate/Bat/Sublime**
+- **Textmate/Bat/Sublime/Delta**
 - **Tilux**
 - **Tmux**
 - **Wezterm**
