@@ -6,7 +6,7 @@ Copy `cyberdream.json` and/or `cyberdream-light.json` to the directory.
 
 Put the following config into the `config.toml` under `~/.config/rio`.
 
-Fix theme
+Use default or light theme:
 
 ```toml
 # ---
@@ -14,7 +14,7 @@ theme = "cyberdream"
 # ---
 ```
 
-Or, adaptive theme approach, following system theme
+Or, follow system theme:
 
 ```toml
 # ---
