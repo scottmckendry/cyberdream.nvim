@@ -3,34 +3,22 @@ local util = require("cyberdream.util")
 
 local M = {}
 
---- Generate cyberdream theme for https://zed.dev/
+--- Generate cyberdream theme for https://raphamorim.io/rio/
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
     function CreateDimColor(hex)
-        return util.blend(hex, colors[variant].bg, 0.8)
+        return util.blend(hex, variant == "default" and colors[variant].bg or colors[variant].fg, 0.8)
     end
 
     function CreateLightColor(hex)
-        return util.blend(hex, colors[variant].fg, 0.8)
+        return util.blend(hex, variant == "default" and colors[variant].fg or colors[variant].bg, 0.8)
     end
 
-    local modified_colors = vim.fn.copy(colors[variant])
-    modified_colors.bgAltDim = CreateDimColor(colors[variant].bgAlt)
-    modified_colors.blueDim = CreateDimColor(colors[variant].blue)
-    modified_colors.cyanDim = CreateDimColor(colors[variant].cyan)
-    modified_colors.fgDim = CreateDimColor(colors[variant].fg)
-    modified_colors.greenDim = CreateDimColor(colors[variant].green)
-    modified_colors.magentaDim = CreateDimColor(colors[variant].magenta)
-    modified_colors.redDim = CreateDimColor(colors[variant].red)
-    modified_colors.yellowDim = CreateDimColor(colors[variant].yellow)
-    modified_colors.bgAltLight = CreateLightColor(colors[variant].bgAlt)
-    modified_colors.blueLight = CreateLightColor(colors[variant].blue)
-    modified_colors.cyanLight = CreateLightColor(colors[variant].cyan)
-    modified_colors.fgLight = CreateLightColor(colors[variant].fg)
-    modified_colors.greenLight = CreateLightColor(colors[variant].green)
-    modified_colors.magentaLight = CreateLightColor(colors[variant].magenta)
-    modified_colors.redLight = CreateLightColor(colors[variant].red)
-    modified_colors.yellowLight = CreateLightColor(colors[variant].yellow)
+    local extended_colors = vim.fn.copy(colors[variant])
+    for key, value in pairs(colors[variant]) do
+        extended_colors[key .. "Dim"] = CreateDimColor(value)
+        extended_colors[key .. "Light"] = CreateLightColor(value)
+    end
 
     local template = [==[
 [colors]
@@ -76,7 +64,7 @@ light-white = '${fgLight}'
 light-yellow = '${yellowLight}'
 ]==]
 
-    return util.parse_extra_template(template, modified_colors)
+    return util.parse_extra_template(template, extended_colors)
 end
 
 return M
