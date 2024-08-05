@@ -36,59 +36,59 @@ FEATURES                                                 *cyberdream-features*
 Supported Plugins/Extensions ~
 
   -----------------------------------------------------------------------
-  Plugin                                Highlights
-  ------------------------------------- ---------------------------------
-  alpha-nvim                            alpha
+  Plugin                                 Highlights
+  -------------------------------------- --------------------------------
+  alpha-nvim                             alpha
 
-  dashboard-nvim                        dashboard
+  dashboard-nvim                         dashboard
 
-  fzf-lua                               fzflua
+  fzf-lua                                fzflua
 
-  gitsigns.nvim                         gitsigns
+  gitsigns.nvim                          gitsigns
 
-  gitpad.nvim                           gitpad
+  gitpad.nvim                            gitpad
 
-  grapple.nvim                          grapple
+  grapple.nvim                           grapple
 
-  grug-far.nvim                         grugfar
+  grug-far.nvim                          grugfar
 
-  heirline-components.nvim              heirline
+  heirline-components.nvim               heirline
 
-  hop.nvim                              hop
+  hop.nvim                               hop
 
-  indent-blankline.nvim                 indentblankline
+  indent-blankline.nvim                  indentblankline
 
-  kubectl.nvim                          kubectl
+  kubectl.nvim                           kubectl
 
-  lazy.nvim                             lazy
+  lazy.nvim                              lazy
 
-  leap.nvim                             leap
+  leap.nvim                              leap
 
-  lualine.nvim                          lualine
+  lualine.nvim                           lualine
 
-  markview.nvim                         markview
+  markview.nvim                          markview
 
-  mini.nvim                             mini
+  mini.nvim                              mini
 
-  noice.nvim                            noice
+  noice.nvim                             noice
 
-  nvim-cmp                              cmp
+  nvim-cmp                               cmp
 
-  nvim-notify                           notify
+  nvim-notify                            notify
 
-  nvim-treesitter                       treesitter
+  nvim-treesitter                        treesitter
 
-  nvim-treesitter-context               treesittercontext
+  nvim-treesitter-context                treesittercontext
 
-  rainbow-delimiters.nvim               rainbow_delimiters
+  rainbow-delimiters.nvim                rainbow_delimiters
 
-  render-markdown.nvim                  markdown
+  render-markdown.nvim                   markdown
 
-  telescope.nvim                        telescope
+  telescope.nvim                         telescope
 
-  trouble.nvim                          trouble
+  trouble.nvim                           trouble
 
-  which-key.nvim                        whichkey
+  which-key.nvim                         whichkey
   -----------------------------------------------------------------------
 
 INSTALLATION                                         *cyberdream-installation*
