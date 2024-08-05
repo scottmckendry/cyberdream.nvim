@@ -58,31 +58,34 @@
 <details>
     <summary><b>Supported Plugins/Extensions</b></summary>
 
-| Plugin                                                                          | Highlights                                                             |
-| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| [alpha-nvim](https://github.com/goolord/alpha-nvim)                             | [alpha](lua/cyberdream/extensions/alpha.lua)                           |
-| [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)                     | [dashboard](lua/cyberdream/extensions/dashboard.lua)                   |
-| [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                  | [fzf](lua/cyberdream/extensions/fzf.lua)                               |
-| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                     | [gitsigns](lua/cyberdream/extensions/gitsigns.lua)                     |
-| [grapple.nvim](https://github.com/cbochs/grapple.nvim)                          | [grapple](lua/cyberdream/extensions/grapple.lua)                       |
-| [gitpad.nvim](https://github.com/yujinyuz/gitpad.nvim)                          | [gitpad](lua/cyberdream/extensions/gitpad.lua)                         |
-| [heirline-components.nvim](https://github.com/Zeioth/heirline-components.nvim)  | [heirline](lua/cyberdream/extensions/heirline.lua)                     |
-| [hop.nvim](https://github.com/phaazon/hop.nvim)                                 | [hop](lua/cyberdream/extensions/hop.lua)                               |
-| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | [indentblankline](lua/cyberdream/extensions/indentblankline.lua)       |
-| [kubectl.nvim](https://github.com/ramilito/kubectl.nvim)                        | [kubectl](lua/cyberdream/extensions/kubectl.lua)                       |
-| [lazy.nvim](https://github.com/folke/lazy.nvim)                                 | [lazy](lua/cyberdream/extensions/lazy.lua)                             |
-| [leap.nvim](https://github.com/ggandor/leap.nvim)                               | [leap](lua/cyberdream/extensions/leap.lua)                             |
-| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)                    | [lualine](lua/cyberdream/extensions/lualine.lua)                       |
-| [markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)          | [markdown](lua/cyberdream/extensions/markdown.lua)                     |
-| [markview.nvim](https://github.com/OXY2DEV/markview.nvim)                       | [markview](lua/cyberdream/extensions/markview.lua)                     |
-| [mini.nvim](https://github.com/echasnovski/mini.nvim)                           | [mini](lua/cyberdream/extensions/mini.lua)                             |
-| [noice.nvim](https://github.com/folke/noice.nvim)                               | [noice](lua/cyberdream/extensions/noice.lua)                           |
-| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | [cmp](lua/cyberdream/extensions/cmp.lua)                               |
-| [nvim-notify](https://github.com/rcarriga/nvim-notify)                          | [notify](lua/cyberdream/extensions/notify.lua)                         |
-| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)           | [treesitter](lua/cyberdream/extensions/treesitter.lua)                 |
-| [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)   | [rainbow_delimiters](lua/cyberdream/extensions/rainbow_delimiters.lua) |
-| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)              | [telescope](lua/cyberdream/extensions/telescope.lua)                   |
-| [which-key.nvim](https://github.com/folke/which-key.nvim)                       | [whichkey](lua/cyberdream/extensions/whichkey.lua)                     |
+| Plugin                                                                                | Highlights                                                             |
+| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [alpha-nvim](https://github.com/goolord/alpha-nvim)                                   | [alpha](lua/cyberdream/extensions/alpha.lua)                           |
+| [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)                           | [dashboard](lua/cyberdream/extensions/dashboard.lua)                   |
+| [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                        | [fzflua](lua/cyberdream/extensions/fzflua.lua)                         |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                           | [gitsigns](lua/cyberdream/extensions/gitsigns.lua)                     |
+| [gitpad.nvim](https://github.com/yujinyuz/gitpad.nvim)                                | [gitpad](lua/cyberdream/extensions/gitpad.lua)                         |
+| [grapple.nvim](https://github.com/cbochs/grapple.nvim)                                | [grapple](lua/cyberdream/extensions/grapple.lua)                       |
+| [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim)                           | [grugfar](lua/cyberdream/extensions/grugfar.lua)                       |
+| [heirline-components.nvim](https://github.com/Zeioth/heirline-components.nvim)        | [heirline](lua/cyberdream/extensions/heirline.lua)                     |
+| [hop.nvim](https://github.com/phaazon/hop.nvim)                                       | [hop](lua/cyberdream/extensions/hop.lua)                               |
+| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)       | [indentblankline](lua/cyberdream/extensions/indentblankline.lua)       |
+| [kubectl.nvim](https://github.com/ramilito/kubectl.nvim)                              | [kubectl](lua/cyberdream/extensions/kubectl.lua)                       |
+| [lazy.nvim](https://github.com/folke/lazy.nvim)                                       | [lazy](lua/cyberdream/extensions/lazy.lua)                             |
+| [leap.nvim](https://github.com/ggandor/leap.nvim)                                     | [leap](lua/cyberdream/extensions/leap.lua)                             |
+| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)                          | [lualine](lua/cyberdream/extensions/lualine.lua)                       |
+| [markview.nvim](https://github.com/OXY2DEV/markview.nvim)                             | [markview](lua/cyberdream/extensions/markview.lua)                     |
+| [mini.nvim](https://github.com/echasnovski/mini.nvim)                                 | [mini](lua/cyberdream/extensions/mini.lua)                             |
+| [noice.nvim](https://github.com/folke/noice.nvim)                                     | [noice](lua/cyberdream/extensions/noice.lua)                           |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                       | [cmp](lua/cyberdream/extensions/cmp.lua)                               |
+| [nvim-notify](https://github.com/rcarriga/nvim-notify)                                | [notify](lua/cyberdream/extensions/notify.lua)                         |
+| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)                 | [treesitter](lua/cyberdream/extensions/treesitter.lua)                 |
+| [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) | [treesittercontext](lua/cyberdream/extensions/treesittercontext.lua)   |
+| [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)         | [rainbow_delimiters](lua/cyberdream/extensions/rainbow_delimiters.lua) |
+| [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)  | [markdown](lua/cyberdream/extensions/markdown.lua)                     |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)                    | [telescope](lua/cyberdream/extensions/telescope.lua)                   |
+| [trouble.nvim](https://github.com/folke/trouble.nvim)                                 | [trouble](lua/cyberdream/extensions/trouble.lua)                       |
+| [which-key.nvim](https://github.com/folke/which-key.nvim)                             | [whichkey](lua/cyberdream/extensions/whichkey.lua)                     |
 
 </details>
 
