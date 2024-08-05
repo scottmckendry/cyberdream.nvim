@@ -42,13 +42,15 @@ Supported Plugins/Extensions ~
 
   dashboard-nvim                        dashboard
 
-  fzf-lua                               fzf
+  fzf-lua                               fzflua
 
   gitsigns.nvim                         gitsigns
 
+  gitpad.nvim                           gitpad
+
   grapple.nvim                          grapple
 
-  gitpad.nvim                           gitpad
+  grug-far.nvim                         grugfar
 
   heirline-components.nvim              heirline
 
@@ -64,8 +66,6 @@ Supported Plugins/Extensions ~
 
   lualine.nvim                          lualine
 
-  markdown.nvim                         markdown
-
   markview.nvim                         markview
 
   mini.nvim                             mini
@@ -78,9 +78,15 @@ Supported Plugins/Extensions ~
 
   nvim-treesitter                       treesitter
 
+  nvim-treesitter-context               treesittercontext
+
   rainbow-delimiters.nvim               rainbow_delimiters
 
+  render-markdown.nvim                  markdown
+
   telescope.nvim                        telescope
+
+  trouble.nvim                          trouble
 
   which-key.nvim                        whichkey
   -----------------------------------------------------------------------
