@@ -224,6 +224,7 @@ Mostly terminal themes and a few other goodies!
 - **Textmate/Bat/Sublime/Delta**
 - **Tilux**
 - **Tmux**
+- **Vivid**
 - **Wezterm**
 - **Windows Terminal**
 - **Zed**
