@@ -18,6 +18,7 @@ M.extras = {
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
     tmux = { extension = "tmuxtheme", name = "tmux" },
+    vivid = { extension = "yml", name = "vivid" },
     wezterm = { extension = "lua", name = "wezterm" },
     windowsterminal = { extension = "json", name = "windowsterminal" },
     zellij = { extension = "kdl", name = "zellij" },
