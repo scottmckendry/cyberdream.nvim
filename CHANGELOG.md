@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.8.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.7.0...v3.8.0) (2024-08-06)
+
+
+### Features
+
+* **cache:** auto-generate cache on first load ([68d7298](https://github.com/scottmckendry/cyberdream.nvim/commit/68d7298210a555fb5b3ed7bcb72dfd638b0569f3))
+* **extras:** add vivid extra ([#113](https://github.com/scottmckendry/cyberdream.nvim/issues/113)) ([2f45a94](https://github.com/scottmckendry/cyberdream.nvim/commit/2f45a94f456ec3c02c4b135e735b8da3fdff7433))
+
+
+### Bug Fixes
+
+* **ci:** use built in token for label removal ([0669430](https://github.com/scottmckendry/cyberdream.nvim/commit/0669430226434521095c17c989212862ccc0a26e))
+* **config:** consistent hl type in overrides function and table ([8550789](https://github.com/scottmckendry/cyberdream.nvim/commit/85507898765a00339aaf2ce7c77b0c3dfb3f7380))
+* **extras-rio:** Fix dimmed and light colors for light theme ([0c277c0](https://github.com/scottmckendry/cyberdream.nvim/commit/0c277c093685d17ec3045ef0a517b12a07d190cb))
+* **extras:** kitty base16 correction on brights (color8) ([#110](https://github.com/scottmckendry/cyberdream.nvim/issues/110)) ([6f91fff](https://github.com/scottmckendry/cyberdream.nvim/commit/6f91fff18169c248fe3db18e124fff5bceb999a1))
+
+
+### Performance Improvements
+
+* **cache:** use JSON encoding for cached theme ([bca6544](https://github.com/scottmckendry/cyberdream.nvim/commit/bca65445e051cbc80b4b158123ef7d474430f018))
+
 ## [3.7.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.6.0...v3.7.0) (2024-07-27)
 
 
