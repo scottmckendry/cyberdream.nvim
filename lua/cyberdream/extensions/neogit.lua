@@ -7,7 +7,7 @@ function M.get(opts, t)
     opts = opts or {}
     local highlights = {
         -- neogit
-        NeogitNormal               = { bg = "NONE" },
+        NeogitNormal               = { bg = t.bg },
         NeogitPopupSwitchKey       = { fg = t.orange },
         NeogitPopupOptionKey       = { fg = t.orange },
         NeogitPopupActionKey       = { fg = t.orange },
