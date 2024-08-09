@@ -41,6 +41,7 @@ local M = {}
 ---@field markdown? boolean
 ---@field markview? boolean
 ---@field mini? boolean
+---@field neogit? boolean
 ---@field noice? boolean
 ---@field notify? boolean
 ---@field rainbow_delimiters? boolean
@@ -91,6 +92,7 @@ local default_options = {
         markview = true,
         mini = true,
         noice = true,
+        neogit = true,
         notify = true,
         rainbow_delimiters = true,
         telescope = true,
