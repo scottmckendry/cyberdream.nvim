@@ -21,6 +21,13 @@ function M.get(opts, t)
         FzfLuaFzfInfo = { fg = t.cyan },
     }
 
+    if not opts.borderless_telescope then
+        highlights.FzfLuaNormal.bg = t.bg
+        highlights.FzfLuaPreviewNormal.bg = t.bg
+        highlights.FzfLuaBorder = { link = "FloatBorder" }
+        highlights.FzfLuaTitle = { link = "FloatTitle" }
+    end
+
     return highlights
 end
 

@@ -145,7 +145,7 @@ require("cyberdream").setup({
     -- Replace all fillchars with ' ' for the ultimate clean look
     hide_fillchars = false,
 
-    -- Modern borderless telescope theme
+    -- Modern borderless telescope theme - also applies to fzf-lua
     borderless_telescope = true,
 
     -- Set terminal colors used in `:terminal`
