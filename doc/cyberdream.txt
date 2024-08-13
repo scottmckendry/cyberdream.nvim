@@ -54,6 +54,8 @@ Supported Plugins/Extensions ~
 
   heirline-components.nvim               heirline
 
+  helpview.nvim                          helpview
+
   hop.nvim                               hop
 
   indent-blankline.nvim                  indentblankline
