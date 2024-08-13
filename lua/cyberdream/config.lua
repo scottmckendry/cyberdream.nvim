@@ -33,6 +33,7 @@ local M = {}
 ---@field grapple? boolean
 ---@field grugfar? boolean
 ---@field heirline? boolean
+---@field helpview? boolean
 ---@field hop? boolean
 ---@field indentblankline? boolean
 ---@field kubectl? boolean
@@ -83,6 +84,7 @@ local default_options = {
         grapple = true,
         grugfar = true,
         heirline = true,
+        helpview = true,
         hop = true,
         indentblankline = true,
         kubectl = true,

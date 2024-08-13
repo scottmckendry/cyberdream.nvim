@@ -68,6 +68,7 @@
 | [grapple.nvim](https://github.com/cbochs/grapple.nvim)                                | [grapple](lua/cyberdream/extensions/grapple.lua)                       |
 | [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim)                           | [grugfar](lua/cyberdream/extensions/grugfar.lua)                       |
 | [heirline-components.nvim](https://github.com/Zeioth/heirline-components.nvim)        | [heirline](lua/cyberdream/extensions/heirline.lua)                     |
+| [helpview.nvim](https://github.com/OXY2DEV/helpview.nvim)                             | [helpview](lua/cyberdream/extensions/helpview.lua)                     |
 | [hop.nvim](https://github.com/phaazon/hop.nvim)                                       | [hop](lua/cyberdream/extensions/hop.lua)                               |
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)       | [indentblankline](lua/cyberdream/extensions/indentblankline.lua)       |
 | [kubectl.nvim](https://github.com/ramilito/kubectl.nvim)                              | [kubectl](lua/cyberdream/extensions/kubectl.lua)                       |
