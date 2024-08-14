@@ -17,8 +17,8 @@ function M.get(opts, t)
         HelpviewInlineCode = { link = "HelpviewCode" },
         HelpviewCodeLanguage = { fg = t.grey, bg = t.bgAlt, italic = true },
 
-        HelpviewTaglink = { fg = t.blue, underline = true },
-        HelpviewOptionlink = { fg = util.blend(t.green, t.blue, 0.5), underline = true },
+        HelpviewTaglink = { fg = t.blue },
+        HelpviewOptionlink = { fg = util.blend(t.cyan, t.magenta, 0.4) },
         HelpviewMentionlink = { fg = t.cyan, underline = true },
     }
 
