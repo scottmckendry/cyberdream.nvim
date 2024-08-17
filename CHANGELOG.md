@@ -1,5 +1,25 @@
 # Changelog
 
+## [4.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.8.0...v4.0.0) (2024-08-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **config:** overrides no longer merge with defaults
+
+### Features
+
+* **extensions:** add helpview.nvim ([6ee2234](https://github.com/scottmckendry/cyberdream.nvim/commit/6ee2234f5b8e877d7125ba4e8fcbd317235a2c87)), closes [#122](https://github.com/scottmckendry/cyberdream.nvim/issues/122)
+* **extensions:** add neogit ([#117](https://github.com/scottmckendry/cyberdream.nvim/issues/117)) ([31f31f2](https://github.com/scottmckendry/cyberdream.nvim/commit/31f31f27dbc2517f72656ad4031f15d25a20dcf2)), closes [#116](https://github.com/scottmckendry/cyberdream.nvim/issues/116)
+* **extensions:** more complete hls for gitsigns.nvim ([abc44e4](https://github.com/scottmckendry/cyberdream.nvim/commit/abc44e40e3141899e57a5c87c3a5191dc1d55930))
+* **extensions:** support transparent fzflua window ([1854b40](https://github.com/scottmckendry/cyberdream.nvim/commit/1854b40d92539f9bc8b29f5c118c01e928af09cd)), closes [#120](https://github.com/scottmckendry/cyberdream.nvim/issues/120)
+
+
+### Bug Fixes
+
+* **config:** overrides no longer merge with defaults ([458f1ed](https://github.com/scottmckendry/cyberdream.nvim/commit/458f1edcd851f135cbbd4fbfbf5e0d156e967570))
+* **extensions:** remove redundant underline property from helpview links ([9454c83](https://github.com/scottmckendry/cyberdream.nvim/commit/9454c831c269dbdf2dc63be4afeb09697a442c52))
+
 ## [3.8.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.7.0...v3.8.0) (2024-08-06)
 
 
