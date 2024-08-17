@@ -89,7 +89,7 @@ function M.setup()
     if type(overrides) == "function" then
         overrides = overrides(t)
     end
-    theme.highlights = vim.tbl_deep_extend("force", theme.highlights, overrides or {})
+    theme.highlights = vim.tbl_extend("force", theme.highlights, overrides or {})
 
     return theme
 end
