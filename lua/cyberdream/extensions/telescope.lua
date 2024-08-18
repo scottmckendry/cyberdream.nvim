@@ -42,7 +42,7 @@ function M.get(opts, t)
         end
         highlights.TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt }
         highlights.TelescopeResultsNormal = { bg = t.bgAlt }
-        highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.bgAlt }
+        highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.cyan }
     end
 
     return highlights
