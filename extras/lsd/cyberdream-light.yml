@@ -1,0 +1,38 @@
+user: 31
+group: 26
+permission:
+  read: 28
+  write: 136
+  exec: 160
+  exec-sticky: 129
+  no-access: 102
+  octal: 30
+  acl: 30
+  context: 31
+date:
+  hour-old: 16
+  day-old: 102
+  older: 145
+size:
+  none: 102
+  small: 28
+  medium: 136
+  large: 172
+inode:
+  valid: 163
+  invalid: 102
+links:
+  valid: 163
+  invalid: 102
+tree-edge: 102
+git-status:
+  default: 102
+  unmodified: 102
+  ignored: 102
+  new-in-index: 28
+  new-in-workdir: 28
+  typechange: 100
+  deleted: 124
+  renamed: 28
+  modified: 100
+  conflicted: 124
