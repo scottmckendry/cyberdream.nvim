@@ -213,6 +213,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 -   **[Kitty](extras/kitty/)**
 -   **[Lazydocker](extras/lazydocker/)**
 -   **[Lazygit](extras/lazygit/)**
+-   **[lsd](extras/lsd/)**
 -   **[Pywal](extras/pywal/)**
 -   **[Rio](extras/rio/)**
 -   **[Textmate/Bat/Sublime/Delta](extras/textmate/)**
