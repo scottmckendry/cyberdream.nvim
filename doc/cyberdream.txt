@@ -221,6 +221,7 @@ Mostly terminal themes and a few other goodies!
 - **Kitty**
 - **Lazydocker**
 - **Lazygit**
+- **lsd**
 - **Pywal**
 - **Rio**
 - **Textmate/Bat/Sublime/Delta**
