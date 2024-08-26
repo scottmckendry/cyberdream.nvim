@@ -18,7 +18,7 @@ Create a symlink to the theme.
 
 ```sh
 # Assuming you are in ~/.config/lsd
-ln -s themes/cyberdream.yaml colors.yaml
+ln -s themes/cyberdream.yml colors.yaml
 ```
 
 ### Approach 2
