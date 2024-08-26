@@ -6,8 +6,14 @@ local M = {}
 --- Generate cyberdream theme for https://zed.dev/
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
-    local modified_colors = vim.fn.copy(colors[variant])
-    modified_colors.variant = variant == "default" and "dark" or "light"
+    local extended_colors = vim.fn.copy(colors[variant])
+
+    for key, value in pairs(colors[variant]) do
+        extended_colors[key .. "Alpha"] = value .. "80" -- 50% transparency
+    end
+
+    extended_colors.variant = variant == "default" and "dark" or "light"
+
     local template = [==[
 {
   "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
@@ -55,10 +61,10 @@ function M.generate(variant)
         "title_bar.background": null,
         "toolbar.background": "${bg}",
         "tab_bar.background": null,
-        "tab.inactive_background": null,
-        "tab.active_background": null,
-        "search.match_background": null,
-        "panel.background": null,
+        "tab.inactive_background": "${bg}",
+        "tab.active_background": "${bgAlt}",
+        "search.match_background": "${orangeAlpha}",
+        "panel.background": "${bg}",
         "panel.focused_border": null,
         "pane.focused_border": null,
         "pane_group.border": null,
@@ -82,7 +88,7 @@ function M.generate(variant)
         "editor.indent_guide_active": null,
         "editor.document_highlight.read_background": null,
         "editor.document_highlight.write_background": null,
-        "terminal.background": null,
+        "terminal.background": "${bg}",
         "terminal.foreground": null,
         "terminal.bright_foreground": null,
         "terminal.dim_foreground": null,
@@ -330,7 +336,7 @@ function M.generate(variant)
 }
 ]==]
 
-    return util.parse_extra_template(template, modified_colors)
+    return util.parse_extra_template(template, extended_colors)
 end
 
 return M

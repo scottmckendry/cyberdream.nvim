@@ -9,15 +9,12 @@ Open [Zed](https://zed.dev) and select the theme under `Settings -> Select Theme
 Alternatively, put the following config into your `settings.json` under `~/.config/zed`.
 
 ```json
-// settings.json
 {
-    // ---
-    "theme": {
-        "mode": "system",
-        "light": "Cyberdream light",
-        "dark": "Cyberdream dark"
-    }
-    // ---
+  "theme": {
+    "mode": "system",
+    "light": "Cyberdream light",
+    "dark": "Cyberdream dark"
+  }
 }
 ```
 
