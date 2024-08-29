@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.0.0...v4.1.0) (2024-08-29)
+
+
+### Features
+
+* **extensions:** update markview.nvim highlight groups ([4f40270](https://github.com/scottmckendry/cyberdream.nvim/commit/4f402704f52acb53306d63f7eae1003871f723f2)), closes [#127](https://github.com/scottmckendry/cyberdream.nvim/issues/127)
+* **extras:** add lsd theme ([dc99ecf](https://github.com/scottmckendry/cyberdream.nvim/commit/dc99ecf23d691e8f943574ba1b44e3f518118d62))
+* **extras:** update zed windows and search highlights ([6689105](https://github.com/scottmckendry/cyberdream.nvim/commit/6689105dd79b7460f180dcb20ca11b38ae4e9488))
+
+
+### Bug Fixes
+
+* **extensions:** show Telescope results title ([#125](https://github.com/scottmckendry/cyberdream.nvim/issues/125)) ([11ef74a](https://github.com/scottmckendry/cyberdream.nvim/commit/11ef74ad01a0aa76e3775876af35590c0e5bc410))
+* **extras:** fix json syntax error in tilix ([#132](https://github.com/scottmckendry/cyberdream.nvim/issues/132)) ([acdfdec](https://github.com/scottmckendry/cyberdream.nvim/commit/acdfdec82c340bdc66c4a728757f8b55cba6e630))
+* **telescope:** 'flat' style look closer to readme screenshots ([a36ef6f](https://github.com/scottmckendry/cyberdream.nvim/commit/a36ef6f05ee1e1ea8c29c8ff3bee293a5bd8e7b7))
+* **telescope:** fix headings for default style and remove duplicate properties ([fadfa8e](https://github.com/scottmckendry/cyberdream.nvim/commit/fadfa8ee6fa4c566958d450a552ecc092e60d8ae))
+
 ## [4.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v3.8.0...v4.0.0) (2024-08-17)
 
 
