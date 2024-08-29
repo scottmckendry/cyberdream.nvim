@@ -27,7 +27,7 @@ function M.generate(variant)
         "${cyan}",
         "${fg}",
         "${bgHighlight}",
-        ${red}",
+        "${red}",
         "${green}",
         "${yellow}",
         "${blue}",
