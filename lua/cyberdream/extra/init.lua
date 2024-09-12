@@ -7,6 +7,7 @@ M.variants = {
 
 M.extras = {
     alacritty = { extension = "toml", name = "alacritty" },
+    base16 = { extension = "yaml", name = "base16" },
     fish = { extension = "theme", name = "fish" },
     gitui = { extension = "ron", name = "gitui" },
     helix = { extension = "toml", name = "helix" },
