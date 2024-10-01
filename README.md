@@ -152,9 +152,8 @@ require("cyberdream").setup({
     -- Set terminal colors used in `:terminal`
     terminal_colors = true,
 
-    -- Use caching to improve performance - WARNING: experimental feature - expect the unexpected!
-    -- Early testing shows a 60-70% improvement in startup time. YMMV. Disables dynamic light/dark theme switching.
-    cache = false, -- generate cache with :CyberdreamBuildCache and clear with :CyberdreamClearCache
+    -- Improve start up time by caching highlights. Generate cache with :CyberdreamBuildCache and clear with :CyberdreamClearCache
+    cache = false,
 
     theme = {
         variant = "default", -- use "light" for the light variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
