@@ -23,6 +23,7 @@ M.extras = {
     vivid = { extension = "yml", name = "vivid" },
     wezterm = { extension = "lua", name = "wezterm" },
     windowsterminal = { extension = "json", name = "windowsterminal" },
+    yazi = { extension = "toml", name = "yazi" },
     zellij = { extension = "kdl", name = "zellij" },
     zed = { extension = "json", name = "zed" },
 }

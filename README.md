@@ -207,6 +207,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 ![terminal](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/b6727dd0-cd45-4f6c-94cd-92fb0dadcfae)
 
 -   **[Alacritty](extras/alacritty/)**
+-   **[Base16/Stylix](extras/base16/)**
 -   **[Fish](extras/fish/)**
 -   **[GitUI](extras/gitui/)**
 -   **[Helix](extras/helix/)**
@@ -222,6 +223,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 -   **[Vivid](extras/vivid/)**
 -   **[Wezterm](extras/wezterm/)**
 -   **[Windows Terminal](extras/windowsterminal/)**
+-   **[Yazi](extras/yazi/)**
 -   **[Zed](extras/zed/)**
 -   **[Zellij](extras/zellij/)**
 
