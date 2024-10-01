@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.1.0...v4.2.0) (2024-10-01)
+
+
+### Features
+
+* **extras:** base16 theme ([5be7d02](https://github.com/scottmckendry/cyberdream.nvim/commit/5be7d024b591a36b765bd7ab0732cab1c2a9b777))
+* **extras:** yazi theme ([5bd0a7d](https://github.com/scottmckendry/cyberdream.nvim/commit/5bd0a7d71df2a35cde81bbe0bce1a5c83f492283))
+
 ## [4.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.0.0...v4.1.0) (2024-08-29)
 
 
