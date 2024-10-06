@@ -21,6 +21,7 @@ M.extras = {
     tilix = { extension = "json", name = "tilix" },
     tmux = { extension = "tmuxtheme", name = "tmux" },
     vivid = { extension = "yml", name = "vivid" },
+    warp = { extension = "yaml", name = "warp" },
     wezterm = { extension = "lua", name = "wezterm" },
     windowsterminal = { extension = "json", name = "windowsterminal" },
     yazi = { extension = "toml", name = "yazi" },

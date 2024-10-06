@@ -220,6 +220,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 -   **[Tilux](extras/tilux/)**
 -   **[Tmux](extras/tmux/)**
 -   **[Vivid](extras/vivid/)**
+-   **[Warp](extras/warp/)**
 -   **[Wezterm](extras/wezterm/)**
 -   **[Windows Terminal](extras/windowsterminal/)**
 -   **[Yazi](extras/yazi/)**
