@@ -6,7 +6,7 @@ local M = {}
 --- Generate cyberdream theme for Warp.
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
-  local template = [==[
+    local template = [==[
 background: "${bg}"
 accent: "${green}"
 foreground: "${fg}"
@@ -31,7 +31,7 @@ terminal_colors:
     cyan: "${cyan}"
     white: "${pink}"
   ]==]
-  return util.parse_extra_template(template, colors[variant])
+    return util.parse_extra_template(template, colors[variant])
 end
 
 return M
