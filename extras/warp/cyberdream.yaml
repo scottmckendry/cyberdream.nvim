@@ -4,7 +4,7 @@ foreground: "#ffffff"
 details: darker
 terminal_colors:
   normal:
-    black: "${gray}"
+    black: "#7b8496"
     red: "#ff6e5e"
     green: "#5eff6c"
     yellow: "#f1ff5e"
@@ -13,7 +13,7 @@ terminal_colors:
     cyan: "#5ef1ff"
     white: "#ff5ea0"
   bright:
-    black: "${gray}"
+    black: "#7b8496"
     red: "#ff6e5e"
     green: "#5eff6c"
     yellow: "#f1ff5e"
