@@ -13,7 +13,7 @@ foreground: "${fg}"
 details: darker
 terminal_colors:
   normal:
-    black: "${gray}"
+    black: "${grey}"
     red: "${red}"
     green: "${green}"
     yellow: "${yellow}"
@@ -22,7 +22,7 @@ terminal_colors:
     cyan: "${cyan}"
     white: "${pink}"
   bright:
-    black: "${gray}"
+    black: "${grey}"
     red: "${red}"
     green: "${green}"
     yellow: "${yellow}"
