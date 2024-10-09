@@ -40,6 +40,8 @@ Supported Plugins/Extensions ~
   -------------------------------------- --------------------------------
   alpha-nvim                             alpha
 
+  blink.cmp                              blinkcmp
+
   dashboard-nvim                         dashboard
 
   fzf-lua                                fzflua
