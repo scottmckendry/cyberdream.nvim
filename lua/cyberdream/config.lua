@@ -25,6 +25,7 @@ local M = {}
 
 ---@class extensions
 ---@field alpha? boolean
+---@field blinkcmp? boolean
 ---@field cmp? boolean
 ---@field dashboard? boolean
 ---@field fzflua? boolean
@@ -76,6 +77,7 @@ local default_options = {
 
     extensions = {
         alpha = true,
+        blinkcmp = true,
         cmp = true,
         dashboard = true,
         fzflua = true,
