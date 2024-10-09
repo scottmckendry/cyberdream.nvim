@@ -228,6 +228,7 @@ Mostly terminal themes and a few other goodies!
 - **Tilux**
 - **Tmux**
 - **Vivid**
+- **Warp**
 - **Wezterm**
 - **Windows Terminal**
 - **Yazi**
