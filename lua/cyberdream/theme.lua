@@ -1,4 +1,5 @@
 local colors = require("cyberdream.colors")
+local util = require("cyberdream.util")
 
 local M = {}
 function M.setup()
@@ -19,6 +20,9 @@ function M.setup()
             t = colors.light
         end
     end
+
+    -- Apply user defined saturation
+    t = util.apply_saturation(t, opts.theme.saturation)
 
     -- Override colors with user defined colors
     ---@type CyberdreamPalette
