@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.2.0...v4.3.0) (2024-10-16)
+
+
+### Features
+
+* **extensions:** add support for blink.cmp ([e16acba](https://github.com/scottmckendry/cyberdream.nvim/commit/e16acba7ed7c630bf655fd1452504fba1c38e3b2))
+* **extras:** add warp terminal theme ([f6760d3](https://github.com/scottmckendry/cyberdream.nvim/commit/f6760d3b7ee3c9949d9ec1cb2f82f683e25c912d))
+
+
+### Bug Fixes
+
+* **extras:** color name typo in warp template ([1b1037f](https://github.com/scottmckendry/cyberdream.nvim/commit/1b1037f3b1cb07c6fdec2f5632a407c64e80b118))
+
 ## [4.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.1.0...v4.2.0) (2024-10-01)
 
 
