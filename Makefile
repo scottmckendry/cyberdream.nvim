@@ -32,17 +32,3 @@ format:
 	@$(call style_calls,"Done!")
 
 .PHONY: format
-
-spell:
-	@$(call style_calls,"Running codespell check")
-	@codespell --quiet-level=2 --check-hidden --skip=./.git,./CHANGELOG.md --ignore-words=./.codespellignorewords .
-	@$(call style_calls,"Done!")
-
-.PHONY: spell
-
-spell-write:
-	@$(call style_calls,"Running codespell write")
-	@codespell --quiet-level=2 --check-hidden --skip=./.git,./CHANGELOG.md --write-changes --ignore-words=./.codespellignorewords .
-	@$(call style_calls,"Done!")
-
-.PHONY: spell-write

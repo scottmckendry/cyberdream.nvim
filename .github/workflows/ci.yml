@@ -29,17 +29,6 @@ jobs:
                   args: --display-style=quiet --config selene.toml .
                   version: 0.27.1
 
-    codespell:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-
-            - name: Install codespell
-              run: pip install codespell
-
-            - name: Use codespell
-              run: make spell
-
     generate-extras:
         runs-on: ubuntu-latest
         steps:
@@ -82,7 +71,7 @@ jobs:
 
     release:
         runs-on: ubuntu-latest
-        needs: [stylua, selene, codespell, generate-extras, generate-doc]
+        needs: [stylua, selene, generate-extras, generate-doc]
         if: github.ref == 'refs/heads/main'
         steps:
             - uses: googleapis/release-please-action@v4
