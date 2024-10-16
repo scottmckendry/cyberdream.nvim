@@ -8,9 +8,9 @@ local M = {}
 function M.generate(variant)
     local template = [==[
 # yaml-language-server: $schema=https://json.schemastore.org/lazydocker.json
-# cyberdream theme for lazygit
+# cyberdream theme for lazydocker
 gui:
-    border: rounded # pending merge of https://github.com/jesseduffield/lazydocker/pull/529 🤞
+    border: rounded
     theme:
         activeBorderColor:
             - "${cyan}"
