@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.3.0...v4.4.0) (2024-10-17)
+
+
+### Features
+
+* add new option `saturation` ([ed73819](https://github.com/scottmckendry/cyberdream.nvim/commit/ed73819ee5b17890a4fa3269644217328afdfd1b)), closes [#140](https://github.com/scottmckendry/cyberdream.nvim/issues/140)
+
+
+### Bug Fixes
+
+* use different highlight for active window winbar ([358f6bf](https://github.com/scottmckendry/cyberdream.nvim/commit/358f6bfdd06115c139fb5518d3b95688083b7f70))
+
 ## [4.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.2.0...v4.3.0) (2024-10-16)
 
 
