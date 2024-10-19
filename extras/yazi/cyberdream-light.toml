@@ -1,239 +1,88 @@
-[manager] 
-    # tmTheme files can be found here: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/textmate 
-    syntect_theme = "../bat/themes/cyberdream.tmTheme"
-    [manager.border_style]
-        fg = "#7b8496"
+[manager]
+# tmTheme files can be found here: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/textmate 
+syntect_theme = "../bat/themes/cyberdream.tmTheme"
+border_style = { fg = "#acacac" }
+cwd = { fg = "#008c99" }
+find_keyword = { bold = true, fg = "#008b0c" }
+find_position = { fg = "#16181a" }
+hovered = { bg = "#7b8496", bold = true, fg = "#16181a" }
+marker_copied = { bg = "#997b00", fg = "#997b00" }
+marker_cut = { bg = "#d11500", fg = "#d11500" }
+marker_selected = { bg = "#acacac", fg = "#008b0c" }
+preview_hovered = { bg = "#acacac", bold = true, fg = "#16181a" }
+tab_active = { bg = "#0057d1", fg = "#ffffff" }
+tab_inactive = { bg = "#acacac", fg = "#16181a" }
 
-    [manager.cwd]
-        fg = "#008c99"
-
-    [manager.find_keyword]
-        bold = true
-        fg = "#008b0c"
-
-    [manager.find_position]
-        fg = "#16181a"
-
-    [manager.hovered]
-        bg = "#7b8496"
-        bold = true
-        fg = "#16181a"
-
-    [manager.marker_copied]
-        bg = "#997b00"
-        fg = "#997b00"
-
-    [manager.marker_cut]
-        bg = "#d11500"
-        fg = "#d11500"
-
-    [manager.marker_selected]
-        bg = "#008b0c"
-        fg = "#008b0c"
-
-    [manager.preview_hovered]
-        bg = "#7b8496"
-        bold = true
-        fg = "#16181a"
-
-    [manager.tab_active]
-        bg = "#0057d1"
-        fg = "#ffffff"
-
-    [manager.tab_inactive]
-        bg = "#acacac"
-        fg = "#16181a"
+count_selected = { bg = "#008b0c", fg = "#ffffff" }
+count_copied = { bg = "#997b00", fg = "#ffffff" }
+count_cut = { bg = "#d11500", fg = "#ffffff" }
 
 [completion]
-    [completion.active]
-        bg = "#7b8496"
-        fg = "#a018ff"
+active = { bg = "#7b8496", fg = "#a018ff" }
+border = { fg = "#0057d1" }
+inactive = { fg = "#16181a" }
 
-    [completion.border]
-        fg = "#0057d1"
-
-    [completion.inactive]
-        fg = "#16181a"
-
-[[filetype.rules]]
-    fg = "#008c99"
-    mime = "image/*"
-
-[[filetype.rules]]
-    fg = "#997b00"
-    mime = "video/*"
-
-[[filetype.rules]]
-    fg = "#997b00"
-    mime = "audio/*"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/zip"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/gzip"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/x-tar"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/x-bzip"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/x-bzip2"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/x-7z-compressed"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/x-rar"
-
-[[filetype.rules]]
-    fg = "#a018ff"
-    mime = "application/xz"
-
-[[filetype.rules]]
-    fg = "#008b0c"
-    mime = "application/doc"
-
-[[filetype.rules]]
-    fg = "#008b0c"
-    mime = "application/pdf"
-
-[[filetype.rules]]
-    fg = "#008b0c"
-    mime = "application/rtf"
-
-[[filetype.rules]]
-    fg = "#008b0c"
-    mime = "application/vnd.*"
-
-[[filetype.rules]]
-    bold = true
-    fg = "#0057d1"
-    mime = "inode/directory"
-
-[[filetype.rules]]
-    fg = "#16181a"
-    mime = "*"
+[filetype]
+rules = [
+    { fg = "#008c99", mime = "image/*" },
+    { fg = "#997b00", mime = "video/*" },
+    { fg = "#997b00", mime = "audio/*" },
+    { fg = "#a018ff", mime = "application/zip" },
+    { fg = "#a018ff", mime = "application/gzip" },
+    { fg = "#a018ff", mime = "application/x-tar" },
+    { fg = "#a018ff", mime = "application/x-bzip" },
+    { fg = "#a018ff", mime = "application/x-bzip2" },
+    { fg = "#a018ff", mime = "application/x-7z-compressed" },
+    { fg = "#a018ff", mime = "application/x-rar" },
+    { fg = "#a018ff", mime = "application/xz" },
+    { fg = "#008b0c", mime = "application/doc" },
+    { fg = "#008b0c", mime = "application/pdf" },
+    { fg = "#008b0c", mime = "application/rtf" },
+    { fg = "#008b0c", mime = "application/vnd.*" },
+    { bold = true, fg = "#0057d1", mime = "inode/directory" },
+    { fg = "#16181a", mime = "*" }
+]
 
 [help]
-    [help.desc]
-        fg = "#16181a"
-
-    [help.footer]
-        fg = "#16181a"
-
-    [help.hovered]
-        bg = "#7b8496"
-        fg = "#16181a"
-
-    [help.on]
-        fg = "#a018ff"
-
-    [help.run]
-        fg = "#008c99"
+desc = { fg = "#16181a" }
+footer = { fg = "#16181a" }
+hovered = { bg = "#7b8496", fg = "#16181a" }
+on = { fg = "#a018ff" }
+run = { fg = "#008c99" }
 
 [input]
-    [input.border]
-        fg = "#0057d1"
-
-    [input.selected]
-        bg = "#7b8496"
-
-    [input.title]
-        fg = "#16181a"
-
-    [input.value]
-        fg = "#16181a"
+border = { fg = "#0057d1" }
+selected = { bg = "#7b8496" }
+title = { fg = "#16181a" }
+value = { fg = "#16181a" }
 
 [select]
-    [select.active]
-        fg = "#a018ff"
-
-    [select.border]
-        fg = "#0057d1"
-
-    [select.inactive]
-        fg = "#16181a"
+active = { fg = "#a018ff" }
+border = { fg = "#0057d1" }
+inactive = { fg = "#16181a" }
 
 [status]
-    [status.mode_normal]
-        bg = "#0057d1"
-        bold = true
-        fg = "#ffffff"
-
-    [status.mode_select]
-        bg = "#008b0c"
-        bold = true
-        fg = "#ffffff"
-
-    [status.mode_unset]
-        bg = "#d100bf"
-        bold = true
-        fg = "#ffffff"
-
-    [status.permissions_r]
-        fg = "#997b00"
-
-    [status.permissions_s]
-        fg = "#008c99"
-
-    [status.permissions_t]
-        fg = "#0057d1"
-
-    [status.permissions_w]
-        fg = "#d11500"
-
-    [status.permissions_x]
-        fg = "#008b0c"
-
-    [status.progress_error]
-        bg = "#ffffff"
-        fg = "#d11500"
-
-    [status.progress_label]
-        bg = "#ffffff"
-        fg = "#16181a"
-
-    [status.progress_normal]
-        bg = "#ffffff"
-        fg = "#16181a"
-
-    [status.separator_style]
-        bg = "#acacac"
-        fg = "#acacac"
+mode_normal = { bg = "#0057d1", bold = true, fg = "#ffffff" }
+mode_select = { bg = "#008b0c", bold = true, fg = "#ffffff" }
+mode_unset = { bg = "#d100bf", bold = true, fg = "#ffffff" }
+permissions_r = { fg = "#997b00" }
+permissions_s = { fg = "#008c99" }
+permissions_t = { fg = "#0057d1" }
+permissions_w = { fg = "#d11500" }
+permissions_x = { fg = "#008b0c" }
+progress_error = { bg = "#ffffff", fg = "#d11500" }
+progress_label = { bg = "#ffffff", fg = "#16181a" }
+progress_normal = { bg = "#ffffff", fg = "#16181a" }
+separator_style = { bg = "#acacac", fg = "#acacac" }
 
 [tasks]
-    [tasks.border]
-        fg = "#0057d1"
-
-    [tasks.hovered]
-        bg = "#7b8496"
-        fg = "#16181a"
-
-    [tasks.title]
-        fg = "#16181a"
+border = { fg = "#0057d1" }
+hovered = { bg = "#7b8496", fg = "#16181a" }
+title = { fg = "#16181a" }
 
 [which]
-    [which.cand]
-        fg = "#008c99"
-
-    [which.desc]
-        fg = "#16181a"
-
-    [which.mask]
-        bg = "#acacac"
-
-    [which.rest]
-        fg = "#d100bf"
-
-    [which.separator_style]
-        fg = "#7b8496"
+cand = { fg = "#008c99" }
+desc = { fg = "#16181a" }
+mask = { bg = "#acacac" }
+rest = { fg = "#d100bf" }
+separator_style = { fg = "#7b8496" }
