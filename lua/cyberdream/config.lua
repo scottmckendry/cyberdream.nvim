@@ -48,6 +48,7 @@ local M = {}
 ---@field noice? boolean
 ---@field notify? boolean
 ---@field rainbow_delimiters? boolean
+---@field snacks? boolean
 ---@field telescope? boolean
 ---@field treesitter? boolean
 ---@field treesittercontext? boolean
@@ -101,6 +102,7 @@ local default_options = {
         neogit = true,
         notify = true,
         rainbow_delimiters = true,
+        snacks = true,
         telescope = true,
         treesitter = true,
         treesittercontext = true,
