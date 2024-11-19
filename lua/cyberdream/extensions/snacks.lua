@@ -1,4 +1,5 @@
 local M = {}
+local util = require("cyberdream.util")
 
 --- Get extension configuration
 --- @param opts Config
@@ -36,6 +37,18 @@ function M.get(opts, t)
         SnacksNotifierBorderWarn = { link = "SnacksNotifierBorderDebug" },
         SnacksNotifierIconWarn = { fg = t.yellow },
         SnacksNotifierTitleWarn = { fg = t.yellow },
+
+        SnacksDashboardNormal = { link = "SnacksNormal" },
+        SnacksDashboardDesc = { fg = t.cyan },
+        SnacksDashboardFile = { fg = t.cyan },
+        SnacksDashboardDir = { fg = t.grey },
+        SnacksDashoardFooter = { fg = t.cyan },
+        SnacksDashboardHeader = { fg = util.blend(t.purple, t.fg, 0.3) },
+        SnacksDashboardIcon = { fg = t.blue },
+        SnacksDashboardKey = { fg = t.orange },
+        SnacksDashboardTerminal = { link = "SnacksNormal" },
+        SnacksDashboardSpecial = { link = "Special" },
+        SnacksDashboardTitle = { link = "Title" },
     }
 
     return highlights
