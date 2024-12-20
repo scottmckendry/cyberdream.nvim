@@ -5,28 +5,34 @@ local M = {}
 --- @param t CyberdreamPalette
 function M.get(opts, t)
     opts = opts or {}
+    local neogit = require("neogit")
     local highlights = {
-        NeogitNormal = { bg = t.bg },
-        NeogitPopupSwitchKey = { fg = t.orange },
-        NeogitPopupOptionKey = { fg = t.orange },
-        NeogitPopupActionKey = { fg = t.orange },
-        NeogitPopupBranchName = { fg = t.cyan, bold = true },
-        NeogitPopupSectionTitle = { fg = t.pink, bold = true },
-        NeogitFold = { fg = t.fg },
-        NeogitRemote = { fg = t.cyan },
-        NeogitBranch = { fg = t.pink, bold = true },
-        NeogitBranchHead = { fg = t.pink, bold = true },
-        NeogitWinSeparator = { bg = t.bg, fg = t.bgHighlight },
-        NeogitChangeDeleted = { fg = t.red, bold = true, italic = true },
-        NeogitChangeModified = { fg = t.blue, bold = true, italic = true },
-        NeogitSectionHeader = { fg = t.orange, bold = true },
-        NeogitCommitViewHeader = { bg = t.pink, fg = t.bgAlt },
-        NeogitHunkHeader = { bg = t.cyan, fg = t.bgAlt, bold = true },
-        NeogitHunkHeaderHighlight = { bg = t.pink, fg = t.bgAlt, bold = true },
-        NeogitDiffHeader = { bg = t.fg, fg = t.bgAlt },
-        NeogitDiffContext = { bg = t.bg },
-        NeogitDiffHeaderHighlight = { bg = t.bgHighlight, fg = t.orange, bold = true, italic = true },
-        NeogitDiffContextHighlight = { bg = t.bgHighlight },
+        neogit.setup({
+            highlight = {
+                bg0 = t.bg,
+                bg1 = t.bgAlt,
+                bg2 = t.grey,
+                bg3 = t.fg,
+                grey = t.grey,
+                white = t.fg,
+                red = t.red,
+                bg_red = t.red,
+                line_red = t.red,
+                orange = t.orange,
+                bg_orange = t.orange,
+                yellow = t.yellow,
+                bg_yellow = t.yellow,
+                green = t.green,
+                bg_green = t.green,
+                line_green = t.green,
+                cyan = t.cyan,
+                bg_cyan = t.cyan,
+                blue = t.blue,
+                bg_blue = t.blue,
+                purple = t.purple,
+                md_purple = t.purple,
+            },
+        }),
     }
 
     return highlights
