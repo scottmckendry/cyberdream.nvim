@@ -1,5 +1,20 @@
 # Changelog
 
+## [4.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.4.0...v4.5.0) (2024-12-22)
+
+
+### Features
+
+* **cache:** auto-detect config updates & rebuild cache ([f94b960](https://github.com/scottmckendry/cyberdream.nvim/commit/f94b960ea2edf943397722f9d002802ac6add331)), closes [#147](https://github.com/scottmckendry/cyberdream.nvim/issues/147)
+* **extensions:** add snacks.nvim dashboard highlights ([b0e1429](https://github.com/scottmckendry/cyberdream.nvim/commit/b0e14290e737b1ae3f3cdcaf9bdcc7c3070ab88e))
+* **extensions:** extend neogit pallete and highlights ([#153](https://github.com/scottmckendry/cyberdream.nvim/issues/153)) ([2ee87ea](https://github.com/scottmckendry/cyberdream.nvim/commit/2ee87eafa03f956ebf5b507cce2bfa07a5d3a3f0))
+
+
+### Bug Fixes
+
+* **extensions:** add missing whichkey highlights ([534527b](https://github.com/scottmckendry/cyberdream.nvim/commit/534527bbdefbaccf1e99c213e98d0871e35cc596)), closes [#147](https://github.com/scottmckendry/cyberdream.nvim/issues/147)
+* **extensions:** add telescope default highlights ([7312900](https://github.com/scottmckendry/cyberdream.nvim/commit/731290012f435e06e4d5d64ed7c09cec49df2663)), closes [#147](https://github.com/scottmckendry/cyberdream.nvim/issues/147)
+
 ## [4.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.3.0...v4.4.0) (2024-11-08)
 
 
