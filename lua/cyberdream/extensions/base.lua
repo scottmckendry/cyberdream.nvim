@@ -68,7 +68,7 @@ function M.get(opts, t)
         Visual = { bg = t.bgHighlight },
         VisualNOS = { bg = t.bgHighlight },
         WarningMsg = { fg = t.orange },
-        Whitespace = { fg = t.grey },
+        Whitespace = { fg = t.bgHighlight },
         WildMenu = { fg = t.bg, bg = t.blue },
 
         Constant = { fg = t.pink },
