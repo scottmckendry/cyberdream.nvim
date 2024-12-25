@@ -31,7 +31,7 @@ color14               ${cyan}
 color7                ${fg}
 color15               ${fg}
 selection_foreground  ${fg}
-active_tab_foreground ${fg}
+active_tab_foreground #000000
 active_tab_background ${orange}
 inactive_tab_foreground ${fg}
 inactive_tab_background ${bg}
