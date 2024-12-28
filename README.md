@@ -50,10 +50,10 @@
 
 ## 🚀 Features
 
--   **Transparency-first design** - all design decisions are made with transparency in mind.
--   **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish.
--   **Terminal Support** - Several included [terminal themes](#-extras) to enhance your cyberdream experience.
--   **Extensions** - Support for a variety of popular plugins out of the box. Can be toggled on or off to maximise performance.
+- **Transparency-first design** - all design decisions are made with transparency in mind.
+- **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish.
+- **Terminal Support** - Several included [terminal themes](#-extras) to enhance your cyberdream experience.
+- **Extensions** - Support for a variety of popular plugins out of the box. Can be toggled on or off to maximise performance.
 
 <details>
     <summary><b>Supported Plugins/Extensions</b></summary>
@@ -207,27 +207,28 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 
 ![terminal](https://github.com/scottmckendry/cyberdream.nvim/assets/39483124/b6727dd0-cd45-4f6c-94cd-92fb0dadcfae)
 
--   **[Alacritty](extras/alacritty/)**
--   **[Base16/Stylix](extras/base16/)**
--   **[Fish](extras/fish/)**
--   **[GitUI](extras/gitui/)**
--   **[Helix](extras/helix/)**
--   **[Kitty](extras/kitty/)**
--   **[Lazydocker](extras/lazydocker/)**
--   **[Lazygit](extras/lazygit/)**
--   **[lsd](extras/lsd/)**
--   **[Pywal](extras/pywal/)**
--   **[Rio](extras/rio/)**
--   **[Textmate/Bat/Sublime/Delta](extras/textmate/)**
--   **[Tilux](extras/tilux/)**
--   **[Tmux](extras/tmux/)**
--   **[Vivid](extras/vivid/)**
--   **[Warp](extras/warp/)**
--   **[Wezterm](extras/wezterm/)**
--   **[Windows Terminal](extras/windowsterminal/)**
--   **[Yazi](extras/yazi/)**
--   **[Zed](extras/zed/)**
--   **[Zellij](extras/zellij/)**
+- **[Alacritty](extras/alacritty/)**
+- **[Base16/Stylix](extras/base16/)**
+- **[Fish](extras/fish/)**
+- **[Ghostty](extras/ghostty/)**
+- **[GitUI](extras/gitui/)**
+- **[Helix](extras/helix/)**
+- **[Kitty](extras/kitty/)**
+- **[Lazydocker](extras/lazydocker/)**
+- **[Lazygit](extras/lazygit/)**
+- **[lsd](extras/lsd/)**
+- **[Pywal](extras/pywal/)**
+- **[Rio](extras/rio/)**
+- **[Textmate/Bat/Sublime/Delta](extras/textmate/)**
+- **[Tilux](extras/tilux/)**
+- **[Tmux](extras/tmux/)**
+- **[Vivid](extras/vivid/)**
+- **[Warp](extras/warp/)**
+- **[Wezterm](extras/wezterm/)**
+- **[Windows Terminal](extras/windowsterminal/)**
+- **[Yazi](extras/yazi/)**
+- **[Zed](extras/zed/)**
+- **[Zellij](extras/zellij/)**
 
 ## 🧑‍🍳 Recipes
 

@@ -9,6 +9,7 @@ M.extras = {
     alacritty = { extension = "toml", name = "alacritty" },
     base16 = { extension = "yaml", name = "base16" },
     fish = { extension = "theme", name = "fish" },
+    ghostty = { extension = nil, name = "ghostty" },
     gitui = { extension = "ron", name = "gitui" },
     helix = { extension = "toml", name = "helix" },
     kitty = { extension = "conf", name = "kitty" },
@@ -51,7 +52,11 @@ local function generate_extras(variant)
     for name, extra in pairs(M.extras) do
         local extra_module = require("cyberdream.extra." .. name)
         local str = extra_module.generate(variant)
-        write(str, extra.name .. "/" .. "cyberdream" .. suffix .. "." .. extra.extension)
+        if extra.extension then
+            write(str, extra.name .. "/" .. "cyberdream" .. suffix .. "." .. extra.extension)
+        else
+            write(str, extra.name .. "/" .. "cyberdream" .. suffix)
+        end
     end
 end
 
