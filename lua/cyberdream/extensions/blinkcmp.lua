@@ -10,7 +10,7 @@ function M.get(opts, t)
         BlinkCmpMenu = { link = "Pmenu" },
         BlinkCmpMenuBorder = { fg = util.blend(t.bgHighlight, t.grey, 0.7) },
         BlinkCmpMenuSelection = { bg = t.bgHighlight },
-        BlinkCmpLabel = { link = "Normal" },
+        BlinkCmpLabel = { fg = t.fg },
         BlinkCmpLabelDeprecated = { fg = t.grey, strikethrough = true },
         BlinkCmpLabelMatch = { fg = t.cyan },
         BlinkCmpDoc = { link = "NormalFloat" },
