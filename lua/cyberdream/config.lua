@@ -9,8 +9,7 @@ local M = {}
 ---@field underline? boolean
 ---@field strikethrough? boolean
 
----@alias Colors table<CyberdreamColorDefault|CyberdreamColorLight|string, string>
----@alias CyberdreamPalette CyberdreamColorLight|CyberdreamColorDefault|Colors
+---@alias Colors table<CyberdreamPalette|CyberdreamPalette|string, string>
 
 ---@alias CyberdreamOverrideFn fun(palette: CyberdreamPalette): CyberdreamHighlight
 
@@ -74,6 +73,7 @@ local default_options = {
     theme = {
         variant = "default",
         saturation = 1,
+        ---@diagnostic disable-next-line: missing-fields
         colors = {},
         highlights = {},
     },

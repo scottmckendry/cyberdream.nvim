@@ -129,7 +129,7 @@ function M.desaturate_hex(hex, weight)
 end
 
 --- Apply saturation to a table of colors.
---- @param colors CyberdreamColorLight | CyberdreamColorDefault
+--- @param colors CyberdreamPalette
 --- @param weight number
 function M.apply_saturation(colors, weight)
     if weight >= 1 then

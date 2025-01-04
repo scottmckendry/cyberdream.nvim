@@ -1,42 +1,25 @@
+---@class CyberdreamPalette
+---@field bg string
+---@field bgAlt string
+---@field bgHighlight string
+---@field bg_solid? string
+---@field fg string
+---@field grey string
+---@field blue string
+---@field green string
+---@field cyan string
+---@field red string
+---@field yellow string
+---@field magenta string
+---@field pink string
+---@field orange string
+---@field purple string
+
 ---@class CyberdreamColors
+---@field default CyberdreamPalette
+---@field light CyberdreamPalette
 local M = {}
 
----@class CyberdreamColorLight
----@field bg "#ffffff"|string
----@field bgAlt "#f7f8f9"|string
----@field bgHighlight "#e9eef2"|string
----@field bg_solid? string
----@field fg "#16181a"|string
----@field grey "#7b8496"|string
----@field blue "#5ea1ff"|string
----@field green "#5eff6c"|string
----@field cyan "#5ef1ff"|string
----@field red "#ff6e5e"|string
----@field yellow "#f1ff5e"|string
----@field magenta "#ff5ef1"|string
----@field pink "#ff5ea0"|string
----@field orange "#ffbd5e"|string
----@field purple "#bd5eff"|string
-
----@class CyberdreamColorDefault
----@field bg "#16181a"|string
----@field bgAlt "#1e2124"|string
----@field bgHighlight "#3c4048"|string
----@field bg_solid? string
----@field fg "#ffffff"|string
----@field grey "#7b8496"|string
----@field blue "#5ea1ff"|string
----@field green "#5eff6c"|string
----@field cyan "#5ef1ff"|string
----@field red "#ff6e5e"|string
----@field yellow "#f1ff5e"|string
----@field magenta "#ff5ef1"|string
----@field pink "#ff5ea0"|string
----@field orange "#ffbd5e"|string
----@field purple "#bd5eff"|string
-
----@class CyberdreamColors
----@field default CyberdreamColorDefault
 M.default = {
     bg = "#16181a",
     bgAlt = "#1e2124",
@@ -54,8 +37,6 @@ M.default = {
     purple = "#bd5eff",
 }
 
----@class CyberdreamColors
----@field light CyberdreamColorLight
 M.light = {
     bg = "#ffffff",
     bgAlt = "#eaeaea",
