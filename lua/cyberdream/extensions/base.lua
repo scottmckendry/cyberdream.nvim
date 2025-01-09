@@ -60,7 +60,7 @@ function M.get(opts, t)
         StatusLine = { fg = t.fg, bg = t.bg },
         StatusLineNC = { fg = t.grey, bg = t.bg },
         TabLine = { fg = t.grey, bg = t.bg },
-        TabLineFill = { fg = t.grey, bg = t.bgHighlight },
+        TabLineFill = { fg = t.grey, bg = t.bg },
         TabLineSel = { fg = t.fg, bg = t.bgHighlight },
         WinBar = { fg = t.fg, bg = t.bg },
         WinBarNC = { fg = t.grey, bg = t.bg },
