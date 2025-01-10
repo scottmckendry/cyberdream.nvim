@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.5.0...v4.6.0) (2025-01-10)
+
+
+### Features
+
+* **extras:** add ghostty extra ([6226dd2](https://github.com/scottmckendry/cyberdream.nvim/commit/6226dd2864c0b8be406133551fca11f87acb1dcf))
+* **extras:** add tab colors for kitty ([#154](https://github.com/scottmckendry/cyberdream.nvim/issues/154)) ([5597042](https://github.com/scottmckendry/cyberdream.nvim/commit/5597042d621b2b94006f6806b2f359b3acb3f994))
+* set lower contrast whitespace highlight ([#155](https://github.com/scottmckendry/cyberdream.nvim/issues/155)) ([8db57c2](https://github.com/scottmckendry/cyberdream.nvim/commit/8db57c2d42dfa0b5906d48c5c69fb0ac5d40fc0a))
+
+
+### Bug Fixes
+
+* **extensions:** remove BlinkCmpLabel bg ([#158](https://github.com/scottmckendry/cyberdream.nvim/issues/158)) ([4f8dcaa](https://github.com/scottmckendry/cyberdream.nvim/commit/4f8dcaa5a989ef207f7a06ffaf5db9d17b9f9156))
+* **extras:** correct kitty tab fg color ([#157](https://github.com/scottmckendry/cyberdream.nvim/issues/157)) ([e46e958](https://github.com/scottmckendry/cyberdream.nvim/commit/e46e958729a29492cc1681dac7bd8fd640a4d15b))
+* **tabline:** make bg of tabline transparent ([#162](https://github.com/scottmckendry/cyberdream.nvim/issues/162)) ([b98d33a](https://github.com/scottmckendry/cyberdream.nvim/commit/b98d33ab209474e4510b9050fb55b5c9d19a8ddf))
+* **treesitter:** improve contrast for asm builtins and rust imports ([dcfa0a3](https://github.com/scottmckendry/cyberdream.nvim/commit/dcfa0a3fbed7e2c60bcfb5c7ce2b02ef6c254d22))
+
 ## [4.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.4.0...v4.5.0) (2024-12-22)
 
 
