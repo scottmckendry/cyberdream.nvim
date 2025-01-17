@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.6.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.6.0...v4.6.1) (2025-01-17)
+
+
+### Bug Fixes
+
+* **cache:** sanitize functions in config ([baeb71a](https://github.com/scottmckendry/cyberdream.nvim/commit/baeb71a64e5fc715664032ed8e0cfb086be70caa))
+* **config:** move config option to correct class ([c21f29b](https://github.com/scottmckendry/cyberdream.nvim/commit/c21f29b23c10a5e905158a487065c8ed8da2bc36))
+
 ## [4.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.5.0...v4.6.0) (2025-01-10)
 
 
