@@ -4,6 +4,19 @@ local util = require("cyberdream.util")
 local M = {}
 local theme_cache_file = vim.fn.stdpath("cache") .. "/cyberdream_cache.json"
 
+-- sanitize a config object by removing functions
+local function sanitize_config(cfg)
+    local sanitized = {}
+    for k, v in pairs(cfg) do
+        if type(v) == "table" then
+            sanitized[k] = sanitize_config(v) -- recursively sanitize nested tables
+        elseif type(v) ~= "function" then
+            sanitized[k] = v
+        end
+    end
+    return sanitized
+end
+
 --- build a cache file for a configured cyberdream theme
 --- @param theme table
 M.build = function(theme)
@@ -20,10 +33,13 @@ M.build = function(theme)
         end
     end
 
-    theme.terminal_colors = #terminal_colors > 0 and terminal_colors or nil
-    theme.config = config.options
+    -- Create a sanitized copy of the entire theme
+    local sanitized_theme = vim.deepcopy(theme)
+    sanitized_theme.config = sanitize_config(config.options)
+    sanitized_theme.terminal_colors = #terminal_colors > 0 and terminal_colors or nil
 
-    cache:write(vim.json.encode(theme))
+    -- Write the sanitized theme to cache
+    cache:write(vim.json.encode(sanitized_theme))
     util.notify("Cache file written to " .. theme_cache_file)
 end
 
@@ -69,8 +85,8 @@ M.load = function()
         vim.api.nvim_set_hl(0, group, opts)
     end
 
-    -- check if config has changed
-    if not vim.deep_equal(theme.config, config.options) then
+    -- check if config has changed (using sanitized comparison)
+    if not vim.deep_equal(theme.config, sanitize_config(config.options)) then
         M.build(require("cyberdream.theme").setup())
         local notify = vim.defer_fn(function()
             util.notify(" Building cache...\n A restart may be required for changes to take effect.")
