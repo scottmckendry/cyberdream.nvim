@@ -20,7 +20,6 @@ local M = {}
 ---@field colors? CyberdreamPalette
 ---@field highlights? table<string, CyberdreamHighlight>
 ---@field overrides? CyberdreamOverrideFn
----@field cache? boolean
 
 ---@alias CyberdreamTelescopeStyle "nvchad" | "flat"
 
@@ -61,6 +60,7 @@ local M = {}
 ---@field hide_fillchars? boolean
 ---@field borderless_telescope? boolean | { border: boolean, style: CyberdreamTelescopeStyle }
 ---@field terminal_colors? boolean
+---@field cache? boolean
 ---@field theme? ThemeConfig
 ---@field extensions? extensions
 local default_options = {
