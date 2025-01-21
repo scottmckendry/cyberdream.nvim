@@ -219,6 +219,7 @@ Mostly terminal themes and a few other goodies!
 - **Alacritty**
 - **Base16/Stylix**
 - **Fish**
+- **Foot**
 - **Ghostty**
 - **GitUI**
 - **Helix**
