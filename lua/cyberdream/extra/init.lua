@@ -9,6 +9,7 @@ M.extras = {
     alacritty = { extension = "toml", name = "alacritty" },
     base16 = { extension = "yaml", name = "base16" },
     fish = { extension = "theme", name = "fish" },
+    foot = { extension = "ini", name = "foot" },
     ghostty = { extension = nil, name = "ghostty" },
     gitui = { extension = "ron", name = "gitui" },
     helix = { extension = "toml", name = "helix" },

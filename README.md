@@ -210,6 +210,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 - **[Alacritty](extras/alacritty/)**
 - **[Base16/Stylix](extras/base16/)**
 - **[Fish](extras/fish/)**
+- **[Foot](extras/foot/)**
 - **[Ghostty](extras/ghostty/)**
 - **[GitUI](extras/gitui/)**
 - **[Helix](extras/helix/)**
