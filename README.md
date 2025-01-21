@@ -229,6 +229,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 - **[Yazi](extras/yazi/)**
 - **[Zed](extras/zed/)**
 - **[Zellij](extras/zellij/)**
+- **[Foot](extras/foot/)**
 
 ## 🧑‍🍳 Recipes
 

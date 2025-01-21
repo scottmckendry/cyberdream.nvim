@@ -28,6 +28,7 @@ M.extras = {
     yazi = { extension = "toml", name = "yazi" },
     zellij = { extension = "kdl", name = "zellij" },
     zed = { extension = "json", name = "zed" },
+    foot = { extension = "ini", name = "foot" },
 }
 
 --- Create/overwrite a file in the extras directory.
