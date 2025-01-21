@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.6.1...v4.7.0) (2025-01-21)
+
+
+### Features
+
+* **extras:** add foot terminal extra ([#164](https://github.com/scottmckendry/cyberdream.nvim/issues/164)) ([a4bfe69](https://github.com/scottmckendry/cyberdream.nvim/commit/a4bfe69f11c04b8245e77df1930d2ca25dc19939))
+
 ## [4.6.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.6.0...v4.6.1) (2025-01-17)
 
 
