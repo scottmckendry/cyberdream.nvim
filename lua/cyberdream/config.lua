@@ -14,7 +14,7 @@ local M = {}
 ---@alias CyberdreamOverrideFn fun(palette: CyberdreamPalette): CyberdreamHighlight
 
 ---@class ThemeConfig
----@field variant? "default" | "light" | "auto"
+---@field variant? "default" | "light" | "cyberone" | "auto"
 ---@field saturation? number
 ---@field colors? CyberdreamPalette
 ---@field highlights? table<string, CyberdreamHighlight>

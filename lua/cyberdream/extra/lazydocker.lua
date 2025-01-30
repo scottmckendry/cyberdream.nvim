@@ -17,9 +17,9 @@ gui:
         inactiveBorderColor:
             - "${grey}"
         selectedLineBgColor:
-            - "${bgHighlight}"
+            - "${bh_highlight}"
         optionsTextColor:
-            - "${bgHighlight}"
+            - "${bh_highlight}"
 ]==]
 
     return util.parse_extra_template(template, colors[variant])

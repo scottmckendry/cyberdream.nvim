@@ -17,13 +17,13 @@ return {
     cursor_border = "${fg}",
 
     selection_fg = "${fg}",
-    selection_bg = "${bgHighlight}",
+    selection_bg = "${bh_highlight}",
 
     scrollbar_thumb = "${bg}",
     split = "${bg}",
 
     ansi = { "${bg}", "${red}", "${green}", "${yellow}", "${blue}", "${purple}", "${cyan}", "${fg}" },
-    brights = { "${bgHighlight}", "${red}", "${green}", "${yellow}", "${blue}", "${purple}", "${cyan}", "${fg}" },
+    brights = { "${bh_highlight}", "${red}", "${green}", "${yellow}", "${blue}", "${purple}", "${cyan}", "${fg}" },
     indexed = { [16] = "${orange}", [17] = "${red}" },
 }
 ]==]

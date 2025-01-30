@@ -49,10 +49,10 @@ function M.generate(variant)
 "label" = "red"
 
 # Interface specific
-"ui.cursorline.primary" = { bg = "bgHighlight" }
-"ui.cursorline.secondary" = { bg = "bgAlt" }
-"ui.cursorcolumn.primary" = { bg = "bgHighlight" }
-"ui.cursorcolumn.secondary" = { bg = "bgAlt" }
+"ui.cursorline.primary" = { bg = "bh_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_alt" }
+"ui.cursorcolumn.primary" = { bg = "bh_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_alt" }
 "ui.statusline.normal" = { fg = "fg", bg = "bg" }
 "ui.statusline.insert" = { fg = "green", bg = "bg" }
 "ui.statusline.select" = { fg = "blue", bg = "bg" }
@@ -71,7 +71,7 @@ function M.generate(variant)
 
 # Popups and Menus
 "ui.popup" = { fg = "fg", bg = "bg" }
-"ui.popup.info" = { fg = "cyan", bg = "bgAlt" }
+"ui.popup.info" = { fg = "cyan", bg = "bg_alt" }
 "ui.menu" = { fg = "fg", bg = "bg" }
 "ui.menu.selected" = { fg = "bg", bg = "fg" }
 
@@ -92,8 +92,8 @@ magenta = "${magenta}"
 pink = "${pink}"
 orange = "${orange}"
 purple = "${purple}"
-bgAlt = "${bgAlt}"
-bgHighlight = "${bgHighlight}"
+bg_alt = "${bg_alt}"
+bh_highlight = "${bh_highlight}"
 ]==]
 
     return util.parse_extra_template(template, colors[variant])

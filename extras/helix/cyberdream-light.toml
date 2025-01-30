@@ -40,10 +40,10 @@
 "label" = "red"
 
 # Interface specific
-"ui.cursorline.primary" = { bg = "bgHighlight" }
-"ui.cursorline.secondary" = { bg = "bgAlt" }
-"ui.cursorcolumn.primary" = { bg = "bgHighlight" }
-"ui.cursorcolumn.secondary" = { bg = "bgAlt" }
+"ui.cursorline.primary" = { bg = "bh_highlight" }
+"ui.cursorline.secondary" = { bg = "bg_alt" }
+"ui.cursorcolumn.primary" = { bg = "bh_highlight" }
+"ui.cursorcolumn.secondary" = { bg = "bg_alt" }
 "ui.statusline.normal" = { fg = "fg", bg = "bg" }
 "ui.statusline.insert" = { fg = "green", bg = "bg" }
 "ui.statusline.select" = { fg = "blue", bg = "bg" }
@@ -62,7 +62,7 @@
 
 # Popups and Menus
 "ui.popup" = { fg = "fg", bg = "bg" }
-"ui.popup.info" = { fg = "cyan", bg = "bgAlt" }
+"ui.popup.info" = { fg = "cyan", bg = "bg_alt" }
 "ui.menu" = { fg = "fg", bg = "bg" }
 "ui.menu.selected" = { fg = "bg", bg = "fg" }
 
@@ -83,5 +83,5 @@ magenta = "#d100bf"
 pink = "#f40064"
 orange = "#d17c00"
 purple = "#a018ff"
-bgAlt = "#eaeaea"
-bgHighlight = "#acacac"
+bg_alt = "#eaeaea"
+bh_highlight = "#acacac"

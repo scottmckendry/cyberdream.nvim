@@ -15,7 +15,7 @@ function M.generate(variant)
     "badge-color": "${bg}",
     "bold-color": "${cyan}",
     "cursor-color": "${fg}",
-    "highlight-background-color": "${bgHighlight}",
+    "highlight-background-color": "${bh_highlight}",
     "highlight-foreground-color": "${fg}",
     "palette": [
         "${bg}",
@@ -26,7 +26,7 @@ function M.generate(variant)
         "${purple}",
         "${cyan}",
         "${fg}",
-        "${bgHighlight}",
+        "${bh_highlight}",
         "${red}",
         "${green}",
         "${yellow}",

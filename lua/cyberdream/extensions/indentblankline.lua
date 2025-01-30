@@ -7,8 +7,8 @@ local M = {}
 function M.get(opts, t)
     opts = opts or {}
     local highlights = {
-        IblIndent = { fg = util.blend(t.bgHighlight, t.bgAlt, 0.3) },
-        IblScope = { fg = t.bgHighlight },
+        IblIndent = { fg = util.blend(t.bh_highlight, t.bg_alt, 0.3) },
+        IblScope = { fg = t.bh_highlight },
     }
 
     return highlights

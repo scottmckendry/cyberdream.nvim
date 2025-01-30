@@ -3,6 +3,7 @@ local M = {}
 M.variants = {
     default = "default",
     light = "light",
+    cyberone = "cyberone",
 }
 
 M.extras = {

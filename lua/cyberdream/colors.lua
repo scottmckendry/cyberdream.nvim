@@ -1,7 +1,7 @@
 ---@class CyberdreamPalette
 ---@field bg string
----@field bgAlt string
----@field bgHighlight string
+---@field bg_alt string
+---@field bh_highlight string
 ---@field bg_solid? string
 ---@field fg string
 ---@field grey string
@@ -18,12 +18,13 @@
 ---@class CyberdreamColors
 ---@field default CyberdreamPalette
 ---@field light CyberdreamPalette
+---@field muted CyberdreamPalette
 local M = {}
 
 M.default = {
     bg = "#16181a",
-    bgAlt = "#1e2124",
-    bgHighlight = "#3c4048",
+    bg_alt = "#1e2124",
+    bh_highlight = "#3c4048",
     fg = "#ffffff",
     grey = "#7b8496",
     blue = "#5ea1ff",
@@ -39,8 +40,8 @@ M.default = {
 
 M.light = {
     bg = "#ffffff",
-    bgAlt = "#eaeaea",
-    bgHighlight = "#acacac",
+    bg_alt = "#eaeaea",
+    bh_highlight = "#acacac",
     fg = "#16181a",
     grey = "#7b8496",
     blue = "#0057d1",
@@ -52,6 +53,23 @@ M.light = {
     pink = "#f40064",
     orange = "#d17c00",
     purple = "#a018ff",
+}
+
+M.cyberone = {
+    bg = "#282c34",
+    bg_alt = "#2c313a",
+    bh_highlight = "#3e4451",
+    fg = "#d7dae0",
+    grey = "#5c6370",
+    blue = "#61afef",
+    green = "#98c379",
+    cyan = "#56b6c2",
+    red = "#e06c75",
+    yellow = "#e5c07b",
+    magenta = "#e395a3",
+    pink = "#eca8e1",
+    orange = "#d19a66",
+    purple = "#c678dd",
 }
 
 return M

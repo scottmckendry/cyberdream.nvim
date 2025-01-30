@@ -13,12 +13,12 @@ function M.get(opts, t)
     end
 
     local highlights = {
-        TelescopeBorder = { fg = t.bgHighlight },
+        TelescopeBorder = { fg = t.bh_highlight },
         TelescopePromptTitle = { fg = t.blue },
         TelescopeResultsTitle = { fg = t.cyan },
         TelescopePromptPrefix = { fg = t.pink },
         TelescopePreviewTitle = { fg = t.magenta },
-        TelescopeSelection = { bg = t.bgHighlight },
+        TelescopeSelection = { bg = t.bh_highlight },
         TelescopePromptCounter = { fg = t.pink },
         TelescopeMatching = { fg = t.cyan },
 
@@ -73,24 +73,24 @@ function M.get(opts, t)
     }
 
     if borderless_telescope then
-        highlights.TelescopeBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        highlights.TelescopeNormal = { bg = t.bgAlt }
-        highlights.TelescopePreviewBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        highlights.TelescopePreviewNormal = { bg = t.bgAlt }
-        highlights.TelescopePreviewTitle = { fg = t.bgAlt, bg = t.green, bold = true }
-        highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.red, bold = true }
-        highlights.TelescopeResultsBorder = { fg = t.bgAlt, bg = t.bgAlt }
-        highlights.TelescopeResultsNormal = { bg = t.bgAlt }
-        highlights.TelescopeResultsTitle = { fg = t.bgAlt, bg = t.cyan }
+        highlights.TelescopeBorder = { fg = t.bg_alt, bg = t.bg_alt }
+        highlights.TelescopeNormal = { bg = t.bg_alt }
+        highlights.TelescopePreviewBorder = { fg = t.bg_alt, bg = t.bg_alt }
+        highlights.TelescopePreviewNormal = { bg = t.bg_alt }
+        highlights.TelescopePreviewTitle = { fg = t.bg_alt, bg = t.green, bold = true }
+        highlights.TelescopePromptTitle = { fg = t.bg_alt, bg = t.red, bold = true }
+        highlights.TelescopeResultsBorder = { fg = t.bg_alt, bg = t.bg_alt }
+        highlights.TelescopeResultsNormal = { bg = t.bg_alt }
+        highlights.TelescopeResultsTitle = { fg = t.bg_alt, bg = t.cyan }
         if telescope_style == "nvchad" then
-            highlights.TelescopePromptBorder = { fg = t.bgHighlight, bg = t.bgHighlight }
-            highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bgHighlight }
-            highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bgHighlight }
+            highlights.TelescopePromptBorder = { fg = t.bh_highlight, bg = t.bh_highlight }
+            highlights.TelescopePromptNormal = { fg = t.fg, bg = t.bh_highlight }
+            highlights.TelescopePromptPrefix = { fg = t.red, bg = t.bh_highlight }
         elseif telescope_style == "flat" then
-            highlights.TelescopePromptPrefix = { fg = t.blue, bg = t.bgAlt }
-            highlights.TelescopePromptCounter = { fg = t.cyan, bg = t.bgAlt }
-            highlights.TelescopePromptTitle = { fg = t.bgAlt, bg = t.blue, bold = true }
-            highlights.TelescopeResultsTitle = { fg = t.blue, bg = t.bgAlt, bold = true }
+            highlights.TelescopePromptPrefix = { fg = t.blue, bg = t.bg_alt }
+            highlights.TelescopePromptCounter = { fg = t.cyan, bg = t.bg_alt }
+            highlights.TelescopePromptTitle = { fg = t.bg_alt, bg = t.blue, bold = true }
+            highlights.TelescopeResultsTitle = { fg = t.blue, bg = t.bg_alt, bold = true }
         end
     end
 

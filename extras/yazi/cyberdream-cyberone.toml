@@ -1,0 +1,88 @@
+[manager]
+# tmTheme files can be found here: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/textmate 
+syntect_theme = "../bat/themes/cyberdream.tmTheme"
+border_style = { fg = "#3e4451" }
+cwd = { fg = "#56b6c2" }
+find_keyword = { bold = true, fg = "#98c379" }
+find_position = { fg = "#d7dae0" }
+hovered = { bg = "#5c6370", bold = true, fg = "#d7dae0" }
+marker_copied = { bg = "#e5c07b", fg = "#e5c07b" }
+marker_cut = { bg = "#e06c75", fg = "#e06c75" }
+marker_selected = { bg = "#3e4451", fg = "#98c379" }
+preview_hovered = { bg = "#3e4451", bold = true, fg = "#d7dae0" }
+tab_active = { bg = "#61afef", fg = "#282c34" }
+tab_inactive = { bg = "#3e4451", fg = "#d7dae0" }
+
+count_selected = { bg = "#98c379", fg = "#282c34" }
+count_copied = { bg = "#e5c07b", fg = "#282c34" }
+count_cut = { bg = "#e06c75", fg = "#282c34" }
+
+[completion]
+active = { bg = "#5c6370", fg = "#c678dd" }
+border = { fg = "#61afef" }
+inactive = { fg = "#d7dae0" }
+
+[filetype]
+rules = [
+    { fg = "#56b6c2", mime = "image/*" },
+    { fg = "#e5c07b", mime = "video/*" },
+    { fg = "#e5c07b", mime = "audio/*" },
+    { fg = "#c678dd", mime = "application/zip" },
+    { fg = "#c678dd", mime = "application/gzip" },
+    { fg = "#c678dd", mime = "application/x-tar" },
+    { fg = "#c678dd", mime = "application/x-bzip" },
+    { fg = "#c678dd", mime = "application/x-bzip2" },
+    { fg = "#c678dd", mime = "application/x-7z-compressed" },
+    { fg = "#c678dd", mime = "application/x-rar" },
+    { fg = "#c678dd", mime = "application/xz" },
+    { fg = "#98c379", mime = "application/doc" },
+    { fg = "#98c379", mime = "application/pdf" },
+    { fg = "#98c379", mime = "application/rtf" },
+    { fg = "#98c379", mime = "application/vnd.*" },
+    { bold = true, fg = "#61afef", mime = "inode/directory" },
+    { fg = "#d7dae0", mime = "*" }
+]
+
+[help]
+desc = { fg = "#d7dae0" }
+footer = { fg = "#d7dae0" }
+hovered = { bg = "#5c6370", fg = "#d7dae0" }
+on = { fg = "#c678dd" }
+run = { fg = "#56b6c2" }
+
+[input]
+border = { fg = "#61afef" }
+selected = { bg = "#5c6370" }
+title = { fg = "#d7dae0" }
+value = { fg = "#d7dae0" }
+
+[select]
+active = { fg = "#c678dd" }
+border = { fg = "#61afef" }
+inactive = { fg = "#d7dae0" }
+
+[status]
+mode_normal = { bg = "#61afef", bold = true, fg = "#282c34" }
+mode_select = { bg = "#98c379", bold = true, fg = "#282c34" }
+mode_unset = { bg = "#e395a3", bold = true, fg = "#282c34" }
+permissions_r = { fg = "#e5c07b" }
+permissions_s = { fg = "#56b6c2" }
+permissions_t = { fg = "#61afef" }
+permissions_w = { fg = "#e06c75" }
+permissions_x = { fg = "#98c379" }
+progress_error = { bg = "#282c34", fg = "#e06c75" }
+progress_label = { bg = "#282c34", fg = "#d7dae0" }
+progress_normal = { bg = "#282c34", fg = "#d7dae0" }
+separator_style = { bg = "#3e4451", fg = "#3e4451" }
+
+[tasks]
+border = { fg = "#61afef" }
+hovered = { bg = "#5c6370", fg = "#d7dae0" }
+title = { fg = "#d7dae0" }
+
+[which]
+cand = { fg = "#56b6c2" }
+desc = { fg = "#d7dae0" }
+mask = { bg = "#3e4451" }
+rest = { fg = "#e395a3" }
+separator_style = { fg = "#5c6370" }
