@@ -15,6 +15,7 @@ function M.generate(variant)
 "ui.statusline" = { fg = "cyan" }
 "ui.selection" = "green"
 "ui.selection.primary" = "magenta"
+"ui.virtual.ruler" = { bg = "bgHighlight" }
 
 # Syntax Highlighting for Code
 "comment" = { fg = "grey", modifiers = ["italic"] }
