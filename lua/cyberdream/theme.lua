@@ -28,7 +28,7 @@ function M.setup()
     ---@type CyberdreamPalette
     t = vim.tbl_deep_extend("force", t, opts.theme.colors)
 
-    t.bg_solid = t.bg ~= "NONE" and t.bg or t.bgAlt
+    t.bg_solid = t.bg ~= "NONE" and t.bg or t.bg_alt
     if opts.transparent then
         t.bg = "NONE"
     end
@@ -52,7 +52,7 @@ function M.setup()
 
     if opts.terminal_colors then
         vim.g.terminal_color_0 = t.bg
-        vim.g.terminal_color_8 = t.bgAlt
+        vim.g.terminal_color_8 = t.bg_alt
 
         vim.g.terminal_color_7 = t.fg
         vim.g.terminal_color_15 = t.grey

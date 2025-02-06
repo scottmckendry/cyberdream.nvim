@@ -8,8 +8,8 @@ function M.get(opts, t)
     opts = opts or {}
     local highlights = {
         BlinkCmpMenu = { link = "Pmenu" },
-        BlinkCmpMenuBorder = { fg = util.blend(t.bgHighlight, t.grey, 0.7) },
-        BlinkCmpMenuSelection = { bg = t.bgHighlight },
+        BlinkCmpMenuBorder = { fg = util.blend(t.bg_highlight, t.grey, 0.7) },
+        BlinkCmpMenuSelection = { bg = t.bg_highlight },
         BlinkCmpLabel = { fg = t.fg },
         BlinkCmpLabelDeprecated = { fg = t.grey, strikethrough = true },
         BlinkCmpLabelMatch = { fg = t.cyan },

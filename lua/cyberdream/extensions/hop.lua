@@ -14,8 +14,8 @@ function M.get(opts, t)
             bg = util.blend(t.bg_solid, t.cyan, 0.9),
             bold = true,
         },
-        HopUnmatched = { fg = t.bgHighlight },
-        HopPreview = { fg = t.fg, bg = t.bgHighlight },
+        HopUnmatched = { fg = t.bg_highlight },
+        HopPreview = { fg = t.fg, bg = t.bg_highlight },
     }
     return highlights
 end

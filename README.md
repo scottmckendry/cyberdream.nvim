@@ -266,8 +266,8 @@ vim.api.nvim_create_autocmd("User", {
 | 🖌                                                        | Hex       | Color       |
 | --------------------------------------------------------- | --------- | ----------- |
 | ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | bg          |
-| ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bgAlt       |
-| ![#3c4048](https://place-hold.it/15/3c4048/3c4048?text=+) | `#3c4048` | bgHighlight |
+| ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bg_alt       |
+| ![#3c4048](https://place-hold.it/15/3c4048/3c4048?text=+) | `#3c4048` | bg_highlight |
 | ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | fg          |
 | ![#7b8496](https://place-hold.it/15/7b8496/7b8496?text=+) | `#7b8496` | grey        |
 | ![#5ea1ff](https://place-hold.it/15/5ea1ff/5ea1ff?text=+) | `#5ea1ff` | blue        |
@@ -288,8 +288,8 @@ vim.api.nvim_create_autocmd("User", {
 | 🖌                                                        | Hex       | Color       |
 | --------------------------------------------------------- | --------- | ----------- |
 | ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | bg          |
-| ![#eaeaea](https://place-hold.it/15/eaeaea/eaeaea?text=+) | `#eaeaea` | bgAlt       |
-| ![#acacac](https://place-hold.it/15/acacac/acacac?text=+) | `#acacac` | bgHighlight |
+| ![#eaeaea](https://place-hold.it/15/eaeaea/eaeaea?text=+) | `#eaeaea` | bg_alt       |
+| ![#acacac](https://place-hold.it/15/acacac/acacac?text=+) | `#acacac` | bg_highlight |
 | ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | fg          |
 | ![#7b8496](https://place-hold.it/15/7b8496/7b8496?text=+) | `#7b8496` | grey        |
 | ![#0057d1](https://place-hold.it/15/0057d1/0057d1?text=+) | `#0057d1` | blue        |

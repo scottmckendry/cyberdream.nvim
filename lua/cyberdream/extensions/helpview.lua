@@ -13,9 +13,9 @@ function M.get(opts, t)
         HelpviewHeading3 = { fg = t.purple, bg = util.blend(t.bg_solid, t.purple, 0.8), bold = true },
         HelpviewHeading4 = { fg = t.magenta, bg = util.blend(t.bg_solid, t.magenta, 0.8), bold = true },
 
-        HelpviewCode = { bg = t.bgAlt },
+        HelpviewCode = { bg = t.bg_alt },
         HelpviewInlineCode = { link = "HelpviewCode" },
-        HelpviewCodeLanguage = { fg = t.grey, bg = t.bgAlt, italic = true },
+        HelpviewCodeLanguage = { fg = t.grey, bg = t.bg_alt, italic = true },
 
         HelpviewTaglink = { fg = t.blue },
         HelpviewOptionlink = { fg = util.blend(t.cyan, t.magenta, 0.4) },

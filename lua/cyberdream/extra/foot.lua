@@ -41,7 +41,7 @@ regular5=   ${purple}
 regular6=   ${cyan}
 regular7=   ${fg}
 # The eight bright ANSI colors (Black, Red, Green, Yellow, Blue, Magenta, Cyan, White)
-bright0=    ${bgHighlight}
+bright0=    ${bg_highlight}
 bright1=    ${red}
 bright2=    ${green}
 bright3=    ${yellow}

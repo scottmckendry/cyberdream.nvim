@@ -40,8 +40,8 @@ fish_color_end ${purple}
 fish_color_comment ${grey}
 fish_color_error ${red}
 fish_color_gray ${grey}
-fish_color_selection --background=${bgHighlight}
-fish_color_search_match --background=${bgHighlight}
+fish_color_selection --background=${bg_highlight}
+fish_color_search_match --background=${bg_highlight}
 fish_color_option ${yellow}
 fish_color_operator ${blue}
 fish_color_escape ${pastel_pink}

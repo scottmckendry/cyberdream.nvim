@@ -15,7 +15,7 @@ function M.get(opts, t)
         GrugFarHelpWinActionDescription = { link = "Comment" },
 
         GrugFarInputLabel = { fg = t.orange, bold = true },
-        GrugFarInputPlaceholder = { fg = util.blend(t.bgHighlight, t.fg, 0.9), italic = true },
+        GrugFarInputPlaceholder = { fg = util.blend(t.bg_highlight, t.fg, 0.9), italic = true },
 
         GrugFarResultsHeader = { link = "Comment" },
         GrugFarResultsStats = { fg = t.yellow },

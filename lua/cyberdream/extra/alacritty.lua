@@ -34,7 +34,7 @@ color = "${red}"
 index = 17
 
 [colors.bright]
-black = "${bgHighlight}"
+black = "${bg_highlight}"
 blue = "${blue}"
 cyan = "${cyan}"
 green = "${green}"
@@ -58,7 +58,7 @@ background = "${bg}"
 foreground = "${fg}"
 
 [colors.selection]
-background = "${bgHighlight}"
+background = "${bg_highlight}"
 foreground = "${fg}"
 ]==]
 

@@ -8,8 +8,8 @@ function M.get(opts, t)
     local highlights = {
         LazyH1 = { fg = t.blue, bold = true },
         LazyH2 = { fg = t.fg, bold = true },
-        LazyButton = { fg = t.fg, bg = t.bgHighlight },
-        LazyButtonActive = { fg = t.fg, bg = t.bgHighlight, bold = true },
+        LazyButton = { fg = t.fg, bg = t.bg_highlight },
+        LazyButtonActive = { fg = t.fg, bg = t.bg_highlight, bold = true },
 
         LazyProgressDone = { bold = true, fg = t.magenta },
         LazyProgressTodo = { bold = true, fg = t.grey },

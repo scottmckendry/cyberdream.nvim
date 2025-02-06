@@ -24,7 +24,7 @@ function M.generate(variant)
 [colors]
 # Regular colors
 background = '${bg}'
-black = '${bgAlt}'
+black = '${bg_alt}'
 blue = '${blue}'
 cursor = '${fg}'
 cyan = '${cyan}'
@@ -36,13 +36,13 @@ white = '${fg}'
 yellow = '${yellow}'
 
 # UI colors
-tabs = '${bgHighlight}'
+tabs = '${bg_highlight}'
 tabs-active = '${grey}'
 selection-foreground = '${fg}'
-selection-background = '${bgAlt}'
+selection-background = '${bg_alt}'
 
 # Dim colors
-dim-black = '${bgAltDim}'
+dim-black = '${bg_altDim}'
 dim-blue = '${blueDim}'
 dim-cyan = '${cyanDim}'
 dim-foreground  = '${fgDim}'
@@ -53,7 +53,7 @@ dim-white = '${fgDim}'
 dim-yellow = '${yellowDim}'
 
 # Light colors
-light-black = '${bgAltLight}'
+light-black = '${bg_altLight}'
 light-blue = '${blueLight}'
 light-cyan = '${cyanLight}'
 light-foreground  = '${fgLight}'

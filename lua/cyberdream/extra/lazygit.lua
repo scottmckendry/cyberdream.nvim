@@ -19,11 +19,11 @@ gui:
         searchingActiveBorderColor:
             - "${magenta}"
         optionsTextColor:
-            - "${bgHighlight}"
+            - "${bg_highlight}"
         selectedLineBgColor:
-            - "${bgHighlight}"
+            - "${bg_highlight}"
         cherryPickedCommitBgColor:
-            - "${bgHighlight}"
+            - "${bg_highlight}"
         cherryPickedCommitFgColor:
             - "${pink}"
         unstagedChangesColor:

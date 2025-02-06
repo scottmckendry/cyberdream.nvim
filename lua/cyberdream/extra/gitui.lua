@@ -29,7 +29,7 @@ function M.generate(variant)
     local unformatted = colors[variant]
     unformatted.light_purple = util.blend(unformatted.fg, unformatted.purple)
     unformatted.grey_blue = util.blend(unformatted.grey, unformatted.blue)
-    unformatted.dark_blue = util.blend(unformatted.bgAlt, unformatted.blue)
+    unformatted.dark_blue = util.blend(unformatted.bg_alt, unformatted.blue)
     unformatted.pastel_pink = util.blend(unformatted.fg, unformatted.pink)
     unformatted.turquoise = util.blend(unformatted.green, unformatted.cyan, 0.3)
 
@@ -38,7 +38,7 @@ function M.generate(variant)
 (
     selected_tab: Rgb(${cyan}), // bright cyan for highlight
     command_fg: Rgb(${fg}), // white for commands foreground
-    selection_bg: Rgb(${bgHighlight}), // darker grey for selection background
+    selection_bg: Rgb(${bg_highlight}), // darker grey for selection background
     selection_fg: Rgb(${fg}), // white for selected text
     cmdbar_bg: Rgb(${bg}), // very dark grey almost black for command bar background
     cmdbar_extra_lines_bg: Rgb(${bg}), // very dark grey almost black for extra lines in command bar

@@ -17,7 +17,7 @@ function M.generate(variant)
         "color5": "${purple}",
         "color6": "${cyan}",
         "color7": "${fg}",
-        "color8": "${bgHighlight}",
+        "color8": "${bg_highlight}",
         "color9": "${red}",
         "color10": "${green}",
         "color11": "${yellow}",

@@ -17,7 +17,7 @@ palette = 4=${blue}
 palette = 5=${purple}
 palette = 6=${cyan}
 palette = 7=${fg}
-palette = 8=${bgHighlight}
+palette = 8=${bg_highlight}
 palette = 9=${red}
 palette = 10=${green}
 palette = 11=${yellow}
@@ -29,7 +29,7 @@ palette = 15=${fg}
 background = ${bg}
 foreground = ${fg}
 cursor-color = ${fg}
-selection-background = ${bgHighlight}
+selection-background = ${bg_highlight}
 selection-foreground = ${fg}
 ]==]
 

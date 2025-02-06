@@ -279,9 +279,9 @@ Dark ~
   ---------------------------------------------------- --------- -------------
   [#16181a]                                            #16181a   bg
 
-  [#1e2124]                                            #1e2124   bgAlt
+  [#1e2124]                                            #1e2124   bg_alt
 
-  [#3c4048]                                            #3c4048   bgHighlight
+  [#3c4048]                                            #3c4048   bg_highlight
 
   [#ffffff]                                            #ffffff   fg
 
@@ -312,9 +312,9 @@ Light ~
   ---------------------------------------------------- --------- -------------
   [#ffffff]                                            #ffffff   bg
 
-  [#eaeaea]                                            #eaeaea   bgAlt
+  [#eaeaea]                                            #eaeaea   bg_alt
 
-  [#acacac]                                            #acacac   bgHighlight
+  [#acacac]                                            #acacac   bg_highlight
 
   [#16181a]                                            #16181a   fg
 
