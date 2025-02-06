@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.0.0...v5.0.1) (2025-02-06)
+
+
+### Bug Fixes
+
+* remove tags file potentially causing lazy updates to fail ([a4f2fec](https://github.com/scottmckendry/cyberdream.nvim/commit/a4f2feca3d1758eb8083f738fcada9414c1e3e74))
+
 ## [5.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.6.1...v5.0.0) (2025-02-06)
 
 
