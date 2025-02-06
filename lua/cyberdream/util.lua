@@ -229,15 +229,15 @@ end
 function M.toggle_theme_variant()
     local opts = vim.g.cyberdream_opts
     -- Handle the "auto" variant without overwriting the value in opts.
-    if opts.theme.variant == "auto" then
+    if opts.variant == "auto" then
         return M.toggle_theme_auto()
     end
 
-    opts.theme.variant = opts.theme.variant == "default" and "light" or "default"
+    opts.variant = opts.variant == "default" and "light" or "default"
     M.set_options(opts)
     M.apply_options(opts)
 
-    return opts.theme.variant
+    return opts.variant
 end
 
 --- Used for toggling the theme variant when the variant is set to "auto". Uses the 'set background' command to toggle between 'light' and 'dark'.

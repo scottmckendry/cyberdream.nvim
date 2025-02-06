@@ -13,15 +13,6 @@ local M = {}
 
 ---@alias CyberdreamOverrideFn fun(palette: CyberdreamPalette): CyberdreamHighlight
 
----@class ThemeConfig
----@field variant? "default" | "light" | "auto"
----@field saturation? number
----@field colors? CyberdreamPalette
----@field highlights? table<string, CyberdreamHighlight>
----@field overrides? CyberdreamOverrideFn
-
----@alias CyberdreamTelescopeStyle "nvchad" | "flat"
-
 ---@class extensions
 ---@field alpha? boolean
 ---@field blinkcmp? boolean
@@ -55,28 +46,29 @@ local M = {}
 
 ---@class Config
 ---@field transparent? boolean
+---@field variant? "default" | "light" | "auto"
+---@field saturation? number
+---@field colors? CyberdreamPalette
+---@field highlights? table<string, CyberdreamHighlight>
+---@field overrides? CyberdreamOverrideFn
 ---@field italic_comments? boolean
 ---@field hide_fillchars? boolean
----@field borderless_telescope? boolean | { border: boolean, style: CyberdreamTelescopeStyle }
+---@field borderless_pickers? boolean
 ---@field terminal_colors? boolean
 ---@field cache? boolean
----@field theme? ThemeConfig
 ---@field extensions? extensions
 local default_options = {
     transparent = false,
+    variant = "default",
+    saturation = 1,
+    ---@diagnostic disable-next-line: missing-fields
+    colors = {},
+    highlights = {},
     italic_comments = false,
     hide_fillchars = false,
-    borderless_telescope = true,
+    borderless_pickers = false,
     terminal_colors = true,
     cache = false,
-
-    theme = {
-        variant = "default",
-        saturation = 1,
-        ---@diagnostic disable-next-line: missing-fields
-        colors = {},
-        highlights = {},
-    },
 
     extensions = {
         alpha = true,

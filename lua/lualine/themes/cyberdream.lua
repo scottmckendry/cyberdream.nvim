@@ -2,11 +2,11 @@
 local colors = require("cyberdream.colors").default
 local opts = require("cyberdream.config").options
 
-if opts.theme.variant == "light" then
+if opts.variant == "light" then
     colors = require("cyberdream.colors").light
 end
 
-if opts.theme.variant == "auto" then
+if opts.variant == "auto" then
     if vim.o.background == "light" then
         colors = require("cyberdream.colors").light
     end

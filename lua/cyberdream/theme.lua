@@ -9,12 +9,12 @@ function M.setup()
     local theme = {}
     ---@type CyberdreamPalette
     local t = colors.default
-    if opts.theme.variant == "light" then
+    if opts.variant == "light" then
         ---@type CyberdreamPalette
         t = colors.light
     end
 
-    if opts.theme.variant == "auto" then
+    if opts.variant == "auto" then
         if vim.o.background == "light" then
             ---@type CyberdreamPalette
             t = colors.light
@@ -22,11 +22,11 @@ function M.setup()
     end
 
     -- Apply user defined saturation
-    t = util.apply_saturation(t, opts.theme.saturation)
+    t = util.apply_saturation(t, opts.saturation)
 
     -- Override colors with user defined colors
     ---@type CyberdreamPalette
-    t = vim.tbl_deep_extend("force", t, opts.theme.colors)
+    t = vim.tbl_deep_extend("force", t, opts.colors)
 
     t.bg_solid = t.bg ~= "NONE" and t.bg or t.bg_alt
     if opts.transparent then
@@ -89,7 +89,7 @@ function M.setup()
     end
 
     -- Parse user defined overrides and apply them
-    local overrides = opts.theme.overrides or opts.theme.highlights
+    local overrides = opts.overrides or opts.highlights
     if type(overrides) == "function" then
         overrides = overrides(t)
     end

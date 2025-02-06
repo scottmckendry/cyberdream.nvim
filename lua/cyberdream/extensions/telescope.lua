@@ -65,7 +65,7 @@ function M.get(opts, t)
         TelescopeResultsDiffUntracked = { link = "NonText" },
     }
 
-    if opts.borderless_telescope then
+    if opts.borderless_pickers then
         highlights.TelescopeBorder = { fg = t.bg_alt, bg = t.bg_alt }
         highlights.TelescopeNormal = { bg = t.bg_alt }
         highlights.TelescopePreviewBorder = { fg = t.bg_alt, bg = t.bg_alt }

@@ -56,7 +56,7 @@ function M.get(opts, t)
         SnacksPickerPrompt = { fg = t.blue, bold = true },
     }
 
-    if opts.borderless_telescope then
+    if opts.borderless_pickers then
         highlights.SnacksPickerBorder = { fg = t.bg_alt, bg = t.bg_alt }
         highlights.SnacksPickerNormal = { bg = t.bg_alt }
         highlights.SnacksPickerBox = { bg = t.bg_alt }
