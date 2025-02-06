@@ -49,7 +49,25 @@ function M.get(opts, t)
         SnacksDashboardTerminal = { link = "SnacksNormal" },
         SnacksDashboardSpecial = { link = "Special" },
         SnacksDashboardTitle = { link = "Title" },
+
+        SnacksPickerDir = { fg = t.grey },
+        SnacksPickerMatch = { fg = t.cyan },
+        SnacksPickerTotals = { fg = t.cyan, bold = true },
+        SnacksPickerPrompt = { fg = t.blue, bold = true },
     }
+
+    if opts.borderless_telescope then
+        highlights.SnacksPickerBorder = { fg = t.bg_alt, bg = t.bg_alt }
+        highlights.SnacksPickerNormal = { bg = t.bg_alt }
+        highlights.SnacksPickerBox = { bg = t.bg_alt }
+        highlights.SnacksPickerList = { bg = t.bg_alt }
+        highlights.SnacksPickerInput = { bg = t.bg_alt }
+        highlights.SnacksPickerPreview = { bg = t.bg_alt }
+        highlights.SnacksPickerBoxTitle = { fg = t.bg_solid, bg = t.blue }
+        highlights.SnacksPickerPreviewTitle = { fg = t.bg_solid, bg = t.green }
+        highlights.SnacksPickerListTitle = { fg = t.bg_solid, bg = t.magenta }
+        highlights.SnacksPickerInputTitle = { fg = t.bg_solid, bg = t.cyan }
+    end
 
     return highlights
 end
