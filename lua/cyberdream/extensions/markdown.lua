@@ -21,7 +21,7 @@ function M.get(opts, t)
         RenderMarkdownH5Bg = { bg = util.blend(t.bg_solid, t.magenta, 0.85) },
         RenderMarkdownH6Bg = { bg = util.blend(t.bg_solid, t.green, 0.85) },
 
-        RenderMarkdownCode = { bg = t.bgAlt },
+        RenderMarkdownCode = { bg = t.bg_alt },
         RenderMarkdownBullet = { fg = t.grey },
         RenderMarkdownQuote = { link = "Comment" },
         RenderMarkdownDash = { fg = t.grey },

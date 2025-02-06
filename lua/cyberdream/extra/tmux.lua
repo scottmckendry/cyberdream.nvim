@@ -8,11 +8,11 @@ local M = {}
 function M.generate(variant)
     local template = [==[
 # cyberdream theme for tmux (catppuccin)
-thm_bg="${bgAlt}"
+thm_bg="${bg_alt}"
 thm_fg="${fg}"
 thm_cyan="${cyan}"
-thm_black="${bgHighlight}"
-thm_gray="${bgHighlight}"
+thm_black="${bg_highlight}"
+thm_gray="${bg_highlight}"
 thm_magenta="${magenta}"
 thm_pink="${pink}"
 thm_red="${red}"

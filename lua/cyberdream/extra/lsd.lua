@@ -57,7 +57,7 @@ permission:
 date:
   hour-old: ${fgDim}
   day-old: ${grey}
-  older: ${bgHighlight}
+  older: ${bg_highlight}
 size:
   none: ${grey}
   small: ${green}

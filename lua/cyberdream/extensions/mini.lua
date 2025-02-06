@@ -42,13 +42,13 @@ function M.get(opts, t)
         MiniDiffSignChange = { fg = t.orange },
         MiniDiffSignDelete = { fg = t.red },
 
-        MiniFilesBorder = { fg = t.bgHighlight },
+        MiniFilesBorder = { fg = t.bg_highlight },
         MiniFilesBorderModified = { fg = t.pink },
         MiniFilesCursorLine = { link = "CursorLine" },
         MiniFilesDirectory = { fg = t.blue },
         MiniFilesFile = { fg = t.fg },
         MiniFilesNormal = { link = "NormalFloat" },
-        MiniFilesTitle = { fg = util.blend(t.bgHighlight, t.cyan, 0.7) },
+        MiniFilesTitle = { fg = util.blend(t.bg_highlight, t.cyan, 0.7) },
         MiniFilesTitleFocused = { fg = t.cyan },
 
         MiniHipatternsFixme = { fg = t.bg_solid, bg = t.red, bold = true },
@@ -94,7 +94,7 @@ function M.get(opts, t)
         MiniPickIconFile = { link = "MiniPickNormal" },
         MiniPickHeader = { link = "DiagnosticFloatingHint" },
         MiniPickMatchCurrent = { link = "CursorLine" },
-        MiniPickMatchMarked = { bg = t.bgHighlight },
+        MiniPickMatchMarked = { bg = t.bg_highlight },
         MiniPickMatchRanges = { fg = t.orange },
         MiniPickNormal = { link = "NormalFloat" },
         MiniPickPreviewLine = { link = "CursorLine" },
@@ -124,14 +124,14 @@ function M.get(opts, t)
 
         MiniSurround = { link = "IncSearch" },
 
-        MiniTablineCurrent = { fg = t.fg, bg = t.bgHighlight, bold = true },
+        MiniTablineCurrent = { fg = t.fg, bg = t.bg_highlight, bold = true },
         MiniTablineFill = { link = "TabLineFill" },
         MiniTablineHidden = { fg = t.grey, bg = t.bg },
-        MiniTablineModifiedCurrent = { fg = t.bgHighlight, bg = t.fg, bold = true },
+        MiniTablineModifiedCurrent = { fg = t.bg_highlight, bg = t.fg, bold = true },
         MiniTablineModifiedHidden = { fg = t.bg_solid, bg = t.grey },
-        MiniTablineModifiedVisible = { fg = t.bgHighlight, bg = t.fg },
+        MiniTablineModifiedVisible = { fg = t.bg_highlight, bg = t.fg },
         MiniTablineTabpagesection = { link = "Search" },
-        MiniTablineVisible = { fg = t.fg, bg = t.bgHighlight },
+        MiniTablineVisible = { fg = t.fg, bg = t.bg_highlight },
 
         MiniTestEmphasis = { bold = true },
         MiniTestFail = { fg = t.red, bold = true },

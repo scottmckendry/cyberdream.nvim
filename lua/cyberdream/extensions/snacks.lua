@@ -14,7 +14,7 @@ function M.get(opts, t)
         SnacksWinBarNC = { link = "SnacksWinBar" },
 
         SnacksNotifierDebug = { fg = t.fg },
-        SnacksNotifierBorderDebug = { fg = t.bgHighlight },
+        SnacksNotifierBorderDebug = { fg = t.bg_highlight },
         SnacksNotifierIconDebug = { fg = t.grey },
         SnacksNotifierTitleDebug = { fg = t.grey },
 

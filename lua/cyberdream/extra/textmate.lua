@@ -29,13 +29,13 @@ function M.generate(variant)
 				<key>invisibles</key>
 				<string>${bg}</string>
 				<key>lineHighlight</key>
-				<string>${bgHighlight}</string>
+				<string>${bg_highlight}</string>
 				<key>selection</key>
-				<string>${bgHighlight}</string>
+				<string>${bg_highlight}</string>
 				<key>findHighlight</key>
 				<string>${cyan}</string>
 				<key>findHighlightForeground</key>
-				<string>${bgAlt}</string>
+				<string>${bg_alt}</string>
 				<key>selectionBorder</key>
 				<string>${bg}</string>
 				<key>activeGuide</key>

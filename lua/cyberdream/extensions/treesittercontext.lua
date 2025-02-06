@@ -7,8 +7,8 @@ local util = require("cyberdream.util")
 function M.get(opts, t)
     opts = opts or {}
     local highlights = {
-        TreeSitterContext = { bg = util.blend(t.bgAlt, t.cyan, 0.9) },
-        TreeSitterContextLineNumber = { fg = util.blend(t.bgHighlight, t.fg) },
+        TreeSitterContext = { bg = util.blend(t.bg_alt, t.cyan, 0.9) },
+        TreeSitterContextLineNumber = { fg = util.blend(t.bg_highlight, t.fg) },
     }
     return highlights
 end

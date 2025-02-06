@@ -11,7 +11,7 @@ function M.generate(variant)
     "background": "${bg}",
     "black": "${bg}",
     "blue": "${blue}",
-    "brightBlack": "${bgHighlight}",
+    "brightBlack": "${bg_highlight}",
     "brightBlue": "${blue}",
     "brightCyan": "${cyan}",
     "brightGreen": "${green}",
@@ -26,7 +26,7 @@ function M.generate(variant)
     "name": "cyberdream",
     "purple": "${purple}",
     "red": "${red}",
-    "selectionBackground": "${bgHighlight}",
+    "selectionBackground": "${bg_highlight}",
     "white": "${fg}",
     "yellow": "${yellow}"
 }

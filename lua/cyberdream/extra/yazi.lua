@@ -10,17 +10,17 @@ function M.generate(variant)
 [manager]
 # tmTheme files can be found here: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/textmate 
 syntect_theme = "../bat/themes/cyberdream.tmTheme"
-border_style = { fg = "${bgHighlight}" }
+border_style = { fg = "${bg_highlight}" }
 cwd = { fg = "${cyan}" }
 find_keyword = { bold = true, fg = "${green}" }
 find_position = { fg = "${fg}" }
 hovered = { bg = "${grey}", bold = true, fg = "${fg}" }
 marker_copied = { bg = "${yellow}", fg = "${yellow}" }
 marker_cut = { bg = "${red}", fg = "${red}" }
-marker_selected = { bg = "${bgHighlight}", fg = "${green}" }
-preview_hovered = { bg = "${bgHighlight}", bold = true, fg = "${fg}" }
+marker_selected = { bg = "${bg_highlight}", fg = "${green}" }
+preview_hovered = { bg = "${bg_highlight}", bold = true, fg = "${fg}" }
 tab_active = { bg = "${blue}", fg = "${bg}" }
-tab_inactive = { bg = "${bgHighlight}", fg = "${fg}" }
+tab_inactive = { bg = "${bg_highlight}", fg = "${fg}" }
 
 count_selected = { bg = "${green}", fg = "${bg}" }
 count_copied = { bg = "${yellow}", fg = "${bg}" }
@@ -82,7 +82,7 @@ permissions_x = { fg = "${green}" }
 progress_error = { bg = "${bg}", fg = "${red}" }
 progress_label = { bg = "${bg}", fg = "${fg}" }
 progress_normal = { bg = "${bg}", fg = "${fg}" }
-separator_style = { bg = "${bgHighlight}", fg = "${bgHighlight}" }
+separator_style = { bg = "${bg_highlight}", fg = "${bg_highlight}" }
 
 [tasks]
 border = { fg = "${blue}" }
@@ -92,7 +92,7 @@ title = { fg = "${fg}" }
 [which]
 cand = { fg = "${cyan}" }
 desc = { fg = "${fg}" }
-mask = { bg = "${bgHighlight}" }
+mask = { bg = "${bg_highlight}" }
 rest = { fg = "${magenta}" }
 separator_style = { fg = "${grey}" }
 ]==]

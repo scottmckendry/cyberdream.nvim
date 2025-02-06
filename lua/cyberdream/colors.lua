@@ -1,7 +1,7 @@
 ---@class CyberdreamPalette
 ---@field bg string
----@field bgAlt string
----@field bgHighlight string
+---@field bg_alt string
+---@field bg_highlight string
 ---@field bg_solid? string
 ---@field fg string
 ---@field grey string
@@ -22,8 +22,8 @@ local M = {}
 
 M.default = {
     bg = "#16181a",
-    bgAlt = "#1e2124",
-    bgHighlight = "#3c4048",
+    bg_alt = "#1e2124",
+    bg_highlight = "#3c4048",
     fg = "#ffffff",
     grey = "#7b8496",
     blue = "#5ea1ff",
@@ -39,8 +39,8 @@ M.default = {
 
 M.light = {
     bg = "#ffffff",
-    bgAlt = "#eaeaea",
-    bgHighlight = "#acacac",
+    bg_alt = "#eaeaea",
+    bg_highlight = "#acacac",
     fg = "#16181a",
     grey = "#7b8496",
     blue = "#0057d1",

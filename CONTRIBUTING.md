@@ -51,7 +51,7 @@ function M.get(opts, t)
         -- Add your highlights here
         -- See lua/cyberdream/colors.lua for a complete list of available colors in the palette
         HighlightGroupName = { fg = t.blue },
-        AnotherHighlightGroupName = { fg = t.purple, bg = t.bgHighlight },
+        AnotherHighlightGroupName = { fg = t.purple, bg = t.bg_highlight },
     }
 
     return highlights

@@ -28,10 +28,10 @@ function M.get(opts, t)
         MarkviewBlockQuoteNote = { fg = t.blue },
         MarkviewBlockQuoteSpecial = { fg = t.cyan },
 
-        MarkviewCode = { bg = util.blend(t.bgAlt, t.bgHighlight, 0.8) },
-        MarkviewInlineCode = { fg = t.pink, bg = util.blend(t.bgAlt, t.bgHighlight, 0.8) },
+        MarkviewCode = { bg = util.blend(t.bg_alt, t.bg_highlight, 0.8) },
+        MarkviewInlineCode = { fg = t.pink, bg = util.blend(t.bg_alt, t.bg_highlight, 0.8) },
 
-        MarkviewTableBorder = { fg = t.bgHighlight },
+        MarkviewTableBorder = { fg = t.bg_highlight },
         MarkviewTableAlignLeft = { fg = t.green },
         MarkviewTableAlignCenter = { fg = t.blue },
         MarkviewTableAlignRight = { fg = t.purple },

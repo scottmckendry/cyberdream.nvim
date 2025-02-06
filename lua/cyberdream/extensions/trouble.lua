@@ -7,7 +7,7 @@ function M.get(opts, t)
     opts = opts or {}
     local highlights = {
         TroubleCode = { fg = t.magenta },
-        TroubleCount = { bg = t.bgHighlight, bold = true },
+        TroubleCount = { bg = t.bg_highlight, bold = true },
         TroubleDirectory = { fg = t.grey, bold = true },
         TroubleFilename = { fg = t.cyan },
         TroubleIconArray = { fg = t.pink },

@@ -13,9 +13,9 @@ background            ${bg}
 foreground            ${fg}
 cursor                ${fg}
 cursor_text_color     ${bg}
-selection_background  ${bgHighlight}
+selection_background  ${bg_highlight}
 color0                ${bg}
-color8                ${bgHighlight}
+color8                ${bg_highlight}
 color1                ${red}
 color9                ${red}
 color2                ${green}

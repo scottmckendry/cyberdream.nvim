@@ -29,7 +29,7 @@ function M.get(opts, t)
         bg_cyan = util.blend(t.bg_solid, t.cyan, 0.20),
         bg_blue = util.blend(t.bg_solid, t.blue, 0.20),
         bg_magenta = util.blend(t.bg_solid, t.magenta, 0.20),
-        bg_alt = util.blend(t.bg_solid, t.bgHighlight, 0.02),
+        bg_alt = util.blend(t.bg_solid, t.bg_highlight, 0.02),
         -- styles
         bold = true,
         italic = true,
