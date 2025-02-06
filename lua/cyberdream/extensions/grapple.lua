@@ -12,7 +12,7 @@ function M.get(opts, t)
     }
 
     -- Inherit borderless theme from telescope (if enabled)
-    if opts.borderless_telescope then
+    if opts.borderless_pickers then
         highlights.GrappleNormal = { bg = t.bg_alt }
         highlights.GrappleBorder = { fg = t.bg_alt, bg = t.bg_alt }
         highlights.GrappleTitle = { fg = t.bg_alt, bg = t.cyan }
