@@ -1,5 +1,26 @@
 # Changelog
 
+## [5.0.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.6.1...v5.0.0) (2025-02-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* **config:** replace `theme` and `borderless_telescope` options
+* replace `bgAlt` & `bgHighlight` with `bg_alt` & `bg_highlight`
+
+### Features
+
+* add deprecation warnings for updated options ([ebe3bd0](https://github.com/scottmckendry/cyberdream.nvim/commit/ebe3bd040d8ff0510bc9036fc1ad368c172e9627))
+* **config:** replace `theme` and `borderless_telescope` options ([a16bbb4](https://github.com/scottmckendry/cyberdream.nvim/commit/a16bbb4736e15a650a7047bff0d800d1a4a366ed))
+* **extensions:** add picker support for snacks ([a203d41](https://github.com/scottmckendry/cyberdream.nvim/commit/a203d41b17763d0288d8fc6a0db7fafd6d5aa5fb))
+* **extras:** Add color for virtual ruler in helix ([#166](https://github.com/scottmckendry/cyberdream.nvim/issues/166)) ([05d44f6](https://github.com/scottmckendry/cyberdream.nvim/commit/05d44f6a0fa9c2690fd027424aea73eedf12956f))
+* **extras:** add foot terminal extra ([#164](https://github.com/scottmckendry/cyberdream.nvim/issues/164)) ([a4bfe69](https://github.com/scottmckendry/cyberdream.nvim/commit/a4bfe69f11c04b8245e77df1930d2ca25dc19939))
+
+
+### Code Refactoring
+
+* replace `bgAlt` & `bgHighlight` with `bg_alt` & `bg_highlight` ([d2578fa](https://github.com/scottmckendry/cyberdream.nvim/commit/d2578fa70b021f08e09e43cc930114c872792214))
+
 ## [4.6.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v4.6.0...v4.6.1) (2025-01-17)
 
 
