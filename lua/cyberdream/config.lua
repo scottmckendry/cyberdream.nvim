@@ -108,7 +108,49 @@ M.options = {}
 
 ---@param options Config|nil
 function M.setup(options)
-    M.options = vim.tbl_deep_extend("force", {}, default_options, options or {})
+    options = options or {}
+
+    -- Handle deprecated options  TODO: Remove post v5.0.0 release
+    ---@diagnostic disable: undefined-field
+    if options.borderless_telescope ~= nil then
+        vim.defer_fn(function()
+            vim.notify(
+                "The 'borderless_telescope' is deprecated!\n\nUse 'borderless_pickers' instead.",
+                3,
+                { title = "cyberdream.nvim" }
+            )
+        end, 1000)
+        options.borderless_pickers = options.borderless_telescope
+    end
+
+    if options.theme then
+        vim.defer_fn(function()
+            vim.notify(
+                "The 'theme' table is deprecated!\n\nMove any 'theme' options to the main 'opts' table instead.",
+                3,
+                { title = "cyberdream.nvim" }
+            )
+        end, 1000)
+
+        if options.theme.variant then
+            options.variant = options.theme.variant
+        end
+        if options.theme.saturation then
+            options.saturation = options.theme.saturation
+        end
+        if options.theme.colors then
+            options.colors = options.theme.colors
+        end
+        if options.theme.highlights then
+            options.highlights = options.theme.highlights
+        end
+        if options.theme.overrides then
+            options.overrides = options.theme.overrides
+        end
+    end
+    ---@diagnostic enable: undefined-field
+
+    M.options = vim.tbl_deep_extend("force", {}, default_options, options)
     vim.g.cyberdream_opts = M.options
 end
 
