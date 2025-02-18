@@ -10,7 +10,7 @@ local M = {}
 --- @param title? string
 function M.notify(message, level, title)
     level = level or "info"
-    title = title or " cyberdream.nvim"
+    title = title or "cyberdream.nvim"
     local level_int = level == "info" and 2 or level == "warn" and 3 or 4
 
     vim.notify(message, level_int, { title = title })

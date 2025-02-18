@@ -40,7 +40,7 @@ M.build = function(theme)
 
     -- Write the sanitized theme to cache
     cache:write(vim.json.encode(sanitized_theme))
-    util.notify("Cache file written to " .. theme_cache_file)
+    util.notify("Cache file written to **" .. theme_cache_file .. "**")
 end
 
 M.load_options = function(theme)
@@ -74,7 +74,7 @@ M.load = function()
     if not cache then
         M.build(require("cyberdream.theme").setup())
         local notify = vim.defer_fn(function()
-            util.notify(" Building cache...\n A restart may be required for changes to take effect.")
+            util.notify("Building cache...\nA restart _may_ be required for changes to take effect.")
             M.load()
         end, 1000)
         return notify
@@ -89,7 +89,7 @@ M.load = function()
     if not vim.deep_equal(theme.config, sanitize_config(config.options)) then
         M.build(require("cyberdream.theme").setup())
         local notify = vim.defer_fn(function()
-            util.notify(" Building cache...\n A restart may be required for changes to take effect.")
+            util.notify("Building cache...\nA restart _may_ be required for changes to take effect.")
             M.load()
         end, 1000)
         return notify
