@@ -1,5 +1,13 @@
 # Changelog
 
+## [5.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.0.1...v5.1.0) (2025-02-18)
+
+
+### Features
+
+* **config:** remove v5.0.0 deprecation warnings and opts translations ([dd3af96](https://github.com/scottmckendry/cyberdream.nvim/commit/dd3af96edca4eb088457871d87745ed6a5d6dc02))
+* small notify styling updates ([6e337f1](https://github.com/scottmckendry/cyberdream.nvim/commit/6e337f1030bb6b08e13644aec2638f45387d2b44))
+
 ## [5.0.1](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.0.0...v5.0.1) (2025-02-06)
 
 
