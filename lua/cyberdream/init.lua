@@ -4,12 +4,13 @@ local util = require("cyberdream.util")
 
 local M = {}
 
-function M.load()
+---@param variant? string
+function M.load(variant)
     if config.options.cache then
         require("cyberdream.cache").load()
         return
     end
-    util.load(theme.setup())
+    util.load(theme.setup(variant))
 end
 
 M.setup = config.setup

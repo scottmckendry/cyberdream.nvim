@@ -2,9 +2,15 @@ local colors = require("cyberdream.colors")
 local util = require("cyberdream.util")
 
 local M = {}
-function M.setup()
+
+---@param variant? string
+function M.setup(variant)
     local config = require("cyberdream.config")
     local opts = config.options
+
+    if variant then
+        opts.variant = variant
+    end
 
     local theme = {}
     ---@type CyberdreamPalette
