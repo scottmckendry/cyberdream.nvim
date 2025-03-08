@@ -8,13 +8,13 @@ function M.get(opts, t)
     opts = opts or {}
     local highlights = {
         Comment = { fg = t.grey, italic = opts.italic_comments },
-        ColorColumn = { bg = t.bg_highlight },
+        ColorColumn = { bg = util.blend(t.bg_solid, t.bg_highlight, 0.55) },
         Conceal = { fg = t.grey },
         Cursor = { fg = t.bg, bg = t.fg },
         ICursor = { fg = t.bg, bg = t.fg },
         CursorIM = { fg = t.bg, bg = t.fg },
-        CursorColumn = { bg = t.bg_highlight },
-        CursorLine = { bg = t.bg_highlight },
+        CursorColumn = { bg = util.blend(t.bg_solid, t.bg_highlight, 0.55) },
+        CursorLine = { bg = util.blend(t.bg_solid, t.bg_highlight, 0.55) },
         Directory = { fg = t.blue },
         DiffAdd = { bg = util.blend(t.bg_solid, t.green, 0.8) },
         DiffChange = { bg = util.blend(t.bg_solid, t.blue, 0.8) },
