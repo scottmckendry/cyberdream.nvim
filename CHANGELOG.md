@@ -1,5 +1,17 @@
 # Changelog
 
+## [5.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.1.0...v5.2.0) (2025-03-09)
+
+
+### Features
+
+* light mode via `colorscheme` cmd ([b02c977](https://github.com/scottmckendry/cyberdream.nvim/commit/b02c977aaf0283a0ec7a0184e6a459366325c93b))
+
+
+### Bug Fixes
+
+* contrast for cursorline/colorcolumn and visual highlights ([#172](https://github.com/scottmckendry/cyberdream.nvim/issues/172)) ([094e4eb](https://github.com/scottmckendry/cyberdream.nvim/commit/094e4eb33e7d078cbf2105604a4246092eb8046e))
+
 ## [5.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.0.1...v5.1.0) (2025-02-18)
 
 
