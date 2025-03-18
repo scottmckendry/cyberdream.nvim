@@ -1,6 +1,6 @@
 local M = {}
 
----@class CyberdreamHighlight
+---@class cyberdream.Highlight
 ---@field fg? string
 ---@field bg? string
 ---@field sp? string
@@ -9,11 +9,11 @@ local M = {}
 ---@field underline? boolean
 ---@field strikethrough? boolean
 
----@alias Colors table<CyberdreamPalette|CyberdreamPalette|string, string>
+---@alias Colors table<cyberdream.Palette|cyberdream.Palette|string, string>
 
----@alias CyberdreamOverrideFn fun(palette: CyberdreamPalette): CyberdreamHighlight
+---@alias cyberdream.OverrideFn fun(palette: cyberdream.Palette): cyberdream.Highlight
 
----@class extensions
+---@class cyberdream.Extensions
 ---@field alpha? boolean
 ---@field blinkcmp? boolean
 ---@field cmp? boolean
@@ -44,19 +44,19 @@ local M = {}
 ---@field trouble? boolean
 ---@field whichkey? boolean
 
----@class Config
+---@class cyberdream.Config
 ---@field transparent? boolean
 ---@field variant? "default" | "light" | "auto"
 ---@field saturation? number
----@field colors? CyberdreamPalette
----@field highlights? table<string, CyberdreamHighlight>
----@field overrides? CyberdreamOverrideFn
+---@field colors? cyberdream.Palette
+---@field highlights? table<string, cyberdream.Highlight>
+---@field overrides? cyberdream.OverrideFn
 ---@field italic_comments? boolean
 ---@field hide_fillchars? boolean
 ---@field borderless_pickers? boolean
 ---@field terminal_colors? boolean
 ---@field cache? boolean
----@field extensions? extensions
+---@field extensions? cyberdream.Extensions
 local default_options = {
     transparent = false,
     variant = "default",
@@ -103,10 +103,10 @@ local default_options = {
     },
 }
 
----@type Config
+---@type cyberdream.Config
 M.options = {}
 
----@param options Config|nil
+---@param options cyberdream.Config|nil
 function M.setup(options)
     options = options or {}
     M.options = vim.tbl_deep_extend("force", {}, default_options, options)

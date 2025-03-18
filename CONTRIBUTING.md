@@ -11,22 +11,22 @@ Every contribution is appreciated, whether it's a bug report, a feature request,
 
 ## Table of Contents 📚
 
--   [Reporting Bugs & Requesting Features](#reporting-bugs--requesting-features-)
--   [Pull Requests](#pull-requests-)
--   [Adding Support for Plugins](#adding-support-for-plugins-)
--   [Adding Extras](#adding-extras-)
+- [Reporting Bugs & Requesting Features](#reporting-bugs--requesting-features-)
+- [Pull Requests](#pull-requests-)
+- [Adding Support for Plugins](#adding-support-for-plugins-)
+- [Adding Extras](#adding-extras-)
 
 ## Reporting Bugs & Requesting Features 🐛
 
 If you find a bug or have a feature request, please open an issue using the appropriate template:
 
--   [Bug Report](https://github.com/scottmckendry/cyberdream.nvim/issues/new?assignees=&labels=bug&projects=&template=bug.yml)
--   [Feature Request (or question)](https://github.com/scottmckendry/cyberdream.nvim/issues/new?assignees=&labels=question&projects=&template=question.yml)
+- [Bug Report](https://github.com/scottmckendry/cyberdream.nvim/issues/new?assignees=&labels=bug&projects=&template=bug.yml)
+- [Feature Request (or question)](https://github.com/scottmckendry/cyberdream.nvim/issues/new?assignees=&labels=question&projects=&template=question.yml)
 
 Some things to keep in mind when opening an issue:
 
--   Make sure to search for existing issues before opening a new one. If you find an existing issue that matches your problem, please add a 👍 reaction to it.
--   Be as detailed as possible when describing the bug or feature request. Include any relevant information, such as the version of Neovim you're using & your cyberdream.nvim config settings.
+- Make sure to search for existing issues before opening a new one. If you find an existing issue that matches your problem, please add a 👍 reaction to it.
+- Be as detailed as possible when describing the bug or feature request. Include any relevant information, such as the version of Neovim you're using & your cyberdream.nvim config settings.
 
 ## Pull Requests 🛠
 
@@ -43,8 +43,8 @@ If you'd like to add support for a plugin that isn't currently supported by cybe
 local M = {}
 
 --- Get extension configuration
---- @param opts Config
---- @param t CyberdreamPalette
+--- @param opts cyberdream.Config
+--- @param t cyberdream.Palette
 function M.get(opts, t)
     opts = opts or {}
     local highlights = {

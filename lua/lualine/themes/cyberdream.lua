@@ -1,4 +1,4 @@
----@type CyberdreamPalette
+---@type cyberdream.Palette
 local colors = require("cyberdream.colors").default
 local opts = require("cyberdream.config").options
 

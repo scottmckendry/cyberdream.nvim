@@ -2,8 +2,8 @@ local M = {}
 local util = require("cyberdream.util")
 
 --- Get extension configuration
---- @param opts Config
---- @param t CyberdreamPalette
+--- @param opts cyberdream.Config
+--- @param t cyberdream.Palette
 function M.get(opts, t)
     opts = opts or {}
     local p = {

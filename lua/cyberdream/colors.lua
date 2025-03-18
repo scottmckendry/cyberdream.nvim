@@ -1,4 +1,4 @@
----@class CyberdreamPalette
+---@class cyberdream.Palette
 ---@field bg string
 ---@field bg_alt string
 ---@field bg_highlight string
@@ -15,9 +15,9 @@
 ---@field orange string
 ---@field purple string
 
----@class CyberdreamColors
----@field default CyberdreamPalette
----@field light CyberdreamPalette
+---@class cyberdream.Colors
+---@field default cyberdream.Palette
+---@field light cyberdream.Palette
 local M = {}
 
 M.default = {

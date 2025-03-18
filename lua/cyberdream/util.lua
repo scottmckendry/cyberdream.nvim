@@ -129,7 +129,7 @@ function M.desaturate_hex(hex, weight)
 end
 
 --- Apply saturation to a table of colors.
---- @param colors CyberdreamPalette
+--- @param colors cyberdream.Palette
 --- @param weight number
 function M.apply_saturation(colors, weight)
     if weight >= 1 then
@@ -207,8 +207,8 @@ function M.parse_extra_template(template, t)
 end
 
 --- Override options with a new table of values.
---- @param new_opts Config
---- @return Config
+--- @param new_opts cyberdream.Config
+--- @return cyberdream.Config
 function M.set_options(new_opts)
     local opts = vim.g.cyberdream_opts
     vim.g.cyberdream_opts = vim.tbl_deep_extend("force", opts, new_opts)
@@ -217,7 +217,7 @@ function M.set_options(new_opts)
 end
 
 --- Apply options to the colorscheme.
---- @param opts Config
+--- @param opts cyberdream.Config
 function M.apply_options(opts)
     -- Update the colorscheme
     config.setup(opts)
