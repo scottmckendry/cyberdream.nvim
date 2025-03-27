@@ -21,7 +21,7 @@ M.extras = {
     rio = { extension = "toml", name = "rio" },
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
-    tmux = { extension = "tmuxtheme", name = "tmux" },
+    tmux = { extension = "conf", name = "tmux" },
     vivid = { extension = "yml", name = "vivid" },
     warp = { extension = "yaml", name = "warp" },
     wezterm = { extension = "lua", name = "wezterm" },
