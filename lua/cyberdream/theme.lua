@@ -31,8 +31,20 @@ function M.setup(variant)
     t = util.apply_saturation(t, opts.saturation)
 
     -- Override colors with user defined colors
-    ---@type cyberdream.Palette
-    t = vim.tbl_deep_extend("force", t, opts.colors)
+    local color_overrides = opts.colors or {}
+
+    -- Merge variant-specific overrides if they exist
+    variant = vim.o.background
+    if color_overrides[variant] then
+        t = vim.tbl_deep_extend("force", t, color_overrides[variant])
+    end
+
+    -- Apply general overrides that work across variants
+    local general_overrides = vim.tbl_deep_extend("keep", {}, color_overrides)
+    general_overrides.dark = nil
+    general_overrides.light = nil
+    general_overrides.auto = nil
+    t = vim.tbl_deep_extend("force", t, general_overrides)
 
     t.bg_solid = t.bg ~= "NONE" and t.bg or t.bg_alt
     if opts.transparent then
