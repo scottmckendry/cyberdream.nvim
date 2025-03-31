@@ -9,9 +9,9 @@ local M = {}
 ---@field underline? boolean
 ---@field strikethrough? boolean
 
----@alias Colors table<cyberdream.Palette|cyberdream.Palette|string, string>
-
+---@alias Colors table<cyberdream.Palette|string, string>
 ---@alias cyberdream.OverrideFn fun(palette: cyberdream.Palette): cyberdream.Highlight
+---@alias cyberdream.Variant "default" | "light" | "auto"
 
 ---@class cyberdream.Extensions
 ---@field alpha? boolean
@@ -46,9 +46,9 @@ local M = {}
 
 ---@class cyberdream.Config
 ---@field transparent? boolean
----@field variant? "default" | "light" | "auto"
+---@field variant? cyberdream.Variant
 ---@field saturation? number
----@field colors? cyberdream.Palette
+---@field colors? cyberdream.Palette | table <cyberdream.Variant, cyberdream.Palette>
 ---@field highlights? table<string, cyberdream.Highlight>
 ---@field overrides? cyberdream.OverrideFn
 ---@field italic_comments? boolean

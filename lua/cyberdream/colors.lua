@@ -1,19 +1,19 @@
 ---@class cyberdream.Palette
----@field bg string
----@field bg_alt string
----@field bg_highlight string
+---@field bg? string
+---@field bg_alt? string
+---@field bg_highlight? string
 ---@field bg_solid? string
----@field fg string
----@field grey string
----@field blue string
----@field green string
----@field cyan string
----@field red string
----@field yellow string
----@field magenta string
----@field pink string
----@field orange string
----@field purple string
+---@field fg? string
+---@field grey? string
+---@field blue? string
+---@field green? string
+---@field cyan? string
+---@field red? string
+---@field yellow? string
+---@field magenta? string
+---@field pink? string
+---@field orange? string
+---@field purple? string
 
 ---@class cyberdream.Colors
 ---@field default cyberdream.Palette
