@@ -13,6 +13,7 @@ M.extras = {
     ghostty = { extension = nil, name = "ghostty" },
     gitui = { extension = "ron", name = "gitui" },
     helix = { extension = "toml", name = "helix" },
+    k9s = { extension = "yml", name = "k9s" },
     kitty = { extension = "conf", name = "kitty" },
     lazydocker = { extension = "yml", name = "lazydocker" },
     lazygit = { extension = "yml", name = "lazygit" },
@@ -27,8 +28,8 @@ M.extras = {
     wezterm = { extension = "lua", name = "wezterm" },
     windowsterminal = { extension = "json", name = "windowsterminal" },
     yazi = { extension = "toml", name = "yazi" },
-    zellij = { extension = "kdl", name = "zellij" },
     zed = { extension = "json", name = "zed" },
+    zellij = { extension = "kdl", name = "zellij" },
 }
 
 --- Create/overwrite a file in the extras directory.

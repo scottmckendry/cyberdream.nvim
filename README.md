@@ -217,6 +217,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 - **[Ghostty](extras/ghostty/)**
 - **[GitUI](extras/gitui/)**
 - **[Helix](extras/helix/)**
+- **[K9s](extras/k9s/)**
 - **[Kitty](extras/kitty/)**
 - **[Lazydocker](extras/lazydocker/)**
 - **[Lazygit](extras/lazygit/)**
