@@ -226,6 +226,7 @@ Mostly terminal themes and a few other goodies!
 - **Ghostty**
 - **GitUI**
 - **Helix**
+- **K9s**
 - **Kitty**
 - **Lazydocker**
 - **Lazygit**
