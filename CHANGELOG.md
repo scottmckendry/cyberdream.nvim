@@ -1,5 +1,24 @@
 # Changelog
 
+## [5.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.1.0...v5.2.0) (2025-04-17)
+
+
+### Features
+
+* **ci:** add mechanism for cleaning up old extras ([8ed5c34](https://github.com/scottmckendry/cyberdream.nvim/commit/8ed5c3400fc79817da32a8045fb0d01bc256a9ee))
+* **extras:** k9s cyberdream skin ([6f2f9ea](https://github.com/scottmckendry/cyberdream.nvim/commit/6f2f9ea5db88de91a4e9a173963663c7c56f31e3))
+* **extras:** markdown highlights for helix extra ([#180](https://github.com/scottmckendry/cyberdream.nvim/issues/180)) ([1bf3a17](https://github.com/scottmckendry/cyberdream.nvim/commit/1bf3a17481f363f41ca895a203611af920153dac))
+* light mode via `colorscheme` cmd ([b02c977](https://github.com/scottmckendry/cyberdream.nvim/commit/b02c977aaf0283a0ec7a0184e6a459366325c93b))
+* **types:** use consistent type/class naming convention ([339a7b1](https://github.com/scottmckendry/cyberdream.nvim/commit/339a7b1293568405847b3627247da82a6030a852)), closes [#174](https://github.com/scottmckendry/cyberdream.nvim/issues/174)
+
+
+### Bug Fixes
+
+* **ci:** enable doc and extra generation in prs ([#176](https://github.com/scottmckendry/cyberdream.nvim/issues/176)) ([68f7f16](https://github.com/scottmckendry/cyberdream.nvim/commit/68f7f16e7abbbf9f3ae15477e41d385dba9c5bce))
+* contrast for cursorline/colorcolumn and visual highlights ([#172](https://github.com/scottmckendry/cyberdream.nvim/issues/172)) ([094e4eb](https://github.com/scottmckendry/cyberdream.nvim/commit/094e4eb33e7d078cbf2105604a4246092eb8046e))
+* **extensions:** don't set bg property for nvim-cmp groups ([c07db2e](https://github.com/scottmckendry/cyberdream.nvim/commit/c07db2e6cab236ead328afc2ae4e0e1e1c69cd68)), closes [#179](https://github.com/scottmckendry/cyberdream.nvim/issues/179)
+* **extras:** update tmux extra ([#175](https://github.com/scottmckendry/cyberdream.nvim/issues/175)) ([ec8a966](https://github.com/scottmckendry/cyberdream.nvim/commit/ec8a9669cdab52f2d64405afba590ad89437e1a8))
+
 ## [5.1.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.0.1...v5.1.0) (2025-02-18)
 
 
