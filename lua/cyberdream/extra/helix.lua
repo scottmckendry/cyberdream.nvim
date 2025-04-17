@@ -17,6 +17,17 @@ function M.generate(variant)
 "ui.selection.primary" = "magenta"
 "ui.virtual.ruler" = { bg = "bg_highlight" }
 
+# Syntax Highlighting for Markdown 
+"markup.raw" = { fg = "magenta", bg = "bg" } 
+"markup.raw.inline" = { fg = "pink" } 
+"markup.heading.marker" = { fg = "blue" }
+"markup.list" = { fg = "magenta" }
+"markup.bold" = { fg = "pink", modifiers = ["bold"] }
+"markup.italic" = { fg = "pink" }
+"markup.strikethrough" = { fg = "red", modifiers = ["crossed_out"] }
+"markup.link" = { fg = "cyan" }
+"markup.quote" = { fg = "fg" }
+
 # Syntax Highlighting for Code
 "comment" = { fg = "grey", modifiers = ["italic"] }
 "comment.line" = { fg = "grey", modifiers = ["italic"] }
