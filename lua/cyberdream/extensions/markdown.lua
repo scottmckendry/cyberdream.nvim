@@ -21,9 +21,16 @@ function M.get(opts, t)
         RenderMarkdownH5Bg = { bg = util.blend(t.bg_solid, t.magenta, 0.85) },
         RenderMarkdownH6Bg = { bg = util.blend(t.bg_solid, t.green, 0.85) },
 
+        RenderMarkdownQuote = { fg = t.grey },
+        RenderMarkdownQuote1 = { fg = util.blend(t.grey, t.bg_solid, 0.9) },
+        RenderMarkdownQuote2 = { fg = util.blend(t.grey, t.bg_solid, 0.8) },
+        RenderMarkdownQuote3 = { fg = util.blend(t.grey, t.bg_solid, 0.7) },
+        RenderMarkdownQuote4 = { fg = util.blend(t.grey, t.bg_solid, 0.6) },
+        RenderMarkdownQuote5 = { fg = util.blend(t.grey, t.bg_solid, 0.5) },
+        RenderMarkdownQuote6 = { fg = util.blend(t.grey, t.bg_solid, 0.4) },
+
         RenderMarkdownCode = { bg = t.bg_alt },
         RenderMarkdownBullet = { fg = t.grey },
-        RenderMarkdownQuote = { link = "Comment" },
         RenderMarkdownDash = { fg = t.grey },
         RenderMarkdownLink = { link = "@markup.link.label.markdown_inline" },
         RenderMarkdownMath = { link = "@markup.math" },
