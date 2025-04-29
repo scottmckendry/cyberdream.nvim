@@ -8,9 +8,19 @@ local M = {}
 function M.generate(variant)
     local template = [==[
 {
+    "name": "${name}",
+    "cursorColor": "${fg}",
+    "selectionBackground": "${bg_highlight}",
     "background": "${bg}",
+    "foreground": "${fg}",
     "black": "${bg}",
     "blue": "${blue}",
+    "cyan": "${cyan}",
+    "green": "${green}",
+    "purple": "${purple}",
+    "red": "${red}",
+    "white": "${fg}",
+    "yellow": "${yellow}",
     "brightBlack": "${bg_highlight}",
     "brightBlue": "${blue}",
     "brightCyan": "${cyan}",
@@ -18,21 +28,19 @@ function M.generate(variant)
     "brightPurple": "${purple}",
     "brightRed": "${red}",
     "brightWhite": "${fg}",
-    "brightYellow": "${yellow}",
-    "cursorColor": "${fg}",
-    "cyan": "${cyan}",
-    "foreground": "${fg}",
-    "green": "${green}",
-    "name": "cyberdream",
-    "purple": "${purple}",
-    "red": "${red}",
-    "selectionBackground": "${bg_highlight}",
-    "white": "${fg}",
-    "yellow": "${yellow}"
+    "brightYellow": "${yellow}"
 }
 ]==]
 
-    return util.parse_extra_template(template, colors[variant])
+    local theme = colors[variant]
+
+    if variant == "default" then
+        theme.name = "Cyberdream"
+    else
+        theme.name = "Cyberdream " .. variant:sub(1, 1):upper() .. variant:sub(2, -1)
+    end
+
+    return util.parse_extra_template(template, theme)
 end
 
 return M
