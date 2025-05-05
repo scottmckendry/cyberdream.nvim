@@ -2,6 +2,10 @@
 local colors = require("cyberdream.colors").default
 local opts = require("cyberdream.config").options
 
+if opts.variant == "tron" then
+    colors = require("cyberdream.colors").tron
+end
+
 if opts.variant == "light" then
     colors = require("cyberdream.colors").light
 end

@@ -19,6 +19,10 @@ function M.setup(variant)
         ---@type cyberdream.Palette
         t = colors.light
     end
+    if opts.variant == "tron" then
+        ---@type cyberdream.Palette
+        t = colors.tron
+    end
 
     if opts.variant == "auto" then
         if vim.o.background == "light" then

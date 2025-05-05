@@ -18,6 +18,7 @@
 ---@class cyberdream.Colors
 ---@field default cyberdream.Palette
 ---@field light cyberdream.Palette
+---@field tron cyberdream.Palette
 local M = {}
 
 M.default = {

@@ -244,7 +244,7 @@ end
 --- @return string new variant
 function M.toggle_theme_auto()
     local variant = vim.o.background
-    if variant == "dark" then
+    if variant == "dark" or variant == "tron" then
         variant = "light"
     else
         variant = "dark"

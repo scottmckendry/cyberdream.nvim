@@ -3,6 +3,7 @@ local M = {}
 M.variants = {
     default = "default",
     light = "light",
+    tron = "tron",
 }
 
 M.extras = {
