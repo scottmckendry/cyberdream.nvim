@@ -55,10 +55,10 @@ M.light = {
 }
 
 M.tron = {
-    bg = "#16181a",
-    bg_alt = "#1e2124",
+    bg = "#14191f",
+    bg_alt = "#1c232b",
     bg_highlight = "#3c4048",
-    fg = "#ffffff",
+    fg = "#aec2e0",
     grey = "#7b8496",
     blue = "#5ea1ff",
     green = "#5eff6c",
