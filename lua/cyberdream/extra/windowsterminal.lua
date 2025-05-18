@@ -32,7 +32,7 @@ function M.generate(variant)
 }
 ]==]
 
-    local theme = colors[variant]
+    local theme = vim.deepcopy(colors[variant])
 
     if variant == "default" then
         theme.name = "Cyberdream"
