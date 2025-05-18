@@ -1,5 +1,19 @@
 # Changelog
 
+## [5.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.2.0...v5.3.0) (2025-05-18)
+
+
+### Features
+
+* **config:** allow colour overrides per variant ([13fb5be](https://github.com/scottmckendry/cyberdream.nvim/commit/13fb5bea902e0c3569258199d040ddbeda3496fa))
+* **extensions:** render-markdown.nvim nested block quote groups ([#182](https://github.com/scottmckendry/cyberdream.nvim/issues/182)) ([a7f4efa](https://github.com/scottmckendry/cyberdream.nvim/commit/a7f4efa9030401c6f827ee9aa96f1bf3409b1f35))
+
+
+### Bug Fixes
+
+* **extras:** avoid modifying original properties in windows terminal ([08328cf](https://github.com/scottmckendry/cyberdream.nvim/commit/08328cfb429ca5562dc8604306ea8b267d149fa5))
+* **extras:** correctly generate names for Windows Terminal extra theme config ([#181](https://github.com/scottmckendry/cyberdream.nvim/issues/181)) ([bba3685](https://github.com/scottmckendry/cyberdream.nvim/commit/bba3685b006f3c563cb48895eac58165bdeea2ab))
+
 ## [5.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.1.0...v5.2.0) (2025-04-17)
 
 
