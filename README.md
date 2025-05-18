@@ -182,13 +182,23 @@ require("cyberdream").setup({
         }
     end,
 
-    -- Override a color entirely
+    -- Override colors
     colors = {
         -- For a list of colors see `lua/cyberdream/colours.lua`
-        -- Example:
+
+        -- Override colors for both light and dark variants
         bg = "#000000",
         green = "#00ff00",
-        magenta = "#ff00ff",
+
+        -- If you want to override colors for light or dark variants only, use the following format:
+        dark = {
+            magenta = "#ff00ff",
+            fg = "#eeeeee",
+        },
+        light = {
+            red = "#ff5c57",
+            cyan = "#5ef1ff",
+        },
     },
 
     -- Disable or enable colorscheme extensions
