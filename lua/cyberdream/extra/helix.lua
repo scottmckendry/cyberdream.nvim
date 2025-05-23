@@ -65,11 +65,9 @@ function M.generate(variant)
 "ui.cursorline.secondary" = { bg = "bg_alt" }
 "ui.cursorcolumn.primary" = { bg = "bg_highlight" }
 "ui.cursorcolumn.secondary" = { bg = "bg_alt" }
-"ui.statusline.normal" = { fg = "fg", bg = "bg" }
-"ui.statusline.insert" = { fg = "green", bg = "bg" }
-"ui.statusline.select" = { fg = "blue", bg = "bg" }
-"ui.statusline.command" = { fg = "red", bg = "bg" }
-"ui.statusline.visual" = { fg = "purple", bg = "bg" }
+"ui.statusline.normal" = { fg = "bg", bg = "cyan" }
+"ui.statusline.insert" = { fg = "bg", bg = "green" }
+"ui.statusline.select" = { fg = "bg", bg = "magenta" }
 
 # Diagnostic styles
 "warning" = { fg = "yellow", modifiers = ["bold"] }
