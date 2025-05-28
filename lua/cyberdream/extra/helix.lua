@@ -8,8 +8,9 @@ local M = {}
 function M.generate(variant)
     local template = [==[
 # cyberdream theme for helix
-"ui.background" = "bg"
+"ui.background" = "bg_highlight" # file picker border color
 "ui.text" = "fg"
+"ui.text.focus" = "magenta" # file picker selection color
 "ui.cursor" = { bg = "fg", fg = "bg" }
 "ui.linenr" = "grey"
 "ui.statusline" = { fg = "cyan" }
@@ -20,7 +21,12 @@ function M.generate(variant)
 # Syntax Highlighting for Markdown 
 "markup.raw" = { fg = "magenta", bg = "bg" } 
 "markup.raw.inline" = { fg = "pink" } 
-"markup.heading.marker" = { fg = "blue" }
+"markup.heading.1" = { fg = "cyan", bg = "bg"}
+"markup.heading.2" = { fg = "blue", bg = "bg" }
+"markup.heading.3" = { fg = "green", bg = "bg" }
+"markup.heading.4" = { fg = "magenta", bg = "bg" }
+"markup.heading.5" = { fg = "pink", bg = "bg" }
+"markup.heading.6" = { fg = "orange", bg = "bg" }
 "markup.list" = { fg = "magenta" }
 "markup.bold" = { fg = "pink", modifiers = ["bold"] }
 "markup.italic" = { fg = "pink" }
@@ -65,11 +71,9 @@ function M.generate(variant)
 "ui.cursorline.secondary" = { bg = "bg_alt" }
 "ui.cursorcolumn.primary" = { bg = "bg_highlight" }
 "ui.cursorcolumn.secondary" = { bg = "bg_alt" }
-"ui.statusline.normal" = { fg = "fg", bg = "bg" }
-"ui.statusline.insert" = { fg = "green", bg = "bg" }
-"ui.statusline.select" = { fg = "blue", bg = "bg" }
-"ui.statusline.command" = { fg = "red", bg = "bg" }
-"ui.statusline.visual" = { fg = "purple", bg = "bg" }
+"ui.statusline.normal" = { fg = "bg", bg = "cyan" }
+"ui.statusline.insert" = { fg = "bg", bg = "green" }
+"ui.statusline.select" = { fg = "bg", bg = "magenta" }
 
 # Diagnostic styles
 "warning" = { fg = "yellow", modifiers = ["bold"] }
@@ -83,7 +87,7 @@ function M.generate(variant)
 
 # Popups and Menus
 "ui.popup" = { fg = "fg", bg = "bg" }
-"ui.popup.info" = { fg = "cyan", bg = "bg_alt" }
+"ui.popup.info" = { fg = "cyan", bg = "bg" }
 "ui.menu" = { fg = "fg", bg = "bg" }
 "ui.menu.selected" = { fg = "bg", bg = "fg" }
 
