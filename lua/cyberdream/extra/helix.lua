@@ -20,7 +20,12 @@ function M.generate(variant)
 # Syntax Highlighting for Markdown 
 "markup.raw" = { fg = "magenta", bg = "bg" } 
 "markup.raw.inline" = { fg = "pink" } 
-"markup.heading.marker" = { fg = "blue" }
+"markup.heading.1" = { fg = "cyan", bg = "bg"}
+"markup.heading.2" = { fg = "blue", bg = "bg" }
+"markup.heading.3" = { fg = "green", bg = "bg" }
+"markup.heading.4" = { fg = "magenta", bg = "bg" }
+"markup.heading.5" = { fg = "pink", bg = "bg" }
+"markup.heading.6" = { fg = "orange", bg = "bg" }
 "markup.list" = { fg = "magenta" }
 "markup.bold" = { fg = "pink", modifiers = ["bold"] }
 "markup.italic" = { fg = "pink" }
