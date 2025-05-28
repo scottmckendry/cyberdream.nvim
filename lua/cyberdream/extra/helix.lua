@@ -8,8 +8,9 @@ local M = {}
 function M.generate(variant)
     local template = [==[
 # cyberdream theme for helix
-"ui.background" = "bg"
+"ui.background" = "bg_highlight" # file picker border color
 "ui.text" = "fg"
+"ui.text.focus" = "magenta" # file picker selection color
 "ui.cursor" = { bg = "fg", fg = "bg" }
 "ui.linenr" = "grey"
 "ui.statusline" = { fg = "cyan" }
@@ -86,7 +87,7 @@ function M.generate(variant)
 
 # Popups and Menus
 "ui.popup" = { fg = "fg", bg = "bg" }
-"ui.popup.info" = { fg = "cyan", bg = "bg_alt" }
+"ui.popup.info" = { fg = "cyan", bg = "bg" }
 "ui.menu" = { fg = "fg", bg = "bg" }
 "ui.menu.selected" = { fg = "bg", bg = "fg" }
 
