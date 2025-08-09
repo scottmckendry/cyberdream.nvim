@@ -44,6 +44,8 @@ Supported Plugins/Extensions ~
 
   dashboard-nvim                         dashboard
 
+  nvim-dap-ui                            dapui
+
   fzf-lua                                fzflua
 
   gitsigns.nvim                          gitsigns
