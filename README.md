@@ -63,6 +63,7 @@
 | [alpha-nvim](https://github.com/goolord/alpha-nvim)                                   | [alpha](lua/cyberdream/extensions/alpha.lua)                           |
 | [blink.cmp](https://github.com/Saghen/blink.cmp)                                      | [blinkcmp](lua/cyberdream/extensions/blinkcmp.lua)                     |
 | [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)                           | [dashboard](lua/cyberdream/extensions/dashboard.lua)                   |
+| [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)                                | [dapui](lua/cyberdream/extensions/dapui.lua)                           |
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                        | [fzflua](lua/cyberdream/extensions/fzflua.lua)                         |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                           | [gitsigns](lua/cyberdream/extensions/gitsigns.lua)                     |
 | [gitpad.nvim](https://github.com/yujinyuz/gitpad.nvim)                                | [gitpad](lua/cyberdream/extensions/gitpad.lua)                         |
