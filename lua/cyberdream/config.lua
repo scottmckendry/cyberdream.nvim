@@ -17,6 +17,7 @@ local M = {}
 ---@field alpha? boolean
 ---@field blinkcmp? boolean
 ---@field cmp? boolean
+---@field dapui? boolean
 ---@field dashboard? boolean
 ---@field fzflua? boolean
 ---@field gitpad? boolean
@@ -74,6 +75,7 @@ local default_options = {
         alpha = true,
         blinkcmp = true,
         cmp = true,
+        dapui = true,
         dashboard = true,
         fzflua = true,
         gitpad = true,
