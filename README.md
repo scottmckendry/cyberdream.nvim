@@ -124,7 +124,7 @@ Lualine (optional):
 }
 ```
 
-See my personal lualine config [here](https://github.com/scottmckendry/Windots/blob/main/nvim/lua/plugins/lualine.lua) for an example.
+See my personal lualine config [here](https://github.com/scottmckendry/nix/blob/0fc0b9ce9f87283c35c261af74bfd222ef5886f8/nvim/lua/plugins/lualine.lua) for an example.
 
 ## 🚀 Usage
 
