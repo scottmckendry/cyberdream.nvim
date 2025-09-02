@@ -21,6 +21,7 @@ M.extras = {
     opencode = { extension = "json", name = "opencode" },
     pywal = { extension = "json", name = "pywal" },
     rio = { extension = "toml", name = "rio" },
+    superfile = { extension = "toml", name = "superfile" },
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
     tmux = { extension = "conf", name = "tmux" },
