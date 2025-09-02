@@ -1,0 +1,48 @@
+# Borders
+file_panel_border = "#bdc1ca"
+sidebar_border = "#bdc1ca"
+footer_border = "#bdc1ca"
+
+file_panel_border_active = "#b1074d"
+sidebar_border_active = "#d17c00"
+footer_border_active = "#d100bf"
+modal_border_active = "#b1074d"
+
+full_screen_bg = "#ffffff"
+file_panel_bg = "#ffffff"
+sidebar_bg = "#ffffff"
+footer_bg = "#ffffff"
+modal_bg = "#ffffff"
+
+full_screen_fg = "#34383f"
+file_panel_fg = "#34383f"
+sidebar_fg = "#16181a"
+footer_fg = "#34383f"
+modal_fg = "#34383f"
+
+cursor = "#16181a"
+correct = "#008b0c"
+error = "#d11500"
+hint = "#0057d1"
+cancel = "#997b00"
+# Gradient color can only have two colors!
+gradient_color = ["#0057d1", "#a018ff"]
+
+file_panel_top_directory_icon = "#008c99"
+file_panel_top_path = "#0057d1"
+file_panel_item_selected_fg = "#d17c00"
+file_panel_item_selected_bg = ""
+
+sidebar_title = "#d17c00"
+sidebar_item_selected_fg = "#008b0c"
+sidebar_item_selected_bg = ""
+sidebar_divider = "#eaeaea"
+
+modal_cancel_fg = "#acacac"
+modal_cancel_bg = "#d11500"
+
+modal_confirm_fg = "#acacac"
+modal_confirm_bg = "#008b0c"
+
+help_menu_hotkey = "#008c99"
+help_menu_title = "#a018ff"
