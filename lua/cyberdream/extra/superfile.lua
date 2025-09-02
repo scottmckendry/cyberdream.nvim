@@ -7,14 +7,15 @@ local M = {}
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
     local template = [==[
-file_panel_border = "${bg_highlight}"
-sidebar_border = "${bg_alt}"
-footer_border = "${bg_highlight}"
+# Borders
+file_panel_border = "${dark_grey}"
+sidebar_border = "${dark_grey}"
+footer_border = "${dark_grey}"
 
-file_panel_border_active = "${magenta}"
+file_panel_border_active = "${pastel_pink}"
 sidebar_border_active = "${orange}"
 footer_border_active = "${magenta}"
-modal_border_active = "${magenta}"
+modal_border_active = "${pastel_pink}"
 
 full_screen_bg = "${bg}"
 file_panel_bg = "${bg}"
@@ -22,22 +23,22 @@ sidebar_bg = "${bg}"
 footer_bg = "${bg}"
 modal_bg = "${bg}"
 
-full_screen_fg = "${fg}"
-file_panel_fg = "${fg}"
+full_screen_fg = "${light_grey}"
+file_panel_fg = "${light_grey}"
 sidebar_fg = "${fg}"
-footer_fg = "${fg}"
-modal_fg = "${fg}"
+footer_fg = "${light_grey}"
+modal_fg = "${light_grey}"
 
-cursor = "${green}"
+cursor = "${fg}"
 correct = "${green}"
 error = "${red}"
 hint = "${blue}"
 cancel = "${yellow}"
-# Gradient color can only have two color!
+# Gradient color can only have two colors!
 gradient_color = ["${blue}", "${purple}"]
 
-file_panel_top_directory_icon = "${green}"
-file_panel_top_path = "${green}"
+file_panel_top_directory_icon = "${cyan}"
+file_panel_top_path = "${blue}"
 file_panel_item_selected_fg = "${orange}"
 file_panel_item_selected_bg = ""
 
@@ -52,11 +53,18 @@ modal_cancel_bg = "${red}"
 modal_confirm_fg = "${bg_highlight}"
 modal_confirm_bg = "${green}"
 
-help_menu_hotkey = "${green}"
-help_menu_title = "${yellow}"
-    ]==]
+help_menu_hotkey = "${cyan}"
+help_menu_title = "${purple}"
+]==]
 
-    return util.parse_extra_template(template, colors[variant])
+    local custom_colours = colors[variant]
+
+    local t = vim.tbl_extend("force", {}, custom_colours)
+    t.light_grey = util.blend(custom_colours.fg, custom_colours.grey, 0.7)
+    t.dark_grey = util.blend(custom_colours.bg, custom_colours.grey, 0.5)
+    t.pastel_pink = util.blend(custom_colours.pink, custom_colours.fg, 0.7)
+
+    return util.parse_extra_template(template, t)
 end
 
 return M
