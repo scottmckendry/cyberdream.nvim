@@ -147,6 +147,14 @@ function M.apply_saturation(colors, weight)
     return desaturated_colors
 end
 
+--- Convert a percentage (0-100) to a hex alpha value (00-FF).
+--- @param percent number
+--- @return string
+function M.percent_to_hex_alpha(percent)
+    local alpha = math.floor((percent / 100) * 255)
+    return string.format("%02x", alpha)
+end
+
 --- Load the colorscheme.
 --- @param theme table
 function M.load(theme)

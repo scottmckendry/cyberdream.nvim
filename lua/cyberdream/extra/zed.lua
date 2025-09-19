@@ -6,14 +6,6 @@ local M = {}
 --- Generate cyberdream theme for https://zed.dev/
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
-    local extended_colors = vim.fn.copy(colors[variant])
-
-    for key, value in pairs(colors[variant]) do
-        extended_colors[key .. "Alpha"] = value .. "80" -- 50% transparency
-    end
-
-    extended_colors.variant = variant == "default" and "dark" or "light"
-
     local template = [==[
 {
   "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
@@ -63,7 +55,7 @@ function M.generate(variant)
         "tab_bar.background": null,
         "tab.inactive_background": "${bg}",
         "tab.active_background": "${bg_alt}",
-        "search.match_background": "${orangeAlpha}",
+        "search.match_background": "${orangeAlpha50}",
         "panel.background": "${bg}",
         "panel.focused_border": null,
         "pane.focused_border": null,
@@ -133,14 +125,14 @@ function M.generate(variant)
         "hidden.background": null,
         "hidden.border": null,
         "hint": "${grey}",
-        "hint.background": null,
+        "hint.background": ${bg_alt},
         "hint.border": null,
         "ignored": null,
         "ignored.background": null,
         "ignored.border": null,
-        "info": null,
-        "info.background": null,
-        "info.border": null,
+        "info": "${blue}",
+        "info.background": "${blueAlpha50}",
+        "info.border": "${blue}",
         "modified": "${orange}",
         "modified.background": null,
         "modified.border": null,
@@ -156,14 +148,14 @@ function M.generate(variant)
         "unreachable": null,
         "unreachable.background": null,
         "unreachable.border": null,
-        "warning": "${yellow}",
-        "warning.background": "${bg}",
-        "warning.border": null,
+        "warning": "${orange}",
+        "warning.background": "${orangeAlpha30}",
+        "warning.border": "${orange}",
         "players": [
           {
             "cursor": "${fg}",
             "background": "${fg}",
-            "selection": null
+            "selection": "${bg_highlight}"
           }
         ],
         "syntax": {
@@ -190,6 +182,30 @@ function M.generate(variant)
             "background_color": null,
             "font_style": null,
             "font_weight": null
+          },
+          "comment.todo": {
+            "color": "${blue}",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.info": {
+            "color": "${cyan}",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.warn": {
+            "color": "${orange}",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.error": {
+            "color": "${red}",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
           },
           "constant": {
             "color": "${fg}",
@@ -246,13 +262,13 @@ function M.generate(variant)
             "font_weight": null
           },
           "punctuation.bracket": {
-            "color": "${pink}",
+            "color": "${fg}",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation.delimiter": {
-            "color": "${pink}",
+            "color": "${fg}",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -266,6 +282,11 @@ function M.generate(variant)
           "punctuation.special": {
             "color": "${pink}",
             "background_color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+           "selector": {
+            "color": "${purple}",
             "font_style": null,
             "font_weight": null
           },
@@ -335,6 +356,18 @@ function M.generate(variant)
   ]
 }
 ]==]
+
+    local extended_colors = vim.fn.copy(colors[variant])
+    extended_colors.variant = variant == "default" and "dark" or "light"
+
+    local seen = {}
+    for name, pct in string.gmatch(template, "%${([%a_][%w_]*)Alpha(%d+)}") do
+        pct = tonumber(pct)
+        if pct and colors[variant][name] and not seen[name .. pct] then
+            extended_colors[name .. "Alpha" .. tostring(pct)] = colors[variant][name] .. util.percent_to_hex_alpha(pct)
+            seen[name .. pct] = true
+        end
+    end
 
     return util.parse_extra_template(template, extended_colors)
 end
