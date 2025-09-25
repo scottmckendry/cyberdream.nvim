@@ -19,6 +19,7 @@ M.extras = {
     lazygit = { extension = "yml", name = "lazygit" },
     lsd = { extension = "yml", name = "lsd" },
     opencode = { extension = "json", name = "opencode" },
+    posting = { extension = "yaml", name = "posting" },
     pywal = { extension = "json", name = "pywal" },
     rio = { extension = "toml", name = "rio" },
     superfile = { extension = "toml", name = "superfile" },
