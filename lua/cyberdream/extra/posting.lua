@@ -10,7 +10,7 @@ function M.generate(variant)
     local template = [==[
 name: cyberdream
 primary: "${purple}"
-secondary: "${orange}"
+secondary: "${blue}"
 accent: "${cyan}"
 background: "${bg}"
 surface: "${bg_alt}"
