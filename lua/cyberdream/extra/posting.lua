@@ -16,7 +16,7 @@ background: "${bg}"
 surface: "${bg_alt}"
 error: "${red}"
 success: "${green}"
-warning: "${yellow}"
+warning: "${orange}"
 
 author: Scott McKendry
 description: High-contrast, Futuristic & Vibrant Posting Theme
