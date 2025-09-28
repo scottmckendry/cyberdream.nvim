@@ -99,7 +99,7 @@ Supported Plugins/Extensions ~
 
 INSTALLATION                                         *cyberdream-installation*
 
-Lazy1
+Lazy1:
 
 >lua
     {
@@ -115,7 +115,7 @@ Packer:
     use { "scottmckendry/cyberdream.nvim" }
 <
 
-Lualine(optional):
+Lualine (optional):
 
 >lua
     {
