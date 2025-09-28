@@ -1,5 +1,25 @@
 # Changelog
 
+## [5.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.2.0...v5.3.0) (2025-09-25)
+
+
+### Features
+
+* **config:** allow colour overrides per variant ([13fb5be](https://github.com/scottmckendry/cyberdream.nvim/commit/13fb5bea902e0c3569258199d040ddbeda3496fa))
+* **extensions:** add dap ui ([d232012](https://github.com/scottmckendry/cyberdream.nvim/commit/d232012bde162461931dc5791299c25f5c2f7e40)), closes [#189](https://github.com/scottmckendry/cyberdream.nvim/issues/189)
+* **extensions:** render-markdown.nvim nested block quote groups ([#182](https://github.com/scottmckendry/cyberdream.nvim/issues/182)) ([a7f4efa](https://github.com/scottmckendry/cyberdream.nvim/commit/a7f4efa9030401c6f827ee9aa96f1bf3409b1f35))
+* **extras:** add opencode ([14b254d](https://github.com/scottmckendry/cyberdream.nvim/commit/14b254d37bb725bf9a92f741f0c4a429f253418c))
+* **extras:** add posting ([#199](https://github.com/scottmckendry/cyberdream.nvim/issues/199)) ([637e309](https://github.com/scottmckendry/cyberdream.nvim/commit/637e309a4da0d9b892baeab8c1608b404740c875))
+* **extras:** add superfile ([#195](https://github.com/scottmckendry/cyberdream.nvim/issues/195)) ([d0f390c](https://github.com/scottmckendry/cyberdream.nvim/commit/d0f390c99ee04e012e2590dec994a38f4d544966))
+* **extras:** helix theme improvements ([#187](https://github.com/scottmckendry/cyberdream.nvim/issues/187)) ([196751f](https://github.com/scottmckendry/cyberdream.nvim/commit/196751fb93460adadafbba596c6def0f253c6cc9))
+
+
+### Bug Fixes
+
+* **ci:** skip autocommit for extras in prs ([1e13105](https://github.com/scottmckendry/cyberdream.nvim/commit/1e13105d276381eb171baeb7cdb104850c8553c3))
+* **extras:** avoid modifying original properties in windows terminal ([08328cf](https://github.com/scottmckendry/cyberdream.nvim/commit/08328cfb429ca5562dc8604306ea8b267d149fa5))
+* **extras:** correctly generate names for Windows Terminal extra theme config ([#181](https://github.com/scottmckendry/cyberdream.nvim/issues/181)) ([bba3685](https://github.com/scottmckendry/cyberdream.nvim/commit/bba3685b006f3c563cb48895eac58165bdeea2ab))
+
 ## [5.2.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.1.0...v5.2.0) (2025-04-17)
 
 
