@@ -14,7 +14,6 @@ set -ogq @thm_fg "${fg}"
 # Colors
 set -ogq @thm_rosewater "${pink}"
 set -ogq @thm_flamingo "${pink}"
-set -ogq @thm_rosewater "${pink}"
 set -ogq @thm_pink "${pink}"
 set -ogq @thm_mauve "${magenta}"
 set -ogq @thm_red "${red}"
