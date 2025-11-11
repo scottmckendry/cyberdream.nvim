@@ -62,7 +62,9 @@ function M.setup(variant)
             verthoriz = " ",
             eob = " ",
         })
-    else
+    end
+
+    if not opts.show_eob then
         vim.opt.fillchars:append({
             eob = " ",
         })

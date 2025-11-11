@@ -55,10 +55,12 @@ M.load_options = function(theme)
             verthoriz = " ",
             eob = " ",
         })
-    else
-        vim.opt.fillchars:append({
-            eob = " ",
-        })
+
+        if not theme.config.show_eob then
+            vim.opt.fillchars:append({
+                eob = " ",
+            })
+        end
     end
 
     if theme.terminal_colors then

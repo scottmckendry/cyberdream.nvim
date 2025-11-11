@@ -22,7 +22,7 @@ function M.get(opts, t)
         DiffText = { bg = util.blend(t.bg_solid, t.orange, 0.8) },
         Added = { fg = t.green },
         Removed = { fg = t.red },
-        EndOfBuffer = { fg = t.bg },
+        EndOfBuffer = opts.show_eob and { fg = util.blend(t.bg_highlight, t.fg, 0.9) } or { fg = t.bg },
         ErrorMsg = { fg = t.red },
         VertSplit = { fg = t.bg_highlight, bg = t.bg },
         WinSeparator = { fg = t.bg_highlight, bg = t.bg },

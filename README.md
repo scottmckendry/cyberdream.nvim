@@ -154,6 +154,9 @@ require("cyberdream").setup({
     -- Replace all fillchars with ' ' for the ultimate clean look
     hide_fillchars = false,
 
+    -- Show end of buffer tilde characters for a default look
+    show_eob = false,
+
     -- Apply a modern borderless look to pickers like Telescope, Snacks Picker & Fzf-Lua
     borderless_pickers = false,
 

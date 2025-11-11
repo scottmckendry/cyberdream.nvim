@@ -67,6 +67,7 @@ local default_options = {
     highlights = {},
     italic_comments = false,
     hide_fillchars = false,
+    show_eob = false,
     borderless_pickers = false,
     terminal_colors = true,
     cache = false,
