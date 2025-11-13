@@ -62,10 +62,6 @@ function M.setup(variant)
             verthoriz = " ",
             eob = " ",
         })
-    else
-        vim.opt.fillchars:append({
-            eob = " ",
-        })
     end
 
     if opts.terminal_colors then
