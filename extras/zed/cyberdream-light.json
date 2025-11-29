@@ -46,7 +46,7 @@
         "tab_bar.background": null,
         "tab.inactive_background": "#ffffff",
         "tab.active_background": "#eaeaea",
-        "search.match_background": "#d17c0080",
+        "search.match_background": "#d17c007f",
         "panel.background": "#ffffff",
         "panel.focused_border": null,
         "pane.focused_border": null,
@@ -116,14 +116,14 @@
         "hidden.background": null,
         "hidden.border": null,
         "hint": "#7b8496",
-        "hint.background": null,
+        "hint.background": #eaeaea,
         "hint.border": null,
         "ignored": null,
         "ignored.background": null,
         "ignored.border": null,
-        "info": null,
-        "info.background": null,
-        "info.border": null,
+        "info": "#0057d1",
+        "info.background": "#0057d17f",
+        "info.border": "#0057d1",
         "modified": "#d17c00",
         "modified.background": null,
         "modified.border": null,
@@ -139,14 +139,14 @@
         "unreachable": null,
         "unreachable.background": null,
         "unreachable.border": null,
-        "warning": "#997b00",
-        "warning.background": "#ffffff",
-        "warning.border": null,
+        "warning": "#d17c00",
+        "warning.background": "#d17c004c",
+        "warning.border": "#d17c00",
         "players": [
           {
             "cursor": "#16181a",
             "background": "#16181a",
-            "selection": null
+            "selection": "#acacac"
           }
         ],
         "syntax": {
@@ -173,6 +173,30 @@
             "background_color": null,
             "font_style": null,
             "font_weight": null
+          },
+          "comment.todo": {
+            "color": "#0057d1",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.info": {
+            "color": "#008c99",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.warn": {
+            "color": "#d17c00",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.error": {
+            "color": "#d11500",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
           },
           "constant": {
             "color": "#16181a",
@@ -229,13 +253,13 @@
             "font_weight": null
           },
           "punctuation.bracket": {
-            "color": "#f40064",
+            "color": "#16181a",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation.delimiter": {
-            "color": "#f40064",
+            "color": "#16181a",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -249,6 +273,11 @@
           "punctuation.special": {
             "color": "#f40064",
             "background_color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+           "selector": {
+            "color": "#a018ff",
             "font_style": null,
             "font_weight": null
           },

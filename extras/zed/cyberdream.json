@@ -46,7 +46,7 @@
         "tab_bar.background": null,
         "tab.inactive_background": "#16181a",
         "tab.active_background": "#1e2124",
-        "search.match_background": "#ffbd5e80",
+        "search.match_background": "#ffbd5e7f",
         "panel.background": "#16181a",
         "panel.focused_border": null,
         "pane.focused_border": null,
@@ -116,14 +116,14 @@
         "hidden.background": null,
         "hidden.border": null,
         "hint": "#7b8496",
-        "hint.background": null,
+        "hint.background": #1e2124,
         "hint.border": null,
         "ignored": null,
         "ignored.background": null,
         "ignored.border": null,
-        "info": null,
-        "info.background": null,
-        "info.border": null,
+        "info": "#5ea1ff",
+        "info.background": "#5ea1ff7f",
+        "info.border": "#5ea1ff",
         "modified": "#ffbd5e",
         "modified.background": null,
         "modified.border": null,
@@ -139,14 +139,14 @@
         "unreachable": null,
         "unreachable.background": null,
         "unreachable.border": null,
-        "warning": "#f1ff5e",
-        "warning.background": "#16181a",
-        "warning.border": null,
+        "warning": "#ffbd5e",
+        "warning.background": "#ffbd5e4c",
+        "warning.border": "#ffbd5e",
         "players": [
           {
             "cursor": "#ffffff",
             "background": "#ffffff",
-            "selection": null
+            "selection": "#3c4048"
           }
         ],
         "syntax": {
@@ -173,6 +173,30 @@
             "background_color": null,
             "font_style": null,
             "font_weight": null
+          },
+          "comment.todo": {
+            "color": "#5ea1ff",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.info": {
+            "color": "#5ef1ff",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.warn": {
+            "color": "#ffbd5e",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "comment.error": {
+            "color": "#ff6e5e",
+            "background_color": null,
+            "font_style": "italic",
+            "font_weight": 700
           },
           "constant": {
             "color": "#ffffff",
@@ -229,13 +253,13 @@
             "font_weight": null
           },
           "punctuation.bracket": {
-            "color": "#ff5ea0",
+            "color": "#ffffff",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation.delimiter": {
-            "color": "#ff5ea0",
+            "color": "#ffffff",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -249,6 +273,11 @@
           "punctuation.special": {
             "color": "#ff5ea0",
             "background_color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+           "selector": {
+            "color": "#bd5eff",
             "font_style": null,
             "font_weight": null
           },
