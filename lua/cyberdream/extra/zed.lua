@@ -125,7 +125,7 @@ function M.generate(variant)
         "hidden.background": null,
         "hidden.border": null,
         "hint": "${grey}",
-        "hint.background": ${bg_alt},
+        "hint.background": "${bg_alt}",
         "hint.border": null,
         "ignored": null,
         "ignored.background": null,
