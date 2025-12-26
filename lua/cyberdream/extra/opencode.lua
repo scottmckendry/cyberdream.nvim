@@ -7,6 +7,9 @@ local M = {}
 --- @param variant string: variant name, e.g. "dark", "light"
 function M.generate(variant)
     local c = colors[variant]
+    c.diffAddedBg = util.blend(c.bg, c.green, 0.8)
+    c.diffRemovedBg = util.blend(c.bg, c.red, 0.8)
+
     local template = [==[
 {
   "$schema": "https://opencode.ai/theme.json",
@@ -24,12 +27,14 @@ function M.generate(variant)
     "magenta": "${magenta}",
     "pink": "${pink}",
     "orange": "${orange}",
-    "purple": "${purple}"
+    "purple": "${purple}",
+    "diffAddedBg": "${diffAddedBg}",
+    "diffRemovedBg": "${diffRemovedBg}"
   },
   "theme": {
     "primary": "cyan",
     "secondary": "purple",
-    "accent": "pink",
+    "accent": "cyan",
     "error": "red",
     "warning": "orange",
     "success": "green",
@@ -38,7 +43,7 @@ function M.generate(variant)
     "textMuted": "grey",
     "background": "bg",
     "backgroundPanel": "bg_alt",
-    "backgroundElement": "bg_highlight",
+    "backgroundElement": "bg_alt",
     "border": "grey",
     "borderActive": "blue",
     "borderSubtle": "bg_highlight",
@@ -48,17 +53,17 @@ function M.generate(variant)
     "diffHunkHeader": "blue",
     "diffHighlightAdded": "green",
     "diffHighlightRemoved": "red",
-    "diffAddedBg": "bg_alt",
-    "diffRemovedBg": "bg_alt",
-    "diffContextBg": "bg",
+    "diffAddedBg": "diffAddedBg",
+    "diffRemovedBg": "diffRemovedBg",
+    "diffContextBg": "bg_alt",
     "diffLineNumber": "grey",
-    "diffAddedLineNumberBg": "bg_alt",
-    "diffRemovedLineNumberBg": "bg_highlight",
+    "diffAddedLineNumberBg": "diffAddedBg",
+    "diffRemovedLineNumberBg": "diffRemovedBg",
     "markdownText": "fg",
-    "markdownHeading": "orange",
-    "markdownLink": "cyan",
+    "markdownHeading": "fg",
+    "markdownLink": "blue",
     "markdownLinkText": "blue",
-    "markdownCode": "cyan",
+    "markdownCode": "grey",
     "markdownBlockQuote": "grey",
     "markdownEmph": "magenta",
     "markdownStrong": "orange",
