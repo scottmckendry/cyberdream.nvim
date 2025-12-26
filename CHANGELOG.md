@@ -1,5 +1,20 @@
 # Changelog
 
+## [5.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.3.0...v5.4.0) (2025-12-26)
+
+
+### Features
+
+* **extras:** update zed colors ([b7ff584](https://github.com/scottmckendry/cyberdream.nvim/commit/b7ff58446a296237c34f4cec3908c25eb8c5c6ca))
+* show eob chars when hide_fillchars is `false` ([22b993f](https://github.com/scottmckendry/cyberdream.nvim/commit/22b993f79c7aab934c00bfc3437d41f4621974dc))
+
+
+### Bug Fixes
+
+* **extras:** misc opencode style improvements ([a5abcce](https://github.com/scottmckendry/cyberdream.nvim/commit/a5abcce7ce046f019dccaa732b10e755c0f6ebdb))
+* **extras:** tmux duplicate color for thm_rosewater ([#200](https://github.com/scottmckendry/cyberdream.nvim/issues/200)) ([1bced87](https://github.com/scottmckendry/cyberdream.nvim/commit/1bced87ab42d6ac41e3d78c4ac1f85a47442645c))
+* **extras:** wrap zed hint.background in quotes ([#206](https://github.com/scottmckendry/cyberdream.nvim/issues/206)) ([5a508e7](https://github.com/scottmckendry/cyberdream.nvim/commit/5a508e7e7878057fc96fb49475fdd8893fa0935b))
+
 ## [5.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.2.0...v5.3.0) (2025-09-25)
 
 
