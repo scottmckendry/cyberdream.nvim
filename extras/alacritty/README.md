@@ -4,5 +4,5 @@
 2. Add the following line to your `~/.config/alacritty/alacritty.toml` file:
 
 ```toml
-import = ["~/.config/alacritty/cyberdream.toml"]
+general.import = ["~/.config/alacritty/cyberdream.toml"]
 ```
