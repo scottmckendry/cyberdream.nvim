@@ -16,7 +16,7 @@ themes {
         green "${green}"
         yellow "${yellow}"
         blue "${blue}"
-        magenta "${magenta}"
+        magenta "${purple}"
         cyan "${cyan}"
         white "${fg}"
         orange "${orange}"
