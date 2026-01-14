@@ -29,6 +29,7 @@ function M.generate(variant)
 colors:
   black: "${bg}"
   green: "${green}"
+  blue: "${blue}"
   purple: "${purple}"
   red: "${red}"
   yellow: "${yellow}"
@@ -49,7 +50,7 @@ core:
     foreground: orange
 
   directory:
-    foreground: purple
+    foreground: blue
 
   symlink:
     foreground: cyan
@@ -139,13 +140,13 @@ programming:
 
 media:
   image:
-    foreground: pink
-
-  audio:
     foreground: cyan
 
+  audio:
+    foreground: yellow
+
   video:
-    foreground: orange
+    foreground: yellow
     font-style: bold
 
   fonts:
@@ -155,10 +156,10 @@ media:
     foreground: pink
 
 office:
-  foreground: orange
+  foreground: green
 
 archives:
-  foreground: red
+  foreground: purple
   font-style: bold
 
 executable:
