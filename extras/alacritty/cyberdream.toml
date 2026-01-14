@@ -4,7 +4,7 @@ color = "0xffbd5e"
 index = 16
 
 [[colors.indexed_colors]]
-color = "0xff6e5e"
+color = "0xff5ea0"
 index = 17
 
 [colors.bright]
