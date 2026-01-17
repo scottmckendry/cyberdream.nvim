@@ -233,11 +233,15 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 - **[Lazydocker](extras/lazydocker/)**
 - **[Lazygit](extras/lazygit/)**
 - **[lsd](extras/lsd/)**
+- **[OpenCode](extras/opencode/)**
+- **[Posting](extras/posting/)**
 - **[Pywal](extras/pywal/)**
 - **[Rio](extras/rio/)**
+- **[Superfile](extras/superfile/)**
 - **[Textmate/Bat/Sublime/Delta](extras/textmate/)**
-- **[Tilux](extras/tilux/)**
+- **[Tilix](extras/tilix/)**
 - **[Tmux](extras/tmux/)**
+- **[Vicinae](extras/vicinae/)**
 - **[Vivid](extras/vivid/)**
 - **[Warp](extras/warp/)**
 - **[Wezterm](extras/wezterm/)**
