@@ -14,6 +14,8 @@ local M = {}
 ---@alias cyberdream.Variant "default" | "light" | "auto"
 
 ---@class cyberdream.Extensions
+---@field default? boolean Set all extensions to this value by default (useful for disabling all except specific ones)
+
 ---@field alpha? boolean
 ---@field blinkcmp? boolean
 ---@field cmp? boolean
@@ -111,6 +113,27 @@ M.options = {}
 ---@param options cyberdream.Config|nil
 function M.setup(options)
     options = options or {}
+
+    -- Handle the special 'default' option in extensions
+    if options.extensions and options.extensions.default ~= nil then
+        local default_value = options.extensions.default
+        local user_extensions = vim.deepcopy(options.extensions)
+        user_extensions.default = nil -- Remove the special 'default' key
+
+        -- Start with all extensions set to the default value
+        local extensions = {}
+        for k, _ in pairs(default_options.extensions) do
+            extensions[k] = default_value
+        end
+
+        -- Then apply user-specified overrides
+        for k, v in pairs(user_extensions) do
+            extensions[k] = v
+        end
+
+        options.extensions = extensions
+    end
+
     M.options = vim.tbl_deep_extend("force", {}, default_options, options)
     vim.g.cyberdream_opts = M.options
 end
