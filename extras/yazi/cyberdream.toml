@@ -1,26 +1,29 @@
-[manager]
+#:schema https://yazi-rs.github.io/schemas/theme.json
+
+[mgr]
+
 # tmTheme files can be found here: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/textmate 
 syntect_theme = "../bat/themes/cyberdream.tmTheme"
+
 border_style = { fg = "#3c4048" }
 cwd = { fg = "#5ef1ff" }
 find_keyword = { bold = true, fg = "#5eff6c" }
 find_position = { fg = "#ffffff" }
-hovered = { bg = "#7b8496", bold = true, fg = "#ffffff" }
 marker_copied = { bg = "#f1ff5e", fg = "#f1ff5e" }
 marker_cut = { bg = "#ff6e5e", fg = "#ff6e5e" }
 marker_selected = { bg = "#3c4048", fg = "#5eff6c" }
-preview_hovered = { bg = "#3c4048", bold = true, fg = "#ffffff" }
-tab_active = { bg = "#5ea1ff", fg = "#16181a" }
-tab_inactive = { bg = "#3c4048", fg = "#ffffff" }
-
 count_selected = { bg = "#5eff6c", fg = "#16181a" }
 count_copied = { bg = "#f1ff5e", fg = "#16181a" }
 count_cut = { bg = "#ff6e5e", fg = "#16181a" }
 
-[completion]
+[cmp]
 active = { bg = "#7b8496", fg = "#bd5eff" }
 border = { fg = "#5ea1ff" }
 inactive = { fg = "#ffffff" }
+
+[tabs]
+active = { bg = "#5ea1ff", fg = "#16181a" }
+inactive = { bg = "#3c4048", fg = "#ffffff" }
 
 [filetype]
 rules = [
@@ -56,24 +59,25 @@ selected = { bg = "#7b8496" }
 title = { fg = "#ffffff" }
 value = { fg = "#ffffff" }
 
-[select]
+[pick]
 active = { fg = "#bd5eff" }
 border = { fg = "#5ea1ff" }
 inactive = { fg = "#ffffff" }
 
+[mode]
+normal_main = { bg = "#5ea1ff", bold = true, fg = "#16181a" }
+select_main = { bg = "#5eff6c", bold = true, fg = "#16181a" }
+unset_main = { bg = "#ff5ef1", bold = true, fg = "#16181a" }
+
 [status]
-mode_normal = { bg = "#5ea1ff", bold = true, fg = "#16181a" }
-mode_select = { bg = "#5eff6c", bold = true, fg = "#16181a" }
-mode_unset = { bg = "#ff5ef1", bold = true, fg = "#16181a" }
-permissions_r = { fg = "#f1ff5e" }
-permissions_s = { fg = "#5ef1ff" }
-permissions_t = { fg = "#5ea1ff" }
-permissions_w = { fg = "#ff6e5e" }
-permissions_x = { fg = "#5eff6c" }
+perm_sep = { fg = "#5ef1ff" }
+perm_type = { fg = "#5ea1ff" }
+perm_read = { fg = "#f1ff5e" }
+perm_write = { fg = "#ff6e5e" }
+perm_exec = { fg = "#5eff6c" }
 progress_error = { bg = "#16181a", fg = "#ff6e5e" }
 progress_label = { bg = "#16181a", fg = "#ffffff" }
 progress_normal = { bg = "#16181a", fg = "#ffffff" }
-separator_style = { bg = "#3c4048", fg = "#3c4048" }
 
 [tasks]
 border = { fg = "#5ea1ff" }
