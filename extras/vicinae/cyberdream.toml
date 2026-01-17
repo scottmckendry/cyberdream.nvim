@@ -1,0 +1,79 @@
+[meta]
+description = "Cyberdream theme for vicinae"
+inherits = "vicinae-dark"
+name = "Cyberdream"
+variant = "dark"
+
+[colors.accents]
+blue = "#5ea1ff"
+cyan = "#5ef1ff"
+green = "#5eff6c"
+magenta = "#ff5ef1"
+orange = "#ffbd5e"
+purple = "#bd5eff"
+red = "#ff6e5e"
+yellow = "#f1ff5e"
+
+[colors.button.primary]
+background = "#3c4048"
+foreground = "#ffffff"
+
+[colors.button.primary.focus]
+outline = "#5ea1ff"
+
+[colors.button.primary.hover]
+background = "#5ea1ff"
+
+[colors.core]
+accent = "#5ea1ff"
+accent_foreground = "#ffffff"
+background = "#16181a"
+border = "#3c4048"
+foreground = "#ffffff"
+secondary_background = "#1e2124"
+
+[colors.grid.item]
+background = "#3c4048"
+
+[colors.grid.item.hover]
+outline = "#ffffff"
+
+[colors.grid.item.selection]
+outline = "#ffffff"
+
+[colors.input]
+border = "#7b8496"
+border_error = "#ff6e5e"
+border_focus = "#5ea1ff"
+
+[colors.list.item.hover]
+background = "#3c4048"
+foreground = "#ffffff"
+
+[colors.list.item.selection]
+background = "#3c4048"
+foreground = "#ffffff"
+secondary_background = "#3c4048"
+secondary_foreground = "#7b8496"
+
+[colors.loading]
+bar = "#5ea1ff"
+spinner = "#5ea1ff"
+
+[colors.scrollbars]
+background = "#7b8496"
+
+[colors.text]
+danger = "#ff6e5e"
+default = "#ffffff"
+muted = "#7b8496"
+placeholder = "#3c4048"
+success = "#5eff6c"
+
+[colors.text.links]
+default = "#5ea1ff"
+visited = "#ff5ea0"
+
+[colors.text.selection]
+background = "#5ea1ff"
+foreground = "#ffffff"
