@@ -243,11 +243,15 @@ Mostly terminal themes and a few other goodies!
 - **Lazydocker**
 - **Lazygit**
 - **lsd**
+- **OpenCode**
+- **Posting**
 - **Pywal**
 - **Rio**
+- **Superfile**
 - **Textmate/Bat/Sublime/Delta**
-- **Tilux**
+- **Tilix**
 - **Tmux**
+- **Vicinae**
 - **Vivid**
 - **Warp**
 - **Wezterm**
