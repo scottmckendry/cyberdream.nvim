@@ -256,6 +256,106 @@ Mostly terminal themes and a few other goodies!
 - **Zed**
 - **Zellij**
 
+Using the Nix Flake ~
+
+For Nix users, this repository includes a `flake.nix` that exposes all extra
+themes through the `extras` output. This makes it easy to integrate cyberdream
+themes into your NixOS or home-manager configuration.
+
+
+HOW IT WORKS ~
+
+The flake automatically discovers all directories in the `extras/` folder and
+makes them available as outputs. You can reference any extra theme directly in
+your Nix configuration.
+
+
+SETUP ~
+
+Add cyberdream to your flake inputs:
+
+>nix
+    {
+      inputs = {
+        nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+        cyberdream.url = "github:scottmckendry/cyberdream.nvim";
+      };
+    }
+<
+
+
+EXAMPLE USAGE WITH HOME MANAGER ~
+
+There are several approaches you can use depending on the program:
+
+
+USING EXTRACONFIG FOR PROGRAMS WITH CUSTOM CONFIG OPTIONS
+
+>nix
+    { inputs, ... }:
+    {
+      # Alacritty - parse TOML and merge with settings
+      programs.alacritty = {
+        enable = true;
+        settings = builtins.fromTOML (builtins.readFile "${inputs.cyberdream.extras.alacritty}/alacritty.toml");
+      };
+    
+      # Kitty - append theme config
+      programs.kitty = {
+        enable = true;
+        extraConfig = builtins.readFile "${inputs.cyberdream.extras.kitty}/kitty.conf";
+      };
+    
+      # Tmux - append theme config
+      programs.tmux = {
+        enable = true;
+        extraConfig = builtins.readFile "${inputs.cyberdream.extras.tmux}/tmux.conf";
+      };
+    }
+<
+
+
+USING XDG.CONFIGFILE FOR DIRECT FILE PLACEMENT
+
+>nix
+    { inputs, ... }:
+    {
+      # Yazi - link theme file directly
+      xdg.configFile."yazi/theme.toml".source = "${inputs.cyberdream.extras.yazi}/cyberdream.toml";
+    
+      # Zellij - link theme file directly
+      xdg.configFile."zellij/themes/cyberdream.kdl".source = "${inputs.cyberdream.extras.zellij}/cyberdream.kdl";
+    }
+<
+
+
+USING PROGRAM-SPECIFIC THEME OPTIONS
+
+>nix
+    { inputs, ... }:
+    {
+      # Bat - register as a custom theme
+      programs.bat = {
+        enable = true;
+        config = {
+          theme = "cyberdream";
+        };
+        themes = {
+          cyberdream = {
+            src = inputs.cyberdream;
+            file = "extras/textmate/cyberdream.tmTheme";
+          };
+        };
+      };
+    }
+<
+
+
+AVAILABLE EXTRAS ~
+
+All directories in the `extras/` folder are available through
+`inputs.cyberdream.extras.<name>`. See the list above for all available themes.
+
 
 ‍ RECIPES                                           *cyberdream-‍-recipes*
 
