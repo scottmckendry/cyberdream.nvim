@@ -7,29 +7,32 @@ local M = {}
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
     local template = [==[
-[manager]
+#:schema https://yazi-rs.github.io/schemas/theme.json
+
+[mgr]
+
 # tmTheme files can be found here: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/textmate 
 syntect_theme = "../bat/themes/cyberdream.tmTheme"
+
 border_style = { fg = "${bg_highlight}" }
 cwd = { fg = "${cyan}" }
 find_keyword = { bold = true, fg = "${green}" }
 find_position = { fg = "${fg}" }
-hovered = { bg = "${grey}", bold = true, fg = "${fg}" }
 marker_copied = { bg = "${yellow}", fg = "${yellow}" }
 marker_cut = { bg = "${red}", fg = "${red}" }
 marker_selected = { bg = "${bg_highlight}", fg = "${green}" }
-preview_hovered = { bg = "${bg_highlight}", bold = true, fg = "${fg}" }
-tab_active = { bg = "${blue}", fg = "${bg}" }
-tab_inactive = { bg = "${bg_highlight}", fg = "${fg}" }
-
 count_selected = { bg = "${green}", fg = "${bg}" }
 count_copied = { bg = "${yellow}", fg = "${bg}" }
 count_cut = { bg = "${red}", fg = "${bg}" }
 
-[completion]
+[cmp]
 active = { bg = "${grey}", fg = "${purple}" }
 border = { fg = "${blue}" }
 inactive = { fg = "${fg}" }
+
+[tabs]
+active = { bg = "${blue}", fg = "${bg}" }
+inactive = { bg = "${bg_highlight}", fg = "${fg}" }
 
 [filetype]
 rules = [
@@ -65,24 +68,25 @@ selected = { bg = "${grey}" }
 title = { fg = "${fg}" }
 value = { fg = "${fg}" }
 
-[select]
+[pick]
 active = { fg = "${purple}" }
 border = { fg = "${blue}" }
 inactive = { fg = "${fg}" }
 
+[mode]
+normal_main = { bg = "${blue}", bold = true, fg = "${bg}" }
+select_main = { bg = "${green}", bold = true, fg = "${bg}" }
+unset_main = { bg = "${magenta}", bold = true, fg = "${bg}" }
+
 [status]
-mode_normal = { bg = "${blue}", bold = true, fg = "${bg}" }
-mode_select = { bg = "${green}", bold = true, fg = "${bg}" }
-mode_unset = { bg = "${magenta}", bold = true, fg = "${bg}" }
-permissions_r = { fg = "${yellow}" }
-permissions_s = { fg = "${cyan}" }
-permissions_t = { fg = "${blue}" }
-permissions_w = { fg = "${red}" }
-permissions_x = { fg = "${green}" }
+perm_sep = { fg = "${cyan}" }
+perm_type = { fg = "${blue}" }
+perm_read = { fg = "${yellow}" }
+perm_write = { fg = "${red}" }
+perm_exec = { fg = "${green}" }
 progress_error = { bg = "${bg}", fg = "${red}" }
 progress_label = { bg = "${bg}", fg = "${fg}" }
 progress_normal = { bg = "${bg}", fg = "${fg}" }
-separator_style = { bg = "${bg_highlight}", fg = "${bg_highlight}" }
 
 [tasks]
 border = { fg = "${blue}" }
