@@ -26,6 +26,7 @@ M.extras = {
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
     tmux = { extension = "conf", name = "tmux" },
+    vicinae = { extension = "toml", name = "vicinae" },
     vivid = { extension = "yml", name = "vivid" },
     warp = { extension = "yaml", name = "warp" },
     wezterm = { extension = "lua", name = "wezterm" },
