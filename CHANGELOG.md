@@ -1,5 +1,26 @@
 # Changelog
 
+## [5.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.3.0...v5.4.0) (2026-01-27)
+
+
+### Features
+
+* add `default` extension option ([#218](https://github.com/scottmckendry/cyberdream.nvim/issues/218)) ([a0732c9](https://github.com/scottmckendry/cyberdream.nvim/commit/a0732c90574c59853e927f64b71fcfbd477cc76b))
+* **extras:** add vicinae theme ([6d3c379](https://github.com/scottmckendry/cyberdream.nvim/commit/6d3c3791adaf4dd34cebd7c9fce38396e683936e))
+* **extras:** update zed colors ([b7ff584](https://github.com/scottmckendry/cyberdream.nvim/commit/b7ff58446a296237c34f4cec3908c25eb8c5c6ca))
+* show eob chars when hide_fillchars is `false` ([22b993f](https://github.com/scottmckendry/cyberdream.nvim/commit/22b993f79c7aab934c00bfc3437d41f4621974dc))
+* **treesitter:** explicit highlight for docstrings ([a68ffa6](https://github.com/scottmckendry/cyberdream.nvim/commit/a68ffa6af98bf1fc88f33a071c51a188ec85c725))
+
+
+### Bug Fixes
+
+* **extras:** `import` section in Alacritty README ([#210](https://github.com/scottmckendry/cyberdream.nvim/issues/210)) ([4b460d6](https://github.com/scottmckendry/cyberdream.nvim/commit/4b460d6dbfa4c0de53b342b2f6382a30a6e67535))
+* **extras:** misc opencode style improvements ([a5abcce](https://github.com/scottmckendry/cyberdream.nvim/commit/a5abcce7ce046f019dccaa732b10e755c0f6ebdb))
+* **extras:** standardize magenta as purple for terminal themes ([#214](https://github.com/scottmckendry/cyberdream.nvim/issues/214)) ([3efd529](https://github.com/scottmckendry/cyberdream.nvim/commit/3efd529de44ce76439d9d8b63e26fc54f131a262))
+* **extras:** tmux duplicate color for thm_rosewater ([#200](https://github.com/scottmckendry/cyberdream.nvim/issues/200)) ([1bced87](https://github.com/scottmckendry/cyberdream.nvim/commit/1bced87ab42d6ac41e3d78c4ac1f85a47442645c))
+* **extras:** update vivid and yazi themes ([#216](https://github.com/scottmckendry/cyberdream.nvim/issues/216)) ([22942c3](https://github.com/scottmckendry/cyberdream.nvim/commit/22942c30b2b82cf8241e7dc44843bb5f54942337))
+* **extras:** wrap zed hint.background in quotes ([#206](https://github.com/scottmckendry/cyberdream.nvim/issues/206)) ([5a508e7](https://github.com/scottmckendry/cyberdream.nvim/commit/5a508e7e7878057fc96fb49475fdd8893fa0935b))
+
 ## [5.3.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.2.0...v5.3.0) (2025-09-25)
 
 
