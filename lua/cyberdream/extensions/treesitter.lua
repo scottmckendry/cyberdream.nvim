@@ -66,6 +66,7 @@ function M.get(opts, t)
         ["@repeat"] = { link = "Repeat" },
         ["@storageclass"] = { link = "StorageClass" },
         ["@string"] = { link = "String" },
+        ["@string.documentation"] = { link = "Comment" },
         ["@string.escape"] = { link = "SpecialChar" },
         ["@string.regex"] = { link = "String" },
         ["@string.special"] = { link = "SpecialChar" },
