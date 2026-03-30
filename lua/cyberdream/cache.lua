@@ -40,6 +40,7 @@ M.build = function(theme)
 
     -- Write the sanitized theme to cache
     cache:write(vim.json.encode(sanitized_theme))
+    cache:close()
     util.notify("Cache file written to **" .. theme_cache_file .. "**")
 end
 
@@ -81,19 +82,21 @@ M.load = function()
     end
 
     local theme = vim.json.decode(cache:read("*a"))
+    cache:close()
+
     for group, opts in pairs(theme.highlights) do
         vim.api.nvim_set_hl(0, group, opts)
     end
 
     -- check if config has changed (using sanitized comparison)
-    if not vim.deep_equal(theme.config, sanitize_config(config.options)) then
-        M.build(require("cyberdream.theme").setup())
-        local notify = vim.defer_fn(function()
-            util.notify("Building cache...\nA restart _may_ be required for changes to take effect.")
-            M.load()
-        end, 1000)
-        return notify
-    end
+    -- if not vim.deep_equal(theme.config, sanitize_config(config.options)) then
+    --     M.build(require("cyberdream.theme").setup())
+    --     local notify = vim.defer_fn(function()
+    --         util.notify("Building cache...\nA restart _may_ be required for changes to take effect.")
+    --         M.load()
+    --     end, 1000)
+    --     return notify
+    -- end
 
     M.load_options(theme)
     vim.g.colors_name = "cyberdream"
