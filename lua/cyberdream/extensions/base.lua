@@ -47,6 +47,8 @@ function M.get(opts, t)
         PmenuSel = { fg = t.fg, bg = t.bg_highlight },
         PmenuSbar = { fg = t.bg, bg = t.bg_highlight },
         PmenuThumb = { fg = t.bg, bg = t.bg_highlight },
+        PmenuMatch = { fg = t.cyan, bg = t.bg_highlight },
+        PmenuMatchSel = { fg = t.cyan, bg = t.bg_highlight },
         Question = { fg = t.yellow },
         QuickFixLine = { bg = t.bg_highlight },
         Search = { fg = t.bg_alt, bg = t.fg },
