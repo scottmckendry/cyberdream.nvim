@@ -13,6 +13,7 @@ M.extras = {
     ghostty = { extension = nil, name = "ghostty" },
     gitui = { extension = "ron", name = "gitui" },
     helix = { extension = "toml", name = "helix" },
+    iterm2 = { extension = "itermcolors", name = "iterm2" },
     k9s = { extension = "yml", name = "k9s" },
     kitty = { extension = "conf", name = "kitty" },
     lazydocker = { extension = "yml", name = "lazydocker" },
