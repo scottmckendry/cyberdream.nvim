@@ -36,16 +36,32 @@ end
 function M.generate(variant)
     local t = to_components(colors[variant])
 
-    local ansi = { "bg", "red", "green", "yellow", "blue", "purple", "cyan", "fg",
-                   "bg_highlight", "red", "green", "yellow", "blue", "purple", "cyan", "fg" }
+    local ansi = {
+        "bg",
+        "red",
+        "green",
+        "yellow",
+        "blue",
+        "purple",
+        "cyan",
+        "fg",
+        "bg_highlight",
+        "red",
+        "green",
+        "yellow",
+        "blue",
+        "purple",
+        "cyan",
+        "fg",
+    }
     local named = {
-        { "Background Color",   "bg" },
-        { "Foreground Color",   "fg" },
-        { "Bold Color",         "fg" },
-        { "Cursor Color",       "fg" },
-        { "Cursor Text Color",  "bg" },
-        { "Selection Color",    "bg_highlight" },
-        { "Selected Text Color","fg" },
+        { "Background Color", "bg" },
+        { "Foreground Color", "fg" },
+        { "Bold Color", "fg" },
+        { "Cursor Color", "fg" },
+        { "Cursor Text Color", "bg" },
+        { "Selection Color", "bg_highlight" },
+        { "Selected Text Color", "fg" },
     }
 
     local parts = {
