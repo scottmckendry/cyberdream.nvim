@@ -8,7 +8,7 @@ local M = {}
 function M.generate(variant)
     local template = [==[
 [delta "${name}"]
-	blame-palette = "${bg} ${palette_bg_1} ${palette_bg_2} ${palette_bg_3} ${palette_bg_4}}"
+	blame-palette = "${bg} ${palette_bg_1} ${palette_bg_2} ${palette_bg_3} ${palette_bg_4}"
 	commit-decoration-style = "${grey}" bold box ul
 	${variant} = true
 	file-decoration-style = "${grey}"
@@ -26,12 +26,12 @@ function M.generate(variant)
 	minus-style = syntax "${minus}"
 	plus-emph-style = bold syntax "${plus_emph}"
 	plus-style = syntax "${plus}"
-  map-styles = \
-    bold purple => syntax "${map_style_purple}", \
-    bold blue   => syntax "${map_style_blue}", \
-    bold cyan   => syntax "${map_style_cyan}", \
-    bold yellow => syntax "${map_style_yellow}"
-  # Should match the name of the bat theme
+	map-styles = \
+	  bold purple => syntax "${map_style_purple}", \
+	  bold blue   => syntax "${map_style_blue}", \
+	  bold cyan   => syntax "${map_style_cyan}", \
+	  bold yellow => syntax "${map_style_yellow}"
+	# Should match the name of the bat theme
 	syntax-theme = ${name}
 ]==]
 
@@ -60,12 +60,12 @@ function M.generate(variant)
     theme.lightgray = util.blend(theme.grey, base_color, 0.8)
 
     -- Add minus colors
-    theme.minus_emph = util.blend(theme.bg, theme.red, "default" and 0.6 or 0.8)
-    theme.minus = util.blend(theme.bg, theme.red, "default" and 0.8 or 0.6)
+    theme.minus_emph = util.blend(theme.bg, theme.red, variant == "default" and 0.6 or 0.8)
+    theme.minus = util.blend(theme.bg, theme.red, variant == "default" and 0.8 or 0.6)
 
     -- Add plus colors
-    theme.plus_emph = util.blend(theme.bg, theme.green, "default" and 0.6 or 0.8)
-    theme.plus = util.blend(theme.bg, theme.green, "default" and 0.8 or 0.6)
+    theme.plus_emph = util.blend(theme.bg, theme.green, variant == "default" and 0.6 or 0.8)
+    theme.plus = util.blend(theme.bg, theme.green, variant == "default" and 0.8 or 0.6)
 
     -- Add map style colors
     theme.map_style_purple = util.blend(theme.bg, theme.purple, variant == "default" and 0.6 or 0.8)
