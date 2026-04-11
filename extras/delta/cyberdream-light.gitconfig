@@ -1,0 +1,26 @@
+[delta "cyberdream-light"]
+	blame-palette = "#ffffff #eaeaea #d0d0d0 #b7b7b7 #9d9d9d"
+	commit-decoration-style = "#7b8496" bold box ul
+	light = true
+	file-decoration-style = "#7b8496"
+	file-style = "#16181a"
+	hunk-header-decoration-style = "#7b8496" box ul
+	hunk-header-file-style = bold
+	hunk-header-line-number-style = bold "#959cab"
+	hunk-header-style = file line-number syntax
+	line-numbers-left-style = "#7b8496"
+	line-numbers-minus-style = bold "#d11500"
+	line-numbers-plus-style = bold "#008b0c"
+	line-numbers-right-style = "#7b8496"
+	line-numbers-zero-style = "#7b8496"
+	minus-emph-style = bold syntax "#f5d0cc"
+	minus-style = syntax "#eca199"
+	plus-emph-style = bold syntax "#cce7ce"
+	plus-style = syntax "#99d09d"
+	map-styles = \
+	  bold purple => syntax "#ecd0ff", \
+	  bold blue   => syntax "#ccddf5", \
+	  bold cyan   => syntax "#cce8ea", \
+	  bold yellow => syntax "#eae4cc"
+	# Should match the name of the bat theme
+	syntax-theme = cyberdream-light
