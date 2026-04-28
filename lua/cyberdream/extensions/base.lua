@@ -132,7 +132,7 @@ function M.get(opts, t)
         DiagnosticHint = { fg = t.cyan },
         DiagnosticUnnecessary = { fg = t.grey },
 
-        DiagnosiiucVirtualTextError = { fg = t.red },
+        DiagnosticVirtualTextError = { fg = t.red },
         DiagnosticVirtualTextWarn = { fg = t.yellow },
         DiagnosticVirtualTextInfo = { fg = t.blue },
         DiagnosticVirtualTextHint = { fg = t.cyan },
