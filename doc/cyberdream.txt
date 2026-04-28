@@ -1,4 +1,5 @@
-*cyberdream.txt*             For Neovim >= 0.9.0             Last change: 2026
+*cyberdream.txt*
+                                      For Neovim >= 0.9.0    Last change: 2026
 
 ==============================================================================
 Table of Contents                               *cyberdream-table-of-contents*
