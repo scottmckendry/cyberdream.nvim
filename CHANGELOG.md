@@ -1,5 +1,17 @@
 # Changelog
 
+## [5.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.4.0...v5.5.0) (2026-04-28)
+
+
+### Features
+
+* **extras:** Add delta extra ([#207](https://github.com/scottmckendry/cyberdream.nvim/issues/207)) ([b034194](https://github.com/scottmckendry/cyberdream.nvim/commit/b034194b3e3d4b8ed06ac2ff93b0c87b13d7c647))
+
+
+### Bug Fixes
+
+* **extensions:** correct DiagnosticVirtualTextError ([#223](https://github.com/scottmckendry/cyberdream.nvim/issues/223)) ([3fb17fc](https://github.com/scottmckendry/cyberdream.nvim/commit/3fb17fc5c538378e0e7f1e57646b5e061531acb3))
+
 ## [5.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.3.0...v5.4.0) (2026-04-10)
 
 
