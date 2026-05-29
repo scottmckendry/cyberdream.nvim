@@ -8,6 +8,7 @@ M.variants = {
 M.extras = {
     alacritty = { extension = "toml", name = "alacritty" },
     base16 = { extension = "yaml", name = "base16" },
+    btop = { extension = "theme", name = "btop" },
     delta = { extension = "gitconfig", name = "delta" },
     fish = { extension = "theme", name = "fish" },
     foot = { extension = "ini", name = "foot" },
