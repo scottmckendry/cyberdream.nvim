@@ -1,0 +1,79 @@
+# cyberdream.nvim theme for btop
+# https://github.com/scottmckendry/cyberdream.nvim
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#16181a"
+
+# Main text color
+theme[main_fg]="#ffffff"
+
+# Title color for boxes
+theme[title]="#ffffff"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#5ea1ff"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#3c4048"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#ffffff"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#7b8496"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#ffffff"
+
+# Background color of the percentage meters
+theme[meter_bg]="#3c4048"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#5ef1ff"
+
+# Box outline color
+theme[cpu_box]="#3c4048"
+theme[mem_box]="#3c4048"
+theme[net_box]="#3c4048"
+theme[proc_box]="#3c4048"
+
+# Box divider line and small boxes line color
+theme[div_line]="#3c4048"
+
+# Graph colors (Cyan -> Purple)
+theme[temp_start]="#5ef1ff"
+theme[temp_mid]="#8da7ff"
+theme[temp_end]="#bd5eff"
+
+theme[cpu_start]="#5ef1ff"
+theme[cpu_mid]="#8da7ff"
+theme[cpu_end]="#bd5eff"
+
+theme[free_start]="#5ef1ff"
+theme[free_mid]="#8da7ff"
+theme[free_end]="#bd5eff"
+
+theme[cached_start]="#5ef1ff"
+theme[cached_mid]="#8da7ff"
+theme[cached_end]="#bd5eff"
+
+theme[available_start]="#5ef1ff"
+theme[available_mid]="#8da7ff"
+theme[available_end]="#bd5eff"
+
+theme[used_start]="#5ef1ff"
+theme[used_mid]="#8da7ff"
+theme[used_end]="#bd5eff"
+
+theme[download_start]="#5ef1ff"
+theme[download_mid]="#8da7ff"
+theme[download_end]="#bd5eff"
+
+theme[upload_start]="#5ef1ff"
+theme[upload_mid]="#8da7ff"
+theme[upload_end]="#bd5eff"
+
+# Process box color gradient for threads, mem and cpu usage
+theme[process_start]="#5ea1ff"
+theme[process_mid]="#bd5eff"
+theme[process_end]="#ff5ef1"
