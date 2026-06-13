@@ -30,6 +30,7 @@ M.extras = {
     tilix = { extension = "json", name = "tilix" },
     tmux = { extension = "conf", name = "tmux" },
     vicinae = { extension = "toml", name = "vicinae" },
+    vim = { extension = "vim", name = "vim" },
     vivid = { extension = "yml", name = "vivid" },
     warp = { extension = "yaml", name = "warp" },
     wezterm = { extension = "lua", name = "wezterm" },

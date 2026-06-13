@@ -254,6 +254,7 @@ We've cooked up some wonderful extras to enhance your cyberdream experience. Mos
 - **[Tilix](extras/tilix/)**
 - **[Tmux](extras/tmux/)**
 - **[Vicinae](extras/vicinae/)**
+- **[Vim](extras/vim/)**
 - **[Vivid](extras/vivid/)**
 - **[Warp](extras/warp/)**
 - **[Wezterm](extras/wezterm/)**
