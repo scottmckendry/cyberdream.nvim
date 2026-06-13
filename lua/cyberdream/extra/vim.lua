@@ -8,6 +8,9 @@ local M = {}
 function M.generate(variant)
     local template = [==[
 " cyberdream.vim - Cyberdream theme for VIM.
+" Maintainer: 0l3d
+" Description: Cyberdream theme for VIM.
+
 highlight clear
 
 if exists("syntax_on")
@@ -37,4 +40,3 @@ highlight Function guifg=${purple}
 end
 
 return M
-
