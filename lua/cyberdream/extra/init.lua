@@ -25,6 +25,7 @@ M.extras = {
     posting = { extension = "yaml", name = "posting" },
     pywal = { extension = "json", name = "pywal" },
     rio = { extension = "toml", name = "rio" },
+    setvtrgb = { extension = "conf", name = "setvtrgb" },
     superfile = { extension = "toml", name = "superfile" },
     textmate = { extension = "tmTheme", name = "textmate" },
     tilix = { extension = "json", name = "tilix" },
