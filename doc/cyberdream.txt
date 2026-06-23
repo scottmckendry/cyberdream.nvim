@@ -265,6 +265,7 @@ Mostly terminal themes and a few other goodies!
 - **Tilix**
 - **Tmux**
 - **Vicinae**
+- **Vim**
 - **Vivid**
 - **Warp**
 - **Wezterm**
