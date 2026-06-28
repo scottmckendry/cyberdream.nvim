@@ -34,9 +34,8 @@ function M.setup(variant)
     local color_overrides = opts.colors or {}
 
     -- Merge variant-specific overrides if they exist
-    variant = vim.o.background
-    if color_overrides[variant] then
-        t = vim.tbl_deep_extend("force", t, color_overrides[variant])
+    if color_overrides[opts.variant] then
+        t = vim.tbl_deep_extend("force", t, color_overrides[opts.variant])
     end
 
     -- Apply general overrides that work across variants
