@@ -8,19 +8,17 @@ function M.setup(variant)
     local config = require("cyberdream.config")
     local opts = config.options
 
-    if variant then
-        opts.variant = variant
-    end
+    local active = variant or opts.variant
 
     local theme = {}
     ---@type cyberdream.Palette
     local t = colors.default
-    if opts.variant == "light" then
+    if active == "light" then
         ---@type cyberdream.Palette
         t = colors.light
     end
 
-    if opts.variant == "auto" then
+    if active == "auto" then
         if vim.o.background == "light" then
             ---@type cyberdream.Palette
             t = colors.light
@@ -34,8 +32,8 @@ function M.setup(variant)
     local color_overrides = opts.colors or {}
 
     -- Merge variant-specific overrides if they exist
-    if color_overrides[opts.variant] then
-        t = vim.tbl_deep_extend("force", t, color_overrides[opts.variant])
+    if color_overrides[active] then
+        t = vim.tbl_deep_extend("force", t, color_overrides[active])
     end
 
     -- Apply general overrides that work across variants
