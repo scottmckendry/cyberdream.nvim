@@ -1,5 +1,23 @@
 # Changelog
 
+## [5.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.4.0...v5.5.0) (2026-06-28)
+
+
+### Features
+
+* **extras:** add btop themes ([744011e](https://github.com/scottmckendry/cyberdream.nvim/commit/744011ecd175a640dd7da6eac281ce2210bd789e))
+* **extras:** Add delta extra ([#207](https://github.com/scottmckendry/cyberdream.nvim/issues/207)) ([b034194](https://github.com/scottmckendry/cyberdream.nvim/commit/b034194b3e3d4b8ed06ac2ff93b0c87b13d7c647))
+* **extras:** add setvtrgb ([46187c3](https://github.com/scottmckendry/cyberdream.nvim/commit/46187c34af0001eaf64c15801240db5476b68e34))
+* **extras:** extend vim support ([#226](https://github.com/scottmckendry/cyberdream.nvim/issues/226)) ([578f748](https://github.com/scottmckendry/cyberdream.nvim/commit/578f748005d2654e6746e5ed1c478aa8ff1c8dfe))
+* **extras:** init vim colorscheme ([#225](https://github.com/scottmckendry/cyberdream.nvim/issues/225)) ([abe470c](https://github.com/scottmckendry/cyberdream.nvim/commit/abe470cca95d90a84adf00f50089e14706d5635a))
+
+
+### Bug Fixes
+
+* config mutation in setup ([a25463f](https://github.com/scottmckendry/cyberdream.nvim/commit/a25463fdbdbd021b3dcc64a45d66647decd8ce12)), closes [#224](https://github.com/scottmckendry/cyberdream.nvim/issues/224)
+* **extensions:** correct DiagnosticVirtualTextError ([#223](https://github.com/scottmckendry/cyberdream.nvim/issues/223)) ([3fb17fc](https://github.com/scottmckendry/cyberdream.nvim/commit/3fb17fc5c538378e0e7f1e57646b5e061531acb3))
+* variant-specific color overrides ([7766764](https://github.com/scottmckendry/cyberdream.nvim/commit/776676424706e8633a9ff26d7d2792bad490c156)), closes [#227](https://github.com/scottmckendry/cyberdream.nvim/issues/227)
+
 ## [5.4.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.3.0...v5.4.0) (2026-04-10)
 
 
