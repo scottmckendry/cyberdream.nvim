@@ -2,78 +2,78 @@
 # https://github.com/scottmckendry/cyberdream.nvim
 
 # Main background, empty for terminal default, need to be empty if you want transparent background
-theme[main_bg]="#2b2c2e"
+theme[main_bg]="#16181a"
 
 # Main text color
-theme[main_fg]="#e5e5e5"
+theme[main_fg]="#ffffff"
 
 # Title color for boxes
-theme[title]="#e5e5e5"
+theme[title]="#ffffff"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#649ae5"
+theme[hi_fg]="#78a8e8"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#494c53"
+theme[selected_bg]="#3c4048"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#e5e5e5"
+theme[selected_fg]="#ffffff"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#7c8391"
+theme[inactive_fg]="#7b8496"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
-theme[graph_text]="#e5e5e5"
+theme[graph_text]="#ffffff"
 
 # Background color of the percentage meters
-theme[meter_bg]="#494c53"
+theme[meter_bg]="#3c4048"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-theme[proc_misc]="#64dae5"
+theme[proc_misc]="#7ed8e8"
 
 # Box outline color
-theme[cpu_box]="#494c53"
-theme[mem_box]="#494c53"
-theme[net_box]="#494c53"
-theme[proc_box]="#494c53"
+theme[cpu_box]="#3c4048"
+theme[mem_box]="#3c4048"
+theme[net_box]="#3c4048"
+theme[proc_box]="#3c4048"
 
 # Box divider line and small boxes line color
-theme[div_line]="#494c53"
+theme[div_line]="#3c4048"
 
 # Graph colors (Cyan -> Purple)
-theme[temp_start]="#64dae5"
-theme[temp_mid]="#8a9fe5"
-theme[temp_end]="#b064e5"
+theme[temp_start]="#7ed8e8"
+theme[temp_mid]="#97abe8"
+theme[temp_end]="#b07ee8"
 
-theme[cpu_start]="#64dae5"
-theme[cpu_mid]="#8a9fe5"
-theme[cpu_end]="#b064e5"
+theme[cpu_start]="#7ed8e8"
+theme[cpu_mid]="#97abe8"
+theme[cpu_end]="#b07ee8"
 
-theme[free_start]="#64dae5"
-theme[free_mid]="#8a9fe5"
-theme[free_end]="#b064e5"
+theme[free_start]="#7ed8e8"
+theme[free_mid]="#97abe8"
+theme[free_end]="#b07ee8"
 
-theme[cached_start]="#64dae5"
-theme[cached_mid]="#8a9fe5"
-theme[cached_end]="#b064e5"
+theme[cached_start]="#7ed8e8"
+theme[cached_mid]="#97abe8"
+theme[cached_end]="#b07ee8"
 
-theme[available_start]="#64dae5"
-theme[available_mid]="#8a9fe5"
-theme[available_end]="#b064e5"
+theme[available_start]="#7ed8e8"
+theme[available_mid]="#97abe8"
+theme[available_end]="#b07ee8"
 
-theme[used_start]="#64dae5"
-theme[used_mid]="#8a9fe5"
-theme[used_end]="#b064e5"
+theme[used_start]="#7ed8e8"
+theme[used_mid]="#97abe8"
+theme[used_end]="#b07ee8"
 
-theme[download_start]="#64dae5"
-theme[download_mid]="#8a9fe5"
-theme[download_end]="#b064e5"
+theme[download_start]="#7ed8e8"
+theme[download_mid]="#97abe8"
+theme[download_end]="#b07ee8"
 
-theme[upload_start]="#64dae5"
-theme[upload_mid]="#8a9fe5"
-theme[upload_end]="#b064e5"
+theme[upload_start]="#7ed8e8"
+theme[upload_mid]="#97abe8"
+theme[upload_end]="#b07ee8"
 
 # Process box color gradient for threads, mem and cpu usage
-theme[process_start]="#649ae5"
-theme[process_mid]="#b064e5"
-theme[process_end]="#e564da"
+theme[process_start]="#78a8e8"
+theme[process_mid]="#b07ee8"
+theme[process_end]="#e878d8"

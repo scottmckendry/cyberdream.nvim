@@ -5,75 +5,75 @@ name = "Cyberdream"
 variant = "dark"
 
 [colors.accents]
-blue = "#649ae5"
-cyan = "#64dae5"
-green = "#64e570"
-magenta = "#e564da"
-orange = "#e5b064"
-purple = "#b064e5"
-red = "#e57164"
-yellow = "#dae564"
+blue = "#78a8e8"
+cyan = "#7ed8e8"
+green = "#7ee088"
+magenta = "#e878d8"
+orange = "#e3a875"
+purple = "#b07ee8"
+red = "#e8796f"
+yellow = "#e3c875"
 
 [colors.button.primary]
-background = "#494c53"
-foreground = "#e5e5e5"
+background = "#3c4048"
+foreground = "#ffffff"
 
 [colors.button.primary.focus]
-outline = "#649ae5"
+outline = "#78a8e8"
 
 [colors.button.primary.hover]
-background = "#649ae5"
+background = "#78a8e8"
 
 [colors.core]
-accent = "#649ae5"
-accent_foreground = "#e5e5e5"
-background = "#2b2c2e"
-border = "#494c53"
-foreground = "#e5e5e5"
-secondary_background = "#313436"
+accent = "#78a8e8"
+accent_foreground = "#ffffff"
+background = "#16181a"
+border = "#3c4048"
+foreground = "#ffffff"
+secondary_background = "#1e2124"
 
 [colors.grid.item]
-background = "#494c53"
+background = "#3c4048"
 
 [colors.grid.item.hover]
-outline = "#e5e5e5"
+outline = "#ffffff"
 
 [colors.grid.item.selection]
-outline = "#e5e5e5"
+outline = "#ffffff"
 
 [colors.input]
-border = "#7c8391"
-border_error = "#e57164"
-border_focus = "#649ae5"
+border = "#7b8496"
+border_error = "#e8796f"
+border_focus = "#78a8e8"
 
 [colors.list.item.hover]
-background = "#494c53"
-foreground = "#e5e5e5"
+background = "#3c4048"
+foreground = "#ffffff"
 
 [colors.list.item.selection]
-background = "#494c53"
-foreground = "#e5e5e5"
-secondary_background = "#494c53"
-secondary_foreground = "#7c8391"
+background = "#3c4048"
+foreground = "#ffffff"
+secondary_background = "#3c4048"
+secondary_foreground = "#7b8496"
 
 [colors.loading]
-bar = "#649ae5"
-spinner = "#649ae5"
+bar = "#78a8e8"
+spinner = "#78a8e8"
 
 [colors.scrollbars]
-background = "#7c8391"
+background = "#7b8496"
 
 [colors.text]
-danger = "#e57164"
-default = "#e5e5e5"
-muted = "#7c8391"
-placeholder = "#494c53"
-success = "#64e570"
+danger = "#e8796f"
+default = "#ffffff"
+muted = "#7b8496"
+placeholder = "#3c4048"
+success = "#7ee088"
 
 [colors.text.links]
-default = "#649ae5"
-visited = "#e56499"
+default = "#78a8e8"
+visited = "#e878a8"
 
 [colors.text.selection]
-background = "#649ae5"
-foreground = "#e5e5e5"
+background = "#78a8e8"
+foreground = "#ffffff"

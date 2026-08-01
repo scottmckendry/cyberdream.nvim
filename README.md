@@ -406,6 +406,28 @@ vim.api.nvim_create_autocmd("User", {
 </details>
 
 <details>
+<summary><b>Muted</b></summary>
+
+| 🖌                                                        | Hex       | Color        |
+| --------------------------------------------------------- | --------- | ------------ |
+| ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | bg           |
+| ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bg_alt       |
+| ![#3c4048](https://place-hold.it/15/3c4048/3c4048?text=+) | `#3c4048` | bg_highlight |
+| ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | fg           |
+| ![#7b8496](https://place-hold.it/15/7b8496/7b8496?text=+) | `#7b8496` | grey         |
+| ![#78a8e8](https://place-hold.it/15/78a8e8/78a8e8?text=+) | `#78a8e8` | blue         |
+| ![#7ee088](https://place-hold.it/15/7ee088/7ee088?text=+) | `#7ee088` | green        |
+| ![#7ed8e8](https://place-hold.it/15/7ed8e8/7ed8e8?text=+) | `#7ed8e8` | cyan         |
+| ![#e8796f](https://place-hold.it/15/e8796f/e8796f?text=+) | `#e8796f` | red          |
+| ![#e3c875](https://place-hold.it/15/e3c875/e3c875?text=+) | `#e3c875` | yellow       |
+| ![#e878d8](https://place-hold.it/15/e878d8/e878d8?text=+) | `#e878d8` | magenta      |
+| ![#e878a8](https://place-hold.it/15/e878a8/e878a8?text=+) | `#e878a8` | pink         |
+| ![#e3a875](https://place-hold.it/15/e3a875/e3a875?text=+) | `#e3a875` | orange       |
+| ![#b07ee8](https://place-hold.it/15/b07ee8/b07ee8?text=+) | `#b07ee8` | purple       |
+
+</details>
+
+<details>
 <summary><b>Light</b></summary>
 
 | 🖌                                                        | Hex       | Color        |

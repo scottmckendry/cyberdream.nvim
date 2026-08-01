@@ -1,19 +1,19 @@
 -- cyberdream theme for wezterm
 return {
-    foreground = "#e5e5e5",
-    background = "#2b2c2e",
+    foreground = "#ffffff",
+    background = "#16181a",
 
-    cursor_bg = "#e5e5e5",
-    cursor_fg = "#2b2c2e",
-    cursor_border = "#e5e5e5",
+    cursor_bg = "#ffffff",
+    cursor_fg = "#16181a",
+    cursor_border = "#ffffff",
 
-    selection_fg = "#e5e5e5",
-    selection_bg = "#494c53",
+    selection_fg = "#ffffff",
+    selection_bg = "#3c4048",
 
-    scrollbar_thumb = "#2b2c2e",
-    split = "#2b2c2e",
+    scrollbar_thumb = "#16181a",
+    split = "#16181a",
 
-    ansi = { "#2b2c2e", "#e57164", "#64e570", "#dae564", "#649ae5", "#b064e5", "#64dae5", "#e5e5e5" },
-    brights = { "#494c53", "#e57164", "#64e570", "#dae564", "#649ae5", "#b064e5", "#64dae5", "#e5e5e5" },
-    indexed = { [16] = "#e5b064", [17] = "#e57164" },
+    ansi = { "#16181a", "#e8796f", "#7ee088", "#e3c875", "#78a8e8", "#b07ee8", "#7ed8e8", "#ffffff" },
+    brights = { "#3c4048", "#e8796f", "#7ee088", "#e3c875", "#78a8e8", "#b07ee8", "#7ed8e8", "#ffffff" },
+    indexed = { [16] = "#e3a875", [17] = "#e8796f" },
 }
