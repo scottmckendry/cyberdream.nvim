@@ -4,10 +4,10 @@ gui:
     border: rounded
     theme:
         activeBorderColor:
-            - "#64dae5"
+            - "#7ed8e8"
         inactiveBorderColor:
-            - "#7c8391"
+            - "#7b8496"
         selectedLineBgColor:
-            - "#494c53"
+            - "#3c4048"
         optionsTextColor:
-            - "#494c53"
+            - "#3c4048"

@@ -1,30 +1,30 @@
 # name: 'cyberdream'
 # url: 'https://github.com/scottmckendry/cyberdream.nvim'
-# preferred_background: 2b2c2e
+# preferred_background: 16181a
 
-fish_color_normal e5e5e5
-fish_color_command 64dae5
-fish_color_param e5a4bf
-fish_color_keyword 64e570
-fish_color_quote dae564
-fish_color_redirection 649ae5
-fish_color_end b064e5
-fish_color_comment 7c8391
-fish_color_error e57164
-fish_color_gray 7c8391
-fish_color_selection --background=494c53
-fish_color_search_match --background=494c53
-fish_color_option dae564
-fish_color_operator 649ae5
-fish_color_escape e5a4bf
-fish_color_autosuggestion 7c8391
-fish_color_cancel e57164
-fish_color_cwd e5b064
-fish_color_user 64ddc1
-fish_color_host 64e570
-fish_color_host_remote dae564
-fish_color_status e57164
-fish_pager_color_progress 7c8391
-fish_pager_color_prefix 649ae5
-fish_pager_color_completion e5e5e5
-fish_pager_color_description 7c8391
+fish_color_normal ffffff
+fish_color_command 7ed8e8
+fish_color_param f3bbd3
+fish_color_keyword 7ee088
+fish_color_quote e3c875
+fish_color_redirection 78a8e8
+fish_color_end b07ee8
+fish_color_comment 7b8496
+fish_color_error e8796f
+fish_color_gray 7b8496
+fish_color_selection --background=3c4048
+fish_color_search_match --background=3c4048
+fish_color_option e3c875
+fish_color_operator 78a8e8
+fish_color_escape f3bbd3
+fish_color_autosuggestion 7b8496
+fish_color_cancel e8796f
+fish_color_cwd e3a875
+fish_color_user 7ddacb
+fish_color_host 7ee088
+fish_color_host_remote e3c875
+fish_color_status e8796f
+fish_pager_color_progress 7b8496
+fish_pager_color_prefix 78a8e8
+fish_pager_color_completion ffffff
+fish_pager_color_description 7b8496

@@ -21,8 +21,6 @@
 ---@field muted cyberdream.Palette
 local M = {}
 
-local util = require("cyberdream.util")
-
 M.default = {
     bg = "#16181a",
     bg_alt = "#1e2124",
@@ -57,6 +55,21 @@ M.light = {
     purple = "#a018ff",
 }
 
-M.muted = util.generate_muted_palette(M.default)
+M.muted = {
+    bg = "#16181a",
+    bg_alt = "#1e2124",
+    bg_highlight = "#3c4048",
+    fg = "#ffffff",
+    grey = "#7b8496",
+    blue = "#78a8e8",
+    green = "#7ee088",
+    cyan = "#7ed8e8",
+    red = "#e8796f",
+    yellow = "#e3c875",
+    magenta = "#e878d8",
+    pink = "#e878a8",
+    orange = "#e3a875",
+    purple = "#b07ee8",
+}
 
 return M

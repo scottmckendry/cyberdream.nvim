@@ -9,9 +9,9 @@
 "ui.selection.primary" = "magenta"
 "ui.virtual.ruler" = { bg = "bg_highlight" }
 
-# Syntax Highlighting for Markdown 
-"markup.raw" = { fg = "magenta", bg = "bg" } 
-"markup.raw.inline" = { fg = "pink" } 
+# Syntax Highlighting for Markdown
+"markup.raw" = { fg = "magenta", bg = "bg" }
+"markup.raw.inline" = { fg = "pink" }
 "markup.heading.1" = { fg = "cyan", bg = "bg"}
 "markup.heading.2" = { fg = "blue", bg = "bg" }
 "markup.heading.3" = { fg = "green", bg = "bg" }
@@ -87,17 +87,17 @@
 "ui.virtual.indent-guide" = { fg = "grey", style = "dotted" }
 
 [palette]
-bg = "#2b2c2e"
-fg = "#e5e5e5"
-grey = "#7c8391"
-blue = "#649ae5"
-green = "#64e570"
-cyan = "#64dae5"
-red = "#e57164"
-yellow = "#dae564"
-magenta = "#e564da"
-pink = "#e56499"
-orange = "#e5b064"
-purple = "#b064e5"
-bg_alt = "#313436"
-bg_highlight = "#494c53"
+bg = "#16181a"
+fg = "#ffffff"
+grey = "#7b8496"
+blue = "#78a8e8"
+green = "#7ee088"
+cyan = "#7ed8e8"
+red = "#e8796f"
+yellow = "#e3c875"
+magenta = "#e878d8"
+pink = "#e878a8"
+orange = "#e3a875"
+purple = "#b07ee8"
+bg_alt = "#1e2124"
+bg_highlight = "#3c4048"

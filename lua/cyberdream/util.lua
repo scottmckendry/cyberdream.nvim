@@ -147,25 +147,6 @@ function M.apply_saturation(colors, weight)
     return desaturated_colors
 end
 
---- Generate a muted palette by blending all colors toward a neutral midpoint.
---- This softens colors by reducing saturation and slightly narrowing lightness
---- without making them look washed out.
---- @param palette cyberdream.Palette
---- @return cyberdream.Palette
-function M.generate_muted_palette(palette)
-    local neutral = "#808080"
-    local blend_weight = 0.8
-    local muted = {}
-    for k, v in pairs(palette) do
-        if type(v) == "string" and v:sub(1, 1) == "#" then
-            muted[k] = M.blend(v, neutral, blend_weight)
-        else
-            muted[k] = v
-        end
-    end
-    return muted
-end
-
 --- Convert a percentage (0-100) to a hex alpha value (00-FF).
 --- @param percent number
 --- @return string

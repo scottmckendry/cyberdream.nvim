@@ -1,36 +1,36 @@
 # cyberdream theme for alacritty
 [[colors.indexed_colors]]
-color = "0xe5b064"
+color = "0xe3a875"
 index = 16
 
 [[colors.indexed_colors]]
-color = "0xe57164"
+color = "0xe8796f"
 index = 17
 
 [colors.bright]
-black = "0x494c53"
-blue = "0x649ae5"
-cyan = "0x64dae5"
-green = "0x64e570"
-magenta = "0xb064e5"
-red = "0xe57164"
-white = "0xe5e5e5"
-yellow = "0xdae564"
+black = "0x3c4048"
+blue = "0x78a8e8"
+cyan = "0x7ed8e8"
+green = "0x7ee088"
+magenta = "0xb07ee8"
+red = "0xe8796f"
+white = "0xffffff"
+yellow = "0xe3c875"
 
 [colors.normal]
-black = "0x2b2c2e"
-blue = "0x649ae5"
-cyan = "0x64dae5"
-green = "0x64e570"
-magenta = "0xb064e5"
-red = "0xe57164"
-white = "0xe5e5e5"
-yellow = "0xdae564"
+black = "0x16181a"
+blue = "0x78a8e8"
+cyan = "0x7ed8e8"
+green = "0x7ee088"
+magenta = "0xb07ee8"
+red = "0xe8796f"
+white = "0xffffff"
+yellow = "0xe3c875"
 
 [colors.primary]
-background = "0x2b2c2e"
-foreground = "0xe5e5e5"
+background = "0x16181a"
+foreground = "0xffffff"
 
 [colors.selection]
-background = "0x494c53"
-foreground = "0xe5e5e5"
+background = "0x3c4048"
+foreground = "0xffffff"
