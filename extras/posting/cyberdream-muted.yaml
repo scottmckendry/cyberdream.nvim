@@ -1,0 +1,13 @@
+name: cyberdream
+primary: "#b064e5"
+secondary: "#649ae5"
+accent: "#64dae5"
+background: "#2b2c2e"
+surface: "#313436"
+error: "#e57164"
+success: "#64e570"
+warning: "#e5b064"
+
+author: Scott McKendry
+description: High-contrast, Futuristic & Vibrant Posting Theme
+homepage: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/posting
