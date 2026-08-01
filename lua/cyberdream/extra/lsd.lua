@@ -7,7 +7,11 @@ local M = {}
 --- @param variant string: Variation of the colorscheme to use.
 function M.generate(variant)
     function CreateDimColor(hex)
-        return util.blend(hex, variant == "default" and colors[variant].bg or colors[variant].fg, 0.8)
+        return util.blend(
+            hex,
+            (variant == "default" or variant == "muted") and colors[variant].bg or colors[variant].fg,
+            0.8
+        )
     end
 
     function HexToAnsi(hex)

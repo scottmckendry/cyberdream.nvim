@@ -36,6 +36,8 @@ function M.generate(variant)
 
     if variant == "default" then
         theme.name = "Cyberdream"
+    elseif variant == "muted" then
+        theme.name = "Cyberdream Muted"
     else
         theme.name = "Cyberdream " .. variant:sub(1, 1):upper() .. variant:sub(2, -1)
     end

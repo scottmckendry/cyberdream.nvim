@@ -147,6 +147,25 @@ function M.apply_saturation(colors, weight)
     return desaturated_colors
 end
 
+--- Generate a muted palette by blending all colors toward a neutral midpoint.
+--- This softens colors by reducing saturation and slightly narrowing lightness
+--- without making them look washed out.
+--- @param palette cyberdream.Palette
+--- @return cyberdream.Palette
+function M.generate_muted_palette(palette)
+    local neutral = "#808080"
+    local blend_weight = 0.8
+    local muted = {}
+    for k, v in pairs(palette) do
+        if type(v) == "string" and v:sub(1, 1) == "#" then
+            muted[k] = M.blend(v, neutral, blend_weight)
+        else
+            muted[k] = v
+        end
+    end
+    return muted
+end
+
 --- Convert a percentage (0-100) to a hex alpha value (00-FF).
 --- @param percent number
 --- @return string
@@ -232,7 +251,8 @@ function M.apply_options(opts)
     vim.cmd("colorscheme cyberdream")
 end
 
---- Toggle the theme variant between "default" and "light".
+--- Toggle the theme variant between dark and light variants.
+--- Respects the user's configured dark variant (default or muted).
 --- @return string new variant
 function M.toggle_theme_variant()
     local opts = vim.g.cyberdream_opts
@@ -241,7 +261,20 @@ function M.toggle_theme_variant()
         return M.toggle_theme_auto()
     end
 
-    local new_variant = opts.variant == "default" and "light" or "default"
+    local dark_variants = { default = true, muted = true }
+
+    local new_variant
+    if opts.variant == "light" then
+        -- Restore the user's configured dark variant, or default
+        new_variant = (vim.g.cyberdream_previous_dark_variant or "default")
+    elseif dark_variants[opts.variant] then
+        -- Remember the current dark variant before switching to light
+        vim.g.cyberdream_previous_dark_variant = opts.variant
+        new_variant = "light"
+    else
+        new_variant = "default"
+    end
+
     M.set_options({ variant = new_variant })
     M.apply_options(vim.g.cyberdream_opts)
 
