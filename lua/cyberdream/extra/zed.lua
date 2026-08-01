@@ -358,7 +358,7 @@ function M.generate(variant)
 ]==]
 
     local extended_colors = vim.fn.copy(colors[variant])
-    extended_colors.variant = variant == "default" and "dark" or "light"
+    extended_colors.variant = (variant == "default" or variant == "muted") and "dark" or "light"
 
     local seen = {}
     for name, pct in string.gmatch(template, "%${([%a_][%w_]*)Alpha(%d+)}") do

@@ -18,6 +18,7 @@
 ---@class cyberdream.Colors
 ---@field default cyberdream.Palette
 ---@field light cyberdream.Palette
+---@field muted cyberdream.Palette
 local M = {}
 
 M.default = {
@@ -52,6 +53,23 @@ M.light = {
     pink = "#f40064",
     orange = "#d17c00",
     purple = "#a018ff",
+}
+
+M.muted = {
+    bg = "#16181a",
+    bg_alt = "#1e2124",
+    bg_highlight = "#3c4048",
+    fg = "#ffffff",
+    grey = "#7b8496",
+    blue = "#78a8e8",
+    green = "#7ee088",
+    cyan = "#7ed8e8",
+    red = "#e8796f",
+    yellow = "#e3c875",
+    magenta = "#e878d8",
+    pink = "#e878a8",
+    orange = "#e3a875",
+    purple = "#b07ee8",
 }
 
 return M

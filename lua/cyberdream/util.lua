@@ -232,7 +232,8 @@ function M.apply_options(opts)
     vim.cmd("colorscheme cyberdream")
 end
 
---- Toggle the theme variant between "default" and "light".
+--- Toggle the theme variant between dark and light variants.
+--- Respects the user's configured dark variant (default or muted).
 --- @return string new variant
 function M.toggle_theme_variant()
     local opts = vim.g.cyberdream_opts
@@ -241,7 +242,20 @@ function M.toggle_theme_variant()
         return M.toggle_theme_auto()
     end
 
-    local new_variant = opts.variant == "default" and "light" or "default"
+    local dark_variants = { default = true, muted = true }
+
+    local new_variant
+    if opts.variant == "light" then
+        -- Restore the user's configured dark variant, or default
+        new_variant = (vim.g.cyberdream_previous_dark_variant or "default")
+    elseif dark_variants[opts.variant] then
+        -- Remember the current dark variant before switching to light
+        vim.g.cyberdream_previous_dark_variant = opts.variant
+        new_variant = "light"
+    else
+        new_variant = "default"
+    end
+
     M.set_options({ variant = new_variant })
     M.apply_options(vim.g.cyberdream_opts)
 

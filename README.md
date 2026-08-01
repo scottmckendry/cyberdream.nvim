@@ -140,7 +140,7 @@ Below is an example of all the available configuration options with their defaul
 ```lua
 require("cyberdream").setup({
     -- Set light or dark variant
-    variant = "default", -- use "light" for the light variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
+    variant = "default", -- use "light" for the light variant, "muted" for a softer dark variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
 
     -- Enable transparent background
     transparent = false,
@@ -402,6 +402,28 @@ vim.api.nvim_create_autocmd("User", {
 | ![#ff5ea0](https://place-hold.it/15/ff5ea0/ff5ea0?text=+) | `#ff5ea0` | pink         |
 | ![#ffbd5e](https://place-hold.it/15/ffbd5e/ffbd5e?text=+) | `#ffbd5e` | orange       |
 | ![#bd5eff](https://place-hold.it/15/bd5eff/bd5eff?text=+) | `#bd5eff` | purple       |
+
+</details>
+
+<details>
+<summary><b>Muted</b></summary>
+
+| 🖌                                                        | Hex       | Color        |
+| --------------------------------------------------------- | --------- | ------------ |
+| ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | bg           |
+| ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bg_alt       |
+| ![#3c4048](https://place-hold.it/15/3c4048/3c4048?text=+) | `#3c4048` | bg_highlight |
+| ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | fg           |
+| ![#7b8496](https://place-hold.it/15/7b8496/7b8496?text=+) | `#7b8496` | grey         |
+| ![#78a8e8](https://place-hold.it/15/78a8e8/78a8e8?text=+) | `#78a8e8` | blue         |
+| ![#7ee088](https://place-hold.it/15/7ee088/7ee088?text=+) | `#7ee088` | green        |
+| ![#7ed8e8](https://place-hold.it/15/7ed8e8/7ed8e8?text=+) | `#7ed8e8` | cyan         |
+| ![#e8796f](https://place-hold.it/15/e8796f/e8796f?text=+) | `#e8796f` | red          |
+| ![#e3c875](https://place-hold.it/15/e3c875/e3c875?text=+) | `#e3c875` | yellow       |
+| ![#e878d8](https://place-hold.it/15/e878d8/e878d8?text=+) | `#e878d8` | magenta      |
+| ![#e878a8](https://place-hold.it/15/e878a8/e878a8?text=+) | `#e878a8` | pink         |
+| ![#e3a875](https://place-hold.it/15/e3a875/e3a875?text=+) | `#e3a875` | orange       |
+| ![#b07ee8](https://place-hold.it/15/b07ee8/b07ee8?text=+) | `#b07ee8` | purple       |
 
 </details>
 

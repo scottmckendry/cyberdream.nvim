@@ -4,6 +4,8 @@ local opts = require("cyberdream.config").options
 
 if opts.variant == "light" then
     colors = require("cyberdream.colors").light
+elseif opts.variant == "muted" then
+    colors = require("cyberdream.colors").muted
 end
 
 if opts.variant == "auto" then

@@ -11,7 +11,7 @@ local M = {}
 
 ---@alias Colors table<cyberdream.Palette|string, string>
 ---@alias cyberdream.OverrideFn fun(palette: cyberdream.Palette): cyberdream.Highlight
----@alias cyberdream.Variant "default" | "light" | "auto"
+---@alias cyberdream.Variant "default" | "light" | "muted" | "auto"
 
 ---@class cyberdream.Extensions
 ---@field default? boolean Set all extensions to this value by default (useful for disabling all except specific ones)
