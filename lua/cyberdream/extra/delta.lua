@@ -53,29 +53,30 @@ function M.generate(variant)
     end
 
     -- Add palette bg colors
-    generate_palette(theme.bg_alt, 4, variant == "default" and 10 or -10, "bg")
+    local is_dark = variant == "default" or variant == "muted"
+    generate_palette(theme.bg_alt, 4, is_dark and 10 or -10, "bg")
 
     -- Add lightgray
-    local base_color = variant == "default" and theme.fg or theme.bg
+    local base_color = is_dark and theme.fg or theme.bg
     theme.lightgray = util.blend(theme.grey, base_color, 0.8)
 
     -- Add minus colors
-    theme.minus_emph = util.blend(theme.bg, theme.red, variant == "default" and 0.6 or 0.8)
-    theme.minus = util.blend(theme.bg, theme.red, variant == "default" and 0.8 or 0.6)
+    theme.minus_emph = util.blend(theme.bg, theme.red, is_dark and 0.6 or 0.8)
+    theme.minus = util.blend(theme.bg, theme.red, is_dark and 0.8 or 0.6)
 
     -- Add plus colors
-    theme.plus_emph = util.blend(theme.bg, theme.green, variant == "default" and 0.6 or 0.8)
-    theme.plus = util.blend(theme.bg, theme.green, variant == "default" and 0.8 or 0.6)
+    theme.plus_emph = util.blend(theme.bg, theme.green, is_dark and 0.6 or 0.8)
+    theme.plus = util.blend(theme.bg, theme.green, is_dark and 0.8 or 0.6)
 
     -- Add map style colors
-    theme.map_style_purple = util.blend(theme.bg, theme.purple, variant == "default" and 0.6 or 0.8)
-    theme.map_style_blue = util.blend(theme.bg, theme.blue, variant == "default" and 0.6 or 0.8)
-    theme.map_style_cyan = util.blend(theme.bg, theme.cyan, variant == "default" and 0.6 or 0.8)
-    theme.map_style_yellow = util.blend(theme.bg, theme.yellow, variant == "default" and 0.6 or 0.8)
+    theme.map_style_purple = util.blend(theme.bg, theme.purple, is_dark and 0.6 or 0.8)
+    theme.map_style_blue = util.blend(theme.bg, theme.blue, is_dark and 0.6 or 0.8)
+    theme.map_style_cyan = util.blend(theme.bg, theme.cyan, is_dark and 0.6 or 0.8)
+    theme.map_style_yellow = util.blend(theme.bg, theme.yellow, is_dark and 0.6 or 0.8)
 
     -- Theme structure
-    theme.name = variant == "default" and "cyberdream" or "cyberdream-light"
-    theme.variant = variant == "default" and "dark" or "light"
+    theme.name = is_dark and "cyberdream" or "cyberdream-light"
+    theme.variant = is_dark and "dark" or "light"
 
     return util.parse_extra_template(template, theme)
 end

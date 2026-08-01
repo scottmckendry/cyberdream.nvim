@@ -16,6 +16,9 @@ function M.setup(variant)
     if active == "light" then
         ---@type cyberdream.Palette
         t = colors.light
+    elseif active == "muted" then
+        ---@type cyberdream.Palette
+        t = colors.muted
     end
 
     if active == "auto" then

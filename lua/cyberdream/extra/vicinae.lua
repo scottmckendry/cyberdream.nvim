@@ -89,7 +89,7 @@ foreground = "${fg}"
 ]==]
 
     local extended_colors = vim.fn.copy(colors[variant])
-    extended_colors.variant = variant == "default" and "dark" or variant
+    extended_colors.variant = (variant == "default" or variant == "muted") and "dark" or variant
     extended_colors.inherits = variant == "light" and "vicinae-light" or "vicinae-dark"
 
     return util.parse_extra_template(template, extended_colors)

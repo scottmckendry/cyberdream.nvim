@@ -1,0 +1,23 @@
+{
+    "name": "Cyberdream Muted",
+    "cursorColor": "#e5e5e5",
+    "selectionBackground": "#494c53",
+    "background": "#2b2c2e",
+    "foreground": "#e5e5e5",
+    "black": "#2b2c2e",
+    "blue": "#649ae5",
+    "cyan": "#64dae5",
+    "green": "#64e570",
+    "purple": "#b064e5",
+    "red": "#e57164",
+    "white": "#e5e5e5",
+    "yellow": "#dae564",
+    "brightBlack": "#494c53",
+    "brightBlue": "#649ae5",
+    "brightCyan": "#64dae5",
+    "brightGreen": "#64e570",
+    "brightPurple": "#b064e5",
+    "brightRed": "#e57164",
+    "brightWhite": "#e5e5e5",
+    "brightYellow": "#dae564"
+}

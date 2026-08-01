@@ -140,7 +140,7 @@ Below is an example of all the available configuration options with their defaul
 ```lua
 require("cyberdream").setup({
     -- Set light or dark variant
-    variant = "default", -- use "light" for the light variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
+    variant = "default", -- use "light" for the light variant, "muted" for a softer dark variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
 
     -- Enable transparent background
     transparent = false,

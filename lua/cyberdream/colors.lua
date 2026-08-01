@@ -18,7 +18,10 @@
 ---@class cyberdream.Colors
 ---@field default cyberdream.Palette
 ---@field light cyberdream.Palette
+---@field muted cyberdream.Palette
 local M = {}
+
+local util = require("cyberdream.util")
 
 M.default = {
     bg = "#16181a",
@@ -53,5 +56,7 @@ M.light = {
     orange = "#d17c00",
     purple = "#a018ff",
 }
+
+M.muted = util.generate_muted_palette(M.default)
 
 return M

@@ -1,12 +1,3 @@
-local colors = require("cyberdream.colors")
-local util = require("cyberdream.util")
-
-local M = {}
-
---- Generate cyberdream theme for https://zed.dev/
---- @param variant string: Variation of the colorscheme to use.
-function M.generate(variant)
-    local template = [==[
 {
   "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
   "name": "Cyberdream",
@@ -14,8 +5,8 @@ function M.generate(variant)
   "author": "Byt3m4st3r",
   "themes": [
     {
-      "name": "Cyberdream ${variant}",
-      "appearance": "${variant}",
+      "name": "Cyberdream dark",
+      "appearance": "dark",
       "style": {
         "background.appearance": "opaque",
         "accents": [],
@@ -27,7 +18,7 @@ function M.generate(variant)
         "border.disabled": null,
         "elevated_surface.background": null,
         "surface.background": null,
-        "background": "${bg}",
+        "background": "#2b2c2e",
         "element.background": null,
         "element.hover": null,
         "element.active": null,
@@ -39,7 +30,7 @@ function M.generate(variant)
         "ghost_element.active": null,
         "ghost_element.selected": null,
         "ghost_element.disabled": null,
-        "text": "${fg}",
+        "text": "#e5e5e5",
         "text.muted": null,
         "text.placeholder": null,
         "text.disabled": null,
@@ -51,28 +42,28 @@ function M.generate(variant)
         "icon.accent": null,
         "status_bar.background": null,
         "title_bar.background": null,
-        "toolbar.background": "${bg}",
+        "toolbar.background": "#2b2c2e",
         "tab_bar.background": null,
-        "tab.inactive_background": "${bg}",
-        "tab.active_background": "${bg_alt}",
-        "search.match_background": "${orangeAlpha50}",
-        "panel.background": "${bg}",
+        "tab.inactive_background": "#2b2c2e",
+        "tab.active_background": "#313436",
+        "search.match_background": "#e5b0647f",
+        "panel.background": "#2b2c2e",
         "panel.focused_border": null,
         "pane.focused_border": null,
         "pane_group.border": null,
         "scrollbar.thumb.background": null,
         "scrollbar.thumb.hover_background": null,
         "scrollbar.thumb.border": null,
-        "scrollbar.track.background": "${bg}",
+        "scrollbar.track.background": "#2b2c2e",
         "scrollbar.track.border": null,
-        "editor.foreground": "${fg}",
-        "editor.background": "${bg}",
-        "editor.gutter.background": "${bg}",
+        "editor.foreground": "#e5e5e5",
+        "editor.background": "#2b2c2e",
+        "editor.gutter.background": "#2b2c2e",
         "editor.subheader.background": null,
-        "editor.active_line.background": "${bg_alt}",
+        "editor.active_line.background": "#313436",
         "editor.highlighted_line.background": null,
         "editor.line_number": null,
-        "editor.active_line_number": "${fg}",
+        "editor.active_line_number": "#e5e5e5",
         "editor.invisible": null,
         "editor.wrap_guide": null,
         "editor.active_wrap_guide": null,
@@ -80,7 +71,7 @@ function M.generate(variant)
         "editor.indent_guide_active": null,
         "editor.document_highlight.read_background": null,
         "editor.document_highlight.write_background": null,
-        "terminal.background": "${bg}",
+        "terminal.background": "#2b2c2e",
         "terminal.foreground": null,
         "terminal.bright_foreground": null,
         "terminal.dim_foreground": null,
@@ -118,22 +109,22 @@ function M.generate(variant)
         "deleted": null,
         "deleted.background": null,
         "deleted.border": null,
-        "error": "${red}",
-        "error.background": "${bg}",
+        "error": "#e57164",
+        "error.background": "#2b2c2e",
         "error.border": null,
         "hidden": null,
         "hidden.background": null,
         "hidden.border": null,
-        "hint": "${grey}",
-        "hint.background": "${bg_alt}",
+        "hint": "#7c8391",
+        "hint.background": "#313436",
         "hint.border": null,
         "ignored": null,
         "ignored.background": null,
         "ignored.border": null,
-        "info": "${blue}",
-        "info.background": "${blueAlpha50}",
-        "info.border": "${blue}",
-        "modified": "${orange}",
+        "info": "#649ae5",
+        "info.background": "#649ae57f",
+        "info.border": "#649ae5",
+        "modified": "#e5b064",
         "modified.background": null,
         "modified.border": null,
         "predictive": null,
@@ -148,204 +139,204 @@ function M.generate(variant)
         "unreachable": null,
         "unreachable.background": null,
         "unreachable.border": null,
-        "warning": "${orange}",
-        "warning.background": "${orangeAlpha30}",
-        "warning.border": "${orange}",
+        "warning": "#e5b064",
+        "warning.background": "#e5b0644c",
+        "warning.border": "#e5b064",
         "players": [
           {
-            "cursor": "${fg}",
-            "background": "${fg}",
-            "selection": "${bg_highlight}"
+            "cursor": "#e5e5e5",
+            "background": "#e5e5e5",
+            "selection": "#494c53"
           }
         ],
         "syntax": {
           "attribute": {
-            "color": "${cyan}",
+            "color": "#64dae5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "boolean": {
-            "color": "${blue}",
+            "color": "#649ae5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "comment": {
-            "color": "${grey}",
+            "color": "#7c8391",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "comment.doc": {
-            "color": "${grey}",
+            "color": "#7c8391",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "comment.todo": {
-            "color": "${blue}",
+            "color": "#649ae5",
             "background_color": null,
             "font_style": "italic",
             "font_weight": 700
           },
           "comment.info": {
-            "color": "${cyan}",
+            "color": "#64dae5",
             "background_color": null,
             "font_style": "italic",
             "font_weight": 700
           },
           "comment.warn": {
-            "color": "${orange}",
+            "color": "#e5b064",
             "background_color": null,
             "font_style": "italic",
             "font_weight": 700
           },
           "comment.error": {
-            "color": "${red}",
+            "color": "#e57164",
             "background_color": null,
             "font_style": "italic",
             "font_weight": 700
           },
           "constant": {
-            "color": "${fg}",
+            "color": "#e5e5e5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "constructor": {
-            "color": "${cyan}",
+            "color": "#64dae5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "emphasis": {
-            "color": "${orange}",
+            "color": "#e5b064",
             "background_color": null,
             "font_style": "italic",
             "font_weight": null
           },
           "emphasis.strong": {
-            "color": "${orange}",
+            "color": "#e5b064",
             "background_color": null,
             "font_style": null,
             "font_weight": 700
           },
           "function": {
-            "color": "${blue}",
+            "color": "#649ae5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "keyword": {
-            "color": "${orange}",
+            "color": "#e5b064",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "number": {
-            "color": "${orange}",
+            "color": "#e5b064",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "operator": {
-            "color": "${purple}",
+            "color": "#b064e5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation": {
-            "color": "${pink}",
+            "color": "#e56499",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation.bracket": {
-            "color": "${fg}",
+            "color": "#e5e5e5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation.delimiter": {
-            "color": "${fg}",
+            "color": "#e5e5e5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation.list_marker": {
-            "color": "${pink}",
+            "color": "#e56499",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "punctuation.special": {
-            "color": "${pink}",
+            "color": "#e56499",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
            "selector": {
-            "color": "${purple}",
+            "color": "#b064e5",
             "font_style": null,
             "font_weight": null
           },
           "string": {
-            "color": "${green}",
+            "color": "#64e570",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "string.escape": {
-            "color": "${fg}",
+            "color": "#e5e5e5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "string.regex": {
-            "color": "${green}",
+            "color": "#64e570",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "string.special": {
-            "color": "${green}",
+            "color": "#64e570",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "string.special.symbol": {
-            "color": "${green}",
+            "color": "#64e570",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "tag": {
-            "color": "${cyan}",
+            "color": "#64dae5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "text.literal": {
-            "color": "${green}",
+            "color": "#64e570",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "type": {
-            "color": "${purple}",
+            "color": "#b064e5",
             "background_color": null,
             "font_style": "italic",
             "font_weight": null
           },
           "variable": {
-            "color": "${fg}",
+            "color": "#e5e5e5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
           },
           "variable.special": {
-            "color": "${purple}",
+            "color": "#b064e5",
             "background_color": null,
             "font_style": null,
             "font_weight": null
@@ -355,21 +346,3 @@ function M.generate(variant)
     }
   ]
 }
-]==]
-
-    local extended_colors = vim.fn.copy(colors[variant])
-    extended_colors.variant = (variant == "default" or variant == "muted") and "dark" or "light"
-
-    local seen = {}
-    for name, pct in string.gmatch(template, "%${([%a_][%w_]*)Alpha(%d+)}") do
-        pct = tonumber(pct)
-        if pct and colors[variant][name] and not seen[name .. pct] then
-            extended_colors[name .. "Alpha" .. tostring(pct)] = colors[variant][name] .. util.percent_to_hex_alpha(pct)
-            seen[name .. pct] = true
-        end
-    end
-
-    return util.parse_extra_template(template, extended_colors)
-end
-
-return M
