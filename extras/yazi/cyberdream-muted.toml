@@ -1,0 +1,92 @@
+#:schema https://yazi-rs.github.io/schemas/theme.json
+
+[mgr]
+
+# tmTheme files can be found here: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/textmate 
+syntect_theme = "../bat/themes/cyberdream.tmTheme"
+
+border_style = { fg = "#3c4048" }
+cwd = { fg = "#7ed8e8" }
+find_keyword = { bold = true, fg = "#7ee088" }
+find_position = { fg = "#ffffff" }
+marker_copied = { bg = "#e3c875", fg = "#e3c875" }
+marker_cut = { bg = "#e8796f", fg = "#e8796f" }
+marker_selected = { bg = "#3c4048", fg = "#7ee088" }
+count_selected = { bg = "#7ee088", fg = "#16181a" }
+count_copied = { bg = "#e3c875", fg = "#16181a" }
+count_cut = { bg = "#e8796f", fg = "#16181a" }
+
+[cmp]
+active = { bg = "#7b8496", fg = "#b07ee8" }
+border = { fg = "#78a8e8" }
+inactive = { fg = "#ffffff" }
+
+[tabs]
+active = { bg = "#78a8e8", fg = "#16181a" }
+inactive = { bg = "#3c4048", fg = "#ffffff" }
+
+[filetype]
+rules = [
+    { fg = "#7ed8e8", mime = "image/*" },
+    { fg = "#e3c875", mime = "video/*" },
+    { fg = "#e3c875", mime = "audio/*" },
+    { fg = "#b07ee8", mime = "application/zip" },
+    { fg = "#b07ee8", mime = "application/gzip" },
+    { fg = "#b07ee8", mime = "application/x-tar" },
+    { fg = "#b07ee8", mime = "application/x-bzip" },
+    { fg = "#b07ee8", mime = "application/x-bzip2" },
+    { fg = "#b07ee8", mime = "application/x-7z-compressed" },
+    { fg = "#b07ee8", mime = "application/x-rar" },
+    { fg = "#b07ee8", mime = "application/xz" },
+    { fg = "#7ee088", mime = "application/doc" },
+    { fg = "#7ee088", mime = "application/pdf" },
+    { fg = "#7ee088", mime = "application/rtf" },
+    { fg = "#7ee088", mime = "application/vnd.*" },
+    { bold = true, fg = "#78a8e8", mime = "inode/directory" },
+    { fg = "#ffffff", mime = "*" }
+]
+
+[help]
+desc = { fg = "#ffffff" }
+footer = { fg = "#ffffff" }
+hovered = { bg = "#7b8496", fg = "#ffffff" }
+on = { fg = "#b07ee8" }
+run = { fg = "#7ed8e8" }
+
+[input]
+border = { fg = "#78a8e8" }
+selected = { bg = "#7b8496" }
+title = { fg = "#ffffff" }
+value = { fg = "#ffffff" }
+
+[pick]
+active = { fg = "#b07ee8" }
+border = { fg = "#78a8e8" }
+inactive = { fg = "#ffffff" }
+
+[mode]
+normal_main = { bg = "#78a8e8", bold = true, fg = "#16181a" }
+select_main = { bg = "#7ee088", bold = true, fg = "#16181a" }
+unset_main = { bg = "#e878d8", bold = true, fg = "#16181a" }
+
+[status]
+perm_sep = { fg = "#7ed8e8" }
+perm_type = { fg = "#78a8e8" }
+perm_read = { fg = "#e3c875" }
+perm_write = { fg = "#e8796f" }
+perm_exec = { fg = "#7ee088" }
+progress_error = { bg = "#16181a", fg = "#e8796f" }
+progress_label = { bg = "#16181a", fg = "#ffffff" }
+progress_normal = { bg = "#16181a", fg = "#ffffff" }
+
+[tasks]
+border = { fg = "#78a8e8" }
+hovered = { bg = "#7b8496", fg = "#ffffff" }
+title = { fg = "#ffffff" }
+
+[which]
+cand = { fg = "#7ed8e8" }
+desc = { fg = "#ffffff" }
+mask = { bg = "#3c4048" }
+rest = { fg = "#e878d8" }
+separator_style = { fg = "#7b8496" }
