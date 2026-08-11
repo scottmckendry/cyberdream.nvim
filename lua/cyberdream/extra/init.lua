@@ -24,6 +24,7 @@ M.extras = {
     lsd = { extension = "yml", name = "lsd" },
     opencode = { extension = "json", name = "opencode" },
     posting = { extension = "yaml", name = "posting" },
+    pi = { extension = "json", name = "pi" },
     pywal = { extension = "json", name = "pywal" },
     rio = { extension = "toml", name = "rio" },
     setvtrgb = { extension = "conf", name = "setvtrgb" },
