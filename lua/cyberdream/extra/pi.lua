@@ -8,7 +8,6 @@ local M = {}
 function M.generate(variant)
     local c = colors[variant]
     local suffix = variant == "default" and "" or "-" .. variant
-
     local template = [==[
 {
     "$schema": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
@@ -19,6 +18,8 @@ function M.generate(variant)
         "bgHighlight": "${bg_highlight}",
         "fg": "${fg}",
         "grey": "${grey}",
+        "dim": "${_dim}",
+        "text": "${_text}",
         "blue": "${blue}",
         "green": "${green}",
         "cyan": "${cyan}",
@@ -27,39 +28,45 @@ function M.generate(variant)
         "magenta": "${magenta}",
         "pink": "${pink}",
         "orange": "${orange}",
-        "purple": "${purple}"
+        "purple": "${purple}",
+        "toolPendingBg": "${_tool_pending_bg}",
+        "toolSuccessBg": "${_tool_success_bg}",
+        "toolErrorBg": "${_tool_error_bg}",
+        "customMsgBg": "${_custom_msg_bg}"
     },
     "colors": {
-        "accent": "blue",
+        "accent": "cyan",
         "border": "blue",
         "borderAccent": "cyan",
-        "borderMuted": "grey",
+        "borderMuted": "dim",
         "success": "green",
         "error": "red",
         "warning": "yellow",
         "muted": "grey",
-        "dim": "grey",
-        "text": "",
+        "dim": "dim",
+        "text": "text",
         "thinkingText": "grey",
 
         "selectedBg": "bgHighlight",
         "scrollbarThumb": "bgHighlight",
+        "searchMatchBg": "bgHighlight",
+        "searchMatchText": "text",
         "userMessageBg": "bgAlt",
-        "userMessageText": "fg",
-        "customMessageBg": "bgAlt",
-        "customMessageText": "fg",
-        "customMessageLabel": "cyan",
-        "toolPendingBg": "bgAlt",
-        "toolSuccessBg": "bgAlt",
-        "toolErrorBg": "bgAlt",
-        "toolTitle": "cyan",
-        "toolOutput": "fg",
+        "userMessageText": "text",
+        "customMessageBg": "customMsgBg",
+        "customMessageText": "text",
+        "customMessageLabel": "purple",
+        "toolPendingBg": "toolPendingBg",
+        "toolSuccessBg": "toolSuccessBg",
+        "toolErrorBg": "toolErrorBg",
+        "toolTitle": "text",
+        "toolOutput": "grey",
 
-        "mdHeading": "orange",
-        "mdLink": "cyan",
-        "mdLinkUrl": "blue",
+        "mdHeading": "yellow",
+        "mdLink": "blue",
+        "mdLinkUrl": "dim",
         "mdCode": "cyan",
-        "mdCodeBlock": "fg",
+        "mdCodeBlock": "green",
         "mdCodeBlockBorder": "grey",
         "mdQuote": "grey",
         "mdQuoteBorder": "grey",
@@ -70,30 +77,47 @@ function M.generate(variant)
         "toolDiffRemoved": "red",
         "toolDiffContext": "grey",
 
-        "syntaxComment": "grey",
-        "syntaxKeyword": "magenta",
-        "syntaxFunction": "blue",
-        "syntaxVariable": "yellow",
-        "syntaxString": "green",
-        "syntaxNumber": "purple",
+        "syntaxComment": "green",
+        "syntaxKeyword": "blue",
+        "syntaxFunction": "yellow",
+        "syntaxVariable": "cyan",
+        "syntaxString": "orange",
+        "syntaxNumber": "green",
         "syntaxType": "cyan",
-        "syntaxOperator": "pink",
-        "syntaxPunctuation": "grey",
+        "syntaxOperator": "text",
+        "syntaxPunctuation": "text",
 
-        "thinkingOff": "grey",
-        "thinkingMinimal": "blue",
-        "thinkingLow": "cyan",
-        "thinkingMedium": "green",
-        "thinkingHigh": "yellow",
-        "thinkingXhigh": "orange",
-        "thinkingMax": "red",
+        "thinkingOff": "dim",
+        "thinkingMinimal": "grey",
+        "thinkingLow": "blue",
+        "thinkingMedium": "cyan",
+        "thinkingHigh": "purple",
+        "thinkingXhigh": "magenta",
+        "thinkingMax": "pink",
 
-        "bashMode": "yellow"
+        "bashMode": "green"
+    },
+    "export": {
+        "pageBg": "${_export_page_bg}",
+        "cardBg": "${_export_card_bg}",
+        "infoBg": "${_export_info_bg}"
     }
 }
 ]==]
 
-    local vars = vim.tbl_extend("force", colors[variant], { suffix = suffix })
+    local vars = vim.tbl_extend("force", c, {
+        suffix = suffix,
+        _dim = util.blend(c.grey, c.bg, 0.65),
+        _text = util.blend(c.fg, c.grey, 0.85),
+        _tool_pending_bg = util.blend(c.bg, c.grey, 0.9),
+        _tool_success_bg = util.blend(c.bg, c.green, 0.9),
+        _tool_error_bg = util.blend(c.bg, c.red, 0.85),
+        _custom_msg_bg = util.blend(c.bg, c.purple, 0.9),
+        _export_page_bg = util.blend(c.bg, c.fg, 0.95),
+        _export_card_bg = c.bg_alt,
+        _export_info_bg = util.blend(c.bg, c.yellow, 0.85),
+    })
+
     return util.parse_extra_template(template, vars)
 end
 
