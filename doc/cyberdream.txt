@@ -151,7 +151,7 @@ their default values:
 >lua
     require("cyberdream").setup({
         -- Set light or dark variant
-        variant = "default", -- use "light" for the light variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
+        variant = "default", -- use "light" for the light variant, "muted" for a softer dark variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
     
         -- Enable transparent background
         transparent = false,
@@ -438,6 +438,39 @@ Dark ~
   [#ffbd5e]                                           #ffbd5e   orange
 
   [#bd5eff]                                           #bd5eff   purple
+  ----------------------------------------------------------------------------
+Muted ~
+
+  ----------------------------------------------------------------------------
+                                                      Hex       Color
+  --------------------------------------------------- --------- --------------
+  [#16181a]                                           #16181a   bg
+
+  [#1e2124]                                           #1e2124   bg_alt
+
+  [#3c4048]                                           #3c4048   bg_highlight
+
+  [#ffffff]                                           #ffffff   fg
+
+  [#7b8496]                                           #7b8496   grey
+
+  [#78a8e8]                                           #78a8e8   blue
+
+  [#7ee088]                                           #7ee088   green
+
+  [#7ed8e8]                                           #7ed8e8   cyan
+
+  [#e8796f]                                           #e8796f   red
+
+  [#e3c875]                                           #e3c875   yellow
+
+  [#e878d8]                                           #e878d8   magenta
+
+  [#e878a8]                                           #e878a8   pink
+
+  [#e3a875]                                           #e3a875   orange
+
+  [#b07ee8]                                           #b07ee8   purple
   ----------------------------------------------------------------------------
 Light ~
 
