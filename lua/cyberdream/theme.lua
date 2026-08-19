@@ -34,17 +34,26 @@ function M.setup(variant)
     -- Override colors with user defined colors
     local color_overrides = opts.colors or {}
 
-    -- Merge variant-specific overrides if they exist
-    if color_overrides[active] then
-        t = vim.tbl_deep_extend("force", t, color_overrides[active])
-    end
-
     -- Apply general overrides that work across variants
     local general_overrides = vim.tbl_deep_extend("keep", {}, color_overrides)
     general_overrides.dark = nil
     general_overrides.light = nil
+    general_overrides.muted = nil
     general_overrides.auto = nil
+    general_overrides.default = nil
     t = vim.tbl_deep_extend("force", t, general_overrides)
+
+    -- Merge variant-specific overrides last so they take precedence
+    -- When variant is "auto", resolve to the actual background for lookup
+    -- The default (dark) palette is overridable via the "dark" key (docs) or
+    -- the legacy "default" key
+    local lookup = active == "auto" and vim.o.background or active
+    if lookup == "default" or lookup == "dark" then
+        lookup = color_overrides.dark and "dark" or "default"
+    end
+    if color_overrides[lookup] then
+        t = vim.tbl_deep_extend("force", t, color_overrides[lookup])
+    end
 
     t.bg_solid = t.bg ~= "NONE" and t.bg or t.bg_alt
     if opts.transparent then
