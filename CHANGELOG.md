@@ -1,5 +1,19 @@
 # Changelog
 
+## [5.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.5.0...v5.6.0) (2026-08-19)
+
+
+### Features
+
+* **extras:** add pi ([#230](https://github.com/scottmckendry/cyberdream.nvim/issues/230)) ([049bed6](https://github.com/scottmckendry/cyberdream.nvim/commit/049bed633589d163eada333b21c791471279e1a6))
+* **theme:** add muted variant ([#229](https://github.com/scottmckendry/cyberdream.nvim/issues/229)) ([0904783](https://github.com/scottmckendry/cyberdream.nvim/commit/090478309a9a0f57d02bb539c63192cd75af21f7))
+
+
+### Bug Fixes
+
+* **extras:** improve pi theme ([b9f7bce](https://github.com/scottmckendry/cyberdream.nvim/commit/b9f7bce8b8b06307b353d9439168e1eabda15b0b))
+* **theme:** regression for variant specific overrides ([b1158c7](https://github.com/scottmckendry/cyberdream.nvim/commit/b1158c72ce490b2316ebf4070ebbafd92a7da61f)), closes [#231](https://github.com/scottmckendry/cyberdream.nvim/issues/231)
+
 ## [5.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.4.0...v5.5.0) (2026-06-28)
 
 
