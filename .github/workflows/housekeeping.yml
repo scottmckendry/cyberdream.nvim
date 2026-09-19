@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: "0 0 * * *" # once daily
 
+permissions: {}
+
 jobs:
   update-issues:
     runs-on: ubuntu-latest
@@ -12,7 +14,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@4391f3da665fdf50b6810c1a66712fb9ba21aa93 # v11.0.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-stale: -1 # never add label automatically
@@ -25,8 +27,10 @@ jobs:
   remove-waiting-label:
     runs-on: ubuntu-latest
     if: github.event.sender.login != 'scottmckendry' && github.event_name == 'issue_comment'
+    permissions:
+      issues: write
     steps:
-      - uses: mondeja/remove-labels-gh-action@v2
+      - uses: mondeja/remove-labels-gh-action@b7118e4ba5dca74acf1059b3cb7660378ff9ab1a # v2.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           labels: |
