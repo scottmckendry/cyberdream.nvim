@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Pre-commit hook: regenerate extras before committing.
+# Requires: git, nvim
+# Setup: git config core.hooksPath .githooks
+
+set -euo pipefail
+
+# Only run if files that affect extras generation changed.
+# Extra modules live under lua/cyberdream/extra/ and the palette is in lua/cyberdream/colors.lua.
+changed=$(git diff --cached --name-only --diff-filter=ACMR -- 'lua/cyberdream/extra/' 'lua/cyberdream/colors.lua' 'lua/cyberdream/init.lua' || true)
+if [ -z "$changed" ]; then
+    exit 0
+fi
+
+echo "pre-commit: regenerating extras..."
+nvim -u NONE -E -R --headless \
+    --cmd "set rtp^=." \
+    --cmd "lua require('cyberdream.extra').generate_all_extras()" \
+    --cmd qa
+
+# Stage any changed generated files.
+git add extras/

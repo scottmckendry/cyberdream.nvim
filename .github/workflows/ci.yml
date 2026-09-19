@@ -20,13 +20,10 @@ jobs:
           version: latest
           args: --color always --check .
 
-  generate-extras:
+  check-extras:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.head_ref }}
 
       - name: Install Neovim
         uses: rhysd/action-setup-vim@v1
@@ -38,11 +35,13 @@ jobs:
         run: |
           nvim -u NONE -E -R --headless --cmd "set rtp^=." --cmd "lua require('cyberdream.extra').generate_all_extras()" --cmd qa
 
-      - name: Commit changes
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: generate extras"
+      - name: Check for uncommitted changes
+        run: |
+          if ! git diff --quiet extras/; then
+            echo "::error::Extras are out of date. Run the pre-commit hook or regenerate locally."
+            git diff --stat extras/
+            exit 1
+          fi
 
   generate-doc:
     runs-on: ubuntu-latest
@@ -79,7 +78,7 @@ jobs:
 
   release:
     runs-on: ubuntu-latest
-    needs: [stylua, generate-extras, generate-doc, test]
+    needs: [stylua, check-extras, generate-doc, test]
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: googleapis/release-please-action@v4

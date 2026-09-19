@@ -63,11 +63,21 @@ Once you've created the extension file, you'll need to add it to the `extensions
 
 ## Adding Extras 🎨
 
-We support a number of terminals and other goodies to make the cyberdream experience even better. These are dynamically generated using GitHub actions. This ensures that both light and dark mode variants are generated with minimal effort while adhering as closely as possible to the [cyberdream palette](https://github.com/scottmckendry/cyberdream.nvim/blob/main/lua/cyberdream/colors.lua).
+We support a number of terminals and other goodies to make the cyberdream experience even better. These are generated locally using a pre-commit hook, ensuring that both light and dark mode variants stay in sync with the [cyberdream palette](https://github.com/scottmckendry/cyberdream.nvim/blob/main/lua/cyberdream/colors.lua).
+
+### Setup
+
+After cloning, enable the tracked git hooks:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+This only needs to be run once per clone. The pre-commit hook will automatically regenerate extras whenever relevant source files change.
 
 > [!NOTE]
-> Do not edit the extras directly. Your changes will be overwritten the next time the GitHub action runs.
+> Do not edit the extras directly. Your changes will be overwritten the next time the hook runs.
 
-To add a new extra, create a new template file in the `lua/cyberdrem/extra` directory. Use the existing templates as a guide. Once you've created the template, you'll need to add it to the `extras` table in `lua/cyberdream/extra/init.lua`, including the extension and name.
+To add a new extra, create a new template file in the `lua/cyberdream/extra` directory. Use the existing templates as a guide. Once you've created the template, you'll need to add it to the `extras` table in `lua/cyberdream/extra/init.lua`, including the extension and name.
 
-Once you've done this, the extra will be generated the next time the GitHub action runs. You can find the generated extras in the `extras` directory.
+Once you've done this, the extras will be regenerated automatically on your next commit. CI will also verify they are up to date.
