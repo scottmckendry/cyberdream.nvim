@@ -31,7 +31,7 @@ FEATURES                                                 *cyberdream-features*
 
 - **Transparency-first design** - all design decisions are made with transparency in mind.
 - **High contrast** - Colours have been carefully chosen to be cohesive and easy on the eyes while still being easy to distinguish.
-- **Terminal Support** - Several included |cyberdream-terminal-themes| to enhance your cyberdream experience.
+- **Terminal Support** - Several included terminal themes to enhance your cyberdream experience.
 - **Extensions** - Support for a variety of popular plugins out of the box. Can be toggled on or off to maximise performance.
 
 Supported Plugins/Extensions ~
@@ -152,39 +152,39 @@ their default values:
     require("cyberdream").setup({
         -- Set light or dark variant
         variant = "default", -- use "light" for the light variant, "muted" for a softer dark variant. Also accepts "auto" to set dark or light colors based on the current value of `vim.o.background`
-    
+
         -- Enable transparent background
         transparent = false,
-    
+
         -- Reduce the overall saturation of colours for a more muted look
         saturation = 1, -- accepts a value between 0 and 1. 0 will be fully desaturated (greyscale) and 1 will be the full color (default)
-    
+
         -- Enable italics comments
         italic_comments = false,
-    
+
         -- Replace all fillchars with ' ' for the ultimate clean look
         hide_fillchars = false,
-    
+
         -- Apply a modern borderless look to pickers like Telescope, Snacks Picker & Fzf-Lua
         borderless_pickers = false,
-    
+
         -- Set terminal colors used in `:terminal`
         terminal_colors = true,
-    
+
         -- Improve start up time by caching highlights. Generate cache with :CyberdreamBuildCache and clear with :CyberdreamClearCache
         cache = false,
-    
+
         -- Override highlight groups with your own colour values
         highlights = {
             -- Highlight groups to override, adding new groups is also possible
             -- See `:h highlight-groups` for a list of highlight groups or run `:hi` to see all groups and their current values
-    
+
             -- Example:
             Comment = { fg = "#696969", bg = "NONE", italic = true },
-    
+
             -- More examples can be found in `lua/cyberdream/extensions/*.lua`
         },
-    
+
         -- Override a highlight group entirely using the built-in colour palette
         overrides = function(colors) -- NOTE: This function nullifies the `highlights` option
             -- Example:
@@ -193,15 +193,15 @@ their default values:
                 ["@property"] = { fg = colors.magenta, bold = true },
             }
         end,
-    
+
         -- Override colors
         colors = {
             -- For a list of colors see `lua/cyberdream/colours.lua`
-    
+
             -- Override colors for both light and dark variants
             bg = "#000000",
             green = "#00ff00",
-    
+
             -- If you want to override colors for light or dark variants only, use the following format:
             dark = {
                 magenta = "#ff00ff",
@@ -212,7 +212,7 @@ their default values:
                 cyan = "#5ef1ff",
             },
         },
-    
+
         -- Disable or enable colorscheme extensions
         extensions = {
             telescope = true,
@@ -220,7 +220,7 @@ their default values:
             mini = true,
             ...
         },
-    
+
         -- Alternatively, you can use 'default' to set all extensions at once
         -- cache = true, -- Use cache for fastest loads
         -- extensions = {
@@ -317,13 +317,13 @@ USING EXTRACONFIG FOR PROGRAMS WITH CUSTOM CONFIG OPTIONS
         enable = true;
         settings = builtins.fromTOML (builtins.readFile "${inputs.cyberdream.extras.alacritty}/alacritty.toml");
       };
-    
+
       # Kitty - append theme config
       programs.kitty = {
         enable = true;
         extraConfig = builtins.readFile "${inputs.cyberdream.extras.kitty}/kitty.conf";
       };
-    
+
       # Tmux - append theme config
       programs.tmux = {
         enable = true;
@@ -340,7 +340,7 @@ USING XDG.CONFIGFILE FOR DIRECT FILE PLACEMENT
     {
       # Yazi - link theme file directly
       xdg.configFile."yazi/theme.toml".source = "${inputs.cyberdream.extras.yazi}/cyberdream.toml";
-    
+
       # Zellij - link theme file directly
       xdg.configFile."zellij/themes/cyberdream.kdl".source = "${inputs.cyberdream.extras.zellij}/cyberdream.kdl";
     }
