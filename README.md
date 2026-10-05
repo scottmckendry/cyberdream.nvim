@@ -354,6 +354,12 @@ All directories in the `extras/` folder are available through `inputs.cyberdream
 
 </details>
 
+## 🌐 Community Integrations
+
+Cyberdream is also integrated into these third-party projects:
+
+- **[Proxelar](https://github.com/emanuele-em/proxelar)**
+
 ## 🧑‍🍳 Recipes
 
 Include these alongside the `setup` function to add additional functionality to the theme.
