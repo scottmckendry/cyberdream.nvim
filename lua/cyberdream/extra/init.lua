@@ -11,6 +11,7 @@ M.extras = {
     base16 = { extension = "yaml", name = "base16" },
     btop = { extension = "theme", name = "btop" },
     delta = { extension = "gitconfig", name = "delta" },
+    dux = { extension = "json", name = "dux" },
     fish = { extension = "theme", name = "fish" },
     foot = { extension = "ini", name = "foot" },
     ghostty = { extension = nil, name = "ghostty" },
