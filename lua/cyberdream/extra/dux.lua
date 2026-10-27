@@ -26,7 +26,7 @@ function M.generate(variant)
     "outline": "${_outline}",
     "surfaceContainerLowest": "${bg}",
     "surfaceContainerLow": "${_surface_container_low}",
-    "surfaceContainer": "${bg_alt}",
+    "surfaceContainer": "${_surface_container}",
     "surfaceContainerHigh": "${_surface_container_high}",
     "surfaceContainerHighest": "${bg_highlight}",
     "error": "${red}",
@@ -52,6 +52,7 @@ function M.generate(variant)
         _surface_variant = util.blend(c.bg, c.bg_alt, 0.5),
         _outline = c.grey,
         _surface_container_low = util.blend(c.bg, c.bg_alt, 0.5),
+        _surface_container = util.blend(c.bg_alt, c.bg_highlight, 0.75),
         _surface_container_high = util.blend(c.bg_alt, c.bg_highlight, 0.5),
     })
 
