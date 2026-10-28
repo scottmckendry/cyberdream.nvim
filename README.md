@@ -359,6 +359,7 @@ All directories in the `extras/` folder are available through `inputs.cyberdream
 
 Cyberdream is also integrated into these third-party projects:
 
+- **[Bruno](https://github.com/usebruno/bruno)**
 - **[Proxelar](https://github.com/emanuele-em/proxelar)**
 
 ## 🧑‍🍳 Recipes
