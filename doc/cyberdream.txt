@@ -9,6 +9,7 @@ Table of Contents                               *cyberdream-table-of-contents*
   - Usage                                                   |cyberdream-usage|
   - Configuring                                       |cyberdream-configuring|
   - Extras                                                 |cyberdream-extras|
+  - Community Integrations                 |cyberdream-community-integrations|
   - ‍ Recipes                                       |cyberdream-‍-recipes|
   - Palette                                               |cyberdream-palette|
   - Contributing                                     |cyberdream-contributing|
@@ -246,6 +247,7 @@ Mostly terminal themes and a few other goodies!
 
 - **Alacritty**
 - **Base16/Stylix**
+- **Dux**
 - **Fish**
 - **Foot**
 - **Ghostty**
@@ -373,6 +375,14 @@ AVAILABLE EXTRAS ~
 
 All directories in the `extras/` folder are available through
 `inputs.cyberdream.extras.<name>`. See the list above for all available themes.
+
+
+COMMUNITY INTEGRATIONS                     *cyberdream-community-integrations*
+
+Cyberdream is also integrated into these third-party projects:
+
+- **Bruno**
+- **Proxelar**
 
 
 ‍ RECIPES                                           *cyberdream-‍-recipes*
