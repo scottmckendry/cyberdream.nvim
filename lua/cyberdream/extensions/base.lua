@@ -21,6 +21,7 @@ function M.get(opts, t)
         DiffDelete = { bg = util.blend(t.bg_solid, t.red, 0.8) },
         DiffText = { bg = util.blend(t.bg_solid, t.orange, 0.8) },
         Added = { fg = t.green },
+        Changed = { fg = t.blue },
         Removed = { fg = t.red },
         EndOfBuffer = { fg = util.blend(t.bg_highlight, t.fg, 0.9) },
         ErrorMsg = { fg = t.red },
