@@ -4,7 +4,7 @@ local util = require("cyberdream.util")
 
 local M = {}
 
----@param variant? string
+---@param variant? cyberdream.Variant
 function M.load(variant)
     if config.options.cache then
         require("cyberdream.cache").load()
@@ -13,7 +13,12 @@ function M.load(variant)
     util.load(theme.setup(variant))
 end
 
-M.setup = config.setup
+---@param options? cyberdream.Config
+function M.setup(options)
+    config.setup(options)
+end
+
+---@type fun(variant?: cyberdream.Variant)
 M.colorscheme = M.load
 
 vim.api.nvim_create_user_command("CyberdreamToggleMode", function()
