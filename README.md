@@ -94,6 +94,14 @@
 
 ## 📦 Installation
 
+Vim.pack (Neovim 0.12+):
+
+```lua
+vim.pack.add({
+    "https://github.com/scottmckendry/cyberdream.nvim",
+})
+```
+
 Lazy<sup>1</sup>:
 
 ```lua
@@ -394,7 +402,7 @@ vim.api.nvim_create_autocmd("User", {
 <details>
 <summary><b>Dark</b></summary>
 
-| 🖌                                                        | Hex       | Color        |
+| 🖌                                                         | Hex       | Color        |
 | --------------------------------------------------------- | --------- | ------------ |
 | ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | bg           |
 | ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bg_alt       |
@@ -416,7 +424,7 @@ vim.api.nvim_create_autocmd("User", {
 <details>
 <summary><b>Muted</b></summary>
 
-| 🖌                                                        | Hex       | Color        |
+| 🖌                                                         | Hex       | Color        |
 | --------------------------------------------------------- | --------- | ------------ |
 | ![#16181a](https://place-hold.it/15/16181a/16181a?text=+) | `#16181a` | bg           |
 | ![#1e2124](https://place-hold.it/15/1e2124/1e2124?text=+) | `#1e2124` | bg_alt       |
@@ -438,7 +446,7 @@ vim.api.nvim_create_autocmd("User", {
 <details>
 <summary><b>Light</b></summary>
 
-| 🖌                                                        | Hex       | Color        |
+| 🖌                                                         | Hex       | Color        |
 | --------------------------------------------------------- | --------- | ------------ |
 | ![#ffffff](https://place-hold.it/15/ffffff/ffffff?text=+) | `#ffffff` | bg           |
 | ![#eaeaea](https://place-hold.it/15/eaeaea/eaeaea?text=+) | `#eaeaea` | bg_alt       |
