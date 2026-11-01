@@ -101,6 +101,14 @@ Supported Plugins/Extensions ~
 
 INSTALLATION                                         *cyberdream-installation*
 
+Vim.pack (Neovim 0.12+):
+
+>lua
+    vim.pack.add({
+        "https://github.com/scottmckendry/cyberdream.nvim",
+    })
+<
+
 Lazy1:
 
 >lua
