@@ -1,5 +1,24 @@
 # Changelog
 
+## [5.6.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.5.0...v5.6.0) (2026-11-01)
+
+
+### Features
+
+* **extras:** add pi ([#230](https://github.com/scottmckendry/cyberdream.nvim/issues/230)) ([049bed6](https://github.com/scottmckendry/cyberdream.nvim/commit/049bed633589d163eada333b21c791471279e1a6))
+* **extras:** dux ([81b3e39](https://github.com/scottmckendry/cyberdream.nvim/commit/81b3e39ceb87db2987255123af3212beeb75bf6d))
+* **theme:** add muted variant ([#229](https://github.com/scottmckendry/cyberdream.nvim/issues/229)) ([0904783](https://github.com/scottmckendry/cyberdream.nvim/commit/090478309a9a0f57d02bb539c63192cd75af21f7))
+
+
+### Bug Fixes
+
+* **base:** add missing hl group ([bd99985](https://github.com/scottmckendry/cyberdream.nvim/commit/bd999850baa0e0dea8a329eb78908a23d393ff3e))
+* **extras:** dux - visually distict surfaceContainer ([2dbd7e9](https://github.com/scottmckendry/cyberdream.nvim/commit/2dbd7e944014cf880eb824c1026337bdab1f8d69))
+* **extras:** improve pi theme ([b9f7bce](https://github.com/scottmckendry/cyberdream.nvim/commit/b9f7bce8b8b06307b353d9439168e1eabda15b0b))
+* **theme:** regression for variant specific overrides ([b1158c7](https://github.com/scottmckendry/cyberdream.nvim/commit/b1158c72ce490b2316ebf4070ebbafd92a7da61f)), closes [#231](https://github.com/scottmckendry/cyberdream.nvim/issues/231)
+* type check setup ([0ca0847](https://github.com/scottmckendry/cyberdream.nvim/commit/0ca0847de87d9fee4d8e837f51476495a2081ca9))
+* use vim entrypoints to prevent module shadowing ([1abaf64](https://github.com/scottmckendry/cyberdream.nvim/commit/1abaf64b57204494bb244b28a8ed1b997fc87455))
+
 ## [5.5.0](https://github.com/scottmckendry/cyberdream.nvim/compare/v5.4.0...v5.5.0) (2026-06-28)
 
 
